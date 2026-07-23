@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A community-owned leaderboard of repositories measured with harness-score.">
+  <meta name="theme-color" content="#f1f4ec">
+  <title>Harness Maturity Showcase</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101e1a'/%3E%3Cpath d='M7 23v-4h3v4zm5 0v-7h3v7zm5 0V12h3v11zm5 0V8h3v15z' fill='%23c9ef45'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#leaderboard">Skip to leaderboard</a>
+  <header class="nav">
+    <a class="brand" href="#" aria-label="Harness Maturity Showcase home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <span>harness<span>showcase</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#leaderboard">Ranking</a>
+      <a href="#method">Method</a>
+      <a class="nav-cta" href="https://github.com/paladini/harness-maturity-showcase/issues/new?template=submit-project.yml">Submit a repo ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Open, evidence-backed, community-owned</p>
+        <h1>Where great AI<br>harnesses get <em>seen.</em></h1>
+        <p class="lede">A living index of repositories measured with
+          <a href="https://paladini.io/harness-score/">harness-score</a>.
+          Explore the leaders, inspect every claim, and add your own work.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#leaderboard">Explore the ranking <span>↓</span></a>
+          <a class="button secondary" href="https://github.com/paladini/harness-maturity-showcase">View on GitHub ↗</a>
+        </div>
+      </div>
+      <aside class="signal" aria-label="Showcase statistics">
+        <div class="signal-top"><span>LIVE INDEX</span><span class="pulse">VERIFIED</span></div>
+        <strong id="total-count">—</strong>
+        <p>repositories in the index</p>
+        <div class="signal-grid">
+          <div><b id="scored-count">—</b><span>full reports</span></div>
+          <div><b>6</b><span>dimensions</span></div>
+          <div><b>0</b><span>paywalls</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="podium-section" aria-labelledby="podium-title">
+      <div class="section-kicker">THE CURRENT LEADERS</div>
+      <h2 id="podium-title">Exceptional harnesses.<br><span>Measured, not nominated.</span></h2>
+      <div id="podium" class="podium"></div>
+    </section>
+
+    <section id="leaderboard" class="board-section" aria-labelledby="board-title">
+      <div class="board-head">
+        <div>
+          <p class="section-kicker">THE FULL INDEX</p>
+          <h2 id="board-title">Harness maturity ranking</h2>
+        </div>
+        <p>Every numeric score links to a pinned, reproducible report. Badge-only
+          entries remain visible without pretending to have a comparable total.</p>
+      </div>
+      <div class="controls" aria-label="Leaderboard filters">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search owner or repository…" autocomplete="off"></label>
+        <div class="filter-group" role="group" aria-label="Filter by maturity level">
+          <button class="active" data-level="all">All levels</button>
+          <button data-level="4">L4</button><button data-level="3">L3</button>
+          <button data-level="2">L2</button><button data-level="1">L1</button>
+          <button data-level="0">L0</button>
+        </div>
+        <select id="source" aria-label="Filter by verification type">
+          <option value="all">All evidence</option>
+          <option value="study">Full reports</option>
+          <option value="badge">Verified badges</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Rank</th><th>Repository</th><th>Maturity</th><th>Score</th><th>Evidence</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+        <p id="empty" class="empty" hidden>No repositories match these filters. Try a broader search.</p>
+      </div>
+    </section>
+
+    <section id="method" class="method">
+      <div>
+        <p class="section-kicker">TRUST, BUILT IN</p>
+        <h2>Don't trust the badge.<br><span>Follow the evidence.</span></h2>
+      </div>
+      <ol>
+        <li><span>01</span><div><h3>Run the scanner</h3><p>Generate a JSON report with the deterministic, offline harness-score CLI.</p></div></li>
+        <li><span>02</span><div><h3>Commit the proof</h3><p>Keep the report in your public repository so reviewers can inspect the exact result.</p></div></li>
+        <li><span>03</span><div><h3>Open one small PR</h3><p>Add a single record. Automated checks validate its shape, score math, uniqueness, and evidence URL.</p></div></li>
+      </ol>
+      <a class="button primary" href="https://github.com/paladini/harness-maturity-showcase/blob/main/CONTRIBUTING.md">Read the submission guide ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>harness<span>showcase</span></span></div>
+    <p>Recognition for repositories that invest in reliable AI-assisted development.</p>
+    <div><a href="https://github.com/paladini/harness-maturity-showcase">GitHub</a><a href="https://paladini.io/harness-score/">Harness Score</a><a href="https://github.com/paladini/harness-maturity-analysis">Study</a></div>
+  </footer>
+</body>
+</html>

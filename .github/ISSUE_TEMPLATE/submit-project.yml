@@ -1,0 +1,40 @@
+name: Submit a repository
+description: Prepare a verified Harness Maturity Showcase entry.
+title: "Add: owner/repository"
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for investing in a stronger AI coding harness. This form helps
+        you prepare the small pull request that adds your repository.
+  - type: input
+    id: repository
+    attributes:
+      label: Public repository
+      description: Use the complete GitHub URL.
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Evidence URL
+      description: Link to the committed harness-score JSON report or README badge.
+      placeholder: https://github.com/owner/repository/blob/main/harness-score.json
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Maturity level
+      options: [L0 Unharnessed, L1 Documented, L2 Guarded, L3 Sensing, L4 Self-correcting]
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: The repository and evidence are public and the report was produced by harness-score.
+          required: true
