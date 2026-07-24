@@ -11,11 +11,10 @@ test("page has one h1 and core landmarks", () => {
   for (const landmark of ["<header", "<main", "<footer", "<table"]) assert.match(html, new RegExp(landmark));
 });
 
-test("shared navigation keeps Harness Score as the product home", () => {
+test("section header only routes back to Harness Score", () => {
   assert.match(html, /href="https:\/\/paladini\.io\/harness-score\/" aria-label="Harness Score home"/);
-  assert.match(html, />Guide<\/a>/);
-  assert.match(html, />Maturity Model<\/a>/);
-  assert.match(html, /aria-current="page">Showcase<\/a>/);
+  assert.match(html, /class="nav-return" href="https:\/\/paladini\.io\/harness-score\/"/);
+  assert.doesNotMatch(html, /<header[\s\S]*?<nav/);
 });
 
 test("all full study records expose reproducible reports", () => {
