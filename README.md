@@ -16,11 +16,11 @@ instructions, guardrails, validation, and feedback loops. The showcase
 recognizes teams that make that investment and gives the community a
 transparent way to inspect the evidence behind every listing.
 
-This repository starts with two complementary data sets:
+This repository currently combines two complementary data sets:
 
-- 20 pinned, reproducible reports from the
+- 21 pinned, reproducible reports scanned with `harness-score@1.5.0` from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis).
-- Public repositories that already display a Harness Score maturity badge.
+- 20 public repositories that display a Harness Score maturity badge.
 
 Numeric rankings include only full reports. A badge proves the stated maturity
 level, but it does not expose enough information to claim a numeric total.
@@ -117,7 +117,7 @@ for reproducible bugs. All participation follows the
 - [Harness Score](https://github.com/paladini/harness-score) — the deterministic
   scanner and maturity model.
 - [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis)
-  — the reproducible 20-repository study that seeds the leaderboard.
+  — the reproducible 21-repository study that seeds the leaderboard.
 
 ## License
 
