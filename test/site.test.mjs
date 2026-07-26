@@ -19,7 +19,7 @@ test("section header only routes back to Harness Score", () => {
 
 test("all full study records expose reproducible reports", () => {
   const study = projects.filter((project) => project.source === "study");
-  assert.equal(study.length, 20);
+  assert.equal(study.length, 21);
   assert.ok(study.every((project) => project.evidence.includes("/corpus/reports/")));
 });
 
@@ -28,7 +28,7 @@ test("top three are ordered by normalized score", () => {
   const sorted = [...scored].sort((a, b) => b.score / b.maxScore - a.score / a.maxScore);
   assert.deepEqual(sorted.slice(0, 3).map((project) => project.repo), [
     "paladini/harness-score",
-    "anthropics/anthropic-cookbook",
+    "anthropics/claude-cookbooks",
     "promptfoo/promptfoo",
   ]);
 });
