@@ -16,14 +16,19 @@ instructions, guardrails, validation, and feedback loops. The showcase
 recognizes teams that make that investment and gives the community a
 transparent way to inspect the evidence behind every listing.
 
-This repository currently combines two complementary data sets:
+This repository currently combines three evidence sets:
 
 - 21 pinned, reproducible reports scanned with `harness-score@1.5.0` from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis).
-- 21 public repositories that display a Harness Score maturity badge.
+- 20 full reports from the original badge-listed projects, refreshed with
+  `harness-score@1.8.1` on October 7, 2026. See the
+  [results and pinned run manifest](data/runs/2026-10-07/README.md).
+- 1 additional public repository with a README badge only.
 
-Numeric rankings include only full reports. A badge proves the stated maturity
-level, but it does not expose enough information to claim a numeric total.
+Numeric rankings include only full reports and compare repositories within the
+same scanner version. The podium defaults to the newest version; the scanner
+filter exposes each cohort. A badge records a public level claim, not a verified
+current score. This index has 42 repositories: 41 full reports and 1 badge-only entry.
 
 ## Submit your repository
 
@@ -33,7 +38,7 @@ The complete contribution is one object in
 1. Run Harness Score in your public repository:
 
    ```sh
-   npx harness-score --format json > harness-score.json
+   npx harness-score --json > harness-score.json
    ```
 
 2. Commit `harness-score.json` to the repository you measured.
@@ -46,6 +51,7 @@ The complete contribution is one object in
      "level": 3,
      "score": 82,
      "maxScore": 108,
+     "toolVersion": "1.5.0",
      "source": "study",
      "commit": "40-character-commit-sha-of-the-measured-repository",
      "evidence": "https://github.com/your-name/your-project/blob/main/harness-score.json"
@@ -89,6 +95,7 @@ Open `http://127.0.0.1:8765`.
 ```text
 .
 ├── data/projects.json       # Public registry and source of truth
+├── data/runs/               # Dated scan manifests and unmodified JSON reports
 ├── scripts/validate.mjs     # Deterministic submission checks
 ├── test/site.test.mjs       # Site and ranking invariants
 ├── index.html               # GitHub Pages entry point
@@ -100,6 +107,7 @@ Open `http://127.0.0.1:8765`.
 
 - **Evidence before status.** Every listing links to public proof.
 - **Comparable scores only.** Badge-only records never receive invented totals.
+  Numeric ranks are scoped to a single scanner version.
 - **Small contributions.** A normal submission changes one data file.
 - **Open infrastructure.** The registry, validation, site, and deployment are
   available under the MIT License.
