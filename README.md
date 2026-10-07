@@ -20,7 +20,7 @@ This repository currently combines two complementary data sets:
 
 - 21 pinned, reproducible reports scanned with `harness-score@1.5.0` from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis).
-- 20 public repositories that display a Harness Score maturity badge.
+- 21 public repositories that display a Harness Score maturity badge.
 
 Numeric rankings include only full reports. A badge proves the stated maturity
 level, but it does not expose enough information to claim a numeric total.
