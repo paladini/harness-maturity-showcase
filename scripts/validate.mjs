@@ -21,6 +21,9 @@ for (const [index, project] of projects.entries()) {
     errors.push(`${label}: evidence must be a GitHub URL`);
   }
   if (project.source === "study") {
+    if (!/^\d+\.\d+\.\d+$/.test(project.toolVersion ?? "")) {
+      errors.push(`${label}: full reports require a scanner toolVersion`);
+    }
     if (!Number.isFinite(project.score) || !Number.isFinite(project.maxScore)) {
       errors.push(`${label}: study entries require score and maxScore`);
     } else if (project.score < 0 || project.score > project.maxScore) {

@@ -1,0 +1,351 @@
+{
+  "runDate": "2026-10-07",
+  "startedAt": "2026-10-07T20:25:11.417Z",
+  "toolVersion": "1.8.1",
+  "registryCommit": "c9bf70cb1f83f3e6f7bd838a87c5bb808d64e602",
+  "scope": "repo",
+  "note": "New commits and scanner version; old badge levels are claims, not comparable numeric baselines.",
+  "entries": [
+    {
+      "repo": "paladini/harness-maturity-analysis",
+      "branch": "main",
+      "commit": "8cbacd293dbd7fd4bfcc4506557423ae40a710b1",
+      "previousBadgeLevel": 4,
+      "previousEvidence": "https://github.com/paladini/harness-maturity-analysis/blob/main/README.md",
+      "report": "harness-maturity-analysis.json",
+      "scannedAt": "2026-10-07T20:25:42.760Z",
+      "sha256": "670b4d70b42dacf8ee3e47ef4dc3b8b80338f3509a15e7fc834e373f73aa55d6",
+      "status": "complete",
+      "level": 4,
+      "score": {
+        "earned": 96,
+        "max": 105,
+        "percent": 91
+      }
+    },
+    {
+      "repo": "paladini/specgov",
+      "branch": "main",
+      "commit": "5a59b902639a07fbec1082a4c465aa5d86eadc97",
+      "previousBadgeLevel": 1,
+      "previousEvidence": "https://github.com/paladini/specgov/blob/main/README.md",
+      "report": "specgov.json",
+      "scannedAt": "2026-10-07T20:25:48.348Z",
+      "sha256": "d3c7f50c8f0a039743697966b49d39079952cef74b9dd77b80e6ba7c6a489882",
+      "status": "complete",
+      "level": 1,
+      "score": {
+        "earned": 57,
+        "max": 105,
+        "percent": 54
+      }
+    },
+    {
+      "repo": "paladini/mcp-me",
+      "branch": "main",
+      "commit": "34f85aca18cd461cec729582ec3c0d0a1072a1f3",
+      "previousBadgeLevel": 1,
+      "previousEvidence": "https://github.com/paladini/mcp-me/blob/main/README.md",
+      "report": "mcp-me.json",
+      "scannedAt": "2026-10-07T20:25:53.426Z",
+      "sha256": "b26956d23a77f1da6fe3c1bf8715abc42957158f25aa9cd1b0dd2395b9ff7842",
+      "status": "complete",
+      "level": 3,
+      "score": {
+        "earned": 92,
+        "max": 105,
+        "percent": 88
+      }
+    },
+    {
+      "repo": "paladini/vibe-code-detector",
+      "branch": "main",
+      "commit": "5b91718430b51fa9d91adb9e2d184ab59afc00e0",
+      "previousBadgeLevel": 1,
+      "previousEvidence": "https://github.com/paladini/vibe-code-detector/blob/main/README.md",
+      "report": "vibe-code-detector.json",
+      "scannedAt": "2026-10-07T20:25:58.518Z",
+      "sha256": "fd067acf17da3929c53654cf72b245d39a146da9982f65c6ca447d089b0e91fe",
+      "status": "complete",
+      "level": 1,
+      "score": {
+        "earned": 48,
+        "max": 105,
+        "percent": 46
+      }
+    },
+    {
+      "repo": "paladini/node-intervals-icu",
+      "branch": "main",
+      "commit": "27659b8f6c57a1e284d61ffa97b93f63ca0e8fea",
+      "previousBadgeLevel": 1,
+      "previousEvidence": "https://github.com/paladini/node-intervals-icu/blob/main/README.md",
+      "report": "node-intervals-icu.json",
+      "scannedAt": "2026-10-07T20:26:03.000Z",
+      "sha256": "9d64ca9ba4394432a318731cad76769603eea7abf7b4e09da5b6cb920ac79bf2",
+      "status": "complete",
+      "level": 1,
+      "score": {
+        "earned": 54,
+        "max": 105,
+        "percent": 51
+      }
+    },
+    {
+      "repo": "paladini/extract-moodle-content-to-notebook-lm-extension",
+      "branch": "main",
+      "commit": "c59ec5ab374eca76ecea273a73135332b22e0f12",
+      "previousBadgeLevel": 1,
+      "previousEvidence": "https://github.com/paladini/extract-moodle-content-to-notebook-lm-extension/blob/main/README.md",
+      "report": "extract-moodle-content-to-notebook-lm-extension.json",
+      "scannedAt": "2026-10-07T20:26:06.987Z",
+      "sha256": "149f84add702ce71903318947edbf3c18beb425c9c627e11ef23059c9d055356",
+      "status": "complete",
+      "level": 1,
+      "score": {
+        "earned": 26,
+        "max": 105,
+        "percent": 25
+      }
+    },
+    {
+      "repo": "paladini/history-of-ai-assisted-development",
+      "branch": "main",
+      "commit": "a1050a32e327e0da94709bab48fdcfb3b0eefe53",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/history-of-ai-assisted-development/blob/main/README.md",
+      "report": "history-of-ai-assisted-development.json",
+      "scannedAt": "2026-10-07T20:26:11.213Z",
+      "sha256": "e0fb16e8b5569da48d4676ba50fbdb0ac8977b5902125b1524b86aa106b32d86",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 30,
+        "max": 105,
+        "percent": 29
+      }
+    },
+    {
+      "repo": "paladini/devutils-mcp-server",
+      "branch": "main",
+      "commit": "831a5e9ab1b3f843307232f32808e6978351456c",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/devutils-mcp-server/blob/main/README.md",
+      "report": "devutils-mcp-server.json",
+      "scannedAt": "2026-10-07T20:26:15.229Z",
+      "sha256": "d5168823ecda5cba9625710bb38fb7cb3fb833eba92addd75dbda1330c97f21d",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 30,
+        "max": 105,
+        "percent": 29
+      }
+    },
+    {
+      "repo": "paladini/up-life-higienizacao-static-website",
+      "branch": "main",
+      "commit": "3257f09eb1fb462fbf39355fdeec44828699e62a",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/up-life-higienizacao-static-website/blob/main/README.md",
+      "report": "up-life-higienizacao-static-website.json",
+      "scannedAt": "2026-10-07T20:26:19.430Z",
+      "sha256": "bde3f7daf6f33d3564d813dc18e1a51d001e2aeafd4d0c4ed877703e7dfbf0d9",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 28,
+        "max": 105,
+        "percent": 27
+      }
+    },
+    {
+      "repo": "paladini/credit-card-brand-detector",
+      "branch": "main",
+      "commit": "ab6792f1b541ee35964b66f5921752d1061d48d3",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/credit-card-brand-detector/blob/main/readme.md",
+      "report": "credit-card-brand-detector.json",
+      "scannedAt": "2026-10-07T20:26:24.462Z",
+      "sha256": "5ef5e7488c839ae20ce20fc813b37788b3a31e8116a13f90704032617e283f53",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 37,
+        "max": 105,
+        "percent": 35
+      }
+    },
+    {
+      "repo": "paladini/validador-de-cartoes-de-credito",
+      "branch": "main",
+      "commit": "32191f45da3bedfb6709c23a355c40a48edc0d78",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/validador-de-cartoes-de-credito/blob/main/readme.md",
+      "report": "validador-de-cartoes-de-credito.json",
+      "scannedAt": "2026-10-07T20:26:29.110Z",
+      "sha256": "64600c8ebe2a2295a62361c497c1be44296ba7397435461f73075a07c3a4d3f7",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 29,
+        "max": 105,
+        "percent": 28
+      }
+    },
+    {
+      "repo": "paladini/aa-daily-reflections-database",
+      "branch": "main",
+      "commit": "d4d7eda435bf7e7b1ecc770662c33ebbf785fea4",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/aa-daily-reflections-database/blob/main/README.md",
+      "report": "aa-daily-reflections-database.json",
+      "scannedAt": "2026-10-07T20:26:34.029Z",
+      "sha256": "6d45d69246cd9723fcdf3d20847f830b4793100a3f8d3cf49e98c00e6bf634e6",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 28,
+        "max": 105,
+        "percent": 27
+      }
+    },
+    {
+      "repo": "paladini/team-ai-sync",
+      "branch": "main",
+      "commit": "f6142ee4fc4f424205433e0eff67e1c03b5b6c30",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/team-ai-sync/blob/main/README.md",
+      "report": "team-ai-sync.json",
+      "scannedAt": "2026-10-07T20:26:38.692Z",
+      "sha256": "7bd0a543934c363def0119ba36cd69c0cbdbbe6fb47fd73d20ab01da72a65d22",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 45,
+        "max": 105,
+        "percent": 43
+      }
+    },
+    {
+      "repo": "paladini/OpenFold",
+      "branch": "main",
+      "commit": "d4035d8b52a18f6712dd565d1f086f0168f2f50b",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/OpenFold/blob/main/README.md",
+      "report": "OpenFold.json",
+      "scannedAt": "2026-10-07T20:26:43.148Z",
+      "sha256": "bcc8dc062ddc4caeb24035490a64032f7f2191f218c46f542eae150a831311d5",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 50,
+        "max": 105,
+        "percent": 48
+      }
+    },
+    {
+      "repo": "paladini/guitar-tune-trainer",
+      "branch": "main",
+      "commit": "26cfe55744aad30f2d30f03cdf70244bc0a91809",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/guitar-tune-trainer/blob/main/README.md",
+      "report": "guitar-tune-trainer.json",
+      "scannedAt": "2026-10-07T20:26:47.207Z",
+      "sha256": "443ca875833dc047b0ff7360bc77e883c672497db5d33654c3c4d3fe7df42aec",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 21,
+        "max": 105,
+        "percent": 20
+      }
+    },
+    {
+      "repo": "paladini/aa-reflections-scraper",
+      "branch": "main",
+      "commit": "cb5cddeee4a1d2fba83d0d1ea21d80c0740761a8",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/aa-reflections-scraper/blob/main/README.md",
+      "report": "aa-reflections-scraper.json",
+      "scannedAt": "2026-10-07T20:26:51.195Z",
+      "sha256": "82253cf49bfb83ebabebafa65114e0970d7b7b6e5c23cba3407e63269944e408",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 37,
+        "max": 105,
+        "percent": 35
+      }
+    },
+    {
+      "repo": "paladini/env-team-vault",
+      "branch": "main",
+      "commit": "94472a2d45c24b66075fd5d6d06cce595d059fe0",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/env-team-vault/blob/main/README.md",
+      "report": "env-team-vault.json",
+      "scannedAt": "2026-10-07T20:26:54.884Z",
+      "sha256": "a0542be3f686db80a0807f44d0ed60fe2d2f9af8f5a1cf474fd69365a99a2ee8",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 31,
+        "max": 105,
+        "percent": 30
+      }
+    },
+    {
+      "repo": "paladini/chrome-web-store-assets-generator",
+      "branch": "main",
+      "commit": "18d6913dcf7bf055f0270c0cb656872fd5f5f98d",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/chrome-web-store-assets-generator/blob/main/README.md",
+      "report": "chrome-web-store-assets-generator.json",
+      "scannedAt": "2026-10-07T20:26:58.862Z",
+      "sha256": "b422127040fbfe1c6d8984b9828e90b280fcc2e6d45aa61580fc63ad0dab9275",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 30,
+        "max": 105,
+        "percent": 29
+      }
+    },
+    {
+      "repo": "paladini/aa-daily-reflections-api",
+      "branch": "main",
+      "commit": "3ad917d3c12653496606f1f74079fa0202063196",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/aa-daily-reflections-api/blob/main/README.md",
+      "report": "aa-daily-reflections-api.json",
+      "scannedAt": "2026-10-07T20:27:02.982Z",
+      "sha256": "a8b44b752b1b9b2f943543bf9080ba07db392dc14b9005b7037cacd06084fbd0",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 47,
+        "max": 105,
+        "percent": 45
+      }
+    },
+    {
+      "repo": "paladini/echo-transcribe",
+      "branch": "main",
+      "commit": "9c2332c981acdaceda4cf00ee8991d92c35e7ce5",
+      "previousBadgeLevel": 0,
+      "previousEvidence": "https://github.com/paladini/echo-transcribe/blob/main/README.md",
+      "report": "echo-transcribe.json",
+      "scannedAt": "2026-10-07T20:27:07.404Z",
+      "sha256": "bd2a218fe668c239c643a8444e4af3a94e6ecb71fb24d1bede2757e73f53b5de",
+      "status": "complete",
+      "level": 0,
+      "score": {
+        "earned": 35,
+        "max": 105,
+        "percent": 33
+      }
+    }
+  ],
+  "completedAt": "2026-10-07T20:27:07.404Z"
+}

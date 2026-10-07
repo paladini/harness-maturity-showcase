@@ -31,6 +31,12 @@ body:
       options: [L0 Unharnessed, L1 Documented, L2 Guarded, L3 Sensing, L4 Self-correcting]
     validations:
       required: true
+  - type: input
+    id: scanner-version
+    attributes:
+      label: Scanner version
+      description: For a full report, copy tool.version from the JSON. Badge-only submissions can leave this blank.
+      placeholder: 1.8.1
   - type: checkboxes
     id: confirmation
     attributes:

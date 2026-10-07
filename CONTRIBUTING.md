@@ -11,13 +11,17 @@ Use this path to participate in the numeric ranking.
 1. Run the current Harness Score release against a public repository:
 
    ```sh
-   npx harness-score --format json > harness-score.json
+   npx harness-score --json > harness-score.json
    ```
 
 2. Commit the report to that repository.
 3. Add one object to `data/projects.json`.
 4. Set `source` to `study`.
 5. Copy `level`, `score`, and `maxScore` exactly from the report.
+   Also set `toolVersion` to the report's `tool.version`, and optionally
+   `scannedAt` to the scan's ISO date or timestamp. Rankings compare reports
+   within the same scanner version. The legacy `source: study` value denotes
+   full reports, including community refreshes.
 6. Set `commit` to the complete 40-character SHA that was measured.
 7. Link `evidence` directly to the committed JSON report.
 
@@ -55,6 +59,7 @@ The validation checks:
 - levels range from L0 through L4;
 - scores are possible and complete;
 - full reports include a complete commit SHA;
+- full reports identify the scanner version used;
 - evidence uses a public GitHub URL; and
 - badge-only records do not claim numeric totals.
 

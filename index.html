@@ -51,6 +51,7 @@
     <section class="podium-section" aria-labelledby="podium-title">
       <div class="section-kicker">THE CURRENT LEADERS</div>
       <h2 id="podium-title">Exceptional harnesses.<br><span>Measured, not nominated.</span></h2>
+      <p id="podium-version"></p>
       <div id="podium" class="podium"></div>
     </section>
 
@@ -60,8 +61,8 @@
           <p class="section-kicker">THE FULL INDEX</p>
           <h2 id="board-title">Harness maturity ranking</h2>
         </div>
-        <p>Every numeric score links to a pinned, reproducible report. Badge-only
-          entries remain visible without pretending to have a comparable total.</p>
+        <p>Ranks compare reports from the same scanner version. Different versions
+          are not directly comparable. Every score links to its evidence.</p>
       </div>
       <div class="controls" aria-label="Leaderboard filters">
         <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search owner or repository…" autocomplete="off"></label>
@@ -76,10 +77,13 @@
           <option value="study">Full reports</option>
           <option value="badge">Verified badges</option>
         </select>
+        <select id="version" aria-label="Filter by scanner version">
+          <option value="all">All scanner versions</option>
+        </select>
       </div>
-      <div class="table-wrap">
+      <div class="table-wrap" role="region" aria-label="Repository results, scroll horizontally for all columns" tabindex="0">
         <table>
-          <thead><tr><th>Rank</th><th>Repository</th><th>Maturity</th><th>Score</th><th>Evidence</th></tr></thead>
+          <thead><tr><th>Rank in version</th><th>Repository</th><th>Maturity</th><th>Score</th><th>Scanner / date</th><th>Evidence</th></tr></thead>
           <tbody id="rows"></tbody>
         </table>
         <p id="empty" class="empty" hidden>No repositories match these filters. Try a broader search.</p>
