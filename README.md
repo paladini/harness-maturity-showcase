@@ -18,8 +18,10 @@ transparent way to inspect the evidence behind every listing.
 
 This repository currently combines three evidence sets:
 
-- 21 pinned, reproducible reports scanned with `harness-score@1.5.0` from the
-  [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis).
+- 101 pinned, reproducible reports scanned with `harness-score@1.8.1` from the
+  [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
+  including 30 new AI software projects selected by frozen GitHub stars.
+  See the [import snapshot and raw reports](data/runs/2026-10-08-corpus/README.md).
 - 20 full reports from the original badge-listed projects, refreshed with
   `harness-score@1.8.1` on October 7, 2026. See the
   [results and pinned run manifest](data/runs/2026-10-07/README.md).
@@ -28,7 +30,30 @@ This repository currently combines three evidence sets:
 Numeric rankings include only full reports and compare repositories within the
 same scanner version. The podium defaults to the newest version; the scanner
 filter exposes each cohort. A badge records a public level claim, not a verified
-current score. This index has 42 repositories: 41 full reports and 1 badge-only entry.
+current score. This index has 122 repositories: 121 full reports and 1 badge-only entry.
+
+The 21 older corpus listings have been replaced by matching 1.8.1 reports.
+Previous registry values remain in the import snapshot; the original community
+run stays unchanged. Each corpus evidence link fixes the analysis commit, and
+byte-identical report copies with SHA-256 checksums are retained here.
+Popularity observations are separate metadata, never ranking points or blind
+human validation. Historical scanner-only entries may include instructional
+repositories; the new 30-project cohort excludes guides and awesome lists.
+
+## Import a published corpus
+
+The showcase does not automatically sync with the analysis repository. Import
+an immutable, fully published analysis commit with:
+
+```sh
+npm run corpus:import -- --commit <40-character-analysis-commit>
+npm run check
+```
+
+The importer verifies matching reports/history before updating the registry,
+preserves community listings and writes a new dated snapshot. Existing snapshot
+directories cannot be overwritten. Publish through a reviewed PR; Pages deploys
+automatically after merge into main.
 
 ## Submit your repository
 
@@ -125,7 +150,7 @@ for reproducible bugs. All participation follows the
 - [Harness Score](https://github.com/paladini/harness-score) — the deterministic
   scanner and maturity model.
 - [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis)
-  — the reproducible 21-repository study that seeds the leaderboard.
+  — the reproducible 101-repository corpus that seeds the leaderboard.
 
 ## License
 

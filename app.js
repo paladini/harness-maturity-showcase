@@ -78,7 +78,7 @@ function render() {
     const evidenceLabel = project.source === "study" ? "Full report" : "README badge";
     return `<tr>
       <td class="rank">${numericRank >= 0 ? String(numericRank + 1).padStart(2, "0") : "—"}</td>
-      <td><a class="repo" href="https://github.com/${escapeHtml(project.repo)}">${escapeHtml(project.repo)} <span>↗</span></a><small>${escapeHtml(project.category.replaceAll("-", " "))}</small></td>
+      <td><a class="repo" href="https://github.com/${escapeHtml(project.repo)}">${escapeHtml(project.repo)} <span>↗</span></a><small>${escapeHtml(project.category.replaceAll("-", " "))}${project.isStressCase ? " · stress case" : ""}</small>${project.selection ? `<small>AI popularity #${escapeHtml(project.selection.popularityRank)} · ${escapeHtml(Number(project.selection.githubStars).toLocaleString("en-US"))} stars on ${escapeHtml(project.selection.date)}</small>` : ""}</td>
       <td>${levelPill(project)}</td>
       <td class="score">${score}</td>
       <td>${project.toolVersion ? `<span>${escapeHtml(project.toolVersion)}</span><small>${escapeHtml(project.scannedAt?.slice(0, 10) ?? "")}</small>` : "Unversioned"}</td>

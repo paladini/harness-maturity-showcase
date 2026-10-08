@@ -19,17 +19,17 @@ test("section header only routes back to Harness Score", () => {
 });
 
 test("all full study records expose reproducible reports", () => {
-  const study = projects.filter((project) => project.source === "study" && project.toolVersion === "1.5.0");
-  assert.equal(study.length, 21);
+  const study = projects.filter((project) => project.corpusSourceCommit);
+  assert.equal(study.length, 101);
   assert.ok(study.every((project) => project.evidence.includes("/corpus/reports/")));
 });
 
-test("historical top three stay within their scanner version", () => {
-  const sorted = rankedReports(projects, "1.5.0");
+test("current top three stay within their scanner version", () => {
+  const sorted = rankedReports(projects, "1.8.1");
   assert.deepEqual(sorted.slice(0, 3).map((project) => project.repo), [
     "paladini/harness-score",
+    "affaan-m/ECC",
     "anthropics/claude-cookbooks",
-    "promptfoo/promptfoo",
   ]);
 });
 
