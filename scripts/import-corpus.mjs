@@ -1,0 +1,96 @@
+import { createHash } from "node:crypto";
+import { existsSync } from "node:fs";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const root = new URL("../", import.meta.url);
+const upstream = "paladini/harness-maturity-analysis";
+
+export function corpusListing(entry, report, history, sourceCommit, runDate) {
+  if (report.tool.version !== history.toolVersion.replace("harness-score@", "") ||
+      report.truncated || report.verdicts?.maturity?.status !== "complete" ||
+      !/^[a-f0-9]{40}$/.test(entry.commit) || history.repoUrl !== entry.repoUrl ||
+      history.commit !== entry.commit || history.status !== "scored" ||
+      report.level.index !== history.level.index ||
+      JSON.stringify(report.score) !== JSON.stringify(history.score)) {
+    throw new Error(`Report/history mismatch: ${entry.name}`);
+  }
+  return {
+    repo: entry.repoUrl.replace("https://github.com/", "").replace(/\.git$/, ""),
+    category: entry.category,
+    level: report.level.index,
+    score: report.score.earned,
+    maxScore: report.score.max,
+    source: "study",
+    commit: entry.commit,
+    evidence: `https://github.com/${upstream}/blob/${sourceCommit}/corpus/reports/${entry.name}.json`,
+    toolVersion: report.tool.version,
+    scannedAt: runDate,
+    corpusName: entry.name,
+    corpusSourceCommit: sourceCommit,
+    isStressCase: entry.isStressCase,
+    ...(entry.selection ? { selection: entry.selection } : {}),
+  };
+}
+
+export function mergeCorpusListings(projects, listings) {
+  const oldCorpus = (entry) => entry.corpusSourceCommit ||
+    entry.evidence.startsWith(`https://github.com/${upstream}/blob/`);
+  const byRepo = new Map(projects.filter((entry) => !oldCorpus(entry))
+    .map((entry) => [entry.repo.toLowerCase(), entry]));
+  for (const listing of listings) byRepo.set(listing.repo.toLowerCase(), listing);
+  return [...byRepo.values()];
+}
+
+const isMain = path.resolve(fileURLToPath(import.meta.url)) === path.resolve(process.argv[1] ?? "");
+if (isMain) {
+  const args = process.argv.slice(2);
+  const sourceCommit = args[args.indexOf("--commit") + 1];
+  if (!args.includes("--commit") || !/^[a-f0-9]{40}$/.test(sourceCommit ?? "")) {
+    throw new Error("Usage: node scripts/import-corpus.mjs --commit <full analysis commit SHA>");
+  }
+  const fetchBytes = async (file) => {
+    const response = await fetch(`https://raw.githubusercontent.com/${upstream}/${sourceCommit}/${file}`);
+    if (!response.ok) throw new Error(`${file}: HTTP ${response.status}`);
+    return Buffer.from(await response.arrayBuffer());
+  };
+  const manifestBytes = await fetchBytes("corpus/manifest.json");
+  const source = JSON.parse(manifestBytes);
+  const run = new URL(`data/runs/${source.runDate}-corpus/`, root);
+  if (existsSync(run)) throw new Error("Refusing to overwrite an existing corpus snapshot");
+  const historyBytes = await fetchBytes(`corpus/history/${source.runDate}-${source.toolVersion.replace("@", "-")}.json`);
+  const history = JSON.parse(historyBytes);
+  if (history.date !== source.runDate || history.toolVersion !== source.toolVersion ||
+      history.entries.length !== source.entries.length) throw new Error("Incomplete corpus history");
+  const listings = [];
+  const reports = [];
+  // Fetch and validate the full immutable source before writing the index.
+  for (const entry of source.entries) {
+    if (!/^[a-z0-9-]+$/.test(entry.name)) throw new Error("Invalid corpus file name");
+    const bytes = await fetchBytes(`corpus/reports/${entry.name}.json`);
+    const report = JSON.parse(bytes);
+    const result = history.entries.find((item) => item.name === entry.name);
+    if (!result) throw new Error(`Missing history: ${entry.name}`);
+    listings.push(corpusListing(entry, report, { ...result, toolVersion: history.toolVersion }, sourceCommit, source.runDate));
+    reports.push({ name: entry.name, bytes, sha256: createHash("sha256").update(bytes).digest("hex") });
+  }
+  if (new Set(listings.map((item) => item.repo.toLowerCase())).size !== listings.length) {
+    throw new Error("Duplicate upstream repository identities");
+  }
+  const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
+  const merged = mergeCorpusListings(projects, listings);
+  // Run directories are immutable; mkdir rejects an existing snapshot.
+  await mkdir(run);
+  await writeFile(new URL("source-manifest.json", run), manifestBytes, { flag: "wx" });
+  await writeFile(new URL("source-history.json", run), historyBytes, { flag: "wx" });
+  for (const report of reports) await writeFile(new URL(`${report.name}.json`, run), report.bytes, { flag: "wx" });
+  const snapshot = {
+    sourceRepository: upstream, sourceCommit, runDate: source.runDate,
+    toolVersion: source.toolVersion, previousListings: projects,
+    entries: listings.map((listing, index) => ({ ...listing, report: `${listing.corpusName}.json`, sha256: reports[index].sha256 })),
+  };
+  await writeFile(new URL("manifest.json", run), `${JSON.stringify(snapshot, null, 2)}\n`, { flag: "wx" });
+  await writeFile(new URL("data/projects.json", root), `[\n${merged.map((entry) => `  ${JSON.stringify(entry)}`).join(",\n")}\n]\n`);
+  console.log(`Imported ${listings.length} pinned corpus reports; index now has ${merged.length} unique repositories.`);
+}
