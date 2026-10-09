@@ -31,14 +31,17 @@ This repository currently combines three evidence sets:
 Numeric rankings include only full reports and compare repositories within the
 same scanner version. The podium defaults to the newest version; the scanner
 filter exposes each cohort. A badge records a public level claim, not a verified
-current score. This index has 172 repositories: 171 full reports and 1 badge-only entry.
+current score. The index has 193 report records across 172 repositories: 192 full
+reports and 1 badge-only entry. Repositories with reports from multiple scanner
+versions appear as separate selectable records.
 
 The 101 earlier corpus listings remain available in their original immutable
-[archive](data/runs/2026-10-08-corpus/README.md). The current registry links all
-151 corpus reports to the new analysis commit. Previous registry values remain
-in each import snapshot; the original community
-run stays unchanged. Each corpus evidence link fixes the analysis commit, and
-byte-identical report copies with SHA-256 checksums are retained here.
+[archive](data/runs/2026-10-08-corpus/README.md). The original 21-report
+`1.5.0` cohort is restored as a selectable version from its pinned analysis
+commit in the [July 25 archive](data/runs/2026-07-25-corpus/README.md). The
+current `1.8.1` cohort and community entries remain available alongside it.
+Each corpus evidence link fixes the analysis commit, and byte-identical report
+copies with SHA-256 checksums are retained here.
 Popularity observations are separate metadata, never ranking points or blind
 human validation. Historical scanner-only entries may include instructional
 repositories; both popularity cohorts exclude guides and awesome lists.

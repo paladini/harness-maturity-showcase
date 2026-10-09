@@ -22,8 +22,10 @@ export function corpusRunPaths(manifest) {
 }
 
 export function corpusListing(entry, report, history, sourceCommit, runDate) {
+  const complete = report.verdicts?.maturity?.status === "complete" ||
+    (!report.verdicts && Array.isArray(report.checks));
   if (report.tool.version !== history.toolVersion.replace("harness-score@", "") ||
-      report.truncated || report.verdicts?.maturity?.status !== "complete" ||
+      report.truncated || !complete ||
       !/^[a-f0-9]{40}$/.test(entry.commit) || history.repoUrl !== entry.repoUrl ||
       history.commit !== entry.commit || history.status !== "scored" ||
       report.level.index !== history.level.index ||
@@ -51,10 +53,18 @@ export function corpusListing(entry, report, history, sourceCommit, runDate) {
 export function mergeCorpusListings(projects, listings) {
   const oldCorpus = (entry) => entry.corpusSourceCommit ||
     entry.evidence.startsWith(`https://github.com/${upstream}/blob/`);
-  const byRepo = new Map(projects.filter((entry) => !oldCorpus(entry))
-    .map((entry) => [entry.repo.toLowerCase(), entry]));
-  for (const listing of listings) byRepo.set(listing.repo.toLowerCase(), listing);
-  return [...byRepo.values()];
+  const byVersion = new Map();
+  for (const entry of projects) {
+    const repo = entry.repo.toLowerCase();
+    if (oldCorpus(entry)) byVersion.set(`${repo}@${entry.toolVersion}`, entry);
+    else byVersion.set(repo, entry);
+  }
+  for (const listing of listings) {
+    const repo = listing.repo.toLowerCase();
+    byVersion.delete(repo);
+    byVersion.set(`${repo}@${listing.toolVersion}`, listing);
+  }
+  return [...byVersion.values()];
 }
 
 const isMain = path.resolve(fileURLToPath(import.meta.url)) === path.resolve(process.argv[1] ?? "");
@@ -91,8 +101,8 @@ if (isMain) {
     listings.push(corpusListing(entry, report, { ...result, toolVersion: history.toolVersion }, sourceCommit, source.runDate));
     reports.push({ name: entry.name, bytes, sha256: createHash("sha256").update(bytes).digest("hex") });
   }
-  if (new Set(listings.map((item) => item.repo.toLowerCase())).size !== listings.length) {
-    throw new Error("Duplicate upstream repository identities");
+  if (new Set(listings.map((item) => `${item.repo.toLowerCase()}@${item.toolVersion}`)).size !== listings.length) {
+    throw new Error("Duplicate upstream repository and scanner-version identities");
   }
   const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
   const merged = mergeCorpusListings(projects, listings);
@@ -109,5 +119,5 @@ if (isMain) {
   };
   await writeFile(new URL("manifest.json", run), `${JSON.stringify(snapshot, null, 2)}\n`, { flag: "wx" });
   await writeFile(new URL("data/projects.json", root), `[\n${merged.map((entry) => `  ${JSON.stringify(entry)}`).join(",\n")}\n]\n`);
-  console.log(`Imported ${listings.length} pinned corpus reports; index now has ${merged.length} unique repositories.`);
+  console.log(`Imported ${listings.length} pinned corpus reports; index now has ${merged.length} repository-version records.`);
 }

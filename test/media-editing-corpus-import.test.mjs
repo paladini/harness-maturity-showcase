@@ -23,8 +23,8 @@ test("the media editing import matches its immutable analysis source and preserv
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(snapshot.previousListings.length, 147);
   assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 172);
-  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 151);
-  assert.equal(projects.filter((item) => item.source === "study").length, 171);
+  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 172);
+  assert.equal(projects.filter((item) => item.source === "study").length, 192);
   assert.equal(projects.filter((item) => item.source === "badge").length, 1);
 
   const mediaEditing = projects.filter((item) => item.selection?.cohort === "media-editing-popularity");
@@ -45,7 +45,7 @@ test("the media editing import matches its immutable analysis source and preserv
     assert.equal(report.tool.version, "1.8.1", entry.name);
     const { report: reportFile, sha256, ...listing } = imported;
     assert.deepEqual(
-      projects.find((item) => item.repo.toLowerCase() === imported.repo.toLowerCase()),
+      projects.find((item) => item.repo.toLowerCase() === imported.repo.toLowerCase() && item.toolVersion === imported.toolVersion),
       listing,
     );
   }

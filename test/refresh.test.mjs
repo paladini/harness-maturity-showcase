@@ -16,7 +16,7 @@ test("all 20 refreshed listings match complete, unchanged, pinned reports", asyn
   for (const entry of manifest.entries) {
     const raw = await readFile(new URL(entry.report, runRoot));
     const report = JSON.parse(raw);
-    const project = projects.find((item) => item.repo === entry.repo);
+    const project = projects.find((item) => item.repo === entry.repo && item.toolVersion === manifest.toolVersion);
     assert.equal(entry.sha256, createHash("sha256").update(raw).digest("hex"), entry.repo);
     assert.equal(entry.status, "complete");
     assert.match(entry.commit, /^[a-f0-9]{40}$/);
@@ -38,5 +38,5 @@ test("all 20 refreshed listings match complete, unchanged, pinned reports", asyn
 test("the additional ActiveAdmin listing remains outside the original 20", () => {
   assert.ok(!manifest.entries.some((entry) => entry.repo === "paladini/activeadmin-aaa-theme"));
   assert.equal(projects.find((project) => project.repo === "paladini/activeadmin-aaa-theme").source, "badge");
-  assert.equal(projects.length, 172);
+  assert.equal(projects.length, 193);
 });
