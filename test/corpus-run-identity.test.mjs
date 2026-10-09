@@ -13,7 +13,7 @@ test("same-day named runs retain distinct immutable snapshot and history paths",
     directory: "data/runs/2026-10-08-crypto-popularity-corpus/",
     history: "corpus/history/2026-10-08-harness-score-1.8.1-crypto-popularity.json",
   });
-  for (const runId of ["", "../overwrite", "Crypto", "a/b", "a--b"]) {
+  for (const runId of ["", "../overwrite", "Crypto", "a/b", "a--b", 1, "a".repeat(65)]) {
     assert.throws(() => corpusRunPaths({ ...base, runId }), /Invalid corpus run identity/);
   }
 });

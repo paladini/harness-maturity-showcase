@@ -10,7 +10,8 @@ const upstream = "paladini/harness-maturity-analysis";
 export function corpusRunPaths(manifest) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(manifest.runDate ?? "") ||
       !/^harness-score@\d+\.\d+\.\d+$/.test(manifest.toolVersion ?? "") ||
-      (manifest.runId !== undefined && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(manifest.runId))) {
+      (manifest.runId !== undefined && (typeof manifest.runId !== "string" ||
+        manifest.runId.length > 64 || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(manifest.runId)))) {
     throw new Error("Invalid corpus run identity");
   }
   const suffix = manifest.runId ? `-${manifest.runId}` : "";
