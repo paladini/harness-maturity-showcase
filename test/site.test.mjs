@@ -20,7 +20,7 @@ test("section header only routes back to Harness Score", () => {
 
 test("all full study records expose reproducible reports", () => {
   const study = projects.filter((project) => project.corpusSourceCommit);
-  assert.equal(study.length, 101);
+  assert.equal(study.length, 126);
   assert.ok(study.every((project) => project.evidence.includes("/corpus/reports/")));
 });
 

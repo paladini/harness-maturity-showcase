@@ -18,10 +18,11 @@ transparent way to inspect the evidence behind every listing.
 
 This repository currently combines three evidence sets:
 
-- 101 pinned, reproducible reports scanned with `harness-score@1.8.1` from the
+- 126 pinned, reproducible reports scanned with `harness-score@1.8.1` from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
-  including 30 new AI software projects selected by frozen GitHub stars.
-  See the [import snapshot and raw reports](data/runs/2026-10-08-corpus/README.md).
+  including 30 AI software projects and 25 cryptocurrency software projects
+  selected by frozen GitHub stars. See the [latest import snapshot and raw
+  reports](data/runs/2026-10-08-crypto-popularity-corpus/README.md).
 - 20 full reports from the original badge-listed projects, refreshed with
   `harness-score@1.8.1` on October 7, 2026. See the
   [results and pinned run manifest](data/runs/2026-10-07/README.md).
@@ -30,15 +31,19 @@ This repository currently combines three evidence sets:
 Numeric rankings include only full reports and compare repositories within the
 same scanner version. The podium defaults to the newest version; the scanner
 filter exposes each cohort. A badge records a public level claim, not a verified
-current score. This index has 122 repositories: 121 full reports and 1 badge-only entry.
+current score. This index has 147 repositories: 146 full reports and 1 badge-only entry.
 
-The 21 older corpus listings have been replaced by matching 1.8.1 reports.
-Previous registry values remain in the import snapshot; the original community
+The 101 earlier corpus listings remain available in their original immutable
+[archive](data/runs/2026-10-08-corpus/README.md). The current registry links all
+126 corpus reports to the new analysis commit. Previous registry values remain
+in each import snapshot; the original community
 run stays unchanged. Each corpus evidence link fixes the analysis commit, and
 byte-identical report copies with SHA-256 checksums are retained here.
 Popularity observations are separate metadata, never ranking points or blind
 human validation. Historical scanner-only entries may include instructional
-repositories; the new 30-project cohort excludes guides and awesome lists.
+repositories; both popularity cohorts exclude guides and awesome lists.
+Cryptocurrency stars describe cumulative GitHub popularity observed at selection
+time, not an all-time historical maximum or investment merit.
 
 ## Import a published corpus
 
@@ -54,6 +59,13 @@ The importer verifies matching reports/history before updating the registry,
 preserves community listings and writes a new dated snapshot. Existing snapshot
 directories cannot be overwritten. Publish through a reviewed PR; Pages deploys
 automatically after merge into main.
+
+Named analysis runs use the manifest's optional `runId` in both the upstream
+history filename and the local snapshot directory. This lets separate cohorts
+run on the same date without replacing previous evidence. For example,
+`runId: crypto-popularity` retains `data/runs/2026-10-08-crypto-popularity-corpus/`
+alongside the earlier `data/runs/2026-10-08-corpus/`. The importer rejects
+mismatched run identities and unsafe identifiers.
 
 ## Submit your repository
 
@@ -150,7 +162,7 @@ for reproducible bugs. All participation follows the
 - [Harness Score](https://github.com/paladini/harness-score) — the deterministic
   scanner and maturity model.
 - [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis)
-  — the reproducible 101-repository corpus that seeds the leaderboard.
+  — the reproducible 126-repository corpus that seeds the leaderboard.
 
 ## License
 

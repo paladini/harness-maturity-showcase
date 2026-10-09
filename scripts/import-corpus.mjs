@@ -7,6 +7,19 @@ import { fileURLToPath } from "node:url";
 const root = new URL("../", import.meta.url);
 const upstream = "paladini/harness-maturity-analysis";
 
+export function corpusRunPaths(manifest) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(manifest.runDate ?? "") ||
+      !/^harness-score@\d+\.\d+\.\d+$/.test(manifest.toolVersion ?? "") ||
+      (manifest.runId !== undefined && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(manifest.runId))) {
+    throw new Error("Invalid corpus run identity");
+  }
+  const suffix = manifest.runId ? `-${manifest.runId}` : "";
+  return {
+    directory: `data/runs/${manifest.runDate}${suffix}-corpus/`,
+    history: `corpus/history/${manifest.runDate}-${manifest.toolVersion.replace("@", "-")}${suffix}.json`,
+  };
+}
+
 export function corpusListing(entry, report, history, sourceCommit, runDate) {
   if (report.tool.version !== history.toolVersion.replace("harness-score@", "") ||
       report.truncated || report.verdicts?.maturity?.status !== "complete" ||
@@ -57,11 +70,13 @@ if (isMain) {
   };
   const manifestBytes = await fetchBytes("corpus/manifest.json");
   const source = JSON.parse(manifestBytes);
-  const run = new URL(`data/runs/${source.runDate}-corpus/`, root);
+  const runPaths = corpusRunPaths(source);
+  const run = new URL(runPaths.directory, root);
   if (existsSync(run)) throw new Error("Refusing to overwrite an existing corpus snapshot");
-  const historyBytes = await fetchBytes(`corpus/history/${source.runDate}-${source.toolVersion.replace("@", "-")}.json`);
+  const historyBytes = await fetchBytes(runPaths.history);
   const history = JSON.parse(historyBytes);
   if (history.date !== source.runDate || history.toolVersion !== source.toolVersion ||
+      history.runId !== source.runId ||
       history.entries.length !== source.entries.length) throw new Error("Incomplete corpus history");
   const listings = [];
   const reports = [];
@@ -87,6 +102,7 @@ if (isMain) {
   for (const report of reports) await writeFile(new URL(`${report.name}.json`, run), report.bytes, { flag: "wx" });
   const snapshot = {
     sourceRepository: upstream, sourceCommit, runDate: source.runDate,
+    ...(source.runId ? { runId: source.runId } : {}),
     toolVersion: source.toolVersion, previousListings: projects,
     entries: listings.map((listing, index) => ({ ...listing, report: `${listing.corpusName}.json`, sha256: reports[index].sha256 })),
   };

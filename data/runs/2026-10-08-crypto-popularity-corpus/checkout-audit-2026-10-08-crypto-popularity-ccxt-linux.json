@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-08",
+  "runId": "crypto-popularity-ccxt-linux",
+  "note": "Derived by reading each pinned Git tree and checking the worktree index. Submodules are not initialized, LFS smudging is disabled, and Git long-path support preserves deep paths. No repository code was executed.",
+  "entries": [
+    {
+      "name": "ccxt",
+      "commit": "f0aca06eb7482f083bed8406fadfcc0c05e45b1c",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 9928,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 19,
+      "codeEvidence": {
+        "path": "ts/src/binance.ts",
+        "blobSha": "eb50a05589cb240c24af41eb75363279e5f7af80",
+        "size": 847383,
+        "status": "verified"
+      }
+    }
+  ]
+}
