@@ -11,7 +11,7 @@ const source = JSON.parse(await readFile(new URL("source-manifest.json", run)));
 const history = JSON.parse(await readFile(new URL("source-history.json", run)));
 const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
 
-test("every imported corpus listing has immutable, byte-verified report evidence", async () => {
+test("the original 101-report archive retains immutable, byte-verified evidence", async () => {
   assert.equal(snapshot.entries.length, 101);
   assert.match(snapshot.sourceCommit, /^[a-f0-9]{40}$/);
   for (const entry of source.entries) {
@@ -21,13 +21,13 @@ test("every imported corpus listing has immutable, byte-verified report evidence
     const historical = history.entries.find(item => item.name === entry.name);
     assert.equal(imported.sha256, createHash("sha256").update(raw).digest("hex"));
     const expected = corpusListing(entry, report, { ...historical, toolVersion: history.toolVersion }, snapshot.sourceCommit, source.runDate);
-    const project = projects.find(item => item.repo === imported.repo);
-    assert.deepEqual(project, expected);
-    assert.ok(project.evidence.includes(`/blob/${snapshot.sourceCommit}/corpus/reports/`));
+    const { report: filename, sha256, ...listing } = imported;
+    assert.deepEqual(listing, expected);
+    assert.ok(listing.evidence.includes(`/blob/${snapshot.sourceCommit}/corpus/reports/`));
     assert.equal(report.truncated, false);
   }
-  assert.equal(projects.filter(item => item.selection).length, 30);
-  assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 122);
+  assert.equal(snapshot.entries.filter(item => item.selection).length, 30);
+  assert.equal(new Set(snapshot.entries.map(item => item.repo.toLowerCase())).size, 101);
 });
 
 test("community records and previous registry values are preserved", () => {

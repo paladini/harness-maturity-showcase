@@ -1,0 +1,15 @@
+{
+  "platform": "linux",
+  "environment": "Ubuntu 24.04 WSL, separate Linux filesystem",
+  "nodeVersion": "v22.20.0",
+  "toolVersion": "harness-score@1.8.1",
+  "repoUrl": "https://github.com/ccxt/ccxt.git",
+  "commit": "f0aca06eb7482f083bed8406fadfcc0c05e45b1c",
+  "root": "/tmp/harness-ccxt-read-DqDEZH/.cache/repos/ccxt",
+  "checkoutExcludes": [],
+  "codeExecutedFromTarget": false,
+  "maturityStatus": "complete",
+  "truncated": false,
+  "reason": "Windows Defender quarantined js/src/pro/test/Exchange/test.watchOrderBook.js during static reads. Quarantine and Windows protections remained unchanged; complete pinned input was read in a separate Linux filesystem.",
+  "audit": "checkout-audit-2026-10-08-crypto-popularity-ccxt-linux.json"
+}
