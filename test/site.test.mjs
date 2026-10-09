@@ -18,9 +18,14 @@ test("section header only routes back to Harness Score", () => {
   assert.doesNotMatch(html, /<header[\s\S]*?<nav/);
 });
 
+test("the leaderboard exposes category and selection-provenance filters", () => {
+  assert.match(html, /id="category" aria-label="Filter by category"/);
+  assert.match(html, /id="cohort" aria-label="Filter by selection provenance"/);
+});
+
 test("all full study records expose reproducible reports", () => {
   const study = projects.filter((project) => project.corpusSourceCommit);
-  assert.equal(study.length, 126);
+  assert.equal(study.length, 151);
   assert.ok(study.every((project) => project.evidence.includes("/corpus/reports/")));
 });
 

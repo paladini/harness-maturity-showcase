@@ -1,6 +1,7 @@
 export function popularityLabel(cohort) {
   return cohort === "ai-popularity" ? "AI popularity" :
-    cohort === "crypto-popularity" ? "Crypto popularity" : "GitHub popularity";
+    cohort === "crypto-popularity" ? "Crypto popularity" :
+      cohort === "media-editing-popularity" ? "Media editing popularity" : "GitHub popularity";
 }
 
 export function reportVersions(projects) {

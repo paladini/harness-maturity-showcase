@@ -8,7 +8,7 @@ const levels = {
   4: ["Self-correcting", "l4"],
 };
 
-const state = { query: "", level: "all", source: "all", version: "all" };
+const state = { query: "", level: "all", source: "all", category: "all", cohort: "all", version: "all" };
 const projects = await fetch("./data/projects.json").then((response) => response.json());
 const versions = reportVersions(projects);
 const rankings = new Map(versions.map((version) => [version, rankedReports(projects, version)]));
@@ -33,6 +33,23 @@ for (const version of versions) {
   option.value = version;
   option.textContent = `harness-score ${version}`;
   versionFilter.append(option);
+}
+
+const categoryFilter = document.querySelector("#category");
+for (const category of [...new Set(projects.map((project) => project.category))].sort()) {
+  const option = document.createElement("option");
+  option.value = category;
+  option.textContent = category.replaceAll("-", " ");
+  categoryFilter.append(option);
+}
+
+const cohortFilter = document.querySelector("#cohort");
+const cohorts = [...new Set(projects.map((project) => project.selection?.cohort ?? "none"))].sort();
+for (const cohort of cohorts) {
+  const option = document.createElement("option");
+  option.value = cohort;
+  option.textContent = cohort === "none" ? "No selection cohort" : popularityLabel(cohort);
+  cohortFilter.append(option);
 }
 
 function renderPodium() {
@@ -63,6 +80,8 @@ function render() {
     .filter((project) => project.repo.toLowerCase().includes(state.query))
     .filter((project) => state.level === "all" || String(project.level) === state.level)
     .filter((project) => state.source === "all" || project.source === state.source)
+    .filter((project) => state.category === "all" || project.category === state.category)
+    .filter((project) => state.cohort === "all" || (project.selection?.cohort ?? "none") === state.cohort)
     .filter((project) => state.version === "all" || project.toolVersion === state.version)
     .sort((a, b) => {
       if (Number.isFinite(a.score) !== Number.isFinite(b.score)) return Number.isFinite(a.score) ? -1 : 1;
@@ -76,9 +95,12 @@ function render() {
       ? `<strong>${project.score}</strong><span> / ${project.maxScore}</span>`
       : `<span class="not-ranked">badge only</span>`;
     const evidenceLabel = project.source === "study" ? "Full report" : "README badge";
+    const provenance = project.selection
+      ? `<small>${escapeHtml(popularityLabel(project.selection.cohort))}${project.selection.popularityRank ? ` #${escapeHtml(project.selection.popularityRank)}` : ""} · ${escapeHtml(Number(project.selection.githubStars).toLocaleString("en-US"))} stars on ${escapeHtml(project.selection.date)}${project.selection.archived ? " · archived snapshot" : ""}</small>`
+      : "";
     return `<tr>
       <td class="rank">${numericRank >= 0 ? String(numericRank + 1).padStart(2, "0") : "—"}</td>
-      <td><a class="repo" href="https://github.com/${escapeHtml(project.repo)}">${escapeHtml(project.repo)} <span>↗</span></a><small>${escapeHtml(project.category.replaceAll("-", " "))}${project.isStressCase ? " · stress case" : ""}</small>${project.selection ? `<small>${escapeHtml(popularityLabel(project.selection.cohort))} #${escapeHtml(project.selection.popularityRank)} · ${escapeHtml(Number(project.selection.githubStars).toLocaleString("en-US"))} stars on ${escapeHtml(project.selection.date)}${project.selection.archived ? " · archived snapshot" : ""}</small>` : ""}</td>
+      <td><a class="repo" href="https://github.com/${escapeHtml(project.repo)}">${escapeHtml(project.repo)} <span>↗</span></a><small>${escapeHtml(project.category.replaceAll("-", " "))}${project.isStressCase ? " · stress case" : ""}</small>${provenance}</td>
       <td>${levelPill(project)}</td>
       <td class="score">${score}</td>
       <td>${project.toolVersion ? `<span>${escapeHtml(project.toolVersion)}</span><small>${escapeHtml(project.scannedAt?.slice(0, 10) ?? "")}</small>` : "Unversioned"}</td>
@@ -99,6 +121,14 @@ document.querySelector("#source").addEventListener("change", (event) => {
     state.version = "all";
     versionFilter.value = "all";
   }
+  render();
+});
+categoryFilter.addEventListener("change", (event) => {
+  state.category = event.target.value;
+  render();
+});
+cohortFilter.addEventListener("change", (event) => {
+  state.cohort = event.target.value;
   render();
 });
 versionFilter.addEventListener("change", (event) => {

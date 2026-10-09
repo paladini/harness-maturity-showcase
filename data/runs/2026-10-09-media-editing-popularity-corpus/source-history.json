@@ -1,0 +1,2424 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "toolVersion": "harness-score@1.8.1",
+  "runId": "media-editing-popularity",
+  "entries": [
+    {
+      "name": "harness-score",
+      "repoUrl": "https://github.com/paladini/harness-score.git",
+      "commit": "27bb2fa7f9da2e370cfb3d9f15c88b867e23d5c9",
+      "status": "scored",
+      "level": {
+        "index": 4,
+        "name": "Self-correcting"
+      },
+      "score": {
+        "earned": 108,
+        "max": 108,
+        "percent": 100
+      },
+      "truncated": false
+    },
+    {
+      "name": "fakeflix",
+      "repoUrl": "https://github.com/tech-leads-club/fakeflix.git",
+      "commit": "62dd3cb61bbe6a6e6acbd0f171e0ea1067331445",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 72,
+        "max": 103,
+        "percent": 70
+      },
+      "truncated": false
+    },
+    {
+      "name": "execa",
+      "repoUrl": "https://github.com/sindresorhus/execa.git",
+      "commit": "5944b2d176c69591d0eb35a383d0c16758060ae8",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 36,
+        "max": 105,
+        "percent": 34
+      },
+      "truncated": false
+    },
+    {
+      "name": "octocat-hello-world",
+      "repoUrl": "https://github.com/octocat/Hello-World.git",
+      "commit": "7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 14,
+        "max": 105,
+        "percent": 13
+      },
+      "truncated": false
+    },
+    {
+      "name": "anthropic-cookbook",
+      "repoUrl": "https://github.com/anthropics/claude-cookbooks.git",
+      "commit": "67ce644d33e5933f0bcc0b6eb4113df41bbf3a8f",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 99,
+        "max": 105,
+        "percent": 94
+      },
+      "truncated": false
+    },
+    {
+      "name": "anthropic-skills",
+      "repoUrl": "https://github.com/anthropics/skills.git",
+      "commit": "9d2f1ae187231d8199c64b5b762e1bdf2244733d",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 17,
+        "max": 105,
+        "percent": 16
+      },
+      "truncated": false
+    },
+    {
+      "name": "openai-cookbook",
+      "repoUrl": "https://github.com/openai/openai-cookbook.git",
+      "commit": "20793784ac467f06ed67f3e3e9349dc9596894e0",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 64,
+        "max": 105,
+        "percent": 61
+      },
+      "truncated": false
+    },
+    {
+      "name": "smolagents",
+      "repoUrl": "https://github.com/huggingface/smolagents.git",
+      "commit": "e3a5b8994b301983b91c0325546e9dc82eab8cf0",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 53,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "continue",
+      "repoUrl": "https://github.com/continuedev/continue.git",
+      "commit": "d0a3c0b626b5bebc3bef4742eec05a0242be0bab",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 79,
+        "max": 105,
+        "percent": 75
+      },
+      "truncated": false
+    },
+    {
+      "name": "cline",
+      "repoUrl": "https://github.com/cline/cline.git",
+      "commit": "a41129a5dbda29c4e6b84968a2a798039ba32ab3",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 82,
+        "max": 105,
+        "percent": 78
+      },
+      "truncated": false
+    },
+    {
+      "name": "openhands",
+      "repoUrl": "https://github.com/All-Hands-AI/OpenHands.git",
+      "commit": "9c5d4dce546eaad2425a76c09e1717ddd9df9819",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 72,
+        "max": 105,
+        "percent": 69
+      },
+      "truncated": false
+    },
+    {
+      "name": "goose",
+      "repoUrl": "https://github.com/block/goose.git",
+      "commit": "dae512010a9acf1eed2cf7034a64cdd02547641c",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 80,
+        "max": 105,
+        "percent": 76
+      },
+      "truncated": false
+    },
+    {
+      "name": "opencode",
+      "repoUrl": "https://github.com/sst/opencode.git",
+      "commit": "c69abee0c73253aebae65e87e4e1b9bfa8c38021",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 74,
+        "max": 105,
+        "percent": 70
+      },
+      "truncated": false
+    },
+    {
+      "name": "aider",
+      "repoUrl": "https://github.com/Aider-AI/aider.git",
+      "commit": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 46,
+        "max": 105,
+        "percent": 44
+      },
+      "truncated": false
+    },
+    {
+      "name": "zed",
+      "repoUrl": "https://github.com/zed-industries/zed.git",
+      "commit": "93b846b2a65715977841dd1fffcb3dce40588c66",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 75,
+        "max": 105,
+        "percent": 71
+      },
+      "truncated": false
+    },
+    {
+      "name": "promptfoo",
+      "repoUrl": "https://github.com/promptfoo/promptfoo.git",
+      "commit": "688a90561180a6045ce3c8e8805d04bc23811bd7",
+      "status": "scored",
+      "level": {
+        "index": 4,
+        "name": "Self-correcting"
+      },
+      "score": {
+        "earned": 97,
+        "max": 108,
+        "percent": 90
+      },
+      "truncated": false
+    },
+    {
+      "name": "openai-evals",
+      "repoUrl": "https://github.com/openai/evals.git",
+      "commit": "8eac7a7de5215c907fbddc30efdaf316913eccdd",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 41,
+        "max": 105,
+        "percent": 39
+      },
+      "truncated": false
+    },
+    {
+      "name": "dspy",
+      "repoUrl": "https://github.com/stanfordnlp/dspy.git",
+      "commit": "027d9f45f4d60aedadee3fd587d1f4f3584567df",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 52,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "langfuse",
+      "repoUrl": "https://github.com/langfuse/langfuse.git",
+      "commit": "0febc33a0fb42388010ed908b474b5102e216123",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 73,
+        "max": 105,
+        "percent": 70
+      },
+      "truncated": false
+    },
+    {
+      "name": "mcp-servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers.git",
+      "commit": "d31124c982401739917fd817c2a59db344529c16",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 66,
+        "max": 108,
+        "percent": 61
+      },
+      "truncated": false
+    },
+    {
+      "name": "awesome-cursorrules",
+      "repoUrl": "https://github.com/PatrickJS/awesome-cursorrules.git",
+      "commit": "b044f956f021b6e8877f16781bcfc466a6a120e9",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 36,
+        "max": 105,
+        "percent": 34
+      },
+      "truncated": false
+    },
+    {
+      "name": "langchain",
+      "repoUrl": "https://github.com/langchain-ai/langchain.git",
+      "commit": "1f587e3f4e0b34d67ea83896f74f855ee6ec103f",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 57,
+        "max": 108,
+        "percent": 53
+      },
+      "truncated": false
+    },
+    {
+      "name": "autogen",
+      "repoUrl": "https://github.com/microsoft/autogen.git",
+      "commit": "027ecf0a379bcc1d09956d46d12d44a3ad9cee14",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 39,
+        "max": 105,
+        "percent": 37
+      },
+      "truncated": false
+    },
+    {
+      "name": "pydantic-ai",
+      "repoUrl": "https://github.com/pydantic/pydantic-ai.git",
+      "commit": "5d43cfcc334a29222b0e6d23d797689dc3c2132c",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 80,
+        "max": 105,
+        "percent": 76
+      },
+      "truncated": false
+    },
+    {
+      "name": "dify",
+      "repoUrl": "https://github.com/langgenius/dify.git",
+      "commit": "5a733bd5e7931fa07e7b51d3f83e5bfebbd1985a",
+      "status": "scored",
+      "level": {
+        "index": 4,
+        "name": "Self-correcting"
+      },
+      "score": {
+        "earned": 86,
+        "max": 105,
+        "percent": 82
+      },
+      "truncated": false
+    },
+    {
+      "name": "ollama",
+      "repoUrl": "https://github.com/ollama/ollama.git",
+      "commit": "f9f4af6ce09223fde24949a5b3ccff061ca0abf4",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 57,
+        "max": 105,
+        "percent": 54
+      },
+      "truncated": false
+    },
+    {
+      "name": "vllm",
+      "repoUrl": "https://github.com/vllm-project/vllm.git",
+      "commit": "f38c6778ce4cf62b1ca7a8e091892f5bfdf79f98",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 80,
+        "max": 105,
+        "percent": 76
+      },
+      "truncated": false
+    },
+    {
+      "name": "n8n",
+      "repoUrl": "https://github.com/n8n-io/n8n.git",
+      "commit": "60ad29f242c21aac0ce01ce945db9c66101fcce6",
+      "status": "scored",
+      "level": {
+        "index": 4,
+        "name": "Self-correcting"
+      },
+      "score": {
+        "earned": 93,
+        "max": 105,
+        "percent": 89
+      },
+      "truncated": false
+    },
+    {
+      "name": "vscode",
+      "repoUrl": "https://github.com/microsoft/vscode.git",
+      "commit": "20f57d8a036b9b85b49689cfeb848ec8ddf09533",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 68,
+        "max": 108,
+        "percent": 63
+      },
+      "truncated": false
+    },
+    {
+      "name": "neovim",
+      "repoUrl": "https://github.com/neovim/neovim.git",
+      "commit": "27ee55c09d088c88b6c5ab5e8e2c4eaf86d6df71",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 39,
+        "max": 105,
+        "percent": 37
+      },
+      "truncated": false
+    },
+    {
+      "name": "deno",
+      "repoUrl": "https://github.com/denoland/deno.git",
+      "commit": "a18ce33715e30cd2b0d99c7e322ef11a65490e4d",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 69,
+        "max": 105,
+        "percent": 66
+      },
+      "truncated": false
+    },
+    {
+      "name": "biome",
+      "repoUrl": "https://github.com/biomejs/biome.git",
+      "commit": "47c3084f9c80869e9dec3126f06bb5ff97c38fd5",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 64,
+        "max": 105,
+        "percent": 61
+      },
+      "truncated": false
+    },
+    {
+      "name": "eslint",
+      "repoUrl": "https://github.com/eslint/eslint.git",
+      "commit": "87bd2cef7b2309739c29598fb2be335f4bed71a3",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 57,
+        "max": 105,
+        "percent": 54
+      },
+      "truncated": false
+    },
+    {
+      "name": "playwright",
+      "repoUrl": "https://github.com/microsoft/playwright.git",
+      "commit": "235f50cec82232786dfdf776cec2066e6f9e4e0d",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 74,
+        "max": 108,
+        "percent": 69
+      },
+      "truncated": false
+    },
+    {
+      "name": "vite",
+      "repoUrl": "https://github.com/vitejs/vite.git",
+      "commit": "8a4c19cfc035f2dd203f2fa6d00ab9256a5e77c9",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 46,
+        "max": 105,
+        "percent": 44
+      },
+      "truncated": false
+    },
+    {
+      "name": "kubernetes",
+      "repoUrl": "https://github.com/kubernetes/kubernetes.git",
+      "commit": "d5b0997ef4ae72ba6bd27cb2b6b436b71519d06b",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 44,
+        "max": 105,
+        "percent": 42
+      },
+      "truncated": false
+    },
+    {
+      "name": "terraform",
+      "repoUrl": "https://github.com/hashicorp/terraform.git",
+      "commit": "73bf678bc9d12fb35bc8cf0c978466462dc45314",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 45,
+        "max": 105,
+        "percent": 43
+      },
+      "truncated": false
+    },
+    {
+      "name": "opentofu",
+      "repoUrl": "https://github.com/opentofu/opentofu.git",
+      "commit": "6d58bff177a4c2c15981bcfffa9b861d9a766880",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 54,
+        "max": 105,
+        "percent": 51
+      },
+      "truncated": false
+    },
+    {
+      "name": "pulumi",
+      "repoUrl": "https://github.com/pulumi/pulumi.git",
+      "commit": "887e0dd5cba36cdabbab8821f6666be13abfa18d",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 80,
+        "max": 105,
+        "percent": 76
+      },
+      "truncated": false
+    },
+    {
+      "name": "ansible",
+      "repoUrl": "https://github.com/ansible/ansible.git",
+      "commit": "bf2610eb39b066994bb457f95359907aef0ae972",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 48,
+        "max": 105,
+        "percent": 46
+      },
+      "truncated": false
+    },
+    {
+      "name": "argo-cd",
+      "repoUrl": "https://github.com/argoproj/argo-cd.git",
+      "commit": "021797fcec36dbeec244c4bd0431baff3935af2d",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 60,
+        "max": 105,
+        "percent": 57
+      },
+      "truncated": false
+    },
+    {
+      "name": "helm",
+      "repoUrl": "https://github.com/helm/helm.git",
+      "commit": "dc56a44fee5ac036807348bc48653bc93d714953",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 57,
+        "max": 105,
+        "percent": 54
+      },
+      "truncated": false
+    },
+    {
+      "name": "crossplane",
+      "repoUrl": "https://github.com/crossplane/crossplane.git",
+      "commit": "ca89f0ff7fe8146c2f61b480cddb3b8a29e6df26",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 53,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "pandas",
+      "repoUrl": "https://github.com/pandas-dev/pandas.git",
+      "commit": "48f2692dd9d31e9c4825527d0d0a6778d84e1a2f",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 57,
+        "max": 105,
+        "percent": 54
+      },
+      "truncated": false
+    },
+    {
+      "name": "scikit-learn",
+      "repoUrl": "https://github.com/scikit-learn/scikit-learn.git",
+      "commit": "e316dbeeebfd8f38cf293d6443ce81aaa33686d3",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 52,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "pytorch",
+      "repoUrl": "https://github.com/pytorch/pytorch.git",
+      "commit": "db4d02c417701e2a0b4ec6c27fccf0efb888c8b8",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 77,
+        "max": 105,
+        "percent": 73
+      },
+      "truncated": false
+    },
+    {
+      "name": "tensorflow",
+      "repoUrl": "https://github.com/tensorflow/tensorflow.git",
+      "commit": "fb76d99343c72c78326a99abd4329445ad7203a4",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 54,
+        "max": 105,
+        "percent": 51
+      },
+      "truncated": false
+    },
+    {
+      "name": "airflow",
+      "repoUrl": "https://github.com/apache/airflow.git",
+      "commit": "37032a47d49dabb9f65685d36dda84e0ecf434a2",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 81,
+        "max": 105,
+        "percent": 77
+      },
+      "truncated": false
+    },
+    {
+      "name": "dbt",
+      "repoUrl": "https://github.com/dbt-labs/dbt.git",
+      "commit": "dc439816a466122777f50ca5d31b97063c554de6",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 70,
+        "max": 105,
+        "percent": 67
+      },
+      "truncated": false
+    },
+    {
+      "name": "dagster",
+      "repoUrl": "https://github.com/dagster-io/dagster.git",
+      "commit": "2ecaed2ba3f408f2e3692224f10c025e2a36d6fc",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 86,
+        "max": 108,
+        "percent": 80
+      },
+      "truncated": false
+    },
+    {
+      "name": "prometheus",
+      "repoUrl": "https://github.com/prometheus/prometheus.git",
+      "commit": "d4467eede8e6d171c7ee06c0307a34878339a237",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 53,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "grafana",
+      "repoUrl": "https://github.com/grafana/grafana.git",
+      "commit": "1eb3e51345efcf908bf1fdc1d2709df7316fcb09",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 74,
+        "max": 105,
+        "percent": 70
+      },
+      "truncated": false
+    },
+    {
+      "name": "opentelemetry-collector",
+      "repoUrl": "https://github.com/open-telemetry/opentelemetry-collector.git",
+      "commit": "f0bdec9cc6813725dd73de2c5dd13956fcc82b75",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 57,
+        "max": 105,
+        "percent": 54
+      },
+      "truncated": false
+    },
+    {
+      "name": "cilium",
+      "repoUrl": "https://github.com/cilium/cilium.git",
+      "commit": "80d82e1f521ae6b70ebacd6ff7a6432bc538bbf8",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 52,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "istio",
+      "repoUrl": "https://github.com/istio/istio.git",
+      "commit": "1c185fbb667327079f6666087ad922996210fe4e",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 39,
+        "max": 105,
+        "percent": 37
+      },
+      "truncated": false
+    },
+    {
+      "name": "elasticsearch",
+      "repoUrl": "https://github.com/elastic/elasticsearch.git",
+      "commit": "045df523f68dcb8f28281272f3e0d0b70122c480",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 57,
+        "max": 105,
+        "percent": 54
+      },
+      "truncated": false
+    },
+    {
+      "name": "scorecard",
+      "repoUrl": "https://github.com/ossf/scorecard.git",
+      "commit": "05eb7d129354af1401b6f582e4c7b4574c39980d",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 50,
+        "max": 105,
+        "percent": 48
+      },
+      "truncated": false
+    },
+    {
+      "name": "trufflehog",
+      "repoUrl": "https://github.com/trufflesecurity/trufflehog.git",
+      "commit": "f6499ffe785d92f646830c2429eccf3f4368298e",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 63,
+        "max": 105,
+        "percent": 60
+      },
+      "truncated": false
+    },
+    {
+      "name": "trivy",
+      "repoUrl": "https://github.com/aquasecurity/trivy.git",
+      "commit": "3f664e55b7b3f636f29d82f38340fd899c96fedc",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 50,
+        "max": 105,
+        "percent": 48
+      },
+      "truncated": false
+    },
+    {
+      "name": "semgrep",
+      "repoUrl": "https://github.com/semgrep/semgrep.git",
+      "commit": "b253ccbf0c852a29b2ab96344bb1896d5b132077",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 52,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "keycloak",
+      "repoUrl": "https://github.com/keycloak/keycloak.git",
+      "commit": "cf58f2e3b089840789af460741f0e4c72d65b534",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 60,
+        "max": 105,
+        "percent": 57
+      },
+      "truncated": false
+    },
+    {
+      "name": "home-assistant-core",
+      "repoUrl": "https://github.com/home-assistant/core.git",
+      "commit": "d8668bb69320af8d50182091f48fcec6699d7185",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 76,
+        "max": 105,
+        "percent": 72
+      },
+      "truncated": false
+    },
+    {
+      "name": "immich",
+      "repoUrl": "https://github.com/immich-app/immich.git",
+      "commit": "003670d013b78f266de1ce9212ced00e34c22714",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 46,
+        "max": 105,
+        "percent": 44
+      },
+      "truncated": false
+    },
+    {
+      "name": "mattermost",
+      "repoUrl": "https://github.com/mattermost/mattermost.git",
+      "commit": "e8d7f37e923dc4d3582cdb83aefee751eab7bdba",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 68,
+        "max": 105,
+        "percent": 65
+      },
+      "truncated": false
+    },
+    {
+      "name": "element-web",
+      "repoUrl": "https://github.com/element-hq/element-web.git",
+      "commit": "4d1993cc38ef6f96257bbe693863d56f1bd65b61",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 58,
+        "max": 105,
+        "percent": 55
+      },
+      "truncated": false
+    },
+    {
+      "name": "jitsi-meet",
+      "repoUrl": "https://github.com/jitsi/jitsi-meet.git",
+      "commit": "b576a7f6077da7fa04c6982c7253dab5024cf308",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 48,
+        "max": 105,
+        "percent": 46
+      },
+      "truncated": false
+    },
+    {
+      "name": "rust",
+      "repoUrl": "https://github.com/rust-lang/rust.git",
+      "commit": "1d81eb4ad9cd207e3e638bd32b17ec4fce8412a6",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 69,
+        "max": 105,
+        "percent": 66
+      },
+      "truncated": false
+    },
+    {
+      "name": "go",
+      "repoUrl": "https://github.com/golang/go.git",
+      "commit": "0b026fcb0a399626c9caad22c31d77b91fa153f5",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 38,
+        "max": 105,
+        "percent": 36
+      },
+      "truncated": false
+    },
+    {
+      "name": "nodejs",
+      "repoUrl": "https://github.com/nodejs/node.git",
+      "commit": "7514ef8caff3feea55c60d628e003ccbda850485",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 50,
+        "max": 105,
+        "percent": 48
+      },
+      "truncated": false
+    },
+    {
+      "name": "react",
+      "repoUrl": "https://github.com/facebook/react.git",
+      "commit": "b618bbb4422693bbb8d387180687b3f510300f42",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 81,
+        "max": 105,
+        "percent": 77
+      },
+      "truncated": false
+    },
+    {
+      "name": "nextjs",
+      "repoUrl": "https://github.com/vercel/next.js.git",
+      "commit": "c6c7eae009a99ed559ec87dfcbc62168ea387d25",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 83,
+        "max": 105,
+        "percent": 79
+      },
+      "truncated": false
+    },
+    {
+      "name": "openclaw",
+      "repoUrl": "https://github.com/openclaw/openclaw.git",
+      "commit": "c42bd6eae5e856b5265c737e70086a71d014f08e",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 83,
+        "max": 105,
+        "percent": 79
+      },
+      "truncated": false
+    },
+    {
+      "name": "ecc",
+      "repoUrl": "https://github.com/affaan-m/ECC.git",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "status": "scored",
+      "level": {
+        "index": 4,
+        "name": "Self-correcting"
+      },
+      "score": {
+        "earned": 105,
+        "max": 108,
+        "percent": 97
+      },
+      "truncated": false
+    },
+    {
+      "name": "hermes-agent",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent.git",
+      "commit": "38880bd2f1e90dbc9a1aeec03af62539ee64719a",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 71,
+        "max": 105,
+        "percent": 68
+      },
+      "truncated": false
+    },
+    {
+      "name": "deepseek-harness",
+      "repoUrl": "https://github.com/deepseek-ai/deepseek-harness.git",
+      "commit": "5badb15009ae1756c3afe0ae0cef1faafc290ccc",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 75,
+        "max": 105,
+        "percent": 71
+      },
+      "truncated": false
+    },
+    {
+      "name": "firecrawl",
+      "repoUrl": "https://github.com/firecrawl/firecrawl.git",
+      "commit": "8a0e91b00081c28929261a452d8914f2dc000a19",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 60,
+        "max": 105,
+        "percent": 57
+      },
+      "truncated": false
+    },
+    {
+      "name": "autogpt",
+      "repoUrl": "https://github.com/Significant-Gravitas/AutoGPT.git",
+      "commit": "ca259ccc21e1ff50357084d5f90cd8bfc6b544e8",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 81,
+        "max": 105,
+        "percent": 77
+      },
+      "truncated": false
+    },
+    {
+      "name": "prompts-chat",
+      "repoUrl": "https://github.com/f/prompts.chat.git",
+      "commit": "7d3f248962d1dca209d59e033524bcb86c2b26b8",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 60,
+        "max": 108,
+        "percent": 56
+      },
+      "truncated": false
+    },
+    {
+      "name": "transformers",
+      "repoUrl": "https://github.com/huggingface/transformers.git",
+      "commit": "ab138d34c7e4d4291657e2b9a2df9be5107e0af2",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 65,
+        "max": 105,
+        "percent": 62
+      },
+      "truncated": false
+    },
+    {
+      "name": "stable-diffusion-webui",
+      "repoUrl": "https://github.com/AUTOMATIC1111/stable-diffusion-webui.git",
+      "commit": "82a973c04367123ae98bd9abdf80d9eda9b910e2",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 46,
+        "max": 105,
+        "percent": 44
+      },
+      "truncated": false
+    },
+    {
+      "name": "langflow",
+      "repoUrl": "https://github.com/langflow-ai/langflow.git",
+      "commit": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 78,
+        "max": 105,
+        "percent": 74
+      },
+      "truncated": false
+    },
+    {
+      "name": "open-webui",
+      "repoUrl": "https://github.com/open-webui/open-webui.git",
+      "commit": "8bd8b4fac5e059578ac0c74b3c18d11139f88b7d",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 56,
+        "max": 105,
+        "percent": 53
+      },
+      "truncated": false
+    },
+    {
+      "name": "cc-switch",
+      "repoUrl": "https://github.com/farion1231/cc-switch.git",
+      "commit": "2db86e94da13365caae55bb08d09295e31500d21",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 48,
+        "max": 105,
+        "percent": 46
+      },
+      "truncated": false
+    },
+    {
+      "name": "spec-kit",
+      "repoUrl": "https://github.com/github/spec-kit.git",
+      "commit": "fa4b81dad128e7130f85e67bb4af52f8a96e0f45",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 56,
+        "max": 105,
+        "percent": 53
+      },
+      "truncated": false
+    },
+    {
+      "name": "comfyui",
+      "repoUrl": "https://github.com/Comfy-Org/ComfyUI.git",
+      "commit": "58b176f0c8427b1e3b1e0174ded3a7794641388b",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 53,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "llama-cpp",
+      "repoUrl": "https://github.com/ggml-org/llama.cpp.git",
+      "commit": "fc9ce6b9d52a8504edcb262abc92737c2289f96c",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 63,
+        "max": 105,
+        "percent": 60
+      },
+      "truncated": false
+    },
+    {
+      "name": "money-printer-turbo",
+      "repoUrl": "https://github.com/harry0703/MoneyPrinterTurbo.git",
+      "commit": "9887b459e754ee073c056d988499b91136af9662",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 43,
+        "max": 105,
+        "percent": 41
+      },
+      "truncated": false
+    },
+    {
+      "name": "codex",
+      "repoUrl": "https://github.com/openai/codex.git",
+      "commit": "9b738582b13c2cdbeff54af0afd04c50c3e7ba09",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 64,
+        "max": 105,
+        "percent": 61
+      },
+      "truncated": false
+    },
+    {
+      "name": "graphify",
+      "repoUrl": "https://github.com/Graphify-Labs/graphify.git",
+      "commit": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 57,
+        "max": 105,
+        "percent": 54
+      },
+      "truncated": false
+    },
+    {
+      "name": "browser-use",
+      "repoUrl": "https://github.com/browser-use/browser-use.git",
+      "commit": "c75e8476e26d18b7617643bc2ae082fae8eae431",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 60,
+        "max": 105,
+        "percent": 57
+      },
+      "truncated": false
+    },
+    {
+      "name": "pi-agent",
+      "repoUrl": "https://github.com/earendil-works/pi.git",
+      "commit": "ce950d78f424dcaf9f5d6a03ce80ab141130eb1d",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 63,
+        "max": 105,
+        "percent": 60
+      },
+      "truncated": false
+    },
+    {
+      "name": "caveman",
+      "repoUrl": "https://github.com/JuliusBrussee/caveman.git",
+      "commit": "2e08b9177c07bb7249a8a2d1a6758e5db281d002",
+      "status": "scored",
+      "level": {
+        "index": 3,
+        "name": "Sensing"
+      },
+      "score": {
+        "earned": 80,
+        "max": 105,
+        "percent": 76
+      },
+      "truncated": false
+    },
+    {
+      "name": "trading-agents",
+      "repoUrl": "https://github.com/TauricResearch/TradingAgents.git",
+      "commit": "1394a3f72aa4393e1a98f51b382434c4b4c2d972",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 49,
+        "max": 105,
+        "percent": 47
+      },
+      "truncated": false
+    },
+    {
+      "name": "whisper",
+      "repoUrl": "https://github.com/openai/whisper.git",
+      "commit": "86098128c0b4f24f0e2aa2994de830614b474227",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 40,
+        "max": 105,
+        "percent": 38
+      },
+      "truncated": false
+    },
+    {
+      "name": "gemini-cli",
+      "repoUrl": "https://github.com/google-gemini/gemini-cli.git",
+      "commit": "44d764ee579610bf73c43107f5e0422cd92588b9",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 74,
+        "max": 105,
+        "percent": 70
+      },
+      "truncated": false
+    },
+    {
+      "name": "deepseek-v3",
+      "repoUrl": "https://github.com/deepseek-ai/DeepSeek-V3.git",
+      "commit": "9b4e9788e4a3a731f7567338ed15d3ec549ce03b",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 24,
+        "max": 105,
+        "percent": 23
+      },
+      "truncated": false
+    },
+    {
+      "name": "claude-mem",
+      "repoUrl": "https://github.com/thedotmack/claude-mem.git",
+      "commit": "71ddd11735d6dc38a6356fe376921fc216f2aa38",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 71,
+        "max": 108,
+        "percent": 66
+      },
+      "truncated": false
+    },
+    {
+      "name": "autoresearch",
+      "repoUrl": "https://github.com/karpathy/autoresearch.git",
+      "commit": "228791fb499afffb54b46200aca536f79142f117",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 17,
+        "max": 105,
+        "percent": 16
+      },
+      "truncated": false
+    },
+    {
+      "name": "deep-live-cam",
+      "repoUrl": "https://github.com/hacksider/Deep-Live-Cam.git",
+      "commit": "24c32239078bc4c6c0914f4cbe6ee2938682d92e",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 36,
+        "max": 105,
+        "percent": 34
+      },
+      "truncated": false
+    },
+    {
+      "name": "agent-reach",
+      "repoUrl": "https://github.com/Panniantong/Agent-Reach.git",
+      "commit": "94f06c1969dfc1834001269d79d3ad0972d9dee6",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 41,
+        "max": 105,
+        "percent": 39
+      },
+      "truncated": false
+    },
+    {
+      "name": "odysseus",
+      "repoUrl": "https://github.com/odysseus-dev/odysseus.git",
+      "commit": "a8c147b238db01dbd00b57774ed8b453f1e43971",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 41,
+        "max": 105,
+        "percent": 39
+      },
+      "truncated": false
+    },
+    {
+      "name": "bitcoin",
+      "repoUrl": "https://github.com/bitcoin/bitcoin.git",
+      "commit": "acdb32693417c1b6596edfbdd19ab793c010d34f",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 37,
+        "max": 105,
+        "percent": 35
+      },
+      "truncated": false
+    },
+    {
+      "name": "union",
+      "repoUrl": "https://github.com/unionlabs/union.git",
+      "commit": "031785bb6dc6b957c624e62bc64c184409c97d7b",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 47,
+        "max": 105,
+        "percent": 45
+      },
+      "truncated": false
+    },
+    {
+      "name": "fuel-core",
+      "repoUrl": "https://github.com/FuelLabs/fuel-core.git",
+      "commit": "251c8059cc072c780f6e1e2900d8771c8eb99403",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 60,
+        "max": 105,
+        "percent": 57
+      },
+      "truncated": false
+    },
+    {
+      "name": "freqtrade",
+      "repoUrl": "https://github.com/freqtrade/freqtrade.git",
+      "commit": "a9a917649ff8e283cff9c37504863b02da88615a",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 56,
+        "max": 105,
+        "percent": 53
+      },
+      "truncated": false
+    },
+    {
+      "name": "go-ethereum",
+      "repoUrl": "https://github.com/ethereum/go-ethereum.git",
+      "commit": "466c37e3329b119a222b5a275f696da697f6103b",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 57,
+        "max": 105,
+        "percent": 54
+      },
+      "truncated": false
+    },
+    {
+      "name": "ccxt",
+      "repoUrl": "https://github.com/ccxt/ccxt.git",
+      "commit": "f0aca06eb7482f083bed8406fadfcc0c05e45b1c",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 74,
+        "max": 105,
+        "percent": 70
+      },
+      "truncated": false
+    },
+    {
+      "name": "anoma",
+      "repoUrl": "https://github.com/anoma/anoma.git",
+      "commit": "5bcbf8487a331a20748299ed4fd4d62027f0ffa8",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 32,
+        "max": 105,
+        "percent": 30
+      },
+      "truncated": false
+    },
+    {
+      "name": "linera-protocol",
+      "repoUrl": "https://github.com/linera-io/linera-protocol.git",
+      "commit": "672d97bb2fce3127db351069df72f1d225d8f263",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 53,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "shardeum",
+      "repoUrl": "https://github.com/shardeum/shardeum.git",
+      "commit": "0c454caf067f7b896569eabdd5f47cb8b61738b3",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 60,
+        "max": 105,
+        "percent": 57
+      },
+      "truncated": false
+    },
+    {
+      "name": "hey",
+      "repoUrl": "https://github.com/slymnoyann/hey.xyz.git",
+      "commit": "44dee0c1223b9202699915fd3e92e670fd8e34e6",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 43,
+        "max": 105,
+        "percent": 41
+      },
+      "truncated": false
+    },
+    {
+      "name": "openzeppelin-contracts",
+      "repoUrl": "https://github.com/OpenZeppelin/openzeppelin-contracts.git",
+      "commit": "cd3284fde41f1c56d19078f580a0aed751cf11d2",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 68,
+        "max": 105,
+        "percent": 65
+      },
+      "truncated": false
+    },
+    {
+      "name": "solidity",
+      "repoUrl": "https://github.com/argotorg/solidity.git",
+      "commit": "37e27efdba13d47695f9a579df49129d6504ed53",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 32,
+        "max": 105,
+        "percent": 30
+      },
+      "truncated": false
+    },
+    {
+      "name": "fhevm",
+      "repoUrl": "https://github.com/zama-ai/fhevm.git",
+      "commit": "11b29f7b6b86fa8c1621eb4ec00c0b6a072f5675",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 67,
+        "max": 105,
+        "percent": 64
+      },
+      "truncated": false
+    },
+    {
+      "name": "hummingbot",
+      "repoUrl": "https://github.com/hummingbot/hummingbot.git",
+      "commit": "9af100d6822da7d2d0291a906c730ef172284ee2",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 46,
+        "max": 105,
+        "percent": 44
+      },
+      "truncated": false
+    },
+    {
+      "name": "web3-js",
+      "repoUrl": "https://github.com/web3/web3.js.git",
+      "commit": "bf1691765bd9d4b0f7a4479e915207707d69226d",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 49,
+        "max": 105,
+        "percent": 47
+      },
+      "truncated": false
+    },
+    {
+      "name": "subquery",
+      "repoUrl": "https://github.com/subquery/subql.git",
+      "commit": "51e2a2c985c3c869510a36e8c37a3b3557af4a3c",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 63,
+        "max": 105,
+        "percent": 60
+      },
+      "truncated": false
+    },
+    {
+      "name": "hyperledger-fabric",
+      "repoUrl": "https://github.com/hyperledger/fabric.git",
+      "commit": "1f06f620a21dbd7089dca01fd54b0fbbc5798d5a",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 50,
+        "max": 105,
+        "percent": 48
+      },
+      "truncated": false
+    },
+    {
+      "name": "diem",
+      "repoUrl": "https://github.com/diem/diem.git",
+      "commit": "fc4714a8ea273b6efe8b13dbce72ea60aad9a16c",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 50,
+        "max": 105,
+        "percent": 48
+      },
+      "truncated": false
+    },
+    {
+      "name": "sismo-badges",
+      "repoUrl": "https://github.com/sismo-core/sismo-badges.git",
+      "commit": "09206e396ca2342a88f7eaa897d55783f019f759",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 53,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "dogecoin",
+      "repoUrl": "https://github.com/dogecoin/dogecoin.git",
+      "commit": "47a303a449999314abcf83bd1fc7e77dd4540fcd",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 32,
+        "max": 105,
+        "percent": 30
+      },
+      "truncated": false
+    },
+    {
+      "name": "solana",
+      "repoUrl": "https://github.com/solana-labs/solana.git",
+      "commit": "7700cb3128c1f19820de67b81aa45d18f73d2ac0",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 50,
+        "max": 105,
+        "percent": 48
+      },
+      "truncated": false
+    },
+    {
+      "name": "truffle",
+      "repoUrl": "https://github.com/ConsenSys-archive/truffle.git",
+      "commit": "5b5312dbd5ffe2d5ec575e078ff09d98eb1b45c2",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 56,
+        "max": 105,
+        "percent": 53
+      },
+      "truncated": false
+    },
+    {
+      "name": "metamask-extension",
+      "repoUrl": "https://github.com/MetaMask/metamask-extension.git",
+      "commit": "a284fe9f478fb717712350ce0d1fedb58a1a6c10",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 70,
+        "max": 105,
+        "percent": 67
+      },
+      "truncated": false
+    },
+    {
+      "name": "quip-miner",
+      "repoUrl": "https://github.com/QuipNetwork/quip-miner.git",
+      "commit": "d58a7c79826c22b9bc071850a8f3bb453dd186b5",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 60,
+        "max": 105,
+        "percent": 57
+      },
+      "truncated": false
+    },
+    {
+      "name": "quip-ethereum-sdk",
+      "repoUrl": "https://github.com/QuipNetwork/ethereum-sdk.git",
+      "commit": "355f888cdffb643f6acdd50241fc44a93b37e230",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 41,
+        "max": 105,
+        "percent": 39
+      },
+      "truncated": false
+    },
+    {
+      "name": "lossless-cut",
+      "repoUrl": "https://github.com/mifi/lossless-cut.git",
+      "commit": "70f2663a7a7c995903701acd2f616d057f4fdc2f",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 47,
+        "max": 105,
+        "percent": 45
+      },
+      "truncated": false
+    },
+    {
+      "name": "photocraft",
+      "repoUrl": "https://github.com/storytold/photocraft.git",
+      "commit": "9f23d652627cce69471b9b64859a7290940e8c6c",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 55,
+        "max": 105,
+        "percent": 52
+      },
+      "truncated": false
+    },
+    {
+      "name": "graphite",
+      "repoUrl": "https://github.com/GraphiteEditor/Graphite.git",
+      "commit": "377ba8f00c369a635d7ee2d1c637fa0799983436",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 48,
+        "max": 105,
+        "percent": 46
+      },
+      "truncated": false
+    },
+    {
+      "name": "shotcut",
+      "repoUrl": "https://github.com/mltframework/shotcut.git",
+      "commit": "895ee392b6e0381353fbdc48b6889da9d3ad5c27",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 43,
+        "max": 105,
+        "percent": 41
+      },
+      "truncated": false
+    },
+    {
+      "name": "imagetoolbox",
+      "repoUrl": "https://github.com/T8RIN/ImageToolbox.git",
+      "commit": "f547954b9eb8a6953bd71cfb2fb0185ff2ad5641",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 32,
+        "max": 105,
+        "percent": 30
+      },
+      "truncated": false
+    },
+    {
+      "name": "palmier-pro",
+      "repoUrl": "https://github.com/palmier-io/palmier-pro.git",
+      "commit": "c948160b8fc304a3b2a86bf4492329cfedf0230f",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 29,
+        "max": 105,
+        "percent": 28
+      },
+      "truncated": false
+    },
+    {
+      "name": "olive",
+      "repoUrl": "https://github.com/olive-editor/olive.git",
+      "commit": "7e0e94abf6610026aebb9ddce8564c39522fac6e",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 32,
+        "max": 105,
+        "percent": 30
+      },
+      "truncated": false
+    },
+    {
+      "name": "vue-fabric-editor",
+      "repoUrl": "https://github.com/ikuaitu/vue-fabric-editor.git",
+      "commit": "b3bdcfb0bd6d8f98e7483cf561ac03ba56c0d889",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 46,
+        "max": 105,
+        "percent": 44
+      },
+      "truncated": false
+    },
+    {
+      "name": "jspaint",
+      "repoUrl": "https://github.com/1j01/jspaint.git",
+      "commit": "53be67ab8c47cc0d2168899e7481bc04839c4c81",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 40,
+        "max": 105,
+        "percent": 38
+      },
+      "truncated": false
+    },
+    {
+      "name": "filmcraft",
+      "repoUrl": "https://github.com/storytold/filmcraft.git",
+      "commit": "7b6c134472287db4367fca80bcb498240ba36567",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 58,
+        "max": 108,
+        "percent": 54
+      },
+      "truncated": false
+    },
+    {
+      "name": "editly",
+      "repoUrl": "https://github.com/mifi/editly.git",
+      "commit": "dc46674052eacd15ef6e0f563a58eb378b3804ad",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 53,
+        "max": 105,
+        "percent": 50
+      },
+      "truncated": false
+    },
+    {
+      "name": "concat",
+      "repoUrl": "https://github.com/jub0t/concat.git",
+      "commit": "948b6db90448b2f0cda865f38a614d18353ff557",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 44,
+        "max": 105,
+        "percent": 42
+      },
+      "truncated": false
+    },
+    {
+      "name": "pinta",
+      "repoUrl": "https://github.com/PintaProject/Pinta.git",
+      "commit": "c50533f226c2d8e09fbd8a2120eee72ee0bbb16e",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 33,
+        "max": 105,
+        "percent": 31
+      },
+      "truncated": false
+    },
+    {
+      "name": "clypra",
+      "repoUrl": "https://github.com/AIEraDev/Clypra.git",
+      "commit": "4790cde09ee01acdd167cee68e889fde6cdf42ed",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 50,
+        "max": 105,
+        "percent": 48
+      },
+      "truncated": false
+    },
+    {
+      "name": "better-shot",
+      "repoUrl": "https://github.com/KartikLabhshetwar/better-shot.git",
+      "commit": "72422118f871496f16f8d800470ae750d85dbfda",
+      "status": "scored",
+      "level": {
+        "index": 1,
+        "name": "Documented"
+      },
+      "score": {
+        "earned": 47,
+        "max": 105,
+        "percent": 45
+      },
+      "truncated": false
+    },
+    {
+      "name": "photodemon",
+      "repoUrl": "https://github.com/tannerhelland/PhotoDemon.git",
+      "commit": "8357ce499191bf12b84091b936aa9424ac35022f",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 26,
+        "max": 105,
+        "percent": 25
+      },
+      "truncated": false
+    },
+    {
+      "name": "videoeditor",
+      "repoUrl": "https://github.com/trykimu/videoeditor.git",
+      "commit": "6a30d43c5d2c381940478d89e4c712f40fd85146",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 44,
+        "max": 105,
+        "percent": 42
+      },
+      "truncated": false
+    },
+    {
+      "name": "freecut",
+      "repoUrl": "https://github.com/walterlow/freecut.git",
+      "commit": "4d62e8082c5eb387a96275bcbd323d28f6e41a62",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 55,
+        "max": 105,
+        "percent": 52
+      },
+      "truncated": false
+    },
+    {
+      "name": "openchatcut",
+      "repoUrl": "https://github.com/0xsline/OpenChatCut.git",
+      "commit": "2e6f4a29b784200cfb32b859b16f2561592bc3e8",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 51,
+        "max": 108,
+        "percent": 47
+      },
+      "truncated": false
+    },
+    {
+      "name": "visomaster",
+      "repoUrl": "https://github.com/visomaster/VisoMaster.git",
+      "commit": "18b5398b35cb7ebaa5f0f28d9025763da29b74c6",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 19,
+        "max": 105,
+        "percent": 18
+      },
+      "truncated": false
+    },
+    {
+      "name": "vidcutter",
+      "repoUrl": "https://github.com/ozmartian/vidcutter.git",
+      "commit": "db6818f11bbb4d5598dfc5ceeddf7f81c7078499",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 16,
+        "max": 105,
+        "percent": 15
+      },
+      "truncated": false
+    },
+    {
+      "name": "milton",
+      "repoUrl": "https://github.com/serge-rgb/milton.git",
+      "commit": "768c0351fd7a221ec047fe91c85830f544a76661",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 21,
+        "max": 105,
+        "percent": 20
+      },
+      "truncated": false
+    },
+    {
+      "name": "react-video-editor",
+      "repoUrl": "https://github.com/openvideodev/react-video-editor.git",
+      "commit": "9a8c5296da4b258f66dfb7ad73de96be62478bca",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 26,
+        "max": 105,
+        "percent": 25
+      },
+      "truncated": false
+    },
+    {
+      "name": "ffmpeg-webcli",
+      "repoUrl": "https://github.com/tejaswigowda/ffmpeg-webCLI.git",
+      "commit": "b86f7826b4ebb279284125a13d08e6930a99edd1",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 21,
+        "max": 105,
+        "percent": 20
+      },
+      "truncated": false
+    },
+    {
+      "name": "android-video-editor",
+      "repoUrl": "https://github.com/LLhon/Android-Video-Editor.git",
+      "commit": "63d47268f624aaf2119e9376e5f261f69d2b34e0",
+      "status": "scored",
+      "level": {
+        "index": 0,
+        "name": "Unharnessed"
+      },
+      "score": {
+        "earned": 23,
+        "max": 105,
+        "percent": 22
+      },
+      "truncated": false
+    }
+  ]
+}
