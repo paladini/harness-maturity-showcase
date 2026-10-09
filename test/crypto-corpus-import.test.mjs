@@ -22,9 +22,9 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
   assert.equal(corpusRunPaths(source).directory, "data/runs/2026-10-08-crypto-popularity-corpus/");
   assert.match(snapshot.sourceCommit, /^[a-f0-9]{40}$/);
   assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 172);
-  assert.equal(projects.filter(item => item.source === "study").length, 171);
+  assert.equal(projects.filter(item => item.source === "study").length, 192);
   assert.equal(projects.filter(item => item.source === "badge").length, 1);
-  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 151);
+  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 172);
   for (const entry of source.entries) {
     const imported = snapshot.entries.find(item => item.corpusName === entry.name);
     assert.ok(imported, entry.name);
@@ -36,7 +36,7 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
     const expected = corpusListing(entry, report, { ...historical, toolVersion: history.toolVersion }, snapshot.sourceCommit, source.runDate);
     const { report: filename, sha256, ...listing } = imported;
     assert.deepEqual(listing, expected);
-    const current = projects.find(item => item.repo === imported.repo);
+    const current = projects.find(item => item.repo === imported.repo && item.toolVersion === imported.toolVersion);
     assert.equal(current.commit, expected.commit, entry.name);
     assert.equal(current.score, expected.score, entry.name);
     assert.equal(current.corpusSourceCommit, "c3eee241e04da6eaa1ebf700b3a715779a013b55", entry.name);

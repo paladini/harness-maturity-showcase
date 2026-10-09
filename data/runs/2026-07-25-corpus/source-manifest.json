@@ -1,0 +1,198 @@
+{
+  "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. runDate and toolVersion identify the current historical run. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. checkoutExcludes omits platform-incompatible, non-harness data from checkout. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
+  "schemaVersion": 2,
+  "runDate": "2026-07-25",
+  "toolVersion": "harness-score@1.5.0",
+  "entries": [
+    {
+      "name": "harness-score",
+      "category": "control-ceiling",
+      "repoUrl": "https://github.com/paladini/harness-score.git",
+      "commit": "27bb2fa7f9da2e370cfb3d9f15c88b867e23d5c9",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "The scanner scanning itself. Dogfoods L4 on every commit to main — the strongest available ceiling anchor."
+    },
+    {
+      "name": "fakeflix",
+      "category": "harness-engineering-exemplar",
+      "repoUrl": "https://github.com/tech-leads-club/fakeflix.git",
+      "commit": "62dd3cb61bbe6a6e6acbd0f171e0ea1067331445",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Known-good anchor from harness-score's own v0.1.2 real-world test — extensive .cursor/rules, skills, and subagents."
+    },
+    {
+      "name": "execa",
+      "category": "control-non-ai-quality",
+      "repoUrl": "https://github.com/sindresorhus/execa.git",
+      "commit": "5944b2d176c69591d0eb35a383d0c16758060ae8",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Excellently engineered library (tests, CI, strict types, lint) with zero AI-harness artifacts. Tests whether strong Sensors/CI/Hygiene alone can be mistaken for harness maturity."
+    },
+    {
+      "name": "octocat-hello-world",
+      "category": "control-floor",
+      "repoUrl": "https://github.com/octocat/Hello-World.git",
+      "commit": "7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "GitHub's canonical minimal repository — a README and nothing else. Expected floor: L0."
+    },
+    {
+      "name": "anthropic-cookbook",
+      "category": "ai-lab",
+      "repoUrl": "https://github.com/anthropics/claude-cookbooks.git",
+      "commit": "67ce644d33e5933f0bcc0b6eb4113df41bbf3a8f",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Anthropic's official cookbook of Claude usage patterns and integration recipes. The stable corpus name predates the upstream rename to claude-cookbooks. Tests whether a lab's own example repository carries agent-harness infrastructure or is purely reference code."
+    },
+    {
+      "name": "anthropic-skills",
+      "category": "harness-engineering-exemplar",
+      "repoUrl": "https://github.com/anthropics/skills.git",
+      "commit": "9d2f1ae187231d8199c64b5b762e1bdf2244733d",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Anthropic's own showcase of Claude Skills — directly on-topic for the artifact-governance and harness-engineering-exemplar angle of this study; if any repo should score well on Skills & Commands, it is this one."
+    },
+    {
+      "name": "openai-cookbook",
+      "category": "ai-lab",
+      "repoUrl": "https://github.com/openai/openai-cookbook.git",
+      "commit": "20793784ac467f06ed67f3e3e9349dc9596894e0",
+      "scanSubpath": null,
+      "checkoutExcludes": ["examples/data", "images"],
+      "isStressCase": false,
+      "notes": "The pinned commit contains trailing-space directory names under examples/data/hotel_invoices/ that Windows cannot check out. The corpus uses a deterministic partial+sparse checkout to omit examples/data/ and images/ (773 MB of non-harness datasets/assets) while preserving all code, tests, configuration, and operational documentation."
+    },
+    {
+      "name": "smolagents",
+      "category": "ai-lab",
+      "repoUrl": "https://github.com/huggingface/smolagents.git",
+      "commit": "e3a5b8994b301983b91c0325546e9dc82eab8cf0",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Hugging Face's lightweight agent-building framework. Tests whether an agent framework's own repository is itself agent-harnessed, or just ships agent-building code for others."
+    },
+    {
+      "name": "continue",
+      "category": "ai-first-dev-tool",
+      "repoUrl": "https://github.com/continuedev/continue.git",
+      "commit": "d0a3c0b626b5bebc3bef4742eec05a0242be0bab",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Continue — open-source AI code assistant / IDE extension. AI-first developer tool; also a natural home for testing whether a Continue-centric repository is legible to a scanner with Cursor as the flagship example."
+    },
+    {
+      "name": "cline",
+      "category": "ai-first-dev-tool",
+      "repoUrl": "https://github.com/cline/cline.git",
+      "commit": "a41129a5dbda29c4e6b84968a2a798039ba32ab3",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Cline — open-source autonomous coding agent for VS Code, with a large, active contributor base."
+    },
+    {
+      "name": "openhands",
+      "category": "ai-first-dev-tool",
+      "repoUrl": "https://github.com/All-Hands-AI/OpenHands.git",
+      "commit": "9c5d4dce546eaad2425a76c09e1717ddd9df9819",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "OpenHands (formerly OpenDevin) — open-source autonomous software engineering agent platform."
+    },
+    {
+      "name": "goose",
+      "category": "ai-first-dev-tool",
+      "repoUrl": "https://github.com/block/goose.git",
+      "commit": "dae512010a9acf1eed2cf7034a64cdd02547641c",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Goose — Block's open-source, extensible AI agent for building software autonomously."
+    },
+    {
+      "name": "opencode",
+      "category": "ai-first-dev-tool",
+      "repoUrl": "https://github.com/sst/opencode.git",
+      "commit": "c69abee0c73253aebae65e87e4e1b9bfa8c38021",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "opencode — SST's open-source, terminal-based AI coding agent. Default branch is dev, not main."
+    },
+    {
+      "name": "aider",
+      "category": "ai-first-dev-tool",
+      "repoUrl": "https://github.com/Aider-AI/aider.git",
+      "commit": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Aider — widely used open-source AI pair-programming CLI, one of the most established agent-native coding tools."
+    },
+    {
+      "name": "zed",
+      "category": "ai-first-dev-tool",
+      "repoUrl": "https://github.com/zed-industries/zed.git",
+      "commit": "93b846b2a65715977841dd1fffcb3dce40588c66",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Zed — high-performance, AI-integrated code editor. Deliberately large Rust monorepo, scanned whole (no subpath): primary large-monorepo stress case for scan truncation (MAX_FILES) and signal dilution."
+    },
+    {
+      "name": "promptfoo",
+      "category": "prompt-eval-engineering",
+      "repoUrl": "https://github.com/promptfoo/promptfoo.git",
+      "commit": "688a90561180a6045ce3c8e8805d04bc23811bd7",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "promptfoo — open-source LLM prompt testing and evaluation framework. Core prompt/eval-engineering entry."
+    },
+    {
+      "name": "openai-evals",
+      "category": "prompt-eval-engineering",
+      "repoUrl": "https://github.com/openai/evals.git",
+      "commit": "8eac7a7de5215c907fbddc30efdaf316913eccdd",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "OpenAI's open-source framework for evaluating LLMs and LLM systems."
+    },
+    {
+      "name": "dspy",
+      "category": "prompt-eval-engineering",
+      "repoUrl": "https://github.com/stanfordnlp/dspy.git",
+      "commit": "027d9f45f4d60aedadee3fd587d1f4f3584567df",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "DSPy — Stanford's framework for programming (not prompting) language models, with built-in optimization and evaluation loops."
+    },
+    {
+      "name": "langfuse",
+      "category": "prompt-eval-engineering",
+      "repoUrl": "https://github.com/langfuse/langfuse.git",
+      "commit": "0febc33a0fb42388010ed908b474b5102e216123",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Langfuse — open-source LLM observability and evaluation platform. Eval-first stress case: tests the model's blindness to AI-specific sensors (eval suites, LLM-as-judge configs) that today earn zero credit."
+    },
+    {
+      "name": "mcp-servers",
+      "category": "artifact-governance",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers.git",
+      "commit": "d31124c982401739917fd817c2a59db344529c16",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "The official Model Context Protocol servers collection — directly on-topic for the MCP / artifact-governance angle of this study."
+    },
+    {
+      "name": "awesome-cursorrules",
+      "category": "artifact-governance",
+      "repoUrl": "https://github.com/PatrickJS/awesome-cursorrules.git",
+      "commit": "b044f956f021b6e8877f16781bcfc466a6a120e9",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "A widely-starred curated collection of example .cursorrules/rules. Deliberate inflation stress case: tests whether harness artifacts vendored under example/template directories are wrongly counted as the repository's own harness."
+    }
+  ]
+}

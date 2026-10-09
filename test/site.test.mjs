@@ -25,8 +25,10 @@ test("the leaderboard exposes category and selection-provenance filters", () => 
 
 test("all full study records expose reproducible reports", () => {
   const study = projects.filter((project) => project.corpusSourceCommit);
-  assert.equal(study.length, 151);
+  assert.equal(study.length, 172);
   assert.ok(study.every((project) => project.evidence.includes("/corpus/reports/")));
+  assert.deepEqual(reportVersions(projects), ["1.8.1", "1.5.0"]);
+  assert.equal(projects.filter((project) => project.toolVersion === "1.5.0").length, 21);
 });
 
 test("current top three stay within their scanner version", () => {

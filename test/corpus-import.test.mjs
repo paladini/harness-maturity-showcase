@@ -30,22 +30,27 @@ test("the original 101-report archive retains immutable, byte-verified evidence"
   assert.equal(new Set(snapshot.entries.map(item => item.repo.toLowerCase())).size, 101);
 });
 
-test("community records and previous registry values are preserved", () => {
+test("community records are preserved while older report versions remain selectable", () => {
   const previousCommunity = snapshot.previousListings.filter(item => !item.evidence.includes("harness-maturity-analysis/blob/"));
   assert.equal(previousCommunity.length, 21);
   for (const previous of previousCommunity) assert.deepEqual(projects.find(item => item.repo === previous.repo), previous);
   assert.equal(snapshot.previousListings.filter(item => item.toolVersion === "1.5.0").length, 21);
+  assert.equal(projects.filter(item => item.toolVersion === "1.5.0").length, 21);
 });
 
-test("import rejects report mismatches and replaces corpus entries without duplicate repos", () => {
+test("imports retain each scanner version and replace only the matching version", () => {
   const entry = source.entries[0];
   const historical = { ...history.entries.find(item => item.name === entry.name), toolVersion: history.toolVersion };
   const report = { tool: { version: "1.8.1" }, truncated: true, level: historical.level, score: historical.score };
   assert.throws(() => corpusListing(entry, report, historical, snapshot.sourceCommit, source.runDate), /mismatch/);
   const listing = snapshot.entries[0];
-  assert.deepEqual(mergeCorpusListings([
+  const oldVersion = { ...listing, toolVersion: "1.5.0", evidence: "https://github.com/paladini/harness-maturity-analysis/blob/old/report" };
+  const merged = mergeCorpusListings([
     { repo: listing.repo.toUpperCase(), evidence: "https://github.com/example/badge" },
     { repo: "example/community", evidence: "https://github.com/example/community" },
     { repo: "example/old", evidence: "https://github.com/paladini/harness-maturity-analysis/blob/old/report" },
-  ], [listing]).map(item => item.repo), [listing.repo, "example/community"]);
+    oldVersion,
+  ], [listing]);
+  assert.deepEqual(merged.map(item => item.repo), ["example/community", "example/old", oldVersion.repo, listing.repo]);
+  assert.deepEqual(merged.filter(item => item.repo.toLowerCase() === listing.repo.toLowerCase()).map(item => item.toolVersion), ["1.5.0", "1.8.1"]);
 });

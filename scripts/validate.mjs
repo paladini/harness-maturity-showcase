@@ -9,8 +9,11 @@ for (const [index, project] of projects.entries()) {
   if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(project.repo ?? "")) {
     errors.push(`${label}: repo must use owner/name format`);
   }
-  if (seen.has(project.repo?.toLowerCase())) errors.push(`${label}: duplicate repo ${project.repo}`);
-  seen.add(project.repo?.toLowerCase());
+  const identity = project.source === "study"
+    ? `${project.repo?.toLowerCase()}@${project.toolVersion}`
+    : project.repo?.toLowerCase();
+  if (seen.has(identity)) errors.push(`${label}: duplicate repository/version ${identity}`);
+  seen.add(identity);
   if (!Number.isInteger(project.level) || project.level < 0 || project.level > 4) {
     errors.push(`${label}: level must be an integer from 0 through 4`);
   }
@@ -41,4 +44,4 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log(`Validated ${projects.length} unique repository records.`);
+console.log(`Validated ${projects.length} unique repository/version records.`);
