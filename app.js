@@ -1,4 +1,4 @@
-import { popularityLabel, rankedReports, reportVersions } from "./ranking.mjs";
+import { popularityLabel, rankedReports, reportVersions, repositoryCount } from "./ranking.mjs";
 
 const levels = {
   0: ["Unharnessed", "l0"],
@@ -14,7 +14,7 @@ const versions = reportVersions(projects);
 const rankings = new Map(versions.map((version) => [version, rankedReports(projects, version)]));
 const ranked = versions.flatMap((version) => rankings.get(version));
 
-document.querySelector("#total-count").textContent = projects.length;
+document.querySelector("#total-count").textContent = repositoryCount(projects);
 document.querySelector("#scored-count").textContent = ranked.length;
 
 const escapeHtml = (value) =>

@@ -9,6 +9,10 @@ export function reportVersions(projects) {
     .sort((a, b) => b.localeCompare(a, "en", { numeric: true }));
 }
 
+export function repositoryCount(projects) {
+  return new Set(projects.map((project) => project.repo.toLowerCase())).size;
+}
+
 export function rankedReports(projects, version) {
   return projects
     .filter((project) => Number.isFinite(project.score) && project.toolVersion === version)

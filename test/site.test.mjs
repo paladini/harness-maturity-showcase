@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { rankedReports, reportVersions } from "../ranking.mjs";
+import { rankedReports, reportVersions, repositoryCount } from "../ranking.mjs";
 
 const root = new URL("../", import.meta.url);
 const html = await readFile(new URL("index.html", root), "utf8");
@@ -29,6 +29,11 @@ test("all full study records expose reproducible reports", () => {
   assert.ok(study.every((project) => project.evidence.includes("/corpus/reports/")));
   assert.deepEqual(reportVersions(projects), ["1.8.1", "1.5.0"]);
   assert.equal(projects.filter((project) => project.toolVersion === "1.5.0").length, 21);
+});
+
+test("the homepage repository statistic counts unique repositories across versions", () => {
+  assert.equal(repositoryCount(projects), 172);
+  assert.equal(projects.filter((project) => Number.isFinite(project.score)).length, 192);
 });
 
 test("current top three stay within their scanner version", () => {
