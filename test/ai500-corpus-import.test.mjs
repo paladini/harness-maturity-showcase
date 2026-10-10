@@ -36,7 +36,7 @@ test("the 500-project AI popularity cohort is pinned and traceable", async () =>
     assert.ok(listing, candidate.canonicalSlug);
     assert.equal(listing.commit, candidate.commit, candidate.canonicalSlug);
     assert.equal(listing.repo.toLowerCase(), candidate.canonicalSlug.toLowerCase(), candidate.canonicalSlug);
-    assert.ok(listing.evidence.includes(`/blob/${snapshot.sourceCommit}/corpus/reports/`));
+    assert.ok(listing.evidence.includes(`/blob/${listing.corpusSourceCommit}/corpus/reports/`));
   }
   for (const item of snapshot.evidenceFiles) {
     const bytes = await readFile(new URL(item.file, run));
@@ -45,8 +45,8 @@ test("the 500-project AI popularity cohort is pinned and traceable", async () =>
   assert.equal(projects.filter((item) => item.selection?.cohort === "ai-popularity").length, 30);
   assert.equal(projects.filter((item) => item.selection?.cohort === "crypto-popularity").length, 25);
   assert.equal(projects.filter((item) => item.selection?.cohort === "media-editing-popularity").length, 25);
-  assert.equal(projects.length, 693);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 672);
+  assert.equal(projects.length, 1193);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 1172);
   assert.equal(projects.filter((item) => item.toolVersion === "1.5.0").length, 21);
 });
 

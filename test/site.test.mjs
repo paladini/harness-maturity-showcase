@@ -25,15 +25,15 @@ test("the leaderboard exposes category and selection-provenance filters", () => 
 
 test("all full study records expose reproducible reports", () => {
   const study = projects.filter((project) => project.corpusSourceCommit);
-  assert.equal(study.length, 672);
+  assert.equal(study.length, 1172);
   assert.ok(study.every((project) => project.evidence.includes("/corpus/reports/")));
   assert.deepEqual(reportVersions(projects), ["1.8.1", "1.5.0"]);
   assert.equal(projects.filter((project) => project.toolVersion === "1.5.0").length, 21);
 });
 
 test("the homepage repository statistic counts unique repositories across versions", () => {
-  assert.equal(repositoryCount(projects), 672);
-  assert.equal(projects.filter((project) => Number.isFinite(project.score)).length, 692);
+  assert.equal(repositoryCount(projects), 1172);
+  assert.equal(projects.filter((project) => Number.isFinite(project.score)).length, 1192);
 });
 
 test("current top three stay within their scanner version", () => {
