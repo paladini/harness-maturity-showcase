@@ -16,23 +16,26 @@ instructions, guardrails, validation, and feedback loops. The showcase
 recognizes teams that make that investment and gives the community a
 transparent way to inspect the evidence behind every listing.
 
-This repository currently combines three evidence sets:
+This repository currently combines four evidence sets:
 
-- 651 pinned, reproducible reports scanned with `harness-score@1.8.1` from the
+- 1,151 pinned, reproducible reports scanned with `harness-score@1.8.1` from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
   including 500 new AI software projects, 30 earlier AI software projects, 25
-  cryptocurrency projects and 25 media editing projects selected from recorded
-  GitHub searches. See the [500-project AI import snapshot and raw
-  reports](data/runs/2026-10-09-ai-popularity-500-corpus/README.md).
+  cryptocurrency projects, 25 media editing projects and 500 video game AI
+  projects selected from recorded GitHub searches. See the [video game AI
+  import snapshot and raw reports](data/runs/2026-10-10-game-ai-popularity-500-corpus/README.md)
+  and the [500-project AI import snapshot](data/runs/2026-10-09-ai-popularity-500-corpus/README.md).
 - 20 full reports from the original badge-listed projects, refreshed with
   `harness-score@1.8.1` on October 7, 2026. See the
   [results and pinned run manifest](data/runs/2026-10-07/README.md).
+- 21 historical full reports scanned with `harness-score@1.5.0`, retained as a
+  separate selectable scanner-version cohort in the [July 25 archive](data/runs/2026-07-25-corpus/README.md).
 - 1 additional public repository with a README badge only.
 
 Numeric rankings include only full reports and compare repositories within the
 same scanner version. The podium defaults to the newest version; the scanner
 filter exposes each cohort. A badge records a public level claim, not a verified
-current score. The index has 693 report records across 672 repositories: 692 full
+current score. The index has 1,193 report records across 1,172 repositories: 1,192 full
 reports and 1 badge-only entry. Repositories with reports from multiple scanner
 versions appear as separate selectable records.
 
@@ -53,6 +56,10 @@ global rank or a measure of harness maturity.
 The AI software cohort records its bounded search union, canonical repository
 IDs, pinned commits, observed stars, and eligibility replacements in its
 immutable selection and discovery evidence.
+The video game AI cohort covers both games made with AI and software using AI
+in games or game development. It has 500 pinned reports and no blind ratings;
+GitHub stars are selection metadata from a bounded search union, not a global
+ranking or part of the harness score.
 
 ## Import a published corpus
 

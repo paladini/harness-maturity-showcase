@@ -117,19 +117,23 @@ if (isMain) {
   const selection = selectionBytes ? JSON.parse(selectionBytes) : undefined;
   const selectionByName = new Map();
   if (selection) {
-    if (selection.achievedCount !== selection.targetCount || !Array.isArray(selection.candidates) ||
-        selection.candidates.length !== selection.targetCount || !source.runId) {
+    const selectedCandidates = selection.candidates ?? selection.selected;
+    if (selection.achievedCount !== selection.targetCount || !Array.isArray(selectedCandidates) ||
+        selectedCandidates.length !== selection.targetCount || !source.runId) {
       throw new Error("Incomplete selection ledger");
     }
     const sourceByName = new Map(source.entries.map((entry) => [entry.name, entry]));
-    for (const candidate of selection.candidates) {
+    for (const candidate of selectedCandidates) {
       const entry = sourceByName.get(candidate.name);
-      if (!entry || entry.commit !== candidate.commit || entry.category !== candidate.category ||
+      if (!entry || entry.commit !== candidate.commit || entry.category !== (candidate.category ?? selection.category) ||
           !entry.repoUrl.toLowerCase().includes(candidate.canonicalSlug.toLowerCase())) {
         throw new Error(`Selection/source mismatch: ${candidate.name}`);
       }
       if (selectionByName.has(candidate.name)) throw new Error(`Duplicate selection candidate: ${candidate.name}`);
-      selectionByName.set(candidate.name, selectionProvenance(candidate, source.runId, selection.selectionDate));
+      selectionByName.set(candidate.name, selectionProvenance({
+        ...candidate,
+        githubStars: candidate.githubStars ?? candidate.observedStars,
+      }, selection.cohort ?? source.runId, selection.selectionDate));
     }
   }
   const evidence = await Promise.all(evidencePaths.map(async (file) => ({
