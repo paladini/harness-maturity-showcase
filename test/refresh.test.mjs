@@ -38,5 +38,5 @@ test("all 20 refreshed listings match complete, unchanged, pinned reports", asyn
 test("the additional ActiveAdmin listing remains outside the original 20", () => {
   assert.ok(!manifest.entries.some((entry) => entry.repo === "paladini/activeadmin-aaa-theme"));
   assert.equal(projects.find((project) => project.repo === "paladini/activeadmin-aaa-theme").source, "badge");
-  assert.equal(projects.length, 1193);
+  assert.equal(projects.length, 1228);
 });
