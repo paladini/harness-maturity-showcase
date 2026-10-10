@@ -1,0 +1,4857 @@
+{
+  "selectionIssue": "https://github.com/paladini/harness-maturity-analysis/issues/9",
+  "baselineCommit": "c3eee241e04da6eaa1ebf700b3a715779a013b55",
+  "scanner": "harness-score@1.8.1",
+  "platform": "win32 10.0.19045 x64",
+  "batchBudgetKiB": 8000000,
+  "startedAt": "2026-10-10T00:03:28.200Z",
+  "batches": [
+    {
+      "batch": 1,
+      "batchRunId": "ai-popularity-500-batch-01",
+      "names": [
+        "ponytail",
+        "llms-from-scratch",
+        "ragflow",
+        "crawl4ai",
+        "lobehub",
+        "rtk",
+        "netdata",
+        "unsloth",
+        "tesseract",
+        "headroom",
+        "openbb",
+        "openspec",
+        "metagpt",
+        "oh-my-openagent",
+        "docling",
+        "strix",
+        "mem0",
+        "anything-llm",
+        "daily-stock-analysis",
+        "keras",
+        "minimind",
+        "context7",
+        "trendradar"
+      ],
+      "estimateKiB": 6152781,
+      "elapsedMs": 254172,
+      "reports": [
+        {
+          "name": "ponytail",
+          "reportSha256": "665a76406c6651265e12ef4847f249cd2744489962a515c0c212db2a51531bae",
+          "reportBytes": 45824,
+          "scorePercent": 56,
+          "level": 2,
+          "truncated": false
+        },
+        {
+          "name": "llms-from-scratch",
+          "reportSha256": "ecbedf0c9705a1f6051449f096fadb9ae3a8c6031f97b443f00b488d325ee63f",
+          "reportBytes": 45325,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ragflow",
+          "reportSha256": "f61eb60283980c750c7163abb8c073e098cc52a5ea1e32e7009b7b5c96bb9e27",
+          "reportBytes": 45075,
+          "scorePercent": 76,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "crawl4ai",
+          "reportSha256": "9e0c81a597b541fb15e8c20d5b36e9d06005376854fc5685de52f3855d063fd1",
+          "reportBytes": 45132,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "lobehub",
+          "reportSha256": "9cee795de737cbfa1fb6ef5353790922d16858e44494003ae3c98e8fe7217d3a",
+          "reportBytes": 45705,
+          "scorePercent": 76,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "rtk",
+          "reportSha256": "65d65aa774a40770a1490be226cdbe91f90a1f10ba6ed679c7d8fe71314da4fe",
+          "reportBytes": 45747,
+          "scorePercent": 72,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "netdata",
+          "reportSha256": "b4ad89f619fc28644a53edef729cadebfd0b6a1cf51a14d856db491b2beebe94",
+          "reportBytes": 45641,
+          "scorePercent": 70,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "unsloth",
+          "reportSha256": "763e74e13c92a28fb79f55ccb337998854e66b015e2123d9a22518253f7a26a6",
+          "reportBytes": 45561,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tesseract",
+          "reportSha256": "05b81f76507e675d5ba4a0c6af89e01982dbd475ea998a61c7c700386875ab0d",
+          "reportBytes": 45205,
+          "scorePercent": 29,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "headroom",
+          "reportSha256": "141e9f2f1fc4678c046dee02b9d8f86c69420ce5f0b2f9f8fa920c57c5c5c007",
+          "reportBytes": 45392,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "openbb",
+          "reportSha256": "5820c6c1de5cee8feea4492b189357d4869d95fd60f388218add7f5615755721",
+          "reportBytes": 45198,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "openspec",
+          "reportSha256": "492902311ca6e5b362196881ad6705593d617252a3a44ac15598da2a4e4d846d",
+          "reportBytes": 45152,
+          "scorePercent": 70,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "metagpt",
+          "reportSha256": "341e9a9297e80972476c356fb07d33c54fd2ceeac669cf7b4068e1e246b59ac2",
+          "reportBytes": 45111,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "oh-my-openagent",
+          "reportSha256": "857625699e68985fb9f4af6006c014b2579a1e70cc06ad8b4b24b6cf965446b4",
+          "reportBytes": 46201,
+          "scorePercent": 84,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "docling",
+          "reportSha256": "30c4383bd9b2d5b9d45342c8136398ab7fb0757ba3f8393c3fbf525e13fd1bfc",
+          "reportBytes": 45265,
+          "scorePercent": 64,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "strix",
+          "reportSha256": "2bb9574d9e4678a1ed3ee2444f637ff952e17f4743bf22dd2aef360bd6e4fbcb",
+          "reportBytes": 45195,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "mem0",
+          "reportSha256": "a20c1ca4e50c5958dc1e1c4fba88b676191fbb7724f9196cd2aff817b7b4989a",
+          "reportBytes": 45838,
+          "scorePercent": 71,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "anything-llm",
+          "reportSha256": "81fc389dfc55d483683caef9b906f9672ad8fbf34c5cf2e984890224ab22fb92",
+          "reportBytes": 45530,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "daily-stock-analysis",
+          "reportSha256": "98806ccb730d006eea1fa233e036f5a02db7800e0a16805220f715e9dd7fc80e",
+          "reportBytes": 45836,
+          "scorePercent": 71,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "keras",
+          "reportSha256": "38bc6d286916d05c1dc76e4096c4c4b229914080159a5937404041bcbba891b4",
+          "reportBytes": 45075,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "minimind",
+          "reportSha256": "f5926f741d877d49e10810dbb7a791e4aeef30f60aa7077c59fa9cef427ffac4",
+          "reportBytes": 45032,
+          "scorePercent": 18,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "context7",
+          "reportSha256": "4dceb4a19fc4cf27aa51b9c2d3d45c5fee7fd505b1f284ce187a9348b00a76f2",
+          "reportBytes": 45776,
+          "scorePercent": 52,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "trendradar",
+          "reportSha256": "cfb9f9efbaf066d0c2aa8570f171ec9ca76829c82b28e727f9c30da1842822ff",
+          "reportBytes": 45248,
+          "scorePercent": 16,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 23
+    },
+    {
+      "batch": 2,
+      "batchRunId": "ai-popularity-500-batch-02",
+      "names": [
+        "litellm",
+        "meilisearch",
+        "crewai",
+        "mempalace",
+        "llm-app",
+        "ppt-master",
+        "private-gpt",
+        "voicebox",
+        "voicestudio",
+        "flowise",
+        "gpt-engineer",
+        "chatgpt",
+        "bmad-method",
+        "cherry-studio",
+        "llama-index"
+      ],
+      "estimateKiB": 5150872,
+      "elapsedMs": 313703,
+      "reports": [
+        {
+          "name": "litellm",
+          "reportSha256": "a47233f27b722a88c1382705d5c8236286ce5529d89fbc5692925bc30635b261",
+          "reportBytes": 45631,
+          "scorePercent": 76,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "meilisearch",
+          "reportSha256": "36e1f754a36b0989661b937f5bce1c861a8b4810adcecae7ba3ed9de8d88abce",
+          "reportBytes": 45029,
+          "scorePercent": 54,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "crewai",
+          "reportSha256": "4aefb688b7029063c4eaf2d9f139202024cabbd7a94dd7298984ad1025609895",
+          "reportBytes": 45116,
+          "scorePercent": 69,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "mempalace",
+          "reportSha256": "0db66de4d406e878597ea8fc7be5e75cd5888f1d1e1bc5ab7aadee3abdd29291",
+          "reportBytes": 45485,
+          "scorePercent": 69,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "llm-app",
+          "reportSha256": "acd836874a53802abf35e47ca697cb467f2a525ba7d22b58a0da599795c141a7",
+          "reportBytes": 45091,
+          "scorePercent": 31,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ppt-master",
+          "reportSha256": "37f36c4635a8f25b33f7aa026fd8f4e44d7c7f3bb5f08172729bf44c3fbe4aa1",
+          "reportBytes": 45382,
+          "scorePercent": 30,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "private-gpt",
+          "reportSha256": "7e6551e7c1e406db0d1b0952a099ee800744fe3684e16dc68560980288569166",
+          "reportBytes": 44917,
+          "scorePercent": 61,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "voicebox",
+          "reportSha256": "cb2eae7d1a518be0b5cdf5c10ba214beb3031743f7755ff6b2647641e05a4c41",
+          "reportBytes": 45466,
+          "scorePercent": 55,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "voicestudio",
+          "reportSha256": "a881a9be122ea41269c24c4a64672e1027c2e3d1c4e896d82ccc9c7201bcc41d",
+          "reportBytes": 45243,
+          "scorePercent": 63,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "flowise",
+          "reportSha256": "ce630148027cb7fd434555fab75a2f10409fa617ad600d56531070f3f90b1b10",
+          "reportBytes": 45457,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "gpt-engineer",
+          "reportSha256": "e6be530764383865811b189e07b2bc9136290a75bbc08f3ab8e269841df756f3",
+          "reportBytes": 45036,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "chatgpt",
+          "reportSha256": "afb26fbdccf514f5429e6c25972b5de5ea3f98f1d8e2f5a4e9e2c30c6935b908",
+          "reportBytes": 45111,
+          "scorePercent": 23,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "bmad-method",
+          "reportSha256": "7a9a2fdf0cbc4cc8fc91ff4d0f2ffc37f3a01ef1156d5a46f7afc160b9115587",
+          "reportBytes": 45119,
+          "scorePercent": 53,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "cherry-studio",
+          "reportSha256": "af0cb4f022db22a56bb69cf0068144c8d9ec766629045da6ec0aeaa6b63a36d5",
+          "reportBytes": 45735,
+          "scorePercent": 71,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "llama-index",
+          "reportSha256": "4c7bc4636c33e60444ba33ea31b4d485f100038031a4ffb26b8aad7c42e55623",
+          "reportBytes": 45259,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 15
+    },
+    {
+      "batch": 3,
+      "batchRunId": "ai-popularity-500-batch-03",
+      "names": [
+        "supervision",
+        "upscayl",
+        "localai",
+        "qlib",
+        "nanobot",
+        "cowagent",
+        "siyuan",
+        "librechat",
+        "ai-job-search"
+      ],
+      "estimateKiB": 6561832,
+      "elapsedMs": 121603,
+      "reports": [
+        {
+          "name": "supervision",
+          "reportSha256": "b9182e4dbf897e69a1d53aaabb4ce6630244a643b92c9eec2ff979b012463c98",
+          "reportBytes": 44997,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "upscayl",
+          "reportSha256": "b7fb8787a915a18e798eaa8b4deba2a3f317a66e0cd39b9c4d74a54566bf65f8",
+          "reportBytes": 45169,
+          "scorePercent": 31,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "localai",
+          "reportSha256": "0c625c3d56cb60ce6fac76587a7c23726d50de8ff24993414b88c22c5aac1ad7",
+          "reportBytes": 45331,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "qlib",
+          "reportSha256": "a9a4b2f1f573b3d05ae41b45d6e912c94a96651a40db7d4042d1b9366628cadd",
+          "reportBytes": 45136,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "nanobot",
+          "reportSha256": "a69de5c23504c27124405446c54e2cb12de82642cac23165d5ca6bb317d7c95a",
+          "reportBytes": 44957,
+          "scorePercent": 62,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "cowagent",
+          "reportSha256": "8f2ebc843f759d7100e2d5f716ba5939b033ba1e51e5b50bb8b8ef55da0e6ab0",
+          "reportBytes": 45148,
+          "scorePercent": 42,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "siyuan",
+          "reportSha256": "0b1db8994df8c868d33aa0316440a3da0678a40c5ca9087c8591113c830977b2",
+          "reportBytes": 45220,
+          "scorePercent": 51,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "librechat",
+          "reportSha256": "e35a827c9d6949d484a6e253734ca994a4cf6992bc84988ec4697c11b66d1388",
+          "reportBytes": 45327,
+          "scorePercent": 69,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "ai-job-search",
+          "reportSha256": "702f844003af92c6c992d6c2466de5b4ce6e4e0c40f77f29d108e1e2b8a3f211",
+          "reportBytes": 45971,
+          "scorePercent": 57,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 9
+    },
+    {
+      "batch": 4,
+      "batchRunId": "ai-popularity-500-batch-04",
+      "names": [
+        "jan",
+        "kong",
+        "fabric",
+        "ray",
+        "gradio",
+        "deepspeed",
+        "agno",
+        "openhuman",
+        "astrbot",
+        "colossalai",
+        "codewhale",
+        "photoprism",
+        "chattts",
+        "folo",
+        "pageindex",
+        "langchain-chatchat",
+        "copilotkit",
+        "khoj",
+        "vane",
+        "prompt-optimizer",
+        "sglang",
+        "mockingbird",
+        "ai-website-cloner-template",
+        "agentgpt",
+        "graphrag",
+        "next-ai-draw-io",
+        "deepseek-reasonix",
+        "airllm",
+        "qwenpaw",
+        "vibe-trading",
+        "qdrant"
+      ],
+      "estimateKiB": 7546420,
+      "elapsedMs": 441944,
+      "reports": [
+        {
+          "name": "jan",
+          "reportSha256": "1153c3366a07228a10feefa569aeb5fa5941bfc96aa80e8dd64af98d5d3136d9",
+          "reportBytes": 45223,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "kong",
+          "reportSha256": "2f78f1927553300e1cac348bc2eb166e2689940c415a192d1aa3a9369cb45cca",
+          "reportBytes": 45288,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "fabric",
+          "reportSha256": "f3cb5726ce3949f4f31af846b05cb41652fa7bbe73ebe62c33c2451cd3a23a10",
+          "reportBytes": 45100,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ray",
+          "reportSha256": "0813c2d423c57440fb6832d939fb890708b036a0a1b8ab509ba31e723e4da5aa",
+          "reportBytes": 46081,
+          "scorePercent": 65,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "gradio",
+          "reportSha256": "2200a42b0a7e2998934a86dca48d6ef9c5e54e8ad09f5a577419132e29045633",
+          "reportBytes": 45712,
+          "scorePercent": 66,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "deepspeed",
+          "reportSha256": "f5fe21b1a15d19a3fcd96eee64faa49572db8456ebf9d36ea935799b4fec35b8",
+          "reportBytes": 45405,
+          "scorePercent": 42,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "agno",
+          "reportSha256": "e89ed72ebd17cca740f9806be58f44459e52aa876db2ca1fb5de89abd68e3316",
+          "reportBytes": 45468,
+          "scorePercent": 51,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "openhuman",
+          "reportSha256": "1766954cfef7d4493d96ba865486df2cc9227e4727455044789d702f80da0d09",
+          "reportBytes": 45725,
+          "scorePercent": 84,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "astrbot",
+          "reportSha256": "b0e2f30c9585eb3907422dae5c8396744c270e0b0080f98daacfcdf46e3860d1",
+          "reportBytes": 45177,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "colossalai",
+          "reportSha256": "c4812c809ae0438574d4734dee3dc13dc961a747c11abc62fdecceaa8f3543fe",
+          "reportBytes": 45226,
+          "scorePercent": 39,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "codewhale",
+          "reportSha256": "75305bfa6ddd1ed1595802e8968e1d6222afc70a2f06150975432b53faafd57d",
+          "reportBytes": 45595,
+          "scorePercent": 68,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "photoprism",
+          "reportSha256": "b51a324509748eff37687fc0839380974aa756c3367192db0b435a89cc82bf77",
+          "reportBytes": 45704,
+          "scorePercent": 66,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "chattts",
+          "reportSha256": "b9798376efab9a123e52676995895dd7980343af342fd789a237138f028608f1",
+          "reportBytes": 45193,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "folo",
+          "reportSha256": "a917ed4009aa563bd946ae537fd05e853814cc037c3aadc9a87a593465a5858f",
+          "reportBytes": 45608,
+          "scorePercent": 79,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "pageindex",
+          "reportSha256": "951625b513107adefcead61c19e15abde0738e2a584e77f1b1fa4806a3cdecf0",
+          "reportBytes": 45165,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "langchain-chatchat",
+          "reportSha256": "e90eb9390e3e4a8dc85d533f7de3662d0bf319113958e6f2b8251d610d02682b",
+          "reportBytes": 45414,
+          "scorePercent": 38,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "copilotkit",
+          "reportSha256": "e09c35413db2ff3c513a6e904f861d267e77177e88d1be564e6b694d044d1ee3",
+          "reportBytes": 46686,
+          "scorePercent": 75,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "khoj",
+          "reportSha256": "7a12a93f19c0e003eca5858bfe344385eaef1e56570700bf69a51ace029e2653",
+          "reportBytes": 45146,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "vane",
+          "reportSha256": "9232852617930fe7f7ad85117743c9330227bc1021e1a699670052d34ca4cc7e",
+          "reportBytes": 45076,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "prompt-optimizer",
+          "reportSha256": "fc5d5dab9c3c693a414e3157bc1200fbc792c0124dec6a65a6805f77c8e9d54c",
+          "reportBytes": 45256,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "sglang",
+          "reportSha256": "bab7afe9f7188e23d596e3db0d94a2a5a07056c4ebaa70c5c32db61d512a3f92",
+          "reportBytes": 45934,
+          "scorePercent": 66,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "mockingbird",
+          "reportSha256": "4eaee8a0558a855401a1cf19ee4745305343998c880d3a98854696cc9f8396fe",
+          "reportBytes": 45043,
+          "scorePercent": 18,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ai-website-cloner-template",
+          "reportSha256": "160e5ee0b28d9675f42af10cb59ecd21576c0e4b804bac288c6a3c9c0f5990e5",
+          "reportBytes": 44910,
+          "scorePercent": 58,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "agentgpt",
+          "reportSha256": "e8f47551ae2550cf37ce801c99afd89cd0a721683f7a3a23362329f71620fc89",
+          "reportBytes": 44990,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "graphrag",
+          "reportSha256": "07efc64914a1122832b338fa77dee6de3b5ab9a52409728a4dc0d32229f55ffb",
+          "reportBytes": 45012,
+          "scorePercent": 56,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "next-ai-draw-io",
+          "reportSha256": "8ca652347d145c872029fcd9bb803cfdb5d4d814182484ca4c14e7d9ce23fa67",
+          "reportBytes": 45537,
+          "scorePercent": 55,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "deepseek-reasonix",
+          "reportSha256": "f05c0b3e870ad48119ee926af41b267c4b1d0fc9889274397d102af469f2d3d3",
+          "reportBytes": 45207,
+          "scorePercent": 54,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "airllm",
+          "reportSha256": "e3242eb2a9b8a7983769c5265948197315ca739af0dc990c14bd7ff4f4e608c5",
+          "reportBytes": 45204,
+          "scorePercent": 24,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "qwenpaw",
+          "reportSha256": "8ad61ee7bdf909783f0616cb5789b6e8e8dbd3fd1597a018f4f889739f3968a9",
+          "reportBytes": 46359,
+          "scorePercent": 59,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "vibe-trading",
+          "reportSha256": "e184a8cc7db42537c6f4863ca5579512337d2823dfb493c72807bbd665231ac9",
+          "reportBytes": 45248,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "qdrant",
+          "reportSha256": "7eefb8f6b6e02fbc1a484b492e663d6ef5e93d95f85f60ba039aec7c15b7da90",
+          "reportBytes": 45060,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 31
+    },
+    {
+      "batch": 5,
+      "batchRunId": "ai-popularity-500-batch-05",
+      "names": [
+        "oh-my-pi",
+        "caffe",
+        "sillytavern",
+        "happy-llm",
+        "tabby",
+        "gpt-pilot",
+        "netron",
+        "aionui",
+        "ml-from-scratch",
+        "zeroclaw",
+        "weknora",
+        "self-llm",
+        "onyx",
+        "fairseq",
+        "invisible-dots",
+        "cognee",
+        "officecli",
+        "jumpserver",
+        "scrapegraph-ai",
+        "meetily",
+        "pytorch-lightning",
+        "9router",
+        "composio",
+        "mcp-for-blender",
+        "serena",
+        "deepagents",
+        "easyocr",
+        "gpt-researcher",
+        "opencli",
+        "open-generative-ai",
+        "openai-agents-python",
+        "sim",
+        "fastgpt",
+        "chroma",
+        "page-agent",
+        "agentmemory"
+      ],
+      "estimateKiB": 7889221,
+      "elapsedMs": 509047,
+      "reports": [
+        {
+          "name": "oh-my-pi",
+          "reportSha256": "e4aeca78399231d43344be0d1244ed4c83b0ef73be03c36309e55ba1ea6229d1",
+          "reportBytes": 45708,
+          "scorePercent": 71,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "caffe",
+          "reportSha256": "65fb5247dfaae051456106c0a5f2d80b7971e8a973c923e19cb5029e2a397810",
+          "reportBytes": 45231,
+          "scorePercent": 20,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "sillytavern",
+          "reportSha256": "5fa8b15b7d71523f73b6b6b5e6d8d22763a45fd9fea34e14eec2de95aa645a63",
+          "reportBytes": 45179,
+          "scorePercent": 44,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "happy-llm",
+          "reportSha256": "16b330eb0bcf7ba5a4c4dfbece2a21aebf2cdab2365e40c0e02acade4a3ecab1",
+          "reportBytes": 45119,
+          "scorePercent": 21,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tabby",
+          "reportSha256": "301f63f62ff5b6d5e7b8c2247aa18da28a3ce13b6b3dcddc6e48c8011cb8e358",
+          "reportBytes": 45415,
+          "scorePercent": 44,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "gpt-pilot",
+          "reportSha256": "85fb57a914996d7758b51b537ef472d554a44ffdf8916cd331932ead2419bdcd",
+          "reportBytes": 45151,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "netron",
+          "reportSha256": "e38efc8912e40bac2aff53e5ff47e3648f8160f8fe5a84725a738c4b8bcc2fa1",
+          "reportBytes": 45308,
+          "scorePercent": 37,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "aionui",
+          "reportSha256": "612daed4d1c426cd04ba14aac68d44f9d02a703c7b43af106cb66bd9c53c5662",
+          "reportBytes": 45194,
+          "scorePercent": 70,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "ml-from-scratch",
+          "reportSha256": "ea19b7f69b6e65cbdf4e6c19446124fc912079468d33d739257b0392966f08bf",
+          "reportBytes": 45039,
+          "scorePercent": 18,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "zeroclaw",
+          "reportSha256": "b8c698400b3aee2d1f9a8f4e90ce597314347420d97ec65bafab820e7ccbbc41",
+          "reportBytes": 46056,
+          "scorePercent": 70,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "weknora",
+          "reportSha256": "2911d34a5a8c34a4a167fad49fd5cb902166a7a63ee4048fdf0754af1389b68a",
+          "reportBytes": 45271,
+          "scorePercent": 56,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "self-llm",
+          "reportSha256": "a64715dd87d13de2510921ed98d1ce1185d19f69a3a679f48014e1bbf62e62e1",
+          "reportBytes": 45402,
+          "scorePercent": 23,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "onyx",
+          "reportSha256": "d804ff8626a2841287a2dff0f6289109df536b2f1028ee3d521f05e17520b910",
+          "reportBytes": 46036,
+          "scorePercent": 82,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "fairseq",
+          "reportSha256": "750c85304a6f2f7f495f760512b28bef275fc8421d1a2fc11851a3006a826b6a",
+          "reportBytes": 45403,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "invisible-dots",
+          "reportSha256": "c557926635583a1c83959afc68448ca71905b13bf3efc03a5c8d80b8b01599d1",
+          "reportBytes": 45072,
+          "scorePercent": 43,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "cognee",
+          "reportSha256": "f692f88e38a50403c56c9d7cb9ec66aba1c757257ba9b850c748c5f790e176b4",
+          "reportBytes": 45570,
+          "scorePercent": 76,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "officecli",
+          "reportSha256": "fe664bf27677f4647b180a33d1e97b51997c025fb0f27c6463415bdc09a38f6e",
+          "reportBytes": 45119,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "jumpserver",
+          "reportSha256": "4e9a6c9057027ef73c368113b29afd5896107d8ea4e6377387f7ffed1005b4bd",
+          "reportBytes": 45284,
+          "scorePercent": 34,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "scrapegraph-ai",
+          "reportSha256": "6ba997e0f4f8f6ad2ebb38fe1e037ce36666de3d8c435c9e0fb672e50afff1e3",
+          "reportBytes": 44898,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "meetily",
+          "reportSha256": "d66669be404608e2f9425ffaa302e0d676a77bd29afafe2af6bbb1be483632d7",
+          "reportBytes": 45295,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "pytorch-lightning",
+          "reportSha256": "61793fb12b784dcb2cc57725b010c49b557bcdfaab0847d389b189ac1f7032a9",
+          "reportBytes": 44959,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "9router",
+          "reportSha256": "6a2eef6dbca2029227ace38ea4b86b5e16702afc9944ed9f63f002314ee0dc9c",
+          "reportBytes": 45359,
+          "scorePercent": 58,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "composio",
+          "reportSha256": "b445bff54c4388dc4830b0feab5f41a1dd5ddecfc7843b0e2ce6746ead039ad0",
+          "reportBytes": 45904,
+          "scorePercent": 82,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "mcp-for-blender",
+          "reportSha256": "d1bbf736f2e0bd7bf2275e78758888265b0e4b9a8676152d32d0a775c595b243",
+          "reportBytes": 45183,
+          "scorePercent": 31,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "serena",
+          "reportSha256": "a4f4c437cbd8ad2254f6081c2f073ba6370a408fa0ce9dbf5cb7fd1bb9104219",
+          "reportBytes": 45116,
+          "scorePercent": 54,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "deepagents",
+          "reportSha256": "2026087c0e6cb5d017d3c0a65c72764537dc1616acc97cfb270349ac51a4d855",
+          "reportBytes": 45320,
+          "scorePercent": 72,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "easyocr",
+          "reportSha256": "b1cf98a5ba1613073363c944dfa77b686e768076dac2f2bea066ab7d764958eb",
+          "reportBytes": 45119,
+          "scorePercent": 23,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "gpt-researcher",
+          "reportSha256": "e7ed33c186098feeaee93faf6bf547f1091560cced6620222b49d25437b1ac04",
+          "reportBytes": 45096,
+          "scorePercent": 51,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "opencli",
+          "reportSha256": "d152d2f8adbf50e4ea5be763271787f654d349ba6eee998437f917df4f633bdc",
+          "reportBytes": 45205,
+          "scorePercent": 43,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "open-generative-ai",
+          "reportSha256": "ac64fe9c32784e39f2c291d23bc304460c6092be3e29120e358d23631bdaae4e",
+          "reportBytes": 45100,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "openai-agents-python",
+          "reportSha256": "02223155c854ff332194e2a9c8ff67b9e4183e1343da8305cc96a21af78e3ce4",
+          "reportBytes": 45280,
+          "scorePercent": 66,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "sim",
+          "reportSha256": "d5b8437025d1bd9535a6e72313970d6576b76e343bb792b6b12ccb6880015e0e",
+          "reportBytes": 45635,
+          "scorePercent": 76,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "fastgpt",
+          "reportSha256": "70c871d47f61c1f09322ca1a42174f2bf46c9143915ceb0da3a901e93af001db",
+          "reportBytes": 45393,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "chroma",
+          "reportSha256": "a013d00ebfcf19564610837879f71d57302083f88098be84915236d5917e50b7",
+          "reportBytes": 46018,
+          "scorePercent": 68,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "page-agent",
+          "reportSha256": "e23eeae88b60c2d20ed22917ec9e9614fbe395236b3b4dfa84caa495cef8662b",
+          "reportBytes": 45470,
+          "scorePercent": 76,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "agentmemory",
+          "reportSha256": "bfbbffd48227aa21ef2bd801e98c63ede3b822b980b632eebeb1ea8591bf5e90",
+          "reportBytes": 45449,
+          "scorePercent": 48,
+          "level": 1,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 36
+    },
+    {
+      "batch": 6,
+      "batchRunId": "ai-popularity-500-batch-06",
+      "names": ["repomix", "mastra", "semantic-kernel", "resume-matcher", "invokeai", "qwen-code"],
+      "estimateKiB": 7774851,
+      "elapsedMs": 187845,
+      "reports": [
+        {
+          "name": "repomix",
+          "reportSha256": "d7d4a0bf3e3b8fd446c84399e52e2b9e77464efeccfbe9bfc4dd53afd6d7885d",
+          "reportBytes": 46207,
+          "scorePercent": 71,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "mastra",
+          "reportSha256": "3e2badfd6820d78ba1d566c63662713ae178296e0e6a75d3ea80f1582312d9c9",
+          "reportBytes": 46582,
+          "scorePercent": 75,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "semantic-kernel",
+          "reportSha256": "bb28eeb6923ff4b7ec45ccb9aa7d9fd6aad8b6da17ed260b8e532704483e946c",
+          "reportBytes": 45895,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "resume-matcher",
+          "reportSha256": "ca04573b0aec1edcbfe98ba2049e14164de5949a53f205e93e1ad2023d47ddd8",
+          "reportBytes": 45370,
+          "scorePercent": 61,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "invokeai",
+          "reportSha256": "7a6f650e0af1cb743f0e4285eb601f3e09e7f52f081f4a78606c954620b6f34b",
+          "reportBytes": 45350,
+          "scorePercent": 70,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "qwen-code",
+          "reportSha256": "d2d09310cd0c4b7fa75a8de979c55c81d4cfe5b4d191566e1236d71e2de3d0da",
+          "reportBytes": 45791,
+          "scorePercent": 69,
+          "level": 1,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 6
+    },
+    {
+      "batch": 7,
+      "batchRunId": "ai-popularity-500-batch-07",
+      "names": [
+        "mlflow",
+        "fastai",
+        "claude-task-master",
+        "so-vits-svc",
+        "tencentdb-agent-memory",
+        "agenticseek",
+        "ai",
+        "onlook",
+        "deepspeech",
+        "haystack",
+        "12-factor-agents",
+        "shap",
+        "vit-pytorch",
+        "toon",
+        "llm-action",
+        "gin-vue-admin",
+        "activepieces",
+        "homemade-machine-learning",
+        "nocobase",
+        "paddle",
+        "ncnn",
+        "pandas-ai",
+        "watermarks-remover",
+        "archon",
+        "mlc-llm",
+        "skyvern",
+        "ifixai",
+        "omlx",
+        "opik",
+        "opcode",
+        "gpt-crawler"
+      ],
+      "estimateKiB": 7797916,
+      "reports": [
+        {
+          "name": "12-factor-agents",
+          "reportSha256": "42f307225b108b6b4731adbc4f09be7073e98f901e8c68e606fcacb85d895e21",
+          "reportBytes": 44944,
+          "scorePercent": 47,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "activepieces",
+          "reportSha256": "0626ac5379e28f1ac454c47c4a4918feed448f0805d3bad21a1968af775a5a8e",
+          "reportBytes": 46128,
+          "scorePercent": 81,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "agenticseek",
+          "reportSha256": "5319c0690ea9a1e37e0619ec159f080d9cc168ffa46a9c3bfb110db88d7674a5",
+          "reportBytes": 45167,
+          "scorePercent": 26,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ai",
+          "reportSha256": "e91b334f7f72102d3e7978ca5bc0e99f9cf55cb954e998060291875d1e0c220a",
+          "reportBytes": 45882,
+          "scorePercent": 77,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "archon",
+          "reportSha256": "8379f25f773817b98caec6075208f8de14db7b645ea948edbe077b4dccb94cef",
+          "reportBytes": 45660,
+          "scorePercent": 84,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "claude-task-master",
+          "reportSha256": "c26678f43a3a2d444f7c91352c0e40db562acc623a9cd499ef9ed36df4739935",
+          "reportBytes": 45988,
+          "scorePercent": 67,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "deepspeech",
+          "reportSha256": "c55401fa85d50626ce3b37463e57522c0900ceeb2d0d692aeded50eecbbed27a",
+          "reportBytes": 45572,
+          "scorePercent": 35,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "fastai",
+          "reportSha256": "a509a200e34d143346dacff51127006dfbc9dd485d8a0e3d8fca241bb6306c85",
+          "reportBytes": 45358,
+          "scorePercent": 28,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "gin-vue-admin",
+          "reportSha256": "6b27dbc754494d838cf40096bba3ad742b11b9a904959dd8f78072f19a1ba86a",
+          "reportBytes": 45003,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "gpt-crawler",
+          "reportSha256": "c4f16251d523c4a0eef8ab204049234c7c1ae8b7fe9e1029f09e37e52c8cc1ec",
+          "reportBytes": 45113,
+          "scorePercent": 42,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "haystack",
+          "reportSha256": "3323e4c1f13772341c999e2d692b535575dd89adc487389698822166cd1e5b37",
+          "reportBytes": 45316,
+          "scorePercent": 68,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "homemade-machine-learning",
+          "reportSha256": "147ea14d07a5bb75e5db1b00119617aea73db5ca8bd5f1f45b810541810c378c",
+          "reportBytes": 45049,
+          "scorePercent": 18,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ifixai",
+          "reportSha256": "932648b6bfce6d1775525049c7bc6b10542962cc16023ab8ab186210070ef5a7",
+          "reportBytes": 45194,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "mlc-llm",
+          "reportSha256": "7bbc70ca68cee0a14def856584fd728cdd6d84847c074022215afa659a1a7f2f",
+          "reportBytes": 45319,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "mlflow",
+          "reportSha256": "15ba4b078b6e95e104fc647a8a019cd46357a0a3a96d43a608497abb81098400",
+          "reportBytes": 45564,
+          "scorePercent": 88,
+          "level": 4,
+          "truncated": false
+        },
+        {
+          "name": "ncnn",
+          "reportSha256": "24c3b17553c04f230f2b30704a935ff6a5838a11d9e2f54072124dab2b72e480",
+          "reportBytes": 45378,
+          "scorePercent": 28,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "nocobase",
+          "reportSha256": "75794b377940eac629d10c42312ef6c06cdc400bae72f6c8bbb0070dc376696c",
+          "reportBytes": 45398,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "omlx",
+          "reportSha256": "e9c50423ea0a1fe7e6663953422ac3fa4163d4fd25fe0f14b2fa745ac928e643",
+          "reportBytes": 45356,
+          "scorePercent": 45,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "onlook",
+          "reportSha256": "35625cad82aa8616b99ba5a82964778c9d19a02126114d72dc52536ef8f6e8b8",
+          "reportBytes": 45470,
+          "scorePercent": 54,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "opcode",
+          "reportSha256": "208d7a141ded8ff6d450917fa961b369facf722d2b6b03523a3ca9d89e26d620",
+          "reportBytes": 45162,
+          "scorePercent": 37,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "opik",
+          "reportSha256": "06a1fbbe6eddd93db481bb818f3ad3315d350d26785c12bb71ad9a0f40a3a0e5",
+          "reportBytes": 45878,
+          "scorePercent": 77,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "paddle",
+          "reportSha256": "aed143fca70184567b1f90c0a498ba6a0553ca8e75017f6522f486098b44571a",
+          "reportBytes": 45404,
+          "scorePercent": 59,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "pandas-ai",
+          "reportSha256": "8b70f58d9ecb35bb064d744350fc2647a86bb1d234be5a269cc52f752ce1c269",
+          "reportBytes": 45033,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "shap",
+          "reportSha256": "de34fd89e8d143cbe083c7f1f10cf763382737672de8a40ba791dd37988742e7",
+          "reportBytes": 45236,
+          "scorePercent": 59,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "skyvern",
+          "reportSha256": "aaa49a94fa6926f2a8d4e1be5727c02af050dcaba5dd1b10b21c1e09953c5870",
+          "reportBytes": 45301,
+          "scorePercent": 79,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "so-vits-svc",
+          "reportSha256": "d15d7597d5aaaf02be693bb948773c5ce6dfa95c3016d21fb39eeac3000eaab9",
+          "reportBytes": 45045,
+          "scorePercent": 32,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tencentdb-agent-memory",
+          "reportSha256": "bd5af4088c166d8ed5ddbdbfc52e5ea5a37b6f7c58108e8e2e3d3733f9be2e89",
+          "reportBytes": 44976,
+          "scorePercent": 49,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "toon",
+          "reportSha256": "685d8067374c897a21ffa5aed5b919eb777d2c15874babe53ce6bbfb1c86e70b",
+          "reportBytes": 45142,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "vit-pytorch",
+          "reportSha256": "f0bc018d55cb7821d00437e006fe5237040226feb2a28c4c8f822a1822094ef2",
+          "reportBytes": 45091,
+          "scorePercent": 26,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "watermarks-remover",
+          "reportSha256": "a921747e3babd5be4838d43ed76897607689d5ef411e9da238e2c53d3fd31481",
+          "reportBytes": 45164,
+          "scorePercent": 62,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "llm-action",
+          "reportSha256": "6f7e1372cecead93a6b364871298a8974aca68e9defee44f4e075400d5b6b82b",
+          "reportBytes": 45233,
+          "scorePercent": 23,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 31,
+      "status": "complete; one NTFS-incompatible tracked path was scanned intact on WSL2 Ubuntu 24.04",
+      "windowsFailure": {
+        "name": "llm-action",
+        "repo": "liguodongiot/llm-action",
+        "path": "llm-algo/transformer/README.md ",
+        "reason": "NTFS cannot represent this tracked path; no checkout exclusion was applied."
+      },
+      "linuxFallback": {
+        "name": "llm-action",
+        "platform": "WSL2 Ubuntu 24.04 on Linux filesystem",
+        "path": "llm-algo/transformer/README.md ",
+        "reason": "Windows invalid trailing-space path; no checkout exclusion or signal loss."
+      }
+    },
+    {
+      "batch": 8,
+      "batchRunId": "ai-popularity-500-batch-08",
+      "names": [
+        "codexbar",
+        "video2x",
+        "datasets",
+        "qwen",
+        "teable",
+        "dyad",
+        "adk-python",
+        "coze-studio",
+        "hivisionidphotos",
+        "onnx",
+        "fingpt",
+        "rasa",
+        "machine-learning-for-trading",
+        "agency-agents-zh",
+        "cube",
+        "hypit",
+        "swe-agent",
+        "jcode",
+        "suna",
+        "owl",
+        "db-gpt",
+        "deepresearch",
+        "deep-research"
+      ],
+      "estimateKiB": 7034296,
+      "elapsedMs": 351896,
+      "reports": [
+        {
+          "name": "codexbar",
+          "reportSha256": "0782bb78953d0a100d60fc0818cce0a9a6633c335a38f4e4b73e991790cc0611",
+          "reportBytes": 45248,
+          "scorePercent": 58,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "video2x",
+          "reportSha256": "0d121b6e8c9f34859d0422e5d77de4c68517eeb831ba3e569cef2fa8e5e4bbdc",
+          "reportBytes": 45235,
+          "scorePercent": 22,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "datasets",
+          "reportSha256": "619e5838ef22711ba6471a58058f30950d662ba50ce29d40057e94477dbe19e6",
+          "reportBytes": 45190,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "qwen",
+          "reportSha256": "e63949b72e13d611ac8ff448d6db93b61d237b0d8c53eb1905910bbf5e90b98a",
+          "reportBytes": 45114,
+          "scorePercent": 24,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "teable",
+          "reportSha256": "51f0cb11686f63f361efda05271c8ad2d064eec1450a390db0292e4829516650",
+          "reportBytes": 45300,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "dyad",
+          "reportSha256": "4339ffbb69cf7899b06424ffd4eb1a720c4e1a327a1441e344381340d1516abd",
+          "reportBytes": 46184,
+          "scorePercent": 90,
+          "level": 4,
+          "truncated": false
+        },
+        {
+          "name": "adk-python",
+          "reportSha256": "0e138b77085589692d8c742d199e5d26b751f6cbc90e504a89556b276ba8c8c1",
+          "reportBytes": 45366,
+          "scorePercent": 66,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "coze-studio",
+          "reportSha256": "efd99e5d0eb7c9fec4f37894995f51f28d91542c0c5b7cd88407d1a107d71ad9",
+          "reportBytes": 45553,
+          "scorePercent": 61,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "hivisionidphotos",
+          "reportSha256": "125398dbeca31394f6174ddc9bb2cf62becabb3077db6bbecf40486541ba7eb3",
+          "reportBytes": 45146,
+          "scorePercent": 27,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "onnx",
+          "reportSha256": "c0c0ee9c24cf742abd1f98e0a2b35cbba3b4d3efca7bed2472b42ef126a62209",
+          "reportBytes": 45220,
+          "scorePercent": 73,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "fingpt",
+          "reportSha256": "fa425b54299e9b199989d2f76d30102bab686f74f999d27b5e71f25093915776",
+          "reportBytes": 45152,
+          "scorePercent": 34,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "rasa",
+          "reportSha256": "610b5f134bf71b1816b92545fbd4a36aee71e9529f58e0c75dbb112e4257840d",
+          "reportBytes": 44962,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "machine-learning-for-trading",
+          "reportSha256": "e7e629b1fe815cd5116e9b3a97ea107b8b0191fdf7827b8ec8dba3429046c318",
+          "reportBytes": 45038,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "agency-agents-zh",
+          "reportSha256": "707fd3037c3861abe9fa2b3621ce6d4b3f0aafd2e314f6aeb0a12fdade89efb5",
+          "reportBytes": 45322,
+          "scorePercent": 22,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "cube",
+          "reportSha256": "e58674c63dd92f20b134cbe84f13af807b0b1efc3325914b21dfc90bfe665df4",
+          "reportBytes": 45322,
+          "scorePercent": 82,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "hypit",
+          "reportSha256": "7052e48bb688fa1c7adf3e1ea7aaa904461e7bdd4f0c536d9def1a53e71a383f",
+          "reportBytes": 45415,
+          "scorePercent": 40,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "swe-agent",
+          "reportSha256": "0364b7b156126d1d1aa1722e320beadfffe2d19c0ecbb7b1df6dcda5268e9309",
+          "reportBytes": 45309,
+          "scorePercent": 52,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "jcode",
+          "reportSha256": "aa48bef4c281c97fb5924103b349feb70fd5924ac82269bcc5524ae7dd3de9e8",
+          "reportBytes": 45365,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "suna",
+          "reportSha256": "3991922a017452f8d60801ed69b1fc9884c6ed9ff69e1ebb05f025d6ac7d15bd",
+          "reportBytes": 45696,
+          "scorePercent": 77,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "owl",
+          "reportSha256": "6946646ea858556b0666ed5c0814b6cf127c4fdebc5c6196a7d38de3c9037fa1",
+          "reportBytes": 45019,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "db-gpt",
+          "reportSha256": "4425cbcc3079a2bf97651b785c536835e534f7fe547f0a8b9b6db08ece08313c",
+          "reportBytes": 45246,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "deepresearch",
+          "reportSha256": "b71fde4e0bc45fb907c0c2bd63bd363970d87550c7920da27853c682a93d65b0",
+          "reportBytes": 45044,
+          "scorePercent": 21,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "deep-research",
+          "reportSha256": "068290fda4994a75bc5ee6cdf2b89dad7f3fb46ac66da70c438c35246a2ed6e8",
+          "reportBytes": 45013,
+          "scorePercent": 35,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 23
+    },
+    {
+      "batch": 9,
+      "batchRunId": "ai-popularity-500-batch-09",
+      "names": [
+        "ml-agents",
+        "agent-zero",
+        "dia",
+        "lifeos",
+        "web-llm",
+        "chinese-llama-alpaca",
+        "lightgbm",
+        "cockpit-tools",
+        "magika",
+        "agent-lightning",
+        "speech",
+        "airsim",
+        "bit",
+        "docsgpt",
+        "parlant",
+        "weclone",
+        "openfang",
+        "avante-nvim",
+        "deepwiki-open",
+        "langbot",
+        "rowboat",
+        "camel",
+        "wrenai",
+        "rocketride-server",
+        "superagi",
+        "instant-ngp",
+        "tensor2tensor",
+        "vibe-coding-cn",
+        "opencodex",
+        "memori",
+        "ego-lite",
+        "edict",
+        "toonflow-app",
+        "ai-berkshire"
+      ],
+      "estimateKiB": 7786413,
+      "elapsedMs": 389947,
+      "reports": [
+        {
+          "name": "ml-agents",
+          "reportSha256": "ed676246ce7fbe4dca914f1dcc853f3bccd9fed499376e10dee801fd4bffd8e6",
+          "reportBytes": 45123,
+          "scorePercent": 39,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "agent-zero",
+          "reportSha256": "d0ce059ad8e5120d45f005d66e70eabc03764a2b09f02baa5379a47967aecb21",
+          "reportBytes": 45078,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "dia",
+          "reportSha256": "7b405e3c3cd1e706b161258f4b21c950aaf694a704693c81ed92dc9713a2b586",
+          "reportBytes": 44973,
+          "scorePercent": 32,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "lifeos",
+          "reportSha256": "647fcd8b344944b922afb985736b6b98131db8370bfba8f06336b221493cae58",
+          "reportBytes": 45532,
+          "scorePercent": 41,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "web-llm",
+          "reportSha256": "41842c0c2736fac9bc820632d8c76285d0b8b6790c547c35bd05b62f2ec50e38",
+          "reportBytes": 45239,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "chinese-llama-alpaca",
+          "reportSha256": "cfe9e0615c4e19206954a6277613b31b34e5e14bee14cbfda6e12cdf592ac3ad",
+          "reportBytes": 45068,
+          "scorePercent": 22,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "lightgbm",
+          "reportSha256": "da141fbd2498179cd2a5666daa6b250819c4c026fc128da56bbd8729e13005d5",
+          "reportBytes": 45136,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "cockpit-tools",
+          "reportSha256": "3aa5e9d1e70673254026054887bed7daae0b619ae9013cd2b3a4af1423f6ba1c",
+          "reportBytes": 45509,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "magika",
+          "reportSha256": "1a55daed92e7272d9a642773719929544b4af78afbb8515a479c31dc792d1ee3",
+          "reportBytes": 45170,
+          "scorePercent": 43,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "agent-lightning",
+          "reportSha256": "45c31669855fc01c212fe070fef6a9e082deea62788682a7de9c6ed4d373c94d",
+          "reportBytes": 44915,
+          "scorePercent": 62,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "speech",
+          "reportSha256": "68d3e71820d951ad33fc7f2a9141d9c3cbfb43174aa8bb5a2a77faed43ad1795",
+          "reportBytes": 45482,
+          "scorePercent": 76,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "airsim",
+          "reportSha256": "b85322bf39f58343a82ab31b3d41556888f4db64583014b95d484eb0ba3a2af5",
+          "reportBytes": 45334,
+          "scorePercent": 28,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "bit",
+          "reportSha256": "352ebf5cddf1eea2001e7d5e2e46a817d80f8e62bc89c38e58ba349374d12945",
+          "reportBytes": 45347,
+          "scorePercent": 88,
+          "level": 4,
+          "truncated": false
+        },
+        {
+          "name": "docsgpt",
+          "reportSha256": "7c5d36fe339d9157f4f0aee23081c935aa9f8162c64e626e950114b8ef79bb89",
+          "reportBytes": 44907,
+          "scorePercent": 70,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "parlant",
+          "reportSha256": "fc873fc8e188b8fb11eb34b9ef1a4d54c88f289b5d1bb8298ae6e72e9fcb14d9",
+          "reportBytes": 44979,
+          "scorePercent": 54,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "weclone",
+          "reportSha256": "0191f93c91368657c56d9194a4fb466173d78538e444e57a88591183b813be34",
+          "reportBytes": 45123,
+          "scorePercent": 54,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "openfang",
+          "reportSha256": "1bff6978aec29906b3d2b542fb2ed43defc9eb286ef8bb4c15ad1493c580baeb",
+          "reportBytes": 44996,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "avante-nvim",
+          "reportSha256": "79acc12ebf768a2ff6a340b59067215e94f959056c96467e70ff967616e78887",
+          "reportBytes": 45229,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "deepwiki-open",
+          "reportSha256": "239dd1fe57c33633dcaffffeb10f91340879dcd9db8ce722d0016e4a1fce006d",
+          "reportBytes": 44911,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "langbot",
+          "reportSha256": "cf68d7b47ea45f3f1d67d4bfcb69dc5d40a171464fda297b370f4666918423ad",
+          "reportBytes": 45073,
+          "scorePercent": 65,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "rowboat",
+          "reportSha256": "84031f2d554e21058a0d4d2f37c53ceee7886c62c95893b3029e75cb449c5256",
+          "reportBytes": 45327,
+          "scorePercent": 62,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "camel",
+          "reportSha256": "862f5409a3ba57562729398c40d99301f7c2517b4493fcf84d1b986049ef8b43",
+          "reportBytes": 45071,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "wrenai",
+          "reportSha256": "5c4fd1a61010918d871295bd4df27375f075a86a7832b698ab1f47ac9701c58c",
+          "reportBytes": 45722,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "rocketride-server",
+          "reportSha256": "e6016ffc178e6c38508456940b0fe7fb273ccee87c5c6a76f623f740a2586a74",
+          "reportBytes": 45549,
+          "scorePercent": 70,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "superagi",
+          "reportSha256": "199ca77bede34adcd638b88f58d487ac6dc07f05896cfe2d8197ad1ad36485df",
+          "reportBytes": 45088,
+          "scorePercent": 40,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "instant-ngp",
+          "reportSha256": "759d8a2a94445f9a2b6e211446d27e92f1eb48c919d0a48f804326a6b6c0fe6a",
+          "reportBytes": 45073,
+          "scorePercent": 29,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tensor2tensor",
+          "reportSha256": "88e67b95eaec809bb579cfe95f0e5df56abc9426dd635fa512b17ebeb29f5e4e",
+          "reportBytes": 45335,
+          "scorePercent": 17,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "vibe-coding-cn",
+          "reportSha256": "ef18d05ecfba71ed7fad7cde23fd4c26bf127785efd33ba78022bbda18e93e78",
+          "reportBytes": 45704,
+          "scorePercent": 47,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "opencodex",
+          "reportSha256": "09a3438d1452bbc330000416f7d56e5a40c4d79f88ba700c33b50243e72c5d63",
+          "reportBytes": 45321,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "memori",
+          "reportSha256": "24a9e26eaee3bde7e2556b72aad3c03a36d844f6d1d0379287c5edb94429a6b4",
+          "reportBytes": 45250,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ego-lite",
+          "reportSha256": "37270b9b68f187255ca3a25ca0ad4047e3b2e8735e5475982f697305d9ce6f4e",
+          "reportBytes": 45202,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "edict",
+          "reportSha256": "ba918d16400fcfc2cf46cd6a355b3a3c2fb2d9fc2195ee2de19fabdf352cfef1",
+          "reportBytes": 45115,
+          "scorePercent": 37,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "toonflow-app",
+          "reportSha256": "0f187b68f6b1eb02dca16b4652416db100dcf05aa906b61ea33182c46454a638",
+          "reportBytes": 44948,
+          "scorePercent": 45,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "ai-berkshire",
+          "reportSha256": "b0005e46923b5df0fe10e88d3f67132c6a0967b93b10917473d710e263960abc",
+          "reportBytes": 45242,
+          "scorePercent": 30,
+          "level": 1,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 34
+    },
+    {
+      "batch": 10,
+      "batchRunId": "ai-popularity-500-batch-10",
+      "names": [
+        "plate",
+        "web-ui",
+        "latex-ocr",
+        "ai-pdf-chatbot-langchain",
+        "memvid",
+        "screenshot-to-code",
+        "chatall",
+        "numpy-ml",
+        "pipecat",
+        "videocaptioner",
+        "mnn",
+        "burn",
+        "doris",
+        "ragas",
+        "figma-context-mcp",
+        "docker-android",
+        "gitingest",
+        "pentestgpt",
+        "opensandbox",
+        "banana-slides",
+        "plandex",
+        "chatglm2-6b",
+        "ggml",
+        "qm",
+        "easy-dataset",
+        "botpress",
+        "openmythos",
+        "keepchatgpt",
+        "rd-agent",
+        "llmware",
+        "unity-mcp",
+        "llama-chinese",
+        "imgaug",
+        "ai-goofish-monitor",
+        "agents",
+        "casdoor",
+        "chatterbot",
+        "waoowaoo",
+        "dlib",
+        "hermes-desktop",
+        "nni",
+        "deeplearning4j",
+        "agent-framework",
+        "nanobrowser",
+        "open-llm-vtuber",
+        "semantica",
+        "browseros",
+        "tvm",
+        "opencode-ai-opencode",
+        "needle"
+      ],
+      "estimateKiB": 7031983,
+      "elapsedMs": 433065,
+      "reports": [
+        {
+          "name": "plate",
+          "reportSha256": "266c476fba591caa4f29a0add7df4def1b7bda18938d6e883ba6c2ab1e509f22",
+          "reportBytes": 50759,
+          "scorePercent": 79,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "web-ui",
+          "reportSha256": "49abdea41c88f76720a537d055b1a259d0f0eb64b2b3f62b578f536c35dba2ea",
+          "reportBytes": 45066,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "latex-ocr",
+          "reportSha256": "398505a8dae5d2143e495694f8d36469355c1550e217d88cc9a465e810eaf435",
+          "reportBytes": 45205,
+          "scorePercent": 18,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ai-pdf-chatbot-langchain",
+          "reportSha256": "7c6d5dd8b68907e5d12d22f2f4a8b4353f25910151ea52d094fc16cb6d5aae88",
+          "reportBytes": 44850,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "memvid",
+          "reportSha256": "9ecce30882782b01694a653629620f1fa58c0400a21a306a835b77109b22c406",
+          "reportBytes": 44986,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "screenshot-to-code",
+          "reportSha256": "1816228f94767e7ea703dd7a3902ba9a2faab4e030f629d25662d169f5daf416",
+          "reportBytes": 45096,
+          "scorePercent": 16,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "chatall",
+          "reportSha256": "1a4c8be1e81a09d53fc783fe55fe5111c27050221ef9ed302a7e9beabb10b4ce",
+          "reportBytes": 45287,
+          "scorePercent": 42,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "numpy-ml",
+          "reportSha256": "bcac0bf3f0204c390bec5a1e0f28faec6a1f1439e80220ed1d13af442bb4e8d6",
+          "reportBytes": 44948,
+          "scorePercent": 29,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "pipecat",
+          "reportSha256": "0ab3f5b67c89a36563474d7e6c535dcc8f830b364c79f6efa60d048884d1a751",
+          "reportBytes": 45861,
+          "scorePercent": 84,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "videocaptioner",
+          "reportSha256": "35f583787ecc943c80bc4cf44e137e47940630fe109574d7e07ac7f64eff9894",
+          "reportBytes": 44920,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "mnn",
+          "reportSha256": "a0560473bb78e4022045584e2a45d7c1dc4d835ea77415ad5d609ea6776d31af",
+          "reportBytes": 45005,
+          "scorePercent": 63,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "burn",
+          "reportSha256": "f1502e097eeeda17063c2024bb061480d28306079bc9df82a7d77b99b71fcfc7",
+          "reportBytes": 45222,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "doris",
+          "reportSha256": "b52b1f901618566d085d639630b1ee3f3db43dee4ded919fb7f4d2b31ad68337",
+          "reportBytes": 45423,
+          "scorePercent": 70,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "ragas",
+          "reportSha256": "0fc8f7c3c833ed232e1e1b4884d1760028b1d8a59cdee74931e1d15dcfb9240f",
+          "reportBytes": 45191,
+          "scorePercent": 70,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "figma-context-mcp",
+          "reportSha256": "688745a58424eb51cc842f95a079a8412e4290072d4a0a9ddcaf4bb880bd9103",
+          "reportBytes": 44975,
+          "scorePercent": 63,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "docker-android",
+          "reportSha256": "0b4259502e1005efb5d18e8bccb3fff9fc41c691803831368f3a2178b667e103",
+          "reportBytes": 45306,
+          "scorePercent": 28,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "gitingest",
+          "reportSha256": "d5d27540f0a848398230b6f27fa147d8f734511640b271cee9909d1678ea6c71",
+          "reportBytes": 45061,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "pentestgpt",
+          "reportSha256": "8f7be94d21921e86f93d15c07eb4b5400690149598ab65e3ffaaa6de66b79173",
+          "reportBytes": 44944,
+          "scorePercent": 66,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "opensandbox",
+          "reportSha256": "1d9c96f8e8912cbcf011d900a0fc4f40517f0befde7e2e37880cbd2b6ed0640e",
+          "reportBytes": 45731,
+          "scorePercent": 73,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "banana-slides",
+          "reportSha256": "97511bd3c67393870b5a1457465f09af86b6f314f0fd8d6fb35cf6d5833f1966",
+          "reportBytes": 45089,
+          "scorePercent": 51,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "plandex",
+          "reportSha256": "8cbd8f393d881ebc50f25bb48b4d8ade7b8ca1e12b5c0cf632d6cb8b8b0e98ac",
+          "reportBytes": 45037,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "chatglm2-6b",
+          "reportSha256": "84ef1e1423250bf30e5107ab28759da9c268281db9d792e514dd08f52e7e0f2f",
+          "reportBytes": 45063,
+          "scorePercent": 14,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ggml",
+          "reportSha256": "53439edc6e798afadc792532dd58fa0b5f73bcc0cf6a272fa99b26958591c88a",
+          "reportBytes": 45226,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "qm",
+          "reportSha256": "004a940a8f8928e32a2da61d5e9a37293d3f350b8c1434e90afc462404bad475",
+          "reportBytes": 46414,
+          "scorePercent": 64,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "easy-dataset",
+          "reportSha256": "8880f90f1f1b57f48ce9d3f681c4f3b7ace32034189fb748b973bc8e4dbcc33f",
+          "reportBytes": 45060,
+          "scorePercent": 37,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "botpress",
+          "reportSha256": "228a06a4c940364b82a154b76992d9d68bf188ab4142ed672eca837fda604028",
+          "reportBytes": 45558,
+          "scorePercent": 58,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "openmythos",
+          "reportSha256": "bd31e67845a572c246de5be74c0122e6d4a44cbc96c07930eff6fee946098e08",
+          "reportBytes": 45086,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "keepchatgpt",
+          "reportSha256": "8f1b78e75dc03060088cd873396a4c7d3f1290d21a432123af9b53e33bcfcb3a",
+          "reportBytes": 45051,
+          "scorePercent": 35,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "rd-agent",
+          "reportSha256": "1a4e343bbe5999cca148385bd00a0d1cd4748172b5e4b6838547cf90857a26cf",
+          "reportBytes": 45236,
+          "scorePercent": 61,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "llmware",
+          "reportSha256": "9488687258e4af40428fb1b7e3bf0de2950234969fd5932a20e0675620eaf928",
+          "reportBytes": 45215,
+          "scorePercent": 27,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "unity-mcp",
+          "reportSha256": "d2c5beb1b13d32564afdd02294865eb5adc9c07d21f6da0bfd625001cf095a5a",
+          "reportBytes": 45737,
+          "scorePercent": 54,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "llama-chinese",
+          "reportSha256": "a0e2fc9db3c8c00cf5664f8c8aba527245bc9a5e4bfe3fe3837f0836d6950dcf",
+          "reportBytes": 45261,
+          "scorePercent": 16,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "imgaug",
+          "reportSha256": "fce94979eb0da4ed30f1d5559db1754fabdc2ca46ba80d7bb148c81c5f97135f",
+          "reportBytes": 45024,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ai-goofish-monitor",
+          "reportSha256": "d90e9b08156da0845d00925a782b15d7e901efd5e5c51a7bc560c72516f12033",
+          "reportBytes": 44998,
+          "scorePercent": 43,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "agents",
+          "reportSha256": "be25e1bc2edc3a3d35afc2a0336de378c6a4f51530ae5cf537ba364600085d05",
+          "reportBytes": 44956,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "casdoor",
+          "reportSha256": "9439653c8dde653e7c085ecab55b26929098d9d6d1894353ac708e9f1bf116c7",
+          "reportBytes": 45095,
+          "scorePercent": 51,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "chatterbot",
+          "reportSha256": "9e5b109de6112c4eccfe513e12700058a70ab3ae01bb35c3ef5532f75414661b",
+          "reportBytes": 45450,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "waoowaoo",
+          "reportSha256": "b4802451faf9aa104ed1f847fc4449ac364453a2d58bdc5e8bce2bd2ecf21058",
+          "reportBytes": 45212,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "dlib",
+          "reportSha256": "8477872aa12886bb64d8a00000b0a60e2f2e73d717fb6ad3661e8214dd04ffdf",
+          "reportBytes": 45370,
+          "scorePercent": 28,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "hermes-desktop",
+          "reportSha256": "489ed45a95458516d647747ff93b86d2395884c675b7cd0e299928ca7eb5cf6d",
+          "reportBytes": 45384,
+          "scorePercent": 78,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "nni",
+          "reportSha256": "d48a697e2a697e0e9fd214a4555e40534ebfd5636e80bc47af89cb76d1ecfec8",
+          "reportBytes": 45503,
+          "scorePercent": 38,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "deeplearning4j",
+          "reportSha256": "5749cc1a2afc72f0e8619deb1597b37f7f774dbcc96c8191aac6e88cf7cec268",
+          "reportBytes": 45442,
+          "scorePercent": 40,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "agent-framework",
+          "reportSha256": "fd27b162825003766a007e4cda8a19af34c43bff9a26ed031190867ff4f6cd53",
+          "reportBytes": 45587,
+          "scorePercent": 58,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "nanobrowser",
+          "reportSha256": "91344e80ac05884f432fcfbf40ef6c690caf8b17cac5e307affb2e370d1e5a39",
+          "reportBytes": 45177,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "open-llm-vtuber",
+          "reportSha256": "dc0d1fdccb8cfc505233135479374f18e7e1f8397885adedec871098f7fddec1",
+          "reportBytes": 45141,
+          "scorePercent": 55,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "semantica",
+          "reportSha256": "fc722ff8ea939e05ca2c464cd10f65b9b58a37ca22cc45e3f96364ae2f5f76ed",
+          "reportBytes": 45175,
+          "scorePercent": 62,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "browseros",
+          "reportSha256": "c21c81303d8fd0e434baae8d03f0292caafc70037196eb526d4644503179c487",
+          "reportBytes": 45961,
+          "scorePercent": 75,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "tvm",
+          "reportSha256": "966497237b8a0063859e14f121b86a93c8edcadc9a297001cf97f77761a12698",
+          "reportBytes": 45673,
+          "scorePercent": 61,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "opencode-ai-opencode",
+          "reportSha256": "9b23c254193ce754d979019ca1b908311cfab4f9422e155633d18f4097208369",
+          "reportBytes": 45036,
+          "scorePercent": 39,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "needle",
+          "reportSha256": "fcb7ff3dd3a78513889e97149b3ed096536a2dbdf583442d6413e5f844d076d6",
+          "reportBytes": 44954,
+          "scorePercent": 39,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 50
+    },
+    {
+      "batch": 11,
+      "batchRunId": "ai-popularity-500-batch-11",
+      "names": [
+        "omi",
+        "md",
+        "speech-to-speech",
+        "everos",
+        "pr-agent",
+        "eino",
+        "langchain4j",
+        "video-subtitle-remover",
+        "gateway",
+        "nofx",
+        "txtai",
+        "pytorch-grad-cam",
+        "llm",
+        "ida-pro-mcp",
+        "hexstrike-ai",
+        "openllm",
+        "chandra",
+        "inbox-zero",
+        "shell-gpt",
+        "trae-agent",
+        "reader",
+        "crucix",
+        "train-llm-from-scratch",
+        "bisheng",
+        "lmcache",
+        "fluidvoice",
+        "h2ogpt",
+        "ludwig",
+        "tensorzero",
+        "cleanlab",
+        "camofox-browser",
+        "loop-engineering",
+        "kornia",
+        "openchamber",
+        "narratoai",
+        "ekko-studio",
+        "dalle2-pytorch",
+        "wandb",
+        "promptflow",
+        "pocketflow",
+        "tambo",
+        "mlalgorithms"
+      ],
+      "estimateKiB": 6266887,
+      "elapsedMs": 624750,
+      "reports": [
+        {
+          "name": "omi",
+          "reportSha256": "4da5cf063700ae38addf7a7c8d02a61d0bce7251a19230e00ff2d02fa12a6110",
+          "reportBytes": 46143,
+          "scorePercent": 73,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "md",
+          "reportSha256": "a6294374315484f32480bc11b27a48f379bdfec84bee881c8f25da71aecb625c",
+          "reportBytes": 46052,
+          "scorePercent": 69,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "speech-to-speech",
+          "reportSha256": "89f7feba299b25ad1fb6e708539b001f9d457df6e7460479d1c7d45c8c3e7061",
+          "reportBytes": 45246,
+          "scorePercent": 54,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "everos",
+          "reportSha256": "756a6084e90930adc85c7f233664b4c975aad283cd79c0893ad4a936e8a74f4d",
+          "reportBytes": 45932,
+          "scorePercent": 79,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "pr-agent",
+          "reportSha256": "522f794d07a8e5af2e93b7e30d2fc80200ae45b778843e1aa7ba490fa1d8e654",
+          "reportBytes": 44998,
+          "scorePercent": 56,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "eino",
+          "reportSha256": "4804c0956fad1a1539bcf5443694da35ceab52fec763af4225dd868f17065cc2",
+          "reportBytes": 45024,
+          "scorePercent": 49,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "langchain4j",
+          "reportSha256": "e5b9917c861bfa2a313d49f5d2048ccdac051136831140d5f2c0e2103f5747ff",
+          "reportBytes": 45329,
+          "scorePercent": 46,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "video-subtitle-remover",
+          "reportSha256": "4a807520acd7b42cd379b74fe641e45d427e2a8df06b3f78d4a5cf677bdef015",
+          "reportBytes": 45290,
+          "scorePercent": 27,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "gateway",
+          "reportSha256": "9584a00a333e58cd46c8a11c72f72f76449083481e795ee918997b13219c963e",
+          "reportBytes": 45209,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "nofx",
+          "reportSha256": "77a644f7b3dc9c1545dae05dc3aeee7bb0f0fc23677268036dddc67730c88f35",
+          "reportBytes": 45144,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "txtai",
+          "reportSha256": "52bed2e10c9e59af03395dbfd9033ace0d9a18669aa2f634852e3cba440b0c8f",
+          "reportBytes": 45329,
+          "scorePercent": 35,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "pytorch-grad-cam",
+          "reportSha256": "0a7311b430b7d1a1fcfb9db4c3823fd51b3128e7e368d141a8118de4d335fc0d",
+          "reportBytes": 45078,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "llm",
+          "reportSha256": "dab18fde2590654d2d74d1a6f08b5040daec21b6b354e4262b261dac08464f50",
+          "reportBytes": 45049,
+          "scorePercent": 49,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ida-pro-mcp",
+          "reportSha256": "bdbebbc0c861d92223c2eed8c29c1d2794727d1795d345903c21a916a910fdb6",
+          "reportBytes": 44967,
+          "scorePercent": 54,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "hexstrike-ai",
+          "reportSha256": "65dc599b2c1229fb1e1af70b6a53c6f02264531a1a53479a8b17abd92d5e62a6",
+          "reportBytes": 45020,
+          "scorePercent": 16,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "openllm",
+          "reportSha256": "17e76144230f602ba400b2be70bf8cad5c2aa2f6e43a3375e8db40fe61102e89",
+          "reportBytes": 45021,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "chandra",
+          "reportSha256": "d69b36dae6d642eb635b34fa4871159d488233fd88b34d52c64ecc9159158b94",
+          "reportBytes": 44957,
+          "scorePercent": 39,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "inbox-zero",
+          "reportSha256": "bfa59c42175b54946abd93e44a53c6d3a13f3becbc9410d7626cb2ffa7870b97",
+          "reportBytes": 46000,
+          "scorePercent": 82,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "shell-gpt",
+          "reportSha256": "ef99609405ed37f19d9e1eff10b7ac29316af373802118c43066ae2a89f57f85",
+          "reportBytes": 45201,
+          "scorePercent": 37,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "trae-agent",
+          "reportSha256": "9d3b8336f46d167857b57d7c4bdc76f088d7ca005ff0adc7b8abc683c1daa571",
+          "reportBytes": 44986,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "reader",
+          "reportSha256": "95cc0155493f18dec5247b55d1cc5a1510e22a1b5560c90e04be248e32158db2",
+          "reportBytes": 45318,
+          "scorePercent": 51,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "crucix",
+          "reportSha256": "597507ed3ad10b9096a6952a76655e36f5febb58ef22cfac26de9082f82ebbc8",
+          "reportBytes": 45052,
+          "scorePercent": 32,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "train-llm-from-scratch",
+          "reportSha256": "5213269c19dc71a90cfaa172362b44083da22b9fa8b945b49de3ab239a5477a7",
+          "reportBytes": 44822,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "bisheng",
+          "reportSha256": "54a5c5569394d989416ce9d862b5c402f7d04ec9041538bf3d1ba361f18e9799",
+          "reportBytes": 46487,
+          "scorePercent": 84,
+          "level": 4,
+          "truncated": false
+        },
+        {
+          "name": "lmcache",
+          "reportSha256": "b00585f95ebd618769cd7c1977d98cb04f61ba448d301814a31e78d87b68dfe7",
+          "reportBytes": 45301,
+          "scorePercent": 71,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "fluidvoice",
+          "reportSha256": "b97179d816287a58178361ceba52b9aaa4974e41fd8213371deb268d73261101",
+          "reportBytes": 45310,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "h2ogpt",
+          "reportSha256": "3c3f7c0fc1a3b46ad4191ecbc5ec0d929f3dbddc623a365288a26426737c0e34",
+          "reportBytes": 45082,
+          "scorePercent": 24,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ludwig",
+          "reportSha256": "d95556a849c12ac7c2e8a4753a0ccf94c0419f9df512d27f4a126c08fb162e80",
+          "reportBytes": 45570,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tensorzero",
+          "reportSha256": "e39988d0fd80f415e1516058283b04f40a0ec00830d570f18760a85e7be83a78",
+          "reportBytes": 45388,
+          "scorePercent": 70,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "cleanlab",
+          "reportSha256": "03a298dceff439c1b3e090c0473bb277ab37ddf2df1d0cad317aa786a4b498f2",
+          "reportBytes": 45160,
+          "scorePercent": 42,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "camofox-browser",
+          "reportSha256": "39b9a2d5142188e329fb8800c567bd4097e19186d770c09c8ab38088345be91f",
+          "reportBytes": 45213,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "loop-engineering",
+          "reportSha256": "ed296c14446d76989e37f8c1ae2729467497591eebfb2ae1022863a5a2333e9b",
+          "reportBytes": 45692,
+          "scorePercent": 71,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "kornia",
+          "reportSha256": "9c50c1c6dc8a1eb620ca5db1e88ff6a3c2387915a6428e223a902b4f984c32c4",
+          "reportBytes": 44856,
+          "scorePercent": 66,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "openchamber",
+          "reportSha256": "a37381573f6e073e7f77df80136bd3e316e1a3e1cf7e401bb9dfc89041c5483f",
+          "reportBytes": 45917,
+          "scorePercent": 63,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "narratoai",
+          "reportSha256": "d5f1f5a2fbbaeddbce6f51edde55e55a22a065b4e5fb6dfd5eda78307a17ea91",
+          "reportBytes": 45395,
+          "scorePercent": 24,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ekko-studio",
+          "reportSha256": "0091fa805f375c094b1459757c264f79381277393e94fa4e0c992eda8003442f",
+          "reportBytes": 45285,
+          "scorePercent": 47,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "dalle2-pytorch",
+          "reportSha256": "e7a2f23785d7a6747f1870e37de2c2f199a0c90e726202b3b920912c06719778",
+          "reportBytes": 45260,
+          "scorePercent": 26,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "wandb",
+          "reportSha256": "80683aa95183ba58d703d739ae0d55e5c386d3f8d8b4096b2b9331e621d8d9e3",
+          "reportBytes": 45457,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "promptflow",
+          "reportSha256": "b99b687f5b0f89b7b37d5a8ba5852dcfe1be4aa40503eaa5fee11a05086b9ed1",
+          "reportBytes": 45478,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "pocketflow",
+          "reportSha256": "6b8aa125f73a623f75d14479da66b679f64b7eed071e3dc28a62aa371e11b662",
+          "reportBytes": 45398,
+          "scorePercent": 30,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "tambo",
+          "reportSha256": "25b70007c7ead2b6c511d3080e6101cfa22d6697b19200c0d4d737ef9974614d",
+          "reportBytes": 45749,
+          "scorePercent": 87,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "mlalgorithms",
+          "reportSha256": "d196b7f4991722ca1930cc93b9fa9db7c1f2ca134d19e1c71643150b2370d0e3",
+          "reportBytes": 45078,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 42
+    },
+    {
+      "batch": 12,
+      "batchRunId": "ai-popularity-500-batch-12",
+      "names": [
+        "fiftyone",
+        "bytebot",
+        "server",
+        "presenton",
+        "spring-ai-alibaba",
+        "openvino",
+        "llama-gpt",
+        "tyk",
+        "open-swe",
+        "mistral-inference",
+        "doccano",
+        "tabnine",
+        "voltagent",
+        "omnigent",
+        "denoising-diffusion-pytorch",
+        "skypilot",
+        "krita-ai-diffusion",
+        "x-anylabeling",
+        "openui",
+        "aichat",
+        "runanywhere-sdks",
+        "pandawiki",
+        "metaflow",
+        "inkos",
+        "internvl",
+        "bindu",
+        "sktime",
+        "tpot",
+        "ufo",
+        "sonnet",
+        "feynman",
+        "computervision-recipes",
+        "gorse",
+        "cai"
+      ],
+      "estimateKiB": 7996260,
+      "elapsedMs": 447312,
+      "reports": [
+        {
+          "name": "fiftyone",
+          "reportSha256": "82d33530abe8cce2045ec12ee4ebde9e9f892b51d1ae7c14669c5112cc5c3500",
+          "reportBytes": 45350,
+          "scorePercent": 65,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "bytebot",
+          "reportSha256": "259cbeb0dc8bab09a13b5af9ee294a8ef27f1fd2e3e14ce7b65dc12099039ec3",
+          "reportBytes": 45431,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "server",
+          "reportSha256": "153a3658fa3f9c234942335ad7dcc61e4fc0d91b7ce34e1299a47d00bdb471b6",
+          "reportBytes": 45338,
+          "scorePercent": 27,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "presenton",
+          "reportSha256": "5f6117cedec62385dd218eb5caab4e77d81b34335f45dc1264c5f1ff2e579a0f",
+          "reportBytes": 45575,
+          "scorePercent": 46,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "spring-ai-alibaba",
+          "reportSha256": "8ea4a80991b6b945bccf5422c06473ec3bff9e985c4ac98d2418a5572605b94e",
+          "reportBytes": 45641,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "openvino",
+          "reportSha256": "6d07046ecfbebe0df1734390ab19c590246dba60819af1152519fe3a4d45e628",
+          "reportBytes": 45874,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "llama-gpt",
+          "reportSha256": "12acc6f1c662dd0d473cb7ff8d0be7ac393b7c30bb4464dbd22b0d30645a8866",
+          "reportBytes": 44947,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tyk",
+          "reportSha256": "1f3bbce0512321d3d0cbafb12666dd32d247757aee016bdbe547c724cca1a0f0",
+          "reportBytes": 44965,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "open-swe",
+          "reportSha256": "623b5898430e9f978f41a1244da89f2b1555c297a5930f1aa8eabd36485c5f82",
+          "reportBytes": 45536,
+          "scorePercent": 77,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "mistral-inference",
+          "reportSha256": "07cc1884450ce253d52e7601ab082002725df458ef7e8d0aff5dab5ec00b0932",
+          "reportBytes": 44847,
+          "scorePercent": 40,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "doccano",
+          "reportSha256": "47e0d3076195de4e8c487a98758974a91d74c14f0e1489d6a5fcbead7c9df695",
+          "reportBytes": 45007,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tabnine",
+          "reportSha256": "d56a13f78e4afa599cca17b2cc9461659a782ccde44fbf85d82dd7478e6651d3",
+          "reportBytes": 45101,
+          "scorePercent": 18,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "voltagent",
+          "reportSha256": "724804d3894e5c88ce9adf491699c288cbba36512c7459a9ad333c044a0fb115",
+          "reportBytes": 45613,
+          "scorePercent": 69,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "omnigent",
+          "reportSha256": "a9961f2392b9e9527b50b8bf19e2bdb12b744c4ecb46691e776e612bc8d21b96",
+          "reportBytes": 45628,
+          "scorePercent": 77,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "denoising-diffusion-pytorch",
+          "reportSha256": "afbd535f8431d9c6afa90c42b766239d022145e8c205231bcf48dd3769c1aa06",
+          "reportBytes": 45223,
+          "scorePercent": 18,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "skypilot",
+          "reportSha256": "9aa9beb2758c9e0ecaa671c5a7b3ae6fb41c25f460294637456547b62632feeb",
+          "reportBytes": 45144,
+          "scorePercent": 68,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "krita-ai-diffusion",
+          "reportSha256": "d1eea833d862471c22b25c5bf9358e1f565c445f1100051b219d7961555eed9d",
+          "reportBytes": 44870,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "x-anylabeling",
+          "reportSha256": "5cf240bb3c44a632fad3be8352b0ef70b39617a076f5122aa8e91444be6eb4a9",
+          "reportBytes": 45125,
+          "scorePercent": 44,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "openui",
+          "reportSha256": "35192eb635d0535253fb49463316b4534826b477f1bf5ccc83b159311b7fe124",
+          "reportBytes": 45548,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "aichat",
+          "reportSha256": "0b80f463693e8a2c14d26b40cbd01b2917f9e28641c5b139643ce65c1e1feb79",
+          "reportBytes": 45044,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "runanywhere-sdks",
+          "reportSha256": "216bdff5a4e2fa185a944a63e2eadb02c94981ae69647dcc067f41bc3d41257a",
+          "reportBytes": 45830,
+          "scorePercent": 76,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "pandawiki",
+          "reportSha256": "3137ed2d97d03f62f4d8b3aa510bb99dc038fe98739aa4f33d9ca47272a6675d",
+          "reportBytes": 45093,
+          "scorePercent": 56,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "metaflow",
+          "reportSha256": "ba27582961e471e845e5fffb93330f9522f4590f12a6769b4f02ce95e9b7a92d",
+          "reportBytes": 45272,
+          "scorePercent": 54,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "inkos",
+          "reportSha256": "5e93fa264d539c2ff75de770569e5bdb29551b5007bb5663aa071e99534824ce",
+          "reportBytes": 45043,
+          "scorePercent": 43,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "internvl",
+          "reportSha256": "e6151a8933e92f442c911aa227bd0e17c11b82000e12f6afd7ae6441b4188f82",
+          "reportBytes": 45140,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "bindu",
+          "reportSha256": "6c8a6612837d244970522a391194d8f2e1b8479ab3b3372b8fa82bde6bc6300d",
+          "reportBytes": 45313,
+          "scorePercent": 71,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "sktime",
+          "reportSha256": "dfc57af7b0d35da05dc7d2a9e4bfe0b5fccda6a31f7651abd60004bad7cb16ec",
+          "reportBytes": 45404,
+          "scorePercent": 38,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tpot",
+          "reportSha256": "9bb424ab4b4a712de85a4dd8a1a43d2dabb5c29fffe3224b3095238e5dbb6c0c",
+          "reportBytes": 45276,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "ufo",
+          "reportSha256": "ac3d5883d71d7bc3c8bb7191c1e494f183a3c854140c3da320b0b3bc819caa1e",
+          "reportBytes": 45169,
+          "scorePercent": 28,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "sonnet",
+          "reportSha256": "e9a84890b29ab7e144cf39293cfc00209b31bb29559a920e09488ed8cbc3736a",
+          "reportBytes": 45084,
+          "scorePercent": 26,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "feynman",
+          "reportSha256": "a44b3ea1b679ad64f352657a36e9c4913b94acacb8c0ad668ef42ee66b66a983",
+          "reportBytes": 45335,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "computervision-recipes",
+          "reportSha256": "356c23ab1994ed48014b1204eee4f64731be77b7fd173e7e0ff417b16f8c620e",
+          "reportBytes": 45538,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "gorse",
+          "reportSha256": "f1a003d3a31e05569084d36694c1647931b90fb190327ac1be9561a68260daf4",
+          "reportBytes": 44975,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "cai",
+          "reportSha256": "c3f0e7529a19ace014abf108467cc54447a44726d80d789d468e67b9218da36d",
+          "reportBytes": 44961,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 34
+    },
+    {
+      "batch": 13,
+      "batchRunId": "ai-popularity-500-batch-13",
+      "names": [
+        "powerinfer",
+        "graft",
+        "rf-detr",
+        "ralph-claude-code",
+        "ltx-2",
+        "inference",
+        "horizon",
+        "tflearn",
+        "spring-ai",
+        "cog",
+        "oneflow",
+        "oumi",
+        "flexllmgen",
+        "autokeras",
+        "xianyuautoagent",
+        "autoclip",
+        "deeplake",
+        "modelscope",
+        "morphic",
+        "evolver",
+        "catboost",
+        "cnn-explainer",
+        "imageai",
+        "bentoml",
+        "astron-agent",
+        "pattern",
+        "adk-go",
+        "ipex-llm",
+        "rig",
+        "transformer-explainer",
+        "mage-ai",
+        "chatgpt-shortcut",
+        "harness-sdk",
+        "var"
+      ],
+      "estimateKiB": 7895420,
+      "elapsedMs": 423471,
+      "reports": [
+        {
+          "name": "powerinfer",
+          "reportSha256": "3f5801690a437b527e8929b63ebf947226f0012e2494d73093b56d8eb5a8843d",
+          "reportBytes": 45294,
+          "scorePercent": 45,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "graft",
+          "reportSha256": "443ec637051af6c161b31f8994b16861bce5a8b8a34fa45ffa5e7dc1b5d5c0db",
+          "reportBytes": 45197,
+          "scorePercent": 51,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "rf-detr",
+          "reportSha256": "da813ca56438d7ae67105928ae762ec28f35bcb81d5544a05cd1d9aafce940fd",
+          "reportBytes": 45191,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "ralph-claude-code",
+          "reportSha256": "a03770e06441ada545e962a03f954a1f6acff7aebb433288f267c6f99af0260d",
+          "reportBytes": 45189,
+          "scorePercent": 43,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "ltx-2",
+          "reportSha256": "188953c147fc6428c620979eeaa2a19492b534580881a256cf7ab1f0bb4dc7f7",
+          "reportBytes": 45281,
+          "scorePercent": 40,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "inference",
+          "reportSha256": "2f7da10f8af397ad9cecb3bdf5ee2a8c3f8322a1b6bf036cac995fd17f50854c",
+          "reportBytes": 45535,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "horizon",
+          "reportSha256": "b27e0c42a8bbbb869a839392593c60781d8e42e6e96a1df10ad59c0826ee0e8d",
+          "reportBytes": 44941,
+          "scorePercent": 32,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tflearn",
+          "reportSha256": "3c1ca8a4db1d7d73e51cc016bbbd5ccc297a9d830ddd5eee9dfade9f6f4dbe33",
+          "reportBytes": 45241,
+          "scorePercent": 17,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "spring-ai",
+          "reportSha256": "9b47cccdde58d0199f7e3add7a39ca4b1545b2e1c72eccc90b916ba472c6e383",
+          "reportBytes": 45353,
+          "scorePercent": 54,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "cog",
+          "reportSha256": "9699fccfe5397cd5f152b18d4ae1568fe31b636b219822302c7c5e5ca8060783",
+          "reportBytes": 45471,
+          "scorePercent": 66,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "oneflow",
+          "reportSha256": "f55f99b36e6eae5edf2efe6248dfb2eb8c24468796705e4bb9a8b59d00c784d7",
+          "reportBytes": 45293,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "oumi",
+          "reportSha256": "95f3cac58abe692a0d1fea8bf2dad910005b34a23a940ea802f2791b92e05128",
+          "reportBytes": 45128,
+          "scorePercent": 54,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "flexllmgen",
+          "reportSha256": "6ca6fac552745f0ab6192cc87a950e539b5fa93acc162102faa23453a8428a5d",
+          "reportBytes": 45746,
+          "scorePercent": 32,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "autokeras",
+          "reportSha256": "584fd8f36b7ff9ff807c7e21a84cf12aa6cabffd086c7480e252ef297800c7f8",
+          "reportBytes": 45331,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "xianyuautoagent",
+          "reportSha256": "57d76e97256e04562a3e78580a29361e6214a82d64546510bcfa57a88684bbc9",
+          "reportBytes": 45047,
+          "scorePercent": 21,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "autoclip",
+          "reportSha256": "047bf47097ae51d9de5790484e52b5e7e3090b99facf684980eb80a2363fe99c",
+          "reportBytes": 45178,
+          "scorePercent": 62,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "deeplake",
+          "reportSha256": "c773a505e57fe0a18d6602ef827d1ae21498611e57f6b7887a5c39684caf8d02",
+          "reportBytes": 45308,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "modelscope",
+          "reportSha256": "ecf50cb4cf6515727ef48d42cb7b7f4d45a396b7f31283b5f4a552b941371fc6",
+          "reportBytes": 45296,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "morphic",
+          "reportSha256": "8c657cb30dc179fa2fceb2997b726fc959ac218b7c8d5cd8e2b1a190f6d62652",
+          "reportBytes": 45273,
+          "scorePercent": 58,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "evolver",
+          "reportSha256": "0d6f38d1b664d88e00f26b5331e0e1b690378c7b9b7efdfed10f763794a0d4d8",
+          "reportBytes": 46265,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "catboost",
+          "reportSha256": "a48dbb2447bf1df0cf77d030235e245c858b74818974b5f5a34f42913b0a37ed",
+          "reportBytes": 45510,
+          "scorePercent": 39,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "cnn-explainer",
+          "reportSha256": "4bbce95989947ac12dcf5180b93ea20cb986ba48a875289d833d6a1b33d9bb98",
+          "reportBytes": 45243,
+          "scorePercent": 19,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "imageai",
+          "reportSha256": "42fee49e25d2a55faba0c2220810aa6ca3174a49de7e9d1429996130ebb6c7f9",
+          "reportBytes": 45131,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "bentoml",
+          "reportSha256": "481b0c4c7375d61baf03ffba6c3115885a875e100d7e5391a0968caf47f222ba",
+          "reportBytes": 45119,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "astron-agent",
+          "reportSha256": "1696f63a5f5c3428e7e276aeb79e7ee249e886350ec9441fa86148cdd0a78a79",
+          "reportBytes": 45508,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "pattern",
+          "reportSha256": "3134c664ea17f5ed07570ed6234570145a6a8dae0a535ea91b83986859a995a1",
+          "reportBytes": 45249,
+          "scorePercent": 25,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "adk-go",
+          "reportSha256": "ae4ea6491e812fb80e800f51101bd73f095197bbd3d5f4bd02c96b3ce104de40",
+          "reportBytes": 45020,
+          "scorePercent": 63,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "ipex-llm",
+          "reportSha256": "c5718693cc62d6272704f483a98054dba5b806f79c850c820a0f6dd5bd3a1c2e",
+          "reportBytes": 45412,
+          "scorePercent": 28,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "rig",
+          "reportSha256": "beff961c82e17923d962f0c6de02573d70a776cc1cae87adced4b54d941c6d51",
+          "reportBytes": 45171,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "transformer-explainer",
+          "reportSha256": "cd370494ba2793b4dca478bb97ed64ed6ec5f1386d2311161f5ecdee1499f43d",
+          "reportBytes": 45089,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "mage-ai",
+          "reportSha256": "54e3c04bcb6253ecc3f7d4dcff481d2c207cb0c4187ae2dcec0a62f2d2fb7013",
+          "reportBytes": 45197,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "chatgpt-shortcut",
+          "reportSha256": "69c04cb7f4fb1f3fa440bd00bba43890eedc993b098d43a34bddc86099c5e0a8",
+          "reportBytes": 45156,
+          "scorePercent": 31,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "harness-sdk",
+          "reportSha256": "b0c5b8f28414d332000eeeaba99b8d7f7e57f4603dbc9dbc6f554ca155c02aa7",
+          "reportBytes": 45819,
+          "scorePercent": 78,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "var",
+          "reportSha256": "bafba5d7afddc753c3b035cfdbb16c2a7850bb240897bf17d4bfdfd6b25ca2bf",
+          "reportBytes": 45027,
+          "scorePercent": 18,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 34
+    },
+    {
+      "batch": 14,
+      "batchRunId": "ai-popularity-500-batch-14",
+      "names": [
+        "vowpal-wabbit",
+        "bifrost",
+        "mcp-agent",
+        "operit",
+        "bitsandbytes",
+        "imagen-pytorch",
+        "caffe2",
+        "mini-swe-agent",
+        "dowhy",
+        "optimate",
+        "trax",
+        "octop",
+        "utopia",
+        "bertviz",
+        "tabpfn",
+        "search-with-lepton",
+        "shortgpt",
+        "r2r",
+        "cortex",
+        "evidently",
+        "agent-squad",
+        "flyte",
+        "opencommit",
+        "h2o-3",
+        "chatlab",
+        "generative-models",
+        "goutoujunshi",
+        "openllmetry",
+        "mmagic",
+        "lab",
+        "tensorlayer",
+        "facets",
+        "feast",
+        "unstract",
+        "guardrails",
+        "swarms",
+        "flower"
+      ],
+      "estimateKiB": 7961938,
+      "elapsedMs": 400842,
+      "reports": [
+        {
+          "name": "vowpal-wabbit",
+          "reportSha256": "98b329b461bbe01db4e6f5a8fdc2232aec9aba2a2366cd5b9183739d79f00ed1",
+          "reportBytes": 45255,
+          "scorePercent": 37,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "bifrost",
+          "reportSha256": "d0f6a34d707930aa9cd9d6ce90aef645896c48f21cb7a94577eb3f73322422f9",
+          "reportBytes": 45925,
+          "scorePercent": 56,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "mcp-agent",
+          "reportSha256": "5772e57a2f22c08acc59443d85741cdba4a288979f6c329f886ee13d373a78ab",
+          "reportBytes": 45071,
+          "scorePercent": 56,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "operit",
+          "reportSha256": "cb8bdd8f9821ddd48a4677bb103b162c713cc5f580c8530240a893aaf3839b70",
+          "reportBytes": 45484,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "bitsandbytes",
+          "reportSha256": "d9fa79b830da20ed606539517f41ab2464f1e69300eee164a01b258960589ce2",
+          "reportBytes": 45142,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "imagen-pytorch",
+          "reportSha256": "dee6176bb86270597b5dd6d27b5605849b0689732e7e3949eb73c533b784aa33",
+          "reportBytes": 45346,
+          "scorePercent": 24,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "caffe2",
+          "reportSha256": "b20b0735e89d7eee9ae1e9065aa0f47363ed3b23e7ed85033c7d8cf624ffac60",
+          "reportBytes": 45100,
+          "scorePercent": 18,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "mini-swe-agent",
+          "reportSha256": "6afe08dde0f22b7a4e3e66ba4589ad323810df689bf928488131294e44106ade",
+          "reportBytes": 45296,
+          "scorePercent": 53,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "dowhy",
+          "reportSha256": "5f5579385b6fcda1e8871c9b01669342471a08116178e9513446d44560b4745f",
+          "reportBytes": 45011,
+          "scorePercent": 52,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "optimate",
+          "reportSha256": "86475a2ee47659796acd3ae2fe925449bfd08b7743d1b854858b9c7211e5c5db",
+          "reportBytes": 45440,
+          "scorePercent": 29,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "trax",
+          "reportSha256": "a3c2402e061dcef9c286fc6af472a180efdefc84dff4a1ca689f9c787c87022e",
+          "reportBytes": 45194,
+          "scorePercent": 26,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "octop",
+          "reportSha256": "b6932732d22b42b70156c7479f1d69f5bc1f33b9812ac25d96c80021e971c4ca",
+          "reportBytes": 45433,
+          "scorePercent": 79,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "utopia",
+          "reportSha256": "71c47977291a11eae14f99408c95cce0eec29d67667d00fe879901d382aca820",
+          "reportBytes": 45268,
+          "scorePercent": 46,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "bertviz",
+          "reportSha256": "9d8553b42c11c0b9d3723ac1dedb33c322cdf0fc827060d8c6b730c07dbb705e",
+          "reportBytes": 45309,
+          "scorePercent": 17,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tabpfn",
+          "reportSha256": "82877923b013838f1bfd708b0447dfbfd6a69db13ce31e9638d736359b19fe29",
+          "reportBytes": 45124,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "search-with-lepton",
+          "reportSha256": "6d157efc056fcb93d8eca84278de0e00a3ee1dc1643215787d71c98d371198e6",
+          "reportBytes": 45026,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "shortgpt",
+          "reportSha256": "5a9ade854a00a2a27bf0d372f1df2735cca58ceb071c7fa9f29b6bf22734ccfa",
+          "reportBytes": 45102,
+          "scorePercent": 25,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "r2r",
+          "reportSha256": "84baf28dd7b44cd6cfd7183b85a70b74986b7a6604a0d8bbaccfb3ae66077e2b",
+          "reportBytes": 45149,
+          "scorePercent": 46,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "cortex",
+          "reportSha256": "fd21f6d9575a41ff062f170c0ee1c54f6b5ad8fc6a86c9823ef5abc22549debb",
+          "reportBytes": 44858,
+          "scorePercent": 46,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "evidently",
+          "reportSha256": "c06df96cceea5ad8a497d0d73e874736bfac8a00d8db0b47d85d03e213b13b93",
+          "reportBytes": 45281,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "agent-squad",
+          "reportSha256": "2993daa1e121c5ad9cc6304d9433d7754aefd8c45996c1cb06af7938061d8658",
+          "reportBytes": 45147,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "flyte",
+          "reportSha256": "47e0ad97b223f1ff22eb20742e0bdbb72ed848c83e98a3f24eb1d9d663477a36",
+          "reportBytes": 45297,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "opencommit",
+          "reportSha256": "7315a9872236ea0058d1d1219d1020a6c090b2ea51b704cff7961604711cb5c7",
+          "reportBytes": 45428,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "h2o-3",
+          "reportSha256": "72ec2cffc799c863117c4a95cc43aedad3dd14934ccf6b16882745c5bd2d22c1",
+          "reportBytes": 45465,
+          "scorePercent": 41,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "chatlab",
+          "reportSha256": "9e52483a17771df7d7c253e2a366f806ae2de8b8cd1d16093c3679d85fcd8427",
+          "reportBytes": 45357,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "generative-models",
+          "reportSha256": "846f8298528448178dbd4b76cfa3f9e34cb5f7e7f6d0fb451b6ae2b0e1a29078",
+          "reportBytes": 45119,
+          "scorePercent": 21,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "goutoujunshi",
+          "reportSha256": "36c5c654e2d61a6804eaa4813baa4e9118b653c15d6401622221b90f6ae6ceda",
+          "reportBytes": 45130,
+          "scorePercent": 22,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "openllmetry",
+          "reportSha256": "8ad89c5cc2eab9422507805fe44f6a38d3a47f7d322419af2a61b2128661937f",
+          "reportBytes": 45299,
+          "scorePercent": 40,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "mmagic",
+          "reportSha256": "b6b0658ec4b8ba1af560c74276c32c1e814de574b28b1b693bf4eaa533e935d1",
+          "reportBytes": 45182,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "lab",
+          "reportSha256": "6c80e0f97e5b3a9a15ba2d9d9a2244055f56dbce58b0bafab8a0430f6bdc5661",
+          "reportBytes": 45241,
+          "scorePercent": 28,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tensorlayer",
+          "reportSha256": "774f1307688a7496ddfbd4c78ec3f57fc523843fb3a604f821ca8af7661315a2",
+          "reportBytes": 45221,
+          "scorePercent": 29,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "facets",
+          "reportSha256": "651f2dba7ab4de56a98720bfd73ad79fa3bfc6dc7ac09d0726f2accdb733ca25",
+          "reportBytes": 45236,
+          "scorePercent": 20,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "feast",
+          "reportSha256": "806bbf3f4a1ba037d0e0d8a06855aa59331150ebed6f1304628464c5585d7ea6",
+          "reportBytes": 46237,
+          "scorePercent": 74,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "unstract",
+          "reportSha256": "d3b3ef2c754e7ce03489132b5bb510d89f99bfb7fa7e2ec166fd17441a67a31f",
+          "reportBytes": 45322,
+          "scorePercent": 62,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "guardrails",
+          "reportSha256": "06abc6ddb8e82b11c73f919abfa8c8dad149426f394da67edd2a7d29c17b72dc",
+          "reportBytes": 45230,
+          "scorePercent": 76,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "swarms",
+          "reportSha256": "f788fd22f0a26e2d92108172a0c4c4ead4b3fd521908c69af86d6d86ca919d7a",
+          "reportBytes": 45122,
+          "scorePercent": 53,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "flower",
+          "reportSha256": "f45d00547f7a598e69728c337ac050954506838a3008cd72f90eaedc1822bb01",
+          "reportBytes": 45206,
+          "scorePercent": 62,
+          "level": 2,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 37
+    },
+    {
+      "batch": 15,
+      "batchRunId": "ai-popularity-500-recovered-batch-15",
+      "names": [
+        "plano",
+        "cursor-talk-to-figma-mcp",
+        "deeppavlov",
+        "serpentai",
+        "llm-scraper",
+        "appagent",
+        "postgresml",
+        "pi-desktop",
+        "agent-starter-pack",
+        "anus",
+        "intentkit",
+        "kun",
+        "atomic-agents",
+        "adversarial-robustness-toolbox",
+        "lobsterai",
+        "kserve",
+        "zcf",
+        "gorgonia",
+        "remove-ai-watermarks",
+        "aidlearning-framework",
+        "daft",
+        "decepticon",
+        "potpie",
+        "tick-stock-panel",
+        "maka",
+        "baichuan-7b",
+        "dalle-pytorch",
+        "open-dots",
+        "open-science",
+        "wigolo",
+        "ai-data-science-team",
+        "taskingai",
+        "arcreel",
+        "reasoning-from-scratch",
+        "zotero-mcp",
+        "failproofai",
+        "claude-coder",
+        "h2o-llmstudio",
+        "kaolin",
+        "evoscientist",
+        "monkeycode",
+        "integuru",
+        "koog",
+        "pyrit",
+        "mcp-context-forge",
+        "tree-of-thoughts",
+        "tengine",
+        "longmemory",
+        "embabel-agent",
+        "open-knowledge",
+        "ruby-llm",
+        "cognita",
+        "aliens-eye",
+        "deep-daze",
+        "genai-showcase",
+        "agentic-rag-for-dummies",
+        "adalflow",
+        "segment-geospatial",
+        "baichuan2"
+      ],
+      "estimateKiB": 7074933,
+      "elapsedMs": null,
+      "reports": [
+        {
+          "name": "plano",
+          "reportSha256": "1089ffda7d72461e1f88f00b2e81434930a789bd9411c632315ced2f1c67ec23",
+          "reportBytes": 45169,
+          "scorePercent": 71,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "cursor-talk-to-figma-mcp",
+          "reportSha256": "2a3addb40f805ef56f6460cdbef2f4c9b5574a3409e467cec49d31b01003a8a2",
+          "reportBytes": 45122,
+          "scorePercent": 33,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "deeppavlov",
+          "reportSha256": "b924d94fdd8d2c6f5b1778994a4c1263838891724cd7a93eaa317e227ad258bc",
+          "reportBytes": 45072,
+          "scorePercent": 27,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "serpentai",
+          "reportSha256": "34e1b704aa8ddd40816efa46ef735b2e2507cb972c2df984e0bddeeeae4e92bf",
+          "reportBytes": 45277,
+          "scorePercent": 17,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "llm-scraper",
+          "reportSha256": "145e36c2ed7f986c8d0a41b6b04b945c14c855e662bb554ece78441bef300e46",
+          "reportBytes": 44983,
+          "scorePercent": 35,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "appagent",
+          "reportSha256": "ea08ce5a67d2212d528d05a7843dac10f3d26af87f008fdf5a38236f2d57c757",
+          "reportBytes": 45016,
+          "scorePercent": 16,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "postgresml",
+          "reportSha256": "86d6d6bf9c0ca726c2e340ca606d69ca8dab4019b6b706416c925d1d7c5e2cf6",
+          "reportBytes": 45198,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "pi-desktop",
+          "reportSha256": "20ed4c0f9cf0f9377cf5450be26a4de5806d96443756d289e54c40f39f03b883",
+          "reportBytes": 45636,
+          "scorePercent": 68,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "agent-starter-pack",
+          "reportSha256": "21878d194b3ea0e5c773ba2b1bc9abad3997c67c0def454e0da83b8eb9d26ce0",
+          "reportBytes": 45564,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "anus",
+          "reportSha256": "3e873956c4bbd8e34dc035436ce6caee5637a86900ae8dc6f265eb0b96832db7",
+          "reportBytes": 45098,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "intentkit",
+          "reportSha256": "a96a38993256026041f524b6339ada93b1a5db6f7accdc1fda0f3ff22edc0a78",
+          "reportBytes": 45603,
+          "scorePercent": 65,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "kun",
+          "reportSha256": "2e82fe39340f63d614a2eca8caedf3aada0ecee72490db3d446be30f5667616a",
+          "reportBytes": 45751,
+          "scorePercent": 76,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "atomic-agents",
+          "reportSha256": "ad499a91e17b06e4474281db3c5358500432aec51c889751ed23edb15143e1a9",
+          "reportBytes": 45191,
+          "scorePercent": 69,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "adversarial-robustness-toolbox",
+          "reportSha256": "abba82c3bd69a9b4dc6c57b49855bfee5984ecac893cb38dcb21121e94ad8570",
+          "reportBytes": 45166,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "lobsterai",
+          "reportSha256": "458ca5c21c7803de9024e85c720102fdf45bef1bb91900be7628fbf8be200f18",
+          "reportBytes": 45525,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "kserve",
+          "reportSha256": "005dc21d04c93e92307cac109cc2b51e2f771b872a28b1d310ba8efcd4e5e2ce",
+          "reportBytes": 45112,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "zcf",
+          "reportSha256": "1641ab6d0196982fbdf470a7ebd891f6d7fa7b6d34f55f1b2ab8a11b364def26",
+          "reportBytes": 45203,
+          "scorePercent": 83,
+          "level": 4,
+          "truncated": false
+        },
+        {
+          "name": "gorgonia",
+          "reportSha256": "0a2171297f11cb049c1ed3dc3fba9400a0a8ab10b1b33c44da5d3d54974db358",
+          "reportBytes": 45092,
+          "scorePercent": 40,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "remove-ai-watermarks",
+          "reportSha256": "1c814cbb8e34a074d36cc06ac9aa15f9a155904d3f5c5b6a292cbd8f503e3864",
+          "reportBytes": 45318,
+          "scorePercent": 76,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "aidlearning-framework",
+          "reportSha256": "503e14ce4345c647c7ee5b850316e244e5a6872454d87032e6abbd6b3828d50b",
+          "reportBytes": 45088,
+          "scorePercent": 14,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "daft",
+          "reportSha256": "0932a2fc5e3cabe150dc5063db1954362be363c3887558a40e00cb5ae45de227",
+          "reportBytes": 45574,
+          "scorePercent": 68,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "decepticon",
+          "reportSha256": "09e6947ae8b16a9b9062707b1ed08aecb718c79c822aca9844e4f49c4b59f99c",
+          "reportBytes": 45168,
+          "scorePercent": 64,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "potpie",
+          "reportSha256": "7a5f11b2af710abc66f439db7d93b064c4a915ca3aca905aa15e0b3bf232c352",
+          "reportBytes": 45930,
+          "scorePercent": 75,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "tick-stock-panel",
+          "reportSha256": "ca09e35ac8e39803b762735d6f808b373a23ae4db69e52c56a181752ef898230",
+          "reportBytes": 45124,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "maka",
+          "reportSha256": "906934d4f00d2b6571194a5331db8d33082281410ba6c659b20c78d0c208c4b7",
+          "reportBytes": 45646,
+          "scorePercent": 61,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "baichuan-7b",
+          "reportSha256": "daa00833da3f9fa958533c1dc194bb308333336d5511d9f8137f2e5187c828d2",
+          "reportBytes": 45043,
+          "scorePercent": 21,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "dalle-pytorch",
+          "reportSha256": "472e3cc63923852e83b7a52d0e660f2a25eca80b13635ae1a965008424b62e7f",
+          "reportBytes": 45245,
+          "scorePercent": 22,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "open-dots",
+          "reportSha256": "7b04fad665934e0f5bd8fff97eac17caff15d255ce6f7dee29e5d4e3a5c934b3",
+          "reportBytes": 45165,
+          "scorePercent": 37,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "open-science",
+          "reportSha256": "d8962f31fca0f73bc6c63537174a54a0b6cfcc1e7fa5fceb62d074dbd1437aa3",
+          "reportBytes": 45328,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "wigolo",
+          "reportSha256": "aa476353d5f1aa97b08c69237eb7255049a9f960a7daeafb6b6e88ff140bca06",
+          "reportBytes": 45126,
+          "scorePercent": 58,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "ai-data-science-team",
+          "reportSha256": "b971c47d05d85d0482d5ca46031ede525a2da883c553a08ba3f3deade42f7cc4",
+          "reportBytes": 45052,
+          "scorePercent": 21,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "taskingai",
+          "reportSha256": "2eb0a0d61d3c64c7dcc4b4c5e68dfd8455d604744a04d95e96d5eb00fb30a8f4",
+          "reportBytes": 45239,
+          "scorePercent": 40,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "arcreel",
+          "reportSha256": "05f8208b86ad8bfea1833c6e8043d7cf467eb6d1674671d72a46178d7d8664a8",
+          "reportBytes": 47203,
+          "scorePercent": 85,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "reasoning-from-scratch",
+          "reportSha256": "9dc97df909f085009498e86201d3ddeecaf0b446564edfc4435b62cc5711461e",
+          "reportBytes": 45218,
+          "scorePercent": 47,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "zotero-mcp",
+          "reportSha256": "ab79af639a2556ea56adb5e2b13fb3832d9452e0ad6c9cf6a149a1300ff632d9",
+          "reportBytes": 45220,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "failproofai",
+          "reportSha256": "539cbc038f54b9779aa300f75107f7805ccde91e7fc7e72c85d23f177f1ad5c2",
+          "reportBytes": 47833,
+          "scorePercent": 77,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "claude-coder",
+          "reportSha256": "78cc7d4232cd29859424985e4d2c19bc9c97e52cef1ea530fb475607441beb92",
+          "reportBytes": 45450,
+          "scorePercent": 34,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "h2o-llmstudio",
+          "reportSha256": "010540c9f92b6fb675db882bc8c545a854f07f28152c27ec89ba2b6195cf4c58",
+          "reportBytes": 45329,
+          "scorePercent": 42,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "kaolin",
+          "reportSha256": "8d1fe6109fc5430a06f9ea6311b4025737c4e31e524b3713984331cc69ecdb45",
+          "reportBytes": 44984,
+          "scorePercent": 34,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "evoscientist",
+          "reportSha256": "5e5f3a53c6920fa67202ae2b9e2d1b8d2f6ad529a404319c9bb98e22dcb8d246",
+          "reportBytes": 44956,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "monkeycode",
+          "reportSha256": "db4e2d89aa81a265a483893ebf376265f0b037d0e087d5cc772c1d6ed2fd3f22",
+          "reportBytes": 45360,
+          "scorePercent": 63,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "integuru",
+          "reportSha256": "117c02da2097f1412903c306b10eee7b59b8436df01924ad15ba3b7bead94af7",
+          "reportBytes": 45104,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "koog",
+          "reportSha256": "80169e196502186f24ed9ee368f6d28c797d2ee5635b7c21003cae711f5ec60a",
+          "reportBytes": 45478,
+          "scorePercent": 63,
+          "level": 2,
+          "truncated": false
+        },
+        {
+          "name": "pyrit",
+          "reportSha256": "dc6c49ef79188d3f7b89cadbe6c8f5b2d4cdb7b4160a34e293847abfcea8aa74",
+          "reportBytes": 45567,
+          "scorePercent": 62,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "mcp-context-forge",
+          "reportSha256": "96cf72ed03be7359202d784d93db9aafe88a037d7ad92bfee76ec89a7b2a8e23",
+          "reportBytes": 45483,
+          "scorePercent": 70,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "tree-of-thoughts",
+          "reportSha256": "b76731f8261f70d394091793f114f6e7bd0857d5a8273ab70b1b94e6a8e0aa83",
+          "reportBytes": 45084,
+          "scorePercent": 32,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tengine",
+          "reportSha256": "83eec82bd2961df0d604152b697f399275c6c081b332c8a4acc365f946ae8600",
+          "reportBytes": 45415,
+          "scorePercent": 28,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "longmemory",
+          "reportSha256": "7eafac837ecdb3c5d9ea7b2d8d28e0f2878e73580cb182169b082c968381daf9",
+          "reportBytes": 45604,
+          "scorePercent": 48,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "embabel-agent",
+          "reportSha256": "98372e4c60ed8abf3744736938905ad56f4f9733435114d0f4d41f056ae7c014",
+          "reportBytes": 45199,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "open-knowledge",
+          "reportSha256": "62fce048e45cace84e15e4ee651d652c2484d994706f2abec834bd83b9c57986",
+          "reportBytes": 45336,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "ruby-llm",
+          "reportSha256": "f1046d4be3a9d164609753aa4b2e4438b8e6e0b0ac61a9d53c505132f9ae54f6",
+          "reportBytes": 45258,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "cognita",
+          "reportSha256": "b58ddd9d62008d2bbeebe9d2b14038bf9bb81f75691972165f090b3c7dc52a1e",
+          "reportBytes": 45185,
+          "scorePercent": 39,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "aliens-eye",
+          "reportSha256": "94c13fc4e825ac572c841547611b7a3587816289865968fd7d1872c35122ca26",
+          "reportBytes": 44912,
+          "scorePercent": 44,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "deep-daze",
+          "reportSha256": "c4eb923a9e254c7623104eaf8df600044de2eaec86aa9148a241f5efefa484b3",
+          "reportBytes": 45241,
+          "scorePercent": 22,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "genai-showcase",
+          "reportSha256": "60d9afc265686542e90f65df865b098750e16afa7d1e9817f1208cac1f7e1ff3",
+          "reportBytes": 46160,
+          "scorePercent": 45,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "agentic-rag-for-dummies",
+          "reportSha256": "9a651bffcbf16222d0276aaedf2ec56d183c47b1779ac679dd71d0de42bd73c5",
+          "reportBytes": 45055,
+          "scorePercent": 21,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "adalflow",
+          "reportSha256": "367ca82e5685dd78df2a2815b95eb5a2fca66e84ef957153a0c1be2c9b9addd4",
+          "reportBytes": 45190,
+          "scorePercent": 44,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "segment-geospatial",
+          "reportSha256": "24b09d61e0aacddd1d0a858f146b6c8962acd8fa1620722da4f30d07100593c3",
+          "reportBytes": 45318,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "baichuan2",
+          "reportSha256": "16c60466e5d8623b7cd3a101370dffd22b5b8e652aace8560d61e892d39934dc",
+          "reportBytes": 45017,
+          "scorePercent": 16,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 59,
+      "recoveredAfterWindowsFailure": true
+    },
+    {
+      "batch": 16,
+      "batchRunId": "ai-popularity-500-batch-16",
+      "names": [
+        "fedml",
+        "claude-devtools",
+        "openscience",
+        "litserve",
+        "semantic-router",
+        "lazyllm",
+        "liteflow",
+        "aily-blockly",
+        "openclawchinesetranslation",
+        "whatsapp-chatgpt",
+        "stylegan2-pytorch",
+        "anything-analyzer",
+        "olivia",
+        "acontext",
+        "twinny",
+        "core",
+        "tradingagents-astock",
+        "llm-wiki-agent"
+      ],
+      "estimateKiB": 2502422,
+      "elapsedMs": 199804,
+      "reports": [
+        {
+          "name": "fedml",
+          "reportSha256": "7325edeb81f6ccb807a353dac5cad579d0baed77ebafbff29e2f005e5a3f41db",
+          "reportBytes": 45481,
+          "scorePercent": 35,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "claude-devtools",
+          "reportSha256": "c91d412ad13579a3889937aaa21e6fb4d5a53fecd90ea089ba6a78358831fad3",
+          "reportBytes": 47207,
+          "scorePercent": 84,
+          "level": 4,
+          "truncated": false
+        },
+        {
+          "name": "openscience",
+          "reportSha256": "8d8109713729f9bdede04e6c2ef7a4786ff41d38a209575f025d45083e553ab4",
+          "reportBytes": 45337,
+          "scorePercent": 66,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "litserve",
+          "reportSha256": "f598c5f5badd2e63f5450f7eac7c95daa4c2181e5c4c1042ae3e68435ddf4f19",
+          "reportBytes": 45150,
+          "scorePercent": 48,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "semantic-router",
+          "reportSha256": "6e2456ae0401abc4e553b9fa6902f067df48c05df7161f8b022a491842324c2c",
+          "reportBytes": 44927,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "lazyllm",
+          "reportSha256": "83b6e51ad761be8b4bf6039aceb11b9baa5ac2ea08e2dfed91345ed1dd73d074",
+          "reportBytes": 45021,
+          "scorePercent": 48,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "liteflow",
+          "reportSha256": "efaf64fd224b1fa5f775a89f9c177fcb67e8ac5ffbf75e66964a19177cd498f6",
+          "reportBytes": 45198,
+          "scorePercent": 36,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "aily-blockly",
+          "reportSha256": "028fad860b427c81a903fa796cb7e4e4716b7574a79baf281499a92a557ef29d",
+          "reportBytes": 45200,
+          "scorePercent": 40,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "openclawchinesetranslation",
+          "reportSha256": "1b4f7e6e9e32c42ea3b83de1716d7c74fe2cdd639d501cf5964d7c93214d056e",
+          "reportBytes": 45810,
+          "scorePercent": 33,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "whatsapp-chatgpt",
+          "reportSha256": "bb5a585012c904f280ed2b90f9d2c2cc648a88f5e43cf794c7e78e499e8b5da3",
+          "reportBytes": 45206,
+          "scorePercent": 26,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "stylegan2-pytorch",
+          "reportSha256": "c70660f18b266640988ebcab4f284f53653ea984f92c88413c0fe2f5a4971056",
+          "reportBytes": 45249,
+          "scorePercent": 22,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "anything-analyzer",
+          "reportSha256": "5c9921f9a6c233011ba40e426788a81a7dd5c9358427814250c06189fa3e99ab",
+          "reportBytes": 44915,
+          "scorePercent": 50,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "olivia",
+          "reportSha256": "01a11a52b8c8a58820c57ba1f7832433bf58e80f50c0d6614f269d1bd5a06394",
+          "reportBytes": 44976,
+          "scorePercent": 36,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "acontext",
+          "reportSha256": "9ef505a494df3834c0f7454f801483f8629a395dce2394b8591135ce662a9aa7",
+          "reportBytes": 45648,
+          "scorePercent": 65,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "twinny",
+          "reportSha256": "58b755183ec0d4c6901624376336d18b72fc44d5544bb61ec249b8977ac72325",
+          "reportBytes": 45048,
+          "scorePercent": 41,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "core",
+          "reportSha256": "68958524f8f3867ea252dc470d1e84213f45ed93ab5dff75eb8b752bfd76775a",
+          "reportBytes": 45508,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "tradingagents-astock",
+          "reportSha256": "1be1accfe8808af2cb9e52c37daa28ea43b57462326f1c2eb45365dd00c87dca",
+          "reportBytes": 44976,
+          "scorePercent": 35,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "llm-wiki-agent",
+          "reportSha256": "c14a6019a70be4069564817a10649625074650f22d5be7d084621fe4b06c69fb",
+          "reportBytes": 45124,
+          "scorePercent": 34,
+          "level": 1,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 18
+    },
+    {
+      "batch": 17,
+      "batchRunId": "ai-popularity-500-quality-replacements",
+      "names": [
+        "worldmonitor",
+        "openmontage",
+        "chat2db",
+        "kilocode",
+        "stagehand",
+        "qbot",
+        "unstructured",
+        "insforge",
+        "note-gen",
+        "fastapi-mcp",
+        "memos",
+        "holaos",
+        "petals",
+        "machinelearning",
+        "genoffice",
+        "interpret",
+        "aci",
+        "nixtla"
+      ],
+      "estimateKiB": 2689738,
+      "elapsedMs": null,
+      "reports": [
+        {
+          "name": "worldmonitor",
+          "reportSha256": "9e5ae57e5d4f269ad998c2942854046fccb237e0e481d2e359ae439cd5ce39ff",
+          "reportBytes": 45224,
+          "scorePercent": 69,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "openmontage",
+          "reportSha256": "64cbc75b87561db82e83579d9d42ba33979ec9596821839646ecbe92b408842d",
+          "reportBytes": 46581,
+          "scorePercent": 62,
+          "level": 3,
+          "truncated": false
+        },
+        {
+          "name": "chat2db",
+          "reportSha256": "98ad679ea5b95fe8f4c8cefe982406e480025469e55abc3024bfa032cd2754b3",
+          "reportBytes": 45401,
+          "scorePercent": 54,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "kilocode",
+          "reportSha256": "2139cd224b9bd59f677c0373db6bb6554cf07b1a75911b273e9678da04b08093",
+          "reportBytes": 45518,
+          "scorePercent": 70,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "stagehand",
+          "reportSha256": "827ebbf4ee40f7405a5bf7f3f57b52e201dc1940706f98ee1104e38ecbce65a4",
+          "reportBytes": 45697,
+          "scorePercent": 66,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "qbot",
+          "reportSha256": "b471af83c00dc3c37458db4426f5376a199bec93e1b98f4a8c718449adfd1857",
+          "reportBytes": 45272,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "unstructured",
+          "reportSha256": "1e998c1c14e9ec8b89f55edfacc7c5904091f69be816c2ba471c58da29f0c15c",
+          "reportBytes": 44964,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "insforge",
+          "reportSha256": "e2bfb8924b93f9f1519579c516a134851e736d084d45f6b194d0e1c84c1c3d69",
+          "reportBytes": 45436,
+          "scorePercent": 59,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "note-gen",
+          "reportSha256": "9a205217c66522bd648bfc1dcab1ff687da431ce5a6fbf1ab509f0cacea86c65",
+          "reportBytes": 45246,
+          "scorePercent": 43,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "fastapi-mcp",
+          "reportSha256": "2e3378e6914bd718a978e90edfd35d8f4c25df05be54070f3e17e9e981f4f95c",
+          "reportBytes": 44803,
+          "scorePercent": 53,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "memos",
+          "reportSha256": "380b1f24f15461a909da56fe018f731a342db3038bd1940d5e4ae9eb765a40d0",
+          "reportBytes": 45541,
+          "scorePercent": 75,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "holaos",
+          "reportSha256": "381ac1982b5986d90871c303f09a5ec6e77cee404d6f7c420e5d4f678f815ad0",
+          "reportBytes": 45074,
+          "scorePercent": 65,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "petals",
+          "reportSha256": "5f6d0718498172ce69c604f5a1f2b5add8fa7bfd990b283e89fb5fc87b3d2a1d",
+          "reportBytes": 45398,
+          "scorePercent": 30,
+          "level": 0,
+          "truncated": false
+        },
+        {
+          "name": "machinelearning",
+          "reportSha256": "8a7948501556c5e05cbab6ab99bdeb3d7469cfc2d2417d36b35c194da1e1bb18",
+          "reportBytes": 45273,
+          "scorePercent": 38,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "genoffice",
+          "reportSha256": "ecfea7c8eb95a12d2319609b3587bd291be5e84a76b50e6a5723b4e2a1f95753",
+          "reportBytes": 47149,
+          "scorePercent": 57,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "interpret",
+          "reportSha256": "2618b5bf227564f0b557013d56f1a59f9b72e8de2c50ec950e5313a78daa28c8",
+          "reportBytes": 45377,
+          "scorePercent": 51,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "aci",
+          "reportSha256": "8f9d0e58ce00e8f02e1f02852e81014c16c1f088aa4035683762add5d62bd833",
+          "reportBytes": 45035,
+          "scorePercent": 60,
+          "level": 1,
+          "truncated": false
+        },
+        {
+          "name": "nixtla",
+          "reportSha256": "5bdf4e5356f5f7fcfef4ebd12a964fe4def4d690be5957c4f41383405e60107f",
+          "reportBytes": 45054,
+          "scorePercent": 50,
+          "level": 0,
+          "truncated": false
+        }
+      ],
+      "checkoutAuditEntries": 18,
+      "qualityReplacementBatch": true
+    }
+  ],
+  "completedCount": 500,
+  "updatedAt": "2026-10-10T02:12:27.283Z",
+  "supersededReports": [
+    {
+      "name": "ai-engineering-from-scratch",
+      "sha256": "0badcb7664ca70d6968d76deedd2ca1a6099915cdac61ea26f778b5b2c3ed98a",
+      "scorePercent": 69,
+      "level": 3,
+      "reason": "tutorial-first educational repository; not an AI software product"
+    },
+    {
+      "name": "ai-agent-book",
+      "sha256": "8e30164f4bd244d93d5314b28075e2b0567ddad5f7969cfe22e7aa7a5372b70a",
+      "scorePercent": 58,
+      "level": 1,
+      "reason": "book and chapter examples; excluded by the reference-only rule"
+    },
+    {
+      "name": "ai-engineering-hub",
+      "sha256": "844f68fa21c5da76ea9ecc942360b234007c07bc536a95f0fe17af158ea45a1a",
+      "scorePercent": 39,
+      "level": 1,
+      "reason": "tutorial collection rather than a software product"
+    },
+    {
+      "name": "d2l-en",
+      "sha256": "30ca9abdc528418125e820fba2de6a3c1c6625cfccfa5d20d8c8cd7e5c8a3e21",
+      "scorePercent": 22,
+      "level": 0,
+      "reason": "interactive textbook/course repository"
+    },
+    {
+      "name": "cs249r-book",
+      "sha256": "ed50e2c19bcf4311b3a0a5c641cc4c4493d311ba45134e149c0fe2ffeb58217f",
+      "scorePercent": 53,
+      "level": 0,
+      "reason": "textbook/reference repository"
+    },
+    {
+      "name": "genai-agents",
+      "sha256": "b909abf5f380409b48446b624275ec24534710ddf91d926ba0fd8bc143076f87",
+      "scorePercent": 30,
+      "level": 1,
+      "reason": "tutorial collection rather than a software product"
+    },
+    {
+      "name": "ml-engineering",
+      "sha256": "14cc89f0ad0cb2e1d52e31d02367469da24b1e16989476fe8c5dce8d527ae2df",
+      "scorePercent": 19,
+      "level": 0,
+      "reason": "open book and reference materials"
+    },
+    {
+      "name": "ml-nlp",
+      "sha256": "8da375c53396b492c5d017b853258f89e330031c950807a1dff03ea05af8de79",
+      "scorePercent": 14,
+      "level": 0,
+      "reason": "interview preparation/reference notes"
+    },
+    {
+      "name": "python-machine-learning-book",
+      "sha256": "433cbf9fbb74ae65c66c72bab8b73f6f38f6e9e3bf12555c920766685e4c4760",
+      "scorePercent": 20,
+      "level": 0,
+      "reason": "book companion and code reference"
+    },
+    {
+      "name": "llmsurvey",
+      "sha256": "b0beceef01bfe009c3b4c983569e2fbac13de9e84458e08a76d06488268461ac",
+      "scorePercent": 24,
+      "level": 0,
+      "reason": "survey paper repository"
+    },
+    {
+      "name": "all-in-rag",
+      "sha256": "cefdfd6797c4066ab56a5516fa7528950cb4ba2cbe45059fa88dad411fae4403",
+      "scorePercent": 19,
+      "level": 0,
+      "reason": "guide/course content rather than a standalone software product"
+    },
+    {
+      "name": "reinforcement-learning-with-tensorflow",
+      "sha256": "8d5ba6b663f631c64813d5c8ae7f9f6e7714b35b0c110d281f0ad67b950c3d17",
+      "scorePercent": 16,
+      "level": 0,
+      "reason": "tutorial and course repository"
+    },
+    {
+      "name": "machine-learning-examples",
+      "sha256": "7fb21a82c51b847ac26c895b8600259fd22c9935ac76a3dc40c30a0fa23de4f7",
+      "scorePercent": 18,
+      "level": 0,
+      "reason": "tutorial and example collection"
+    },
+    {
+      "name": "machine-learning-collection",
+      "sha256": "46266d4fffd8fff126375f749f12a734ca5a123765f253d5b60d816185963bde",
+      "scorePercent": 20,
+      "level": 0,
+      "reason": "learning resource collection"
+    },
+    {
+      "name": "python-small-examples",
+      "sha256": "a9655d712cb52ca00dbd4635fb7a41d4abdf3abe581698468e95d1ed759ef59e",
+      "scorePercent": 16,
+      "level": 0,
+      "reason": "general-purpose Python examples; AI is incidental"
+    },
+    {
+      "name": "deeplearning",
+      "sha256": "5e09105eddb952f09aecbbef74c34eddf332bfae3babfa3461bf77dedd636b86",
+      "scorePercent": 16,
+      "level": 0,
+      "reason": "textbook companion and reference examples"
+    },
+    {
+      "name": "claude-code-book",
+      "sha256": "548386d8448757622a5eae85a927ecfba9c6c04cefd85589b090419617fe754b",
+      "scorePercent": 22,
+      "level": 0,
+      "reason": "book/reference repository"
+    },
+    {
+      "name": "hands-on-ai-engineering",
+      "sha256": "3db381ab89f4651eaedd6a3011a7ad9274898815e09666e8cd4611d57bd3e8c8",
+      "scorePercent": 49,
+      "level": 0,
+      "reason": "curated learning project collection"
+    }
+  ],
+  "replacementScanPending": [
+    "worldmonitor",
+    "openmontage",
+    "chat2db",
+    "kilocode",
+    "stagehand",
+    "qbot",
+    "unstructured",
+    "insforge",
+    "note-gen",
+    "fastapi-mcp",
+    "memos",
+    "holaos",
+    "petals",
+    "machinelearning",
+    "genoffice",
+    "interpret",
+    "aci",
+    "nixtla"
+  ],
+  "completedAt": "2026-10-10T02:12:27.283Z",
+  "reportCount": 500,
+  "checkoutAuditPath": "corpus/checkout-audit-2026-10-09-ai-popularity-500.json"
+}

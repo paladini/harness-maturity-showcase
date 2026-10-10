@@ -18,11 +18,12 @@ transparent way to inspect the evidence behind every listing.
 
 This repository currently combines three evidence sets:
 
-- 151 pinned, reproducible reports scanned with `harness-score@1.8.1` from the
+- 651 pinned, reproducible reports scanned with `harness-score@1.8.1` from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
-  including 30 AI software projects, 25 cryptocurrency projects and 25 media
-  editing projects selected from recorded GitHub searches. See the [latest
-  import snapshot and raw reports](data/runs/2026-10-09-media-editing-popularity-corpus/README.md).
+  including 500 new AI software projects, 30 earlier AI software projects, 25
+  cryptocurrency projects and 25 media editing projects selected from recorded
+  GitHub searches. See the [500-project AI import snapshot and raw
+  reports](data/runs/2026-10-09-ai-popularity-500-corpus/README.md).
 - 20 full reports from the original badge-listed projects, refreshed with
   `harness-score@1.8.1` on October 7, 2026. See the
   [results and pinned run manifest](data/runs/2026-10-07/README.md).
@@ -31,7 +32,7 @@ This repository currently combines three evidence sets:
 Numeric rankings include only full reports and compare repositories within the
 same scanner version. The podium defaults to the newest version; the scanner
 filter exposes each cohort. A badge records a public level claim, not a verified
-current score. The index has 193 report records across 172 repositories: 192 full
+current score. The index has 693 report records across 672 repositories: 692 full
 reports and 1 badge-only entry. Repositories with reports from multiple scanner
 versions appear as separate selectable records.
 
@@ -44,11 +45,14 @@ Each corpus evidence link fixes the analysis commit, and byte-identical report
 copies with SHA-256 checksums are retained here.
 Popularity observations are separate metadata, never ranking points or blind
 human validation. Historical scanner-only entries may include instructional
-repositories; both popularity cohorts exclude guides and awesome lists.
+repositories; the popularity cohorts exclude guides and awesome lists.
 Cryptocurrency stars describe cumulative GitHub popularity observed at selection
 time, not an all-time historical maximum or investment merit. Media editing
 stars are selection metadata from the recorded bounded search union, not a
 global rank or a measure of harness maturity.
+The AI software cohort records its bounded search union, canonical repository
+IDs, pinned commits, observed stars, and eligibility replacements in its
+immutable selection and discovery evidence.
 
 ## Import a published corpus
 
@@ -60,6 +64,17 @@ npm run corpus:import -- --commit <40-character-analysis-commit>
 npm run check
 ```
 
+For a popularity cohort, pass its selection ledger and supporting evidence from
+the same immutable analysis commit:
+
+```sh
+npm run corpus:import -- --commit <40-character-analysis-commit> \
+  --selection-ledger corpus/selection-2026-10-09-ai-500.json \
+  --evidence-file corpus/popularity-search-2026-10-09-ai-500.json \
+  --evidence-file corpus/checkout-audit-2026-10-09-ai-popularity-500.json \
+  --evidence-file corpus/scan-receipt-2026-10-09-ai-popularity-500.json
+```
+
 The importer verifies matching reports/history before updating the registry,
 preserves community listings and writes a new dated snapshot. Existing snapshot
 directories cannot be overwritten. Publish through a reviewed PR; Pages deploys
@@ -69,8 +84,9 @@ Named analysis runs use the manifest's optional `runId` in both the upstream
 history filename and the local snapshot directory. This lets separate cohorts
 run on the same date without replacing previous evidence. For example,
 `runId: crypto-popularity` retains `data/runs/2026-10-08-crypto-popularity-corpus/`
-alongside the earlier `data/runs/2026-10-08-corpus/`. The importer rejects
-mismatched run identities and unsafe identifiers.
+alongside the earlier `data/runs/2026-10-08-corpus/`; the 500-project AI run
+uses `ai-popularity-500`. The importer rejects mismatched run identities and
+unsafe identifiers.
 
 ## Submit your repository
 
@@ -167,7 +183,7 @@ for reproducible bugs. All participation follows the
 - [Harness Score](https://github.com/paladini/harness-score) — the deterministic
   scanner and maturity model.
 - [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis)
-  — the reproducible 151-repository corpus that seeds the leaderboard.
+  — the reproducible 651-repository corpus that seeds the leaderboard.
 
 ## License
 

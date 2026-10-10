@@ -21,6 +21,7 @@ test("same-day named runs retain distinct immutable snapshot and history paths",
 test("popularity provenance labels each source cohort", () => {
   assert.equal(popularityLabel("crypto-popularity"), "Crypto popularity");
   assert.equal(popularityLabel("ai-popularity"), "AI popularity");
+  assert.equal(popularityLabel("ai-popularity-500"), "AI software popularity");
   assert.equal(popularityLabel("media-editing-popularity"), "Media editing popularity");
   assert.equal(popularityLabel("another-cohort"), "GitHub popularity");
 });
