@@ -22,9 +22,9 @@ test("the media editing import matches its immutable analysis source and preserv
   assert.equal(history.date, source.runDate);
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(snapshot.previousListings.length, 147);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 1207);
-  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 1207);
-  assert.equal(projects.filter((item) => item.source === "study").length, 1227);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 2207);
+  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 2207);
+  assert.equal(projects.filter((item) => item.source === "study").length, 2227);
   assert.equal(projects.filter((item) => item.source === "badge").length, 1);
 
   const mediaEditing = projects.filter((item) => item.selection?.cohort === "media-editing-popularity");
@@ -48,7 +48,7 @@ test("the media editing import matches its immutable analysis source and preserv
       item.toolVersion === imported.toolVersion);
     assert.equal(current.commit, listing.commit, entry.name);
     assert.equal(current.score, listing.score, entry.name);
-    assert.equal(current.corpusSourceCommit, "ba3ba209cc652f1c2849f8756a833b82d623faf9", entry.name);
+    assert.equal(current.corpusSourceCommit, "48e9c7d1859b77cb11712945e5f1d83aa7098256", entry.name);
   }
 
   for (const previous of snapshot.previousListings.filter(
