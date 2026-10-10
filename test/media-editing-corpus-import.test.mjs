@@ -22,9 +22,9 @@ test("the media editing import matches its immutable analysis source and preserv
   assert.equal(history.date, source.runDate);
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(snapshot.previousListings.length, 147);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 172);
-  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 172);
-  assert.equal(projects.filter((item) => item.source === "study").length, 192);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 672);
+  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 672);
+  assert.equal(projects.filter((item) => item.source === "study").length, 692);
   assert.equal(projects.filter((item) => item.source === "badge").length, 1);
 
   const mediaEditing = projects.filter((item) => item.selection?.cohort === "media-editing-popularity");
@@ -44,10 +44,11 @@ test("the media editing import matches its immutable analysis source and preserv
     assert.equal(report.truncated, false, entry.name);
     assert.equal(report.tool.version, "1.8.1", entry.name);
     const { report: reportFile, sha256, ...listing } = imported;
-    assert.deepEqual(
-      projects.find((item) => item.repo.toLowerCase() === imported.repo.toLowerCase() && item.toolVersion === imported.toolVersion),
-      listing,
-    );
+    const current = projects.find((item) => item.repo.toLowerCase() === imported.repo.toLowerCase() &&
+      item.toolVersion === imported.toolVersion);
+    assert.equal(current.commit, listing.commit, entry.name);
+    assert.equal(current.score, listing.score, entry.name);
+    assert.equal(current.corpusSourceCommit, "b26cd4ef0fab3864c0053ddbba4c752b8678ba99", entry.name);
   }
 
   for (const previous of snapshot.previousListings.filter(

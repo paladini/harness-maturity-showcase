@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { corpusListing, mergeCorpusListings } from "../scripts/import-corpus.mjs";
+import { corpusListing, mergeCorpusListings, selectionProvenance } from "../scripts/import-corpus.mjs";
 
 const root = new URL("../", import.meta.url);
 const run = new URL("data/runs/2026-10-08-corpus/", root);
@@ -53,4 +53,22 @@ test("imports retain each scanner version and replace only the matching version"
   ], [listing]);
   assert.deepEqual(merged.map(item => item.repo), ["example/community", "example/old", oldVersion.repo, listing.repo]);
   assert.deepEqual(merged.filter(item => item.repo.toLowerCase() === listing.repo.toLowerCase()).map(item => item.toolVersion), ["1.5.0", "1.8.1"]);
+});
+
+test("AI popularity selection provenance keeps dated stars and canonical identity", () => {
+  const selection = selectionProvenance({
+    githubRepositoryId: 12345,
+    githubStars: 6789,
+    popularityRank: 7,
+    archived: false,
+  }, "ai-popularity-500", "2026-10-09");
+  assert.deepEqual(selection, {
+    cohort: "ai-popularity-500",
+    date: "2026-10-09",
+    githubRepositoryId: 12345,
+    githubStars: 6789,
+    popularityRank: 7,
+    archived: false,
+  });
+  assert.throws(() => selectionProvenance({ githubRepositoryId: "12345" }, "ai-popularity-500", "2026-10-09"), /Invalid popularity selection/);
 });
