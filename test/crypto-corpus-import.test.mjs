@@ -39,7 +39,7 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
     const current = projects.find(item => item.repo === imported.repo && item.toolVersion === imported.toolVersion);
     assert.equal(current.commit, expected.commit, entry.name);
     assert.equal(current.score, expected.score, entry.name);
-    assert.equal(current.corpusSourceCommit, "fb6a6a0566638b24528bc1947535064afee784c8", entry.name);
+    assert.equal(current.corpusSourceCommit, "ba3ba209cc652f1c2849f8756a833b82d623faf9", entry.name);
     assert.equal(report.truncated, false);
   }
   const crypto = projects.filter(item => item.selection?.cohort === "crypto-popularity");

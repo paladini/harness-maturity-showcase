@@ -48,7 +48,7 @@ test("the media editing import matches its immutable analysis source and preserv
       item.toolVersion === imported.toolVersion);
     assert.equal(current.commit, listing.commit, entry.name);
     assert.equal(current.score, listing.score, entry.name);
-    assert.equal(current.corpusSourceCommit, "fb6a6a0566638b24528bc1947535064afee784c8", entry.name);
+    assert.equal(current.corpusSourceCommit, "ba3ba209cc652f1c2849f8756a833b82d623faf9", entry.name);
   }
 
   for (const previous of snapshot.previousListings.filter(
