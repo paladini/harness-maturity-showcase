@@ -78,8 +78,12 @@ export function mergeCorpusListings(projects, listings) {
   }
   for (const listing of listings) {
     const repo = listing.repo.toLowerCase();
+    const key = `${repo}@${listing.toolVersion}`;
+    const previous = byVersion.get(key);
     byVersion.delete(repo);
-    byVersion.set(`${repo}@${listing.toolVersion}`, listing);
+    byVersion.set(key, listing.selection || !previous?.selection
+      ? listing
+      : { ...listing, selection: previous.selection });
   }
   return [...byVersion.values()];
 }

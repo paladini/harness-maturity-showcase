@@ -22,8 +22,8 @@ test("the media editing import matches its immutable analysis source and preserv
   assert.equal(history.date, source.runDate);
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(snapshot.previousListings.length, 147);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 672);
-  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 672);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 1172);
+  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 1172);
   assert.equal(projects.filter((item) => item.source === "study").length, 692);
   assert.equal(projects.filter((item) => item.source === "badge").length, 1);
 
