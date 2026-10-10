@@ -67,7 +67,7 @@ export function selectionProvenance(candidate, cohort, date) {
   };
 }
 
-export function mergeCorpusListings(projects, listings) {
+export function mergeCorpusListings(projects, listings, authoritativeSelectionCohort) {
   const oldCorpus = (entry) => entry.corpusSourceCommit ||
     entry.evidence.startsWith(`https://github.com/${upstream}/blob/`);
   const byVersion = new Map();
@@ -81,7 +81,9 @@ export function mergeCorpusListings(projects, listings) {
     const key = `${repo}@${listing.toolVersion}`;
     const previous = byVersion.get(key);
     byVersion.delete(repo);
-    byVersion.set(key, listing.selection || !previous?.selection
+    const replacesPreviousSelection = authoritativeSelectionCohort &&
+      previous?.selection?.cohort === authoritativeSelectionCohort && !listing.selection;
+    byVersion.set(key, listing.selection || !previous?.selection || replacesPreviousSelection
       ? listing
       : { ...listing, selection: previous.selection });
   }
@@ -166,7 +168,7 @@ if (isMain) {
     throw new Error("Duplicate upstream repository and scanner-version identities");
   }
   const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
-  const merged = mergeCorpusListings(projects, listings);
+  const merged = mergeCorpusListings(projects, listings, selection?.cohort);
   // Run directories are immutable; mkdir rejects an existing snapshot.
   await mkdir(run);
   await writeFile(new URL("source-manifest.json", run), manifestBytes, { flag: "wx" });
