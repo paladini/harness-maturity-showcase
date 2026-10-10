@@ -33,7 +33,7 @@ test("all full study records expose reproducible reports", () => {
 
 test("the homepage repository statistic counts unique repositories across versions", () => {
   assert.equal(repositoryCount(projects), 1172);
-  assert.equal(projects.filter((project) => Number.isFinite(project.score)).length, 692);
+  assert.equal(projects.filter((project) => Number.isFinite(project.score)).length, 1192);
 });
 
 test("current top three stay within their scanner version", () => {

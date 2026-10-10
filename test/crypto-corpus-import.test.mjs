@@ -22,7 +22,7 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
   assert.equal(corpusRunPaths(source).directory, "data/runs/2026-10-08-crypto-popularity-corpus/");
   assert.match(snapshot.sourceCommit, /^[a-f0-9]{40}$/);
   assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 1172);
-  assert.equal(projects.filter(item => item.source === "study").length, 692);
+  assert.equal(projects.filter(item => item.source === "study").length, 1192);
   assert.equal(projects.filter(item => item.source === "badge").length, 1);
   assert.equal(projects.filter(item => item.corpusSourceCommit).length, 1172);
   for (const entry of source.entries) {
@@ -39,7 +39,7 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
     const current = projects.find(item => item.repo === imported.repo && item.toolVersion === imported.toolVersion);
     assert.equal(current.commit, expected.commit, entry.name);
     assert.equal(current.score, expected.score, entry.name);
-    assert.equal(current.corpusSourceCommit, "b26cd4ef0fab3864c0053ddbba4c752b8678ba99", entry.name);
+    assert.equal(current.corpusSourceCommit, "fb6a6a0566638b24528bc1947535064afee784c8", entry.name);
     assert.equal(report.truncated, false);
   }
   const crypto = projects.filter(item => item.selection?.cohort === "crypto-popularity");
