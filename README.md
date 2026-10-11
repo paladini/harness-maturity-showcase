@@ -18,10 +18,12 @@ transparent way to inspect the evidence behind every listing.
 
 This repository currently combines four evidence sets:
 
-- 1,151 pinned, reproducible reports scanned with `harness-score@1.8.1` from the
+- 2,686 pinned, reproducible reports in the current immutable
+  `harness-score@1.8.1` snapshot from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
-  including 500 new AI software projects, 30 earlier AI software projects, 25
-  cryptocurrency projects, 25 media editing projects and 500 video game AI
+  including 500 AI software projects, 30 earlier AI software projects, 25
+  cryptocurrency projects, 25 media editing projects, 500 video game AI
+  projects and 500 loop engineering, harness, MCP, A2A and related agent
   projects selected from recorded GitHub searches. See the [video game AI
   import snapshot and raw reports](data/runs/2026-10-10-game-ai-popularity-500-corpus/README.md)
   and the [500-project AI import snapshot](data/runs/2026-10-09-ai-popularity-500-corpus/README.md).
@@ -35,8 +37,8 @@ This repository currently combines four evidence sets:
 Numeric rankings include only full reports and compare repositories within the
 same scanner version. The podium defaults to the newest version; the scanner
 filter exposes each cohort. A badge records a public level claim, not a verified
-current score. The index has 1,193 report records across 1,172 repositories: 1,192 full
-reports and 1 badge-only entry. Repositories with reports from multiple scanner
+current score. The index has 2,728 repository/version records across 2,707
+repositories: 2,727 full reports and 1 badge-only entry. Repositories with reports from multiple scanner
 versions appear as separate selectable records.
 
 The 101 earlier corpus listings remain available in their original immutable
