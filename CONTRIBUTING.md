@@ -20,8 +20,10 @@ Use this path to participate in the numeric ranking.
 5. Copy `level`, `score`, and `maxScore` exactly from the report.
    Also set `toolVersion` to the report's `tool.version`, and optionally
    `scannedAt` to the scan's ISO date or timestamp. Rankings compare reports
-   within the same scanner version. The legacy `source: study` value denotes
-   full reports, including community refreshes.
+   within the same scanner version. Within a version, the ranking orders by
+   raw score descending, then score percentage descending, then repository name
+   alphabetically. The legacy `source: study` value denotes full reports,
+   including community refreshes.
 6. Set `commit` to the complete 40-character SHA that was measured.
 7. Link `evidence` directly to the committed JSON report.
 

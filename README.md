@@ -23,10 +23,12 @@ This repository currently combines four evidence sets:
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
   including 500 AI software projects, 30 earlier AI software projects, 25
   cryptocurrency projects, 25 media editing projects, 500 video game AI
-  projects and 500 loop engineering, harness, MCP, A2A and related agent
-  projects selected from recorded GitHub searches. See the [video game AI
-  import snapshot and raw reports](data/runs/2026-10-10-game-ai-popularity-500-corpus/README.md)
-  and the [500-project AI import snapshot](data/runs/2026-10-09-ai-popularity-500-corpus/README.md).
+  projects, 500 agent-ecosystem projects, and 1,000 broadly popular GitHub
+  software projects selected from recorded searches. See the [latest video
+  game AI import](data/runs/2026-10-10-game-ai-popularity-500-relaxed-corpus/README.md),
+  the [agent ecosystem import](data/runs/2026-10-10-agent-ecosystem-500-corpus/README.md),
+  the [1,000-project GitHub software import](data/runs/2026-10-10-github-top-software-1000-corpus/README.md),
+  and the [500-project AI software import](data/runs/2026-10-09-ai-popularity-500-corpus/README.md).
 - 20 full reports from the original badge-listed projects, refreshed with
   `harness-score@1.8.1` on October 7, 2026. See the
   [results and pinned run manifest](data/runs/2026-10-07/README.md).
@@ -35,11 +37,13 @@ This repository currently combines four evidence sets:
 - 1 additional public repository with a README badge only.
 
 Numeric rankings include only full reports and compare repositories within the
-same scanner version. The podium defaults to the newest version; the scanner
-filter exposes each cohort. A badge records a public level claim, not a verified
-current score. The index has 2,728 repository/version records across 2,707
-repositories: 2,727 full reports and 1 badge-only entry. Repositories with reports from multiple scanner
-versions appear as separate selectable records.
+same scanner version. Within a version, repositories sort by raw score
+descending, then percentage descending, then repository name alphabetically.
+The podium defaults to the newest version; the scanner filter exposes each
+cohort. A badge records a public level claim, not a verified current score. The
+index has 2,728 repository/version records across 2,707 repositories: 2,727
+full reports and 1 badge-only entry. Repositories with reports from multiple
+scanner versions appear as separate selectable records.
 
 The 101 earlier corpus listings remain available in their original immutable
 [archive](data/runs/2026-10-08-corpus/README.md). The original 21-report
@@ -118,7 +122,7 @@ The complete contribution is one object in
      "level": 3,
      "score": 82,
      "maxScore": 108,
-     "toolVersion": "1.5.0",
+     "toolVersion": "1.8.1",
      "source": "study",
      "commit": "40-character-commit-sha-of-the-measured-repository",
      "evidence": "https://github.com/your-name/your-project/blob/main/harness-score.json"
@@ -164,7 +168,9 @@ Open `http://127.0.0.1:8765`.
 ├── data/projects.json       # Public registry and source of truth
 ├── data/runs/               # Dated scan manifests and unmodified JSON reports
 ├── scripts/validate.mjs     # Deterministic submission checks
-├── test/site.test.mjs       # Site and ranking invariants
+├── ranking.mjs              # Version-scoped ranking and filter logic
+├── test/ranking.test.mjs    # Ranking and filter invariants
+├── test/site.test.mjs       # Site structure and presentation invariants
 ├── index.html               # GitHub Pages entry point
 ├── app.js                   # Ranking, search, and filters
 └── styles.css               # Responsive visual system
