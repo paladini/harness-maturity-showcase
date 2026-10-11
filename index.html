@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js?v=20261010.1" type="module"></script>
+  <link rel="stylesheet" href="styles.css?v=20261010.2">
+  <script src="app.js?v=20261010.2" type="module"></script>
 </head>
 <body>
   <a class="skip-link" href="#leaderboard">Skip to leaderboard</a>
@@ -20,7 +20,7 @@
       <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
       <span>harness<span>score</span></span>
     </a>
-    <a class="nav-return" href="https://paladini.io/harness-score/"><span aria-hidden="true">←</span> Back to Harness Score</a>
+    <a class="nav-return" href="https://paladini.io/harness-score/"><span aria-hidden="true">↗</span> How well-harnessed is your repository? Find out</a>
   </header>
 
   <main>
@@ -33,6 +33,7 @@
           Explore the leaders, inspect every claim, and add your own work.</p>
         <div class="hero-actions">
           <a class="button primary" href="#leaderboard">Explore the ranking <span>↓</span></a>
+          <a class="button secondary" href="https://github.com/paladini/harness-maturity-showcase/blob/main/CONTRIBUTING.md">Submit your Score <span>↗</span></a>
           <a class="button secondary" href="https://github.com/paladini/harness-maturity-showcase">View on GitHub ↗</a>
         </div>
       </div>
@@ -42,8 +43,7 @@
         <p>repositories in the index</p>
         <div class="signal-grid">
           <div><b id="scored-count">—</b><span>full reports</span></div>
-          <div><b>6</b><span>dimensions</span></div>
-          <div><b>0</b><span>paywalls</span></div>
+          <dl id="version-counts" class="version-counts" aria-label="Full reports by scanner version"></dl>
         </div>
       </aside>
     </section>
@@ -62,10 +62,9 @@
           <h2 id="board-title">Harness maturity ranking</h2>
         </div>
         <p>Ranks compare reports from the same scanner version. Different versions
-          are not directly comparable. Every score links to its evidence.
-          Includes 2,686 pinned reports from the Harness Maturity Analysis,
-          including 500 loop engineering, harness, MCP, A2A and related agent
-          projects. GitHub stars describe selection popularity, not maturity.</p>
+          are not directly comparable. Every score links to its evidence. The index
+          spans AI software, cryptocurrency, media editing, video game AI, agent
+          ecosystems, and more. GitHub stars describe selection popularity, not maturity.</p>
       </div>
       <div class="controls" aria-label="Leaderboard filters">
         <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search owner or repository…" autocomplete="off"></label>
