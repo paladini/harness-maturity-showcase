@@ -18,5 +18,15 @@ export function repositoryCount(projects) {
 export function rankedReports(projects, version) {
   return projects
     .filter((project) => Number.isFinite(project.score) && project.toolVersion === version)
-    .sort((a, b) => b.score / b.maxScore - a.score / a.maxScore || a.repo.localeCompare(b.repo, "en"));
+    .sort((a, b) => b.score - a.score || b.score / b.maxScore - a.score / a.maxScore || a.repo.localeCompare(b.repo, "en"));
+}
+
+export function filterProjects(projects, state, omit = "") {
+  return projects
+    .filter((project) => project.repo.toLowerCase().includes(state.query))
+    .filter((project) => omit === "level" || state.level === "all" || String(project.level) === state.level)
+    .filter((project) => omit === "source" || state.source === "all" || project.source === state.source)
+    .filter((project) => omit === "category" || state.category === "all" || project.category === state.category)
+    .filter((project) => omit === "cohort" || state.cohort === "all" || (project.selection?.cohort ?? "none") === state.cohort)
+    .filter((project) => omit === "version" || state.version === "all" || project.toolVersion === state.version);
 }

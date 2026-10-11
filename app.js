@@ -1,4 +1,4 @@
-import { popularityLabel, rankedReports, reportVersions, repositoryCount } from "./ranking.mjs?v=20261010.1";
+import { filterProjects, popularityLabel, rankedReports, reportVersions, repositoryCount } from "./ranking.mjs?v=20261010.2";
 
 const levels = {
   0: ["Unharnessed", "l0"],
@@ -16,6 +16,17 @@ const ranked = versions.flatMap((version) => rankings.get(version));
 
 document.querySelector("#total-count").textContent = repositoryCount(projects);
 document.querySelector("#scored-count").textContent = ranked.length;
+
+const versionCounts = document.querySelector("#version-counts");
+for (const version of versions) {
+  const item = document.createElement("div");
+  const label = document.createElement("dt");
+  label.textContent = `harness-score ${version}`;
+  const count = document.createElement("dd");
+  count.textContent = rankings.get(version).length.toLocaleString("en-US");
+  item.append(label, count);
+  versionCounts.append(item);
+}
 
 const escapeHtml = (value) =>
   String(value).replace(/[&<>"']/g, (character) => ({
@@ -75,14 +86,28 @@ function renderPodium() {
 const rows = document.querySelector("#rows");
 const empty = document.querySelector("#empty");
 
+function renderFilterCounts() {
+  const withoutVersion = filterProjects(projects, state, "version");
+  for (const option of versionFilter.options) {
+    if (option.value === "all") continue;
+    const count = withoutVersion.filter((project) => project.toolVersion === option.value && Number.isFinite(project.score)).length;
+    option.textContent = `harness-score ${option.value} (${count.toLocaleString("en-US")})`;
+  }
+  const allReports = withoutVersion.filter((project) => Number.isFinite(project.score)).length;
+  versionFilter.options[0].textContent = `All scanner versions (${allReports.toLocaleString("en-US")})`;
+
+  const withoutLevel = filterProjects(projects, state, "level");
+  for (const button of document.querySelectorAll(".filter-group button")) {
+    const count = withoutLevel.filter((project) => button.dataset.level === "all"
+      ? project.level !== undefined
+      : String(project.level) === button.dataset.level).length;
+    const label = button.dataset.level === "all" ? "All levels" : `L${button.dataset.level}`;
+    button.textContent = `${label} (${count.toLocaleString("en-US")})`;
+  }
+}
+
 function render() {
-  const filtered = projects
-    .filter((project) => project.repo.toLowerCase().includes(state.query))
-    .filter((project) => state.level === "all" || String(project.level) === state.level)
-    .filter((project) => state.source === "all" || project.source === state.source)
-    .filter((project) => state.category === "all" || project.category === state.category)
-    .filter((project) => state.cohort === "all" || (project.selection?.cohort ?? "none") === state.cohort)
-    .filter((project) => state.version === "all" || project.toolVersion === state.version)
+  const filtered = filterProjects(projects, state)
     .sort((a, b) => {
       if (Number.isFinite(a.score) !== Number.isFinite(b.score)) return Number.isFinite(a.score) ? -1 : 1;
       if (Number.isFinite(a.score)) return ranked.indexOf(a) - ranked.indexOf(b);
@@ -108,6 +133,7 @@ function render() {
     </tr>`;
   }).join("");
   empty.hidden = filtered.length > 0;
+  renderFilterCounts();
   renderPodium();
 }
 

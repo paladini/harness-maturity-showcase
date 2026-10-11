@@ -12,10 +12,16 @@ test("page has one h1 and core landmarks", () => {
   for (const landmark of ["<header", "<main", "<footer", "<table"]) assert.match(html, new RegExp(landmark));
 });
 
-test("section header only routes back to Harness Score", () => {
+test("header CTA routes to Harness Score and invites a repository check", () => {
   assert.match(html, /href="https:\/\/paladini\.io\/harness-score\/" aria-label="Harness Score home"/);
-  assert.match(html, /class="nav-return" href="https:\/\/paladini\.io\/harness-score\/"/);
+  assert.match(html, /class="nav-return" href="https:\/\/paladini\.io\/harness-score\/"[^>]*>.*How well-harnessed is your repository\? Find out/s);
   assert.doesNotMatch(html, /<header[\s\S]*?<nav/);
+});
+
+test("homepage shows dynamic scanner-version coverage and a submission CTA", () => {
+  assert.match(html, /id="version-counts"[^>]*Full reports by scanner version/);
+  assert.doesNotMatch(html, /paywalls|<b>6<\/b>/i);
+  assert.match(html, /href="https:\/\/github\.com\/paladini\/harness-maturity-showcase\/blob\/main\/CONTRIBUTING\.md">Submit your Score/);
 });
 
 test("the leaderboard exposes category and selection-provenance filters", () => {
@@ -45,7 +51,7 @@ test("current top three stay within their scanner version", () => {
   ]);
 });
 
-test("rankings never mix scanner versions or badge-only entries", () => {
+test("rankings order by raw score without mixing scanner versions or badge-only entries", () => {
   const sample = [
     { repo: "a/old", toolVersion: "1.5.0", score: 108, maxScore: 108 },
     { repo: "a/new", toolVersion: "1.8.1", score: 90, maxScore: 105 },
@@ -53,5 +59,5 @@ test("rankings never mix scanner versions or badge-only entries", () => {
     { repo: "a/badge", level: 4 },
   ];
   assert.deepEqual(reportVersions(sample), ["1.8.1", "1.5.0"]);
-  assert.deepEqual(rankedReports(sample, "1.8.1").map((project) => project.repo), ["a/higher-ratio", "a/new"]);
+  assert.deepEqual(rankedReports(sample, "1.8.1").map((project) => project.repo), ["a/new", "a/higher-ratio"]);
 });
