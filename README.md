@@ -18,13 +18,15 @@ transparent way to inspect the evidence behind every listing.
 
 This repository currently combines four evidence sets:
 
-- 2,686 pinned, reproducible reports in the current immutable
+- 3,186 pinned, reproducible reports in the current immutable
   `harness-score@1.8.1` snapshot from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
-  including 500 AI software projects, 30 earlier AI software projects, 25
-  cryptocurrency projects, 25 media editing projects, 500 video game AI
-  projects, 500 agent-ecosystem projects, and 1,000 broadly popular GitHub
-  software projects selected from recorded searches. See the [latest video
+  including 500 repositories with AI coding-agent and IDE guidance files, 500
+  AI software projects, 30 earlier AI software projects, 25 cryptocurrency
+  projects, 25 media editing projects, 500 video game AI projects, 500
+  agent-ecosystem projects, and 1,000 broadly popular GitHub software projects
+  selected from recorded searches. See the [AI coding-assistant adoption
+  import](data/runs/2026-10-11-ai-ide-adoption-500-corpus/README.md), [latest video
   game AI import](data/runs/2026-10-10-game-ai-popularity-500-relaxed-corpus/README.md),
   the [agent ecosystem import](data/runs/2026-10-10-agent-ecosystem-500-corpus/README.md),
   the [1,000-project GitHub software import](data/runs/2026-10-10-github-top-software-1000-corpus/README.md),
@@ -41,7 +43,7 @@ same scanner version. Within a version, repositories sort by raw score
 descending, then percentage descending, then repository name alphabetically.
 The podium defaults to the newest version; the scanner filter exposes each
 cohort. A badge records a public level claim, not a verified current score. The
-index has 2,728 repository/version records across 2,707 repositories: 2,727
+index has 3,228 repository/version records across 3,207 repositories: 3,227
 full reports and 1 badge-only entry. Repositories with reports from multiple
 scanner versions appear as separate selectable records.
 
@@ -66,6 +68,11 @@ The video game AI cohort covers both games made with AI and software using AI
 in games or game development. It has 500 pinned reports and no blind ratings;
 GitHub stars are selection metadata from a bounded search union, not a global
 ranking or part of the harness score.
+The AI coding-assistant adoption cohort selected 500 pinned software
+repositories from bounded code searches for explicit agent or IDE guidance.
+It includes a seeded sample of zero-star repositories and has no blind human
+ratings. Guidance files indicate workflow context; they do not prove that a
+named editor was installed.
 
 ## Import a published corpus
 
