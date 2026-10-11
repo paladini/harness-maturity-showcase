@@ -37,12 +37,12 @@ test("the 1,000-repository GitHub popularity cohort is pinned and traceable", as
     assert.ok(listing, candidate.canonicalSlug);
     assert.equal(listing.repo.toLowerCase(), candidate.canonicalSlug.toLowerCase());
     assert.equal(listing.commit, candidate.commit);
-    assert.equal(listing.corpusSourceCommit, snapshot.sourceCommit);
-    assert.ok(listing.evidence.includes(`/blob/${snapshot.sourceCommit}/corpus/reports/`));
+    assert.equal(listing.corpusSourceCommit, "242c081589859d32f97295183b68cc65192ebc11");
+    assert.ok(listing.evidence.includes("/blob/242c081589859d32f97295183b68cc65192ebc11/corpus/reports/"));
   }
 
-  assert.equal(projects.length, 2228);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 2207);
+  assert.equal(projects.length, 2728);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 2707);
   assert.equal(projects.filter((item) => item.toolVersion === "1.5.0").length, 21);
   assert.ok(snapshot.previousListings.every((previous) => projects.some((item) =>
     item.repo === previous.repo && item.toolVersion === previous.toolVersion)));

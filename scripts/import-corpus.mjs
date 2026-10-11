@@ -83,9 +83,14 @@ export function mergeCorpusListings(projects, listings, authoritativeSelectionCo
     byVersion.delete(repo);
     const replacesPreviousSelection = authoritativeSelectionCohort &&
       previous?.selection?.cohort === authoritativeSelectionCohort && !listing.selection;
-    byVersion.set(key, listing.selection || !previous?.selection || replacesPreviousSelection
-      ? listing
-      : { ...listing, selection: previous.selection });
+    const preservesCanonicalSelection = previous?.selection && listing.selection &&
+      previous.selection.cohort === listing.selection.cohort &&
+      Number.isInteger(previous.selection.githubRepositoryId) &&
+      !Number.isInteger(listing.selection.githubRepositoryId);
+    byVersion.set(key, previous?.selection &&
+      (!listing.selection || replacesPreviousSelection || preservesCanonicalSelection)
+      ? { ...listing, selection: previous.selection }
+      : listing);
   }
   return [...byVersion.values()];
 }
