@@ -22,9 +22,9 @@ test("the media editing import matches its immutable analysis source and preserv
   assert.equal(history.date, source.runDate);
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(snapshot.previousListings.length, 147);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 2207);
-  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 2207);
-  assert.equal(projects.filter((item) => item.source === "study").length, 2227);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 2707);
+  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 2707);
+  assert.equal(projects.filter((item) => item.source === "study").length, 2727);
   assert.equal(projects.filter((item) => item.source === "badge").length, 1);
 
   const mediaEditing = projects.filter((item) => item.selection?.cohort === "media-editing-popularity");

@@ -21,10 +21,10 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(corpusRunPaths(source).directory, "data/runs/2026-10-08-crypto-popularity-corpus/");
   assert.match(snapshot.sourceCommit, /^[a-f0-9]{40}$/);
-  assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 2207);
-  assert.equal(projects.filter(item => item.source === "study").length, 2227);
+  assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 2707);
+  assert.equal(projects.filter(item => item.source === "study").length, 2727);
   assert.equal(projects.filter(item => item.source === "badge").length, 1);
-  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 2207);
+  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 2707);
   for (const entry of source.entries) {
     const imported = snapshot.entries.find(item => item.corpusName === entry.name);
     assert.ok(imported, entry.name);
