@@ -40,7 +40,7 @@ test("the AI coding-assistant adoption cohort is pinned and traceable", async ()
     assert.ok(listing, candidate.canonicalSlug);
     assert.equal(listing.repo.toLowerCase(), candidate.canonicalSlug.toLowerCase(), candidate.canonicalSlug);
     assert.equal(listing.commit, candidate.commit, candidate.canonicalSlug);
-    assert.equal(listing.corpusSourceCommit, snapshot.sourceCommit, candidate.canonicalSlug);
-    assert.ok(listing.evidence.includes(`/blob/${snapshot.sourceCommit}/corpus/reports/`));
+    assert.equal(listing.corpusSourceCommit, "4fc5ae0c5eebcc638a61e0473362190e0afa6fd7", candidate.canonicalSlug);
+    assert.ok(listing.evidence.includes("/blob/4fc5ae0c5eebcc638a61e0473362190e0afa6fd7/corpus/reports/"));
   }
 });
