@@ -3,7 +3,8 @@ export function popularityLabel(cohort) {
     cohort === "ai-popularity-500" ? "AI software popularity" :
     cohort === "game-ai-popularity-500" ? "Video game AI popularity" :
     cohort === "crypto-popularity" ? "Crypto popularity" :
-      cohort === "media-editing-popularity" ? "Media editing popularity" : "GitHub popularity";
+      cohort === "media-editing-popularity" ? "Media editing popularity" :
+      cohort === "scientific-software-random-500" ? "Scientific software random sample" : "GitHub popularity";
 }
 
 export function reportVersions(projects) {
