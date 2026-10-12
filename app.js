@@ -1,4 +1,4 @@
-import { filterProjects, popularityLabel, rankedReports, reportVersions, repositoryCount } from "./ranking.mjs?v=20261010.2";
+import { filterProjects, popularityLabel, rankedReports, reportVersions, repositoryCount } from "./ranking.mjs?v=20261012.1";
 
 const levels = {
   0: ["Unharnessed", "l0"],
