@@ -12,7 +12,7 @@ const selectionBytes = await readFile(new URL("selection.json", run));
 const selection = JSON.parse(selectionBytes);
 const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
 const currentSnapshot = JSON.parse(await readFile(new URL(
-  "data/runs/2026-10-13-agriculture-software-popularity-500-corpus/manifest.json", root,
+  "data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/manifest.json", root,
 )));
 
 test("the AI coding-assistant adoption cohort is pinned and traceable", async () => {

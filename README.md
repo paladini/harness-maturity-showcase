@@ -16,17 +16,19 @@ instructions, guardrails, validation, and feedback loops. The showcase
 recognizes teams that make that investment and gives the community a
 transparent way to inspect the evidence behind every listing.
 
-This repository currently combines five evidence sets:
+This repository currently combines four evidence sets:
 
-- 3,686 pinned, reproducible reports in the current immutable
+- 5,002 pinned, reproducible reports in the current immutable
   `harness-score@1.8.1` snapshot from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
   including 500 randomly sampled scientific software projects, 500
   repositories with AI coding-agent and IDE guidance files, 500
   AI software projects, 30 earlier AI software projects, 25 cryptocurrency
   projects, 25 media editing projects, 500 video game AI projects, 500
-  agent-ecosystem projects, and 1,000 broadly popular GitHub software projects
-  selected from recorded searches. See the [scientific software import](data/runs/2026-10-12-scientific-software-random-500-corpus/README.md), the [AI coding-assistant adoption
+  agent-ecosystem projects, 500 agriculture software projects, 816 developer
+  infrastructure projects, and 1,000 broadly popular GitHub software projects
+  selected from recorded searches. See the [developer infrastructure import](data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/README.md),
+  [scientific software import](data/runs/2026-10-12-scientific-software-random-500-corpus/README.md), the [AI coding-assistant adoption
   import](data/runs/2026-10-11-ai-ide-adoption-500-corpus/README.md), [latest video
   game AI import](data/runs/2026-10-10-game-ai-popularity-500-relaxed-corpus/README.md),
   the [agent ecosystem import](data/runs/2026-10-10-agent-ecosystem-500-corpus/README.md),
@@ -44,7 +46,7 @@ same scanner version. Within a version, repositories sort by raw score
 descending, then percentage descending, then repository name alphabetically.
 The podium defaults to the newest version; the scanner filter exposes each
 cohort. A badge records a public level claim, not a verified current score. The
-index has 3,728 repository/version records across 3,707 repositories: 3,727
+index has 5,044 repository/version records across 5,023 repositories: 5,043
 full reports and 1 badge-only entry. Repositories with reports from multiple
 scanner versions appear as separate selectable records.
 
@@ -62,6 +64,11 @@ Cryptocurrency stars describe cumulative GitHub popularity observed at selection
 time, not an all-time historical maximum or investment merit. Media editing
 stars are selection metadata from the recorded bounded search union, not a
 global rank or a measure of harness maturity.
+The developer infrastructure cohort adds 816 pinned repositories across
+database and data platforms, developer experience, code quality, software
+delivery/testing/build, and developer tools. It selects from a bounded union of
+category searches; observed stars are popularity metadata, not a global GitHub
+rank, a maturity score, or blind human validation.
 The AI software cohort records its bounded search union, canonical repository
 IDs, pinned commits, observed stars, and eligibility replacements in its
 immutable selection and discovery evidence.

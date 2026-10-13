@@ -5,6 +5,9 @@ import test from "node:test";
 
 const root = new URL("../", import.meta.url);
 const run = new URL("data/runs/2026-10-13-agriculture-software-popularity-500-corpus/", root);
+const currentSnapshot = JSON.parse(await readFile(new URL(
+  "data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/manifest.json", root,
+)));
 const snapshot = JSON.parse(await readFile(new URL("manifest.json", run)));
 const source = JSON.parse(await readFile(new URL("source-manifest.json", run)));
 const history = JSON.parse(await readFile(new URL("source-history.json", run)));
@@ -48,10 +51,10 @@ test("the agriculture 500-repository popularity cohort is pinned and traceable",
     assert.equal(entry.category, "agriculture", candidate.name);
     assert.equal(listing.repo.toLowerCase(), candidate.canonicalSlug.toLowerCase(), candidate.name);
     assert.equal(listing.commit, candidate.commit, candidate.name);
-    assert.equal(listing.corpusSourceCommit, snapshot.sourceCommit, candidate.name);
+    assert.equal(listing.corpusSourceCommit, currentSnapshot.sourceCommit, candidate.name);
     assert.equal(listing.toolVersion, "1.8.1", candidate.name);
     assert.equal(listing.selection.githubStars, candidate.githubStars, candidate.name);
-    assert.ok(listing.evidence.includes(`/blob/${snapshot.sourceCommit}/corpus/reports/${candidate.name}.json`));
+    assert.ok(listing.evidence.includes(`/blob/${currentSnapshot.sourceCommit}/corpus/reports/${candidate.name}.json`));
 
     const bytes = await readFile(new URL(imported.report, run));
     const report = JSON.parse(bytes);
