@@ -7,7 +7,7 @@ import { corpusListing, corpusRunPaths } from "../scripts/import-corpus.mjs";
 const root = new URL("../", import.meta.url);
 const run = new URL("data/runs/2026-10-08-crypto-popularity-corpus/", root);
 const currentSnapshot = JSON.parse(await readFile(new URL(
-  "data/runs/2026-10-13-agriculture-software-popularity-500-corpus/manifest.json", root,
+  "data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/manifest.json", root,
 )));
 
 test("the prior 126-report crypto snapshot remains intact in the current registry", async () => {
@@ -24,10 +24,10 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(corpusRunPaths(source).directory, "data/runs/2026-10-08-crypto-popularity-corpus/");
   assert.match(snapshot.sourceCommit, /^[a-f0-9]{40}$/);
-  assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 4207);
-  assert.equal(projects.filter(item => item.source === "study").length, 4227);
+  assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 5023);
+  assert.equal(projects.filter(item => item.source === "study").length, 5043);
   assert.equal(projects.filter(item => item.source === "badge").length, 1);
-  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 4207);
+  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 5023);
   for (const entry of source.entries) {
     const imported = snapshot.entries.find(item => item.corpusName === entry.name);
     assert.ok(imported, entry.name);

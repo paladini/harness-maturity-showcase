@@ -10,7 +10,7 @@ const source = JSON.parse(await readFile(new URL("source-manifest.json", run)));
 const history = JSON.parse(await readFile(new URL("source-history.json", run)));
 const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
 const currentSnapshot = JSON.parse(await readFile(new URL(
-  "data/runs/2026-10-13-agriculture-software-popularity-500-corpus/manifest.json", root,
+  "data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/manifest.json", root,
 )));
 
 test("the media editing import matches its immutable analysis source and preserves the catalog", async () => {
@@ -25,9 +25,9 @@ test("the media editing import matches its immutable analysis source and preserv
   assert.equal(history.date, source.runDate);
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(snapshot.previousListings.length, 147);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 4207);
-  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 4207);
-  assert.equal(projects.filter((item) => item.source === "study").length, 4227);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 5023);
+  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 5023);
+  assert.equal(projects.filter((item) => item.source === "study").length, 5043);
   assert.equal(projects.filter((item) => item.source === "badge").length, 1);
 
   const mediaEditing = projects.filter((item) => item.selection?.cohort === "media-editing-popularity");

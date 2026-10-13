@@ -12,7 +12,7 @@ const selectionBytes = await readFile(new URL("selection.json", run));
 const selection = JSON.parse(selectionBytes);
 const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
 const currentSnapshot = JSON.parse(await readFile(new URL(
-  "data/runs/2026-10-13-agriculture-software-popularity-500-corpus/manifest.json", root,
+  "data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/manifest.json", root,
 )));
 
 test("the 1,000-repository GitHub popularity cohort is pinned and traceable", async () => {
@@ -44,8 +44,8 @@ test("the 1,000-repository GitHub popularity cohort is pinned and traceable", as
     assert.ok(listing.evidence.includes(`/blob/${currentSnapshot.sourceCommit}/corpus/reports/`));
   }
 
-  assert.equal(projects.length, 4228);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 4207);
+  assert.equal(projects.length, 5044);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 5023);
   assert.equal(projects.filter((item) => item.toolVersion === "1.5.0").length, 21);
   assert.ok(snapshot.previousListings.every((previous) => projects.some((item) =>
     item.repo === previous.repo && item.toolVersion === previous.toolVersion)));
