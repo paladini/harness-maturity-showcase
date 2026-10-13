@@ -52,16 +52,19 @@ export function corpusListing(entry, report, history, sourceCommit, runDate, sel
 }
 
 export function selectionProvenance(candidate, cohort, date) {
+  const starsObservedAt = typeof candidate?.starsObservedAt === "string" ? candidate.starsObservedAt.slice(0, 10) : null;
+  const provenanceDate = /^\d{4}-\d{2}-\d{2}$/.test(starsObservedAt ?? "") ? starsObservedAt : date;
   if (!candidate || typeof cohort !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(date ?? "") ||
-      !Number.isInteger(candidate.githubRepositoryId) || !Number.isInteger(candidate.githubStars) ||
+      !Number.isInteger(candidate.githubRepositoryId) ||
+      !Number.isInteger(candidate.githubStars ?? candidate.observedStars ?? candidate.stars) ||
       typeof candidate.archived !== "boolean") {
     throw new Error("Invalid popularity selection candidate");
   }
   return {
     cohort,
-    date,
+    date: provenanceDate,
     githubRepositoryId: candidate.githubRepositoryId,
-    githubStars: candidate.githubStars,
+    githubStars: candidate.githubStars ?? candidate.observedStars ?? candidate.stars,
     ...(Number.isInteger(candidate.popularityRank) ? { popularityRank: candidate.popularityRank } : {}),
     archived: candidate.archived,
   };
@@ -143,7 +146,7 @@ if (isMain) {
       if (selectionByName.has(candidate.name)) throw new Error(`Duplicate selection candidate: ${candidate.name}`);
       selectionByName.set(candidate.name, selectionProvenance({
         ...candidate,
-        githubStars: candidate.githubStars ?? candidate.observedStars,
+        githubStars: candidate.githubStars ?? candidate.observedStars ?? candidate.stars,
       }, selection.cohort ?? source.runId, selection.selectionDate));
     }
   }

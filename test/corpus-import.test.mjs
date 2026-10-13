@@ -72,3 +72,21 @@ test("AI popularity selection provenance keeps dated stars and canonical identit
   });
   assert.throws(() => selectionProvenance({ githubRepositoryId: "12345" }, "ai-popularity-500", "2026-10-09"), /Invalid popularity selection/);
 });
+
+test("developer infrastructure ledger stars keep their observation date", () => {
+  const selection = selectionProvenance({
+    githubRepositoryId: 12345,
+    stars: 159,
+    starsObservedAt: "2026-10-11T15:38:29.710Z",
+    popularityRank: 816,
+    archived: false,
+  }, "developer-infrastructure-popularity-816", "2026-10-13");
+  assert.deepEqual(selection, {
+    cohort: "developer-infrastructure-popularity-816",
+    date: "2026-10-11",
+    githubRepositoryId: 12345,
+    githubStars: 159,
+    popularityRank: 816,
+    archived: false,
+  });
+});
