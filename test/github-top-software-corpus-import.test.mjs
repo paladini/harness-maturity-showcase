@@ -11,6 +11,9 @@ const history = JSON.parse(await readFile(new URL("source-history.json", run)));
 const selectionBytes = await readFile(new URL("selection.json", run));
 const selection = JSON.parse(selectionBytes);
 const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
+const currentSnapshot = JSON.parse(await readFile(new URL(
+  "data/runs/2026-10-13-agriculture-software-popularity-500-corpus/manifest.json", root,
+)));
 
 test("the 1,000-repository GitHub popularity cohort is pinned and traceable", async () => {
   assert.equal(snapshot.sourceCommit, "48e9c7d1859b77cb11712945e5f1d83aa7098256");
@@ -37,12 +40,12 @@ test("the 1,000-repository GitHub popularity cohort is pinned and traceable", as
     assert.ok(listing, candidate.canonicalSlug);
     assert.equal(listing.repo.toLowerCase(), candidate.canonicalSlug.toLowerCase());
     assert.equal(listing.commit, candidate.commit);
-    assert.equal(listing.corpusSourceCommit, "4fc5ae0c5eebcc638a61e0473362190e0afa6fd7");
-    assert.ok(listing.evidence.includes("/blob/4fc5ae0c5eebcc638a61e0473362190e0afa6fd7/corpus/reports/"));
+    assert.equal(listing.corpusSourceCommit, currentSnapshot.sourceCommit);
+    assert.ok(listing.evidence.includes(`/blob/${currentSnapshot.sourceCommit}/corpus/reports/`));
   }
 
-  assert.equal(projects.length, 3728);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 3707);
+  assert.equal(projects.length, 4228);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 4207);
   assert.equal(projects.filter((item) => item.toolVersion === "1.5.0").length, 21);
   assert.ok(snapshot.previousListings.every((previous) => projects.some((item) =>
     item.repo === previous.repo && item.toolVersion === previous.toolVersion)));

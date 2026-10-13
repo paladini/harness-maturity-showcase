@@ -6,6 +6,9 @@ import { corpusListing, corpusRunPaths } from "../scripts/import-corpus.mjs";
 
 const root = new URL("../", import.meta.url);
 const run = new URL("data/runs/2026-10-08-crypto-popularity-corpus/", root);
+const currentSnapshot = JSON.parse(await readFile(new URL(
+  "data/runs/2026-10-13-agriculture-software-popularity-500-corpus/manifest.json", root,
+)));
 
 test("the prior 126-report crypto snapshot remains intact in the current registry", async () => {
   const snapshot = JSON.parse(await readFile(new URL("manifest.json", run)));
@@ -21,10 +24,10 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(corpusRunPaths(source).directory, "data/runs/2026-10-08-crypto-popularity-corpus/");
   assert.match(snapshot.sourceCommit, /^[a-f0-9]{40}$/);
-  assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 3707);
-  assert.equal(projects.filter(item => item.source === "study").length, 3727);
+  assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 4207);
+  assert.equal(projects.filter(item => item.source === "study").length, 4227);
   assert.equal(projects.filter(item => item.source === "badge").length, 1);
-  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 3707);
+  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 4207);
   for (const entry of source.entries) {
     const imported = snapshot.entries.find(item => item.corpusName === entry.name);
     assert.ok(imported, entry.name);
@@ -39,7 +42,7 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
     const current = projects.find(item => item.repo === imported.repo && item.toolVersion === imported.toolVersion);
     assert.equal(current.commit, expected.commit, entry.name);
     assert.equal(current.score, expected.score, entry.name);
-    assert.equal(current.corpusSourceCommit, "4fc5ae0c5eebcc638a61e0473362190e0afa6fd7", entry.name);
+    assert.equal(current.corpusSourceCommit, currentSnapshot.sourceCommit, entry.name);
     assert.equal(report.truncated, false);
   }
   const crypto = projects.filter(item => item.selection?.cohort === "crypto-popularity");
