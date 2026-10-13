@@ -11,6 +11,9 @@ const history = JSON.parse(await readFile(new URL("source-history.json", run)));
 const selectionBytes = await readFile(new URL("selection.json", run));
 const selection = JSON.parse(selectionBytes);
 const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
+const currentSnapshot = JSON.parse(await readFile(new URL(
+  "data/runs/2026-10-13-agriculture-software-popularity-500-corpus/manifest.json", root,
+)));
 
 test("the AI coding-assistant adoption cohort is pinned and traceable", async () => {
   assert.equal(snapshot.sourceCommit, "ce37e4151bb9ea7349da5afa17b4d393dfbc8fd1");
@@ -40,7 +43,7 @@ test("the AI coding-assistant adoption cohort is pinned and traceable", async ()
     assert.ok(listing, candidate.canonicalSlug);
     assert.equal(listing.repo.toLowerCase(), candidate.canonicalSlug.toLowerCase(), candidate.canonicalSlug);
     assert.equal(listing.commit, candidate.commit, candidate.canonicalSlug);
-    assert.equal(listing.corpusSourceCommit, "4fc5ae0c5eebcc638a61e0473362190e0afa6fd7", candidate.canonicalSlug);
-    assert.ok(listing.evidence.includes("/blob/4fc5ae0c5eebcc638a61e0473362190e0afa6fd7/corpus/reports/"));
+    assert.equal(listing.corpusSourceCommit, currentSnapshot.sourceCommit, candidate.canonicalSlug);
+    assert.ok(listing.evidence.includes(`/blob/${currentSnapshot.sourceCommit}/corpus/reports/`));
   }
 });

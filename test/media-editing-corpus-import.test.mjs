@@ -9,6 +9,9 @@ const snapshot = JSON.parse(await readFile(new URL("manifest.json", run)));
 const source = JSON.parse(await readFile(new URL("source-manifest.json", run)));
 const history = JSON.parse(await readFile(new URL("source-history.json", run)));
 const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
+const currentSnapshot = JSON.parse(await readFile(new URL(
+  "data/runs/2026-10-13-agriculture-software-popularity-500-corpus/manifest.json", root,
+)));
 
 test("the media editing import matches its immutable analysis source and preserves the catalog", async () => {
   assert.equal(snapshot.sourceCommit, "c3eee241e04da6eaa1ebf700b3a715779a013b55");
@@ -22,9 +25,9 @@ test("the media editing import matches its immutable analysis source and preserv
   assert.equal(history.date, source.runDate);
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(snapshot.previousListings.length, 147);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 3707);
-  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 3707);
-  assert.equal(projects.filter((item) => item.source === "study").length, 3727);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 4207);
+  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 4207);
+  assert.equal(projects.filter((item) => item.source === "study").length, 4227);
   assert.equal(projects.filter((item) => item.source === "badge").length, 1);
 
   const mediaEditing = projects.filter((item) => item.selection?.cohort === "media-editing-popularity");
@@ -48,7 +51,7 @@ test("the media editing import matches its immutable analysis source and preserv
       item.toolVersion === imported.toolVersion);
     assert.equal(current.commit, listing.commit, entry.name);
     assert.equal(current.score, listing.score, entry.name);
-    assert.equal(current.corpusSourceCommit, "4fc5ae0c5eebcc638a61e0473362190e0afa6fd7", entry.name);
+    assert.equal(current.corpusSourceCommit, currentSnapshot.sourceCommit, entry.name);
   }
 
   for (const previous of snapshot.previousListings.filter(
