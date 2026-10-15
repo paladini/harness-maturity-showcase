@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "repository": "merlos/MapCache",
+  "manifestName": "geospatial-merlos-mapcache",
+  "canonicalGitHubId": 190116054,
+  "commit": "fbc0f644578d7ac109313f8ca472cb2c31cb414a",
+  "reason": "Windows checkout failed exact pinned tree verification; scanned from an audited WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/geospatial-merlos-mapcache",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 438,
+  "treeModes": {
+    "100644": 421,
+    "100755": 16,
+    "120000": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "docs/Extensions/FileManager/allocatedDiskSizeForDirectory(at:).html",
+    "docs/Extensions/FileManager/fileSizeForDirectory(at:).html",
+    "docs/docsets/.docset/Contents/Resources/Documents/Extensions/FileManager/allocatedDiskSizeForDirectory(at:).html",
+    "docs/docsets/.docset/Contents/Resources/Documents/Extensions/FileManager/fileSizeForDirectory(at:).html",
+    "docs/docsets/MapCache.docset/Contents/Resources/Documents/Extensions/FileManager/allocatedDiskSizeForDirectory(at:).html",
+    "docs/docsets/MapCache.docset/Contents/Resources/Documents/Extensions/FileManager/fileSizeForDirectory(at:).html"
+  ],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "49696fd70379c40db21dda50c845f203e3cb8c19"
+  },
+  "implementation": {
+    "path": "docs/docsets/.docset/Contents/Resources/Documents/js/jazzy.js",
+    "blobSha": "1ac8699293ff1db2c42b5e4e0a46ba403967ee68"
+  },
+  "treeListingSha256": "20d06f15107cb9224afa0168e72d2c0a7b8721079d03b677fe564a68fd0e7d45",
+  "report": {
+    "path": "corpus/reports/geospatial-merlos-mapcache.json",
+    "sha256": "40b873cc42cf2d281c6098f5abeeb43ef3114bec0f29a39c0eda4a8de6e31296",
+    "sizeBytes": 45127,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

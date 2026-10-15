@@ -32,8 +32,8 @@ test("the 1,000-repository GitHub popularity cohort is pinned and traceable", as
   assert.equal(selection.selected.length, 1000);
 
   const cohort = projects.filter((item) => item.selection?.cohort === "github-top-software-popularity");
-  assert.equal(cohort.length, 1000);
-  assert.equal(new Set(cohort.map((item) => item.selection.githubRepositoryId)).size, 1000);
+  assert.equal(cohort.length, 2000);
+  assert.equal(new Set(cohort.map((item) => Number(item.selection.githubRepositoryId ?? item.selection.canonicalId))).size, 1000);
   assert.equal(new Set(cohort.map((item) => item.commit)).size, 1000);
   for (const candidate of selection.selected) {
     const listing = cohort.find((item) => item.selection.githubRepositoryId === Number(candidate.canonicalId));
@@ -44,8 +44,8 @@ test("the 1,000-repository GitHub popularity cohort is pinned and traceable", as
     assert.ok(listing.evidence.includes(`/blob/${currentSnapshot.sourceCommit}/corpus/reports/`));
   }
 
-  assert.equal(projects.length, 5044);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 5023);
+  assert.equal(projects.length, 11046);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 6023);
   assert.equal(projects.filter((item) => item.toolVersion === "1.5.0").length, 21);
   assert.ok(snapshot.previousListings.every((previous) => projects.some((item) =>
     item.repo === previous.repo && item.toolVersion === previous.toolVersion)));

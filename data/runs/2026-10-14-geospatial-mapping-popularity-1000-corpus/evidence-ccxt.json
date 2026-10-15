@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "repository": "ccxt/ccxt",
+  "manifestName": "ccxt",
+  "canonicalGitHubId": 91253698,
+  "commit": "f0aca06eb7482f083bed8406fadfcc0c05e45b1c",
+  "reason": "Windows NTFS checkout constraints and persistent partial clones; source tree listing retained without executing repository code",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/ccxt",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 9928,
+  "treeModes": {
+    "100644": 9873,
+    "100755": 36,
+    "120000": 19
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "a66a4baa099e474a67efdcb1505da4f8dfc736f3"
+  },
+  "implementation": {
+    "path": ".agents/skills/binance-sports-ai-analyzer/scripts/cli.mjs",
+    "blobSha": "5f883070e22beb552bea76408f049920d3a3e1a1"
+  },
+  "treeListingSha256": "09f60022794a897722e0d544e181342ee182d968bcdc36efa9b55addcc9ffa75",
+  "report": {
+    "path": "corpus/reports/ccxt.json",
+    "sha256": "2dad3d3a1218b65526ab5302a6d07ca9aec2270ca73dddc9c751140ab79040b8",
+    "sizeBytes": 46561,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

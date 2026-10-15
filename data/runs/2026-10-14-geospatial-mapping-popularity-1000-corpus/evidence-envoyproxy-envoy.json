@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "repository": "envoyproxy/envoy",
+  "manifestName": "envoyproxy-envoy",
+  "canonicalGitHubId": 65214191,
+  "commit": "744a11b5bea643b80f002e8d4020c89e04cea62a",
+  "selectionLedger": "corpus/selection-2026-10-10-github-top-software-1000.json",
+  "reason": "Windows checkout had NTFS-incompatible tracked filenames; scanned from audited WSL2 Linux checkout.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/envoyproxy-envoy",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.10.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 15052,
+  "treeModes": {
+    "100644": 14821,
+    "100755": 220,
+    "120000": 11
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": ["changelogs/current/behavior_changes/tls__remove-aws-lc.rst:"],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "31d16744c45b7c73328468e75a149551b9c4620f"
+  },
+  "implementation": {
+    "path": "source/exe/main.cc",
+    "blobSha": "d1c1ba8d40a94dca5c3b82c91c41be4f05ebea8a"
+  },
+  "treeListingSha256": "48de3366190ae25bf209969273ef8c92445aa657f44a9bda161426dfe5d7ad4e",
+  "report": {
+    "path": "corpus/reports/envoyproxy-envoy.json",
+    "sha256": "855131dd4ab83550dea9cd0b4c2a41437f8f8197936e3599b1a934303c725db3",
+    "sizeBytes": 44935,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

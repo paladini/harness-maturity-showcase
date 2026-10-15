@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "repository": "FuelLabs/fuels-ts",
+  "manifestName": "fuellabs-fuels-ts",
+  "canonicalGitHubId": 402860175,
+  "commit": "b3f37c91aca4aa9d5e4c0d3967f66237190826ea",
+  "selectionLedger": "corpus/selection-2026-10-10-github-top-software-1000.json",
+  "reason": "Windows checkout had NTFS-incompatible tracked filenames; scanned from audited WSL2 Linux checkout.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/fuellabs-fuels-ts",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.10.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 2188,
+  "treeModes": {
+    "100644": 2170,
+    "100755": 17,
+    "120000": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": ["snapshots/2025-01-27T15:32.json", "snapshots/2025-03-25T22:38.json"],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "5aa3254761e61311ef4175006b2914bff3fe40d1"
+  },
+  "implementation": {
+    "path": "packages/fuels/fuels.js",
+    "blobSha": "ae13c3e8f4373956eedc576acd8a8af9550b615c"
+  },
+  "treeListingSha256": "e0997de11310a3c34204d15d85343eccaae7d3756d5beca1a6113523d988ef05",
+  "report": {
+    "path": "corpus/reports/fuellabs-fuels-ts.json",
+    "sha256": "c4efbf5da8c33ac58aba03b3a5a1dbefdd311baac36e2cc966961f4e6a131eb4",
+    "sizeBytes": 45568,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

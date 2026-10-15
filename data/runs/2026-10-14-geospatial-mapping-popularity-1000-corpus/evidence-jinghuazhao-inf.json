@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "repository": "jinghuazhao/INF",
+  "manifestName": "jinghuazhao-inf",
+  "canonicalGitHubId": null,
+  "commit": "6216cc1c046c9a01deffa1e05c72558afb6e28f7",
+  "reason": "Windows reusable checkout contained an existing modified spreadsheet; scanned clean WSL2 Ubuntu 24.04 checkout without omissions.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/jinghuazhao-inf",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 399,
+  "treeModes": {
+    "100644": 293,
+    "100755": 106
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "233a6d654efe5c43f32db89d160d46021f609e3f"
+  },
+  "implementation": {
+    "path": "javascripts/config.js",
+    "blobSha": "06dbf38bfd362b300ea18ab6bf8556a08f5e751c"
+  },
+  "treeListingSha256": "b11222e49da5c302be10d0d2201c3f8643cd5ec58b54412fe48e94692d4e2336",
+  "report": {
+    "path": "corpus/reports/jinghuazhao-inf.json",
+    "sha256": "f22e2b66c3f7b9ef88b96824fefc25833aad97629597d1775ff4d0baf9600b82",
+    "sizeBytes": 45124,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

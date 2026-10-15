@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "repository": "Cap-n-Proud/roboGarden",
+  "manifestName": "cap-n-proud-robogarden",
+  "canonicalGitHubId": null,
+  "commit": "802f2daafcd11131f89395bd9858f7d65e1f5bca",
+  "reason": "Windows reusable checkout contained an existing modified tracked bytecode file; scanned clean WSL2 Ubuntu 24.04 checkout without omissions.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/cap-n-proud-robogarden",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 4091,
+  "treeModes": {
+    "100755": 4088,
+    "120000": 3
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "a61509f79ee20b38e21a3f00a59e0dad503d57de"
+  },
+  "implementation": {
+    "path": "assets/raspberry/updateApp.py",
+    "blobSha": "e7310746dd892a204f057401ce11872ec6f15bec"
+  },
+  "treeListingSha256": "93e8456a80ca0bd6dfb3ef83d5f12e9284eb4415ecb44d7ab99ec7f773df6f08",
+  "report": {
+    "path": "corpus/reports/cap-n-proud-robogarden.json",
+    "sha256": "f8769e57ad83273fdac8e4f2e804da926d7912c1ef756228ba7af973a3fbdbe5",
+    "sizeBytes": 45467,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

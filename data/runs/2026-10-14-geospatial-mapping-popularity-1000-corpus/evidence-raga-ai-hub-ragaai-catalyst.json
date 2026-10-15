@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "repository": "raga-ai-hub/RagaAI-Catalyst",
+  "manifestName": "raga-ai-hub-ragaai-catalyst",
+  "canonicalGitHubId": null,
+  "commit": "ab67893310891140211280a496402003e52cdab5",
+  "reason": "Windows reusable checkout was already modified; scanned from clean WSL2 Ubuntu 24.04 without omitted tracked paths.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/raga-ai-hub-ragaai-catalyst",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 214,
+  "treeModes": {
+    "100644": 214
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "7450aa665127bb801fe118abced587d1b020b305"
+  },
+  "implementation": {
+    "path": "ragaai_catalyst/__init__.py",
+    "blobSha": "2cfd00f458d97dab5387217a4301cfc04c14569a"
+  },
+  "treeListingSha256": "240d5fc52604c7317efb778ef5710ac6deee311b59959b6a04b2c574cecbcc88",
+  "report": {
+    "path": "corpus/reports/raga-ai-hub-ragaai-catalyst.json",
+    "sha256": "209dcae0493c9940c4225a3bdf7bd74deeb7a01bef02c61c30ea64d5039e5394",
+    "sizeBytes": 44852,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

@@ -42,11 +42,11 @@ test("the 500-project AI popularity cohort is pinned and traceable", async () =>
     const bytes = await readFile(new URL(item.file, run));
     assert.equal(item.sha256, createHash("sha256").update(bytes).digest("hex"), item.file);
   }
-  assert.equal(projects.filter((item) => item.selection?.cohort === "ai-popularity").length, 30);
-  assert.equal(projects.filter((item) => item.selection?.cohort === "crypto-popularity").length, 25);
-  assert.equal(projects.filter((item) => item.selection?.cohort === "media-editing-popularity").length, 25);
-  assert.equal(projects.length, 5044);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 5023);
+  assert.equal(projects.filter((item) => item.selection?.cohort === "ai-popularity").length, 60);
+  assert.equal(projects.filter((item) => item.selection?.cohort === "crypto-popularity").length, 50);
+  assert.equal(projects.filter((item) => item.selection?.cohort === "media-editing-popularity").length, 50);
+  assert.equal(projects.length, 11046);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 6023);
   assert.equal(projects.filter((item) => item.toolVersion === "1.5.0").length, 21);
 });
 

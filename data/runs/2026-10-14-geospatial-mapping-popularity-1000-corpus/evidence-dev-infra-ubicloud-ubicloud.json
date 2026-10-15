@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "repository": "ubicloud/ubicloud",
+  "manifestName": "dev-infra-ubicloud-ubicloud",
+  "canonicalGitHubId": 590158156,
+  "commit": "fad16215cbf0b392ab5b9cfc8e4a4c7df382ac28",
+  "reason": "Windows NTFS rejected tracked fixture paths containing colons; scanned clean WSL2 Ubuntu 24.04 checkout without omissions.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/dev-infra-ubicloud-ubicloud",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 2661,
+  "treeModes": {
+    "100644": 2567,
+    "100755": 94
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "spec/routes/api/cli/golden-files/pg eu-central-h1_test-pg add-metric-destination foo bar https:__md.example.com.txt",
+    "\"spec/routes/api/cli/golden-files/sk sk684jk5sa027g4mmr3rrwmakr update \\\"b b\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/sk spk update \\\"b b\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/sk spk2 create \\\"b b\\\".txt\"",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm -4 scp -r local-path :remote-path.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm -4 scp :remote-path local-path.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm -6 scp -r local-path :remote-path.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm -6 scp :remote-path local-path.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm -u foo scp -r local-path :remote-path.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm -u foo scp :remote-path local-path invalid.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm -u foo scp :remote-path local-path.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm scp -r :remote-path local-path.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm scp -r local-path :remote-path.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm scp :remote-path local-path.txt",
+    "spec/routes/api/cli/golden-files/vm eu-central-h1_test-vm scp local-path :remote-path.txt",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create  -s bad \\\"a a\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create \\\"# a\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create \\\"ssh-rsa pk\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create -6 \\\"ssh-rsa pk\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create -S 80 \\\"ssh-rsa pk\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create -S bad \\\"a a\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create -b bad \\\"a a\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create -b debian-12 \\\"ssh-rsa pk\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create -p psfzm9e26xky5m9ggetw4dpqe2 \\\"ssh-rsa pk\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create -s standard-4 \\\"ssh-rsa pk\\\".txt\"",
+    "\"spec/routes/api/cli/golden-files/vm eu-central-h1_test2-vm create -u foo \\\"ssh-rsa pk\\\".txt\""
+  ],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "0afa9c55c73469b9f4e257de5fcce341cfb179b5"
+  },
+  "implementation": {
+    "path": "assets/js/app.js",
+    "blobSha": "966c7ebbf095aafd17f7d026b84c30fe7b488eb8"
+  },
+  "treeListingSha256": "83f64f74381eeb304e51b1a180a85a4ae837b34ee7f22d3f069bf798aa07e465",
+  "report": {
+    "path": "corpus/reports/dev-infra-ubicloud-ubicloud.json",
+    "sha256": "9c2ca5e1b15ac97c0d6016c18c3650b276983a4dfd96ed6643287226dfb785b5",
+    "sizeBytes": 45354,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

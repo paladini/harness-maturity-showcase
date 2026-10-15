@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "repository": "lejubila/piGardenWeb",
+  "manifestName": "lejubila-pigardenweb",
+  "canonicalGitHubId": null,
+  "commit": "3ed1930207d59d72de49fd8877880fe4d30592c2",
+  "reason": "Windows checkout content differed from the pinned README blob; scanned from an audited WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/lejubila-pigardenweb",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 25605,
+  "treeModes": {
+    "100644": 24904,
+    "100755": 695,
+    "120000": 6
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "da3ebb15742433c3f5cc55874d1510f2cd7475c3"
+  },
+  "implementation": {
+    "path": "app/Console/Kernel.php",
+    "blobSha": "a8c51585931fd6692a2aa6306daea3575c0fc411"
+  },
+  "treeListingSha256": "357fd5af001aa1f231ce2b0f96c6977497a8cb0d508d71d3836053fa2a8bfa4a",
+  "report": {
+    "path": "corpus/reports/lejubila-pigardenweb.json",
+    "sha256": "eaa3b466312bf62b89ae4512640e01b8b9402c3a27f91d262a285c77be2222f3",
+    "sizeBytes": 44983,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

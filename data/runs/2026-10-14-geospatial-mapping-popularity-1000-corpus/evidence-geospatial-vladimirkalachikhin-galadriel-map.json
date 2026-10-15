@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "repository": "VladimirKalachikhin/Galadriel-map",
+  "manifestName": "geospatial-vladimirkalachikhin-galadriel-map",
+  "canonicalGitHubId": 147557877,
+  "commit": "3214c4a2087d5bf5d7f30916a993d79dfcc24124",
+  "reason": "Windows checkout disagreed over line endings on a previously cached clone; source evidence retained, no repository code execution",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/geospatial-vladimirkalachikhin-galadriel-map",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 663,
+  "treeModes": {
+    "100644": 619,
+    "100755": 42,
+    "120000": 2
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "bc49917c721b2350152c46f261be7c02bd9ba964"
+  },
+  "implementation": {
+    "path": "L.TileLayer.Mercator/src/L.TileLayer.Mercator.cjs.js",
+    "blobSha": "4c0992b092a5a8aad168b77be6c4d07d9962666e"
+  },
+  "treeListingSha256": "150249fc0ac15a67f782c06f84959caf6dba6053c43343c3dae1db352885c0d2",
+  "report": {
+    "path": "corpus/reports/geospatial-vladimirkalachikhin-galadriel-map.json",
+    "sha256": "93e7f243cc036cd12a4342a09218d3ee3cd4f4cc121e921f9fcb617ed165878b",
+    "sizeBytes": 45099,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}
