@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "repository": "dennissergeev/octant",
+  "manifestName": "dennissergeev-octant",
+  "canonicalGitHubId": null,
+  "commit": "edbf3ae1e576dacc42480cf3c7e9801528db4104",
+  "reason": "Windows NTFS rejected a tracked reserved-device path; scanned clean WSL2 Ubuntu 24.04 checkout without omissions.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/dennissergeev-octant",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1099,
+  "treeModes": {
+    "100644": 1099
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": ["docs/source/api/aux.rst"],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "efd364e2c763dced55b48399524fe20fce50f141"
+  },
+  "implementation": {
+    "path": "docs/source/conf.py",
+    "blobSha": "b2c96ff355f2a995d13bf8e020d5898a08608ad3"
+  },
+  "treeListingSha256": "efa66346488c918e403a8490f95d859b44f93ca7a4332b1bb2c0bfcf7142fcb7",
+  "report": {
+    "path": "corpus/reports/dennissergeev-octant.json",
+    "sha256": "8e46d610a2c6f250315cfcbef41496e97692a761686d011ead37680cf89f1916",
+    "sizeBytes": 45455,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

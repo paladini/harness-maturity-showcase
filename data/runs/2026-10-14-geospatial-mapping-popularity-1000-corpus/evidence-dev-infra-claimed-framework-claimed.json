@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "repository": "claimed-framework/claimed",
+  "manifestName": "dev-infra-claimed-framework-claimed",
+  "canonicalGitHubId": 134300570,
+  "commit": "d86da9298ebe92f5a13332a48056b4e11e2d801b",
+  "reason": "Windows checkout failed exact pinned tree verification; scanned from an audited WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/dev-infra-claimed-framework-claimed",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 468,
+  "treeModes": {
+    "100644": 445,
+    "100755": 23
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "src/claimed/components/transform/image-tiling-with-metadata_adjustment.cwl:Zone.Identifier",
+    "src/claimed/components/transform/image-tiling-with-metadata_adjustment.ipynb:Zone.Identifier",
+    "src/claimed/components/transform/image-tiling-with-metadata_adjustment.job.yaml:Zone.Identifier",
+    "src/claimed/components/transform/image-tiling-with-metadata_adjustment.yaml:Zone.Identifier"
+  ],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "7f276e21d35c6ef4119fad837e27b428bfa6f7fe"
+  },
+  "implementation": {
+    "path": "mlflow_corrupted.py",
+    "blobSha": "4c112742c305185c5a6a5692fa5e897f086c588e"
+  },
+  "treeListingSha256": "8ad71628ae1995832a85b652b19adf54f502891846de3468241ecd4e637f5eb8",
+  "report": {
+    "path": "corpus/reports/dev-infra-claimed-framework-claimed.json",
+    "sha256": "6237badbcc1f90c43fdc4e05a82472bbdd8e254865091443b49b45cc9df9a978",
+    "sizeBytes": 45196,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

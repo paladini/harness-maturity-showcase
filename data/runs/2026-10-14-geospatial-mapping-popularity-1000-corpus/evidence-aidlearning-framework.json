@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "repository": "aidlearning/AidLearning-FrameWork",
+  "manifestName": "aidlearning-framework",
+  "canonicalGitHubId": null,
+  "commit": "84d0676baffa905c12189959480c9a1bb14619a6",
+  "reason": "Windows path-length or cached checkout constraints; source tree listing retained without executing repository code",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/aidlearning-framework",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 257,
+  "treeModes": {
+    "100644": 248,
+    "100755": 9
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "e767a792b53b14fbe560fc3ecb3c9aaaff0b8841"
+  },
+  "implementation": {
+    "path": "buildin/fastpose/webpose.py",
+    "blobSha": "426bcb43e8cd36f93f2a4d78bf2ab0a863587c68"
+  },
+  "treeListingSha256": "ab9c8e8fa353c3df59f3a876b58acbcb82cc4980973ba6ed87e71a85fc6177b8",
+  "report": {
+    "path": "corpus/reports/aidlearning-framework.json",
+    "sha256": "8ad1358d936736950caa316b19afd2aa0ca7b27bc5472c400ba6b406429f7263",
+    "sizeBytes": 45114,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

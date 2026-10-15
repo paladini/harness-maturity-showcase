@@ -32,10 +32,12 @@ test("the AI coding-assistant adoption cohort is pinned and traceable", async ()
   assert.equal(selection.selected.length, 500);
 
   const cohort = projects.filter((item) => item.selection?.cohort === "ai-ide-adoption");
-  assert.equal(cohort.length, 500);
+  assert.equal(cohort.length, 1000);
   assert.equal(new Set(cohort.map((item) => item.selection.githubRepositoryId)).size, 500);
-  assert.equal(cohort.filter((item) => item.selection.githubStars > 0).length, 378);
-  assert.equal(cohort.filter((item) => item.selection.githubStars === 0).length, 122);
+  assert.equal(new Set(cohort.filter((item) => item.selection.githubStars > 0)
+    .map((item) => item.selection.githubRepositoryId)).size, 378);
+  assert.equal(new Set(cohort.filter((item) => item.selection.githubStars === 0)
+    .map((item) => item.selection.githubRepositoryId)).size, 122);
   assert.ok(cohort.every((item) => item.selection.date === "2026-10-11" && typeof item.selection.archived === "boolean"));
 
   for (const candidate of selection.selected) {

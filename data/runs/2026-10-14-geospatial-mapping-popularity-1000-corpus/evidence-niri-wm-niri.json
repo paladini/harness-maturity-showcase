@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "repository": "niri-wm/niri",
+  "manifestName": "niri-wm-niri",
+  "canonicalGitHubId": 676934005,
+  "commit": "d0cd58ec5ac6b2d41d42478fb4f3cc7c0c687db9",
+  "selectionLedger": "corpus/selection-2026-10-10-github-top-software-1000.json",
+  "reason": "Windows checkout had NTFS-incompatible tracked filenames; scanned from audited WSL2 Linux checkout.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/niri-wm-niri",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.10.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 5604,
+  "treeModes": {
+    "100644": 5603,
+    "100755": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "docs/wiki/Configuration:-Animations.md",
+    "docs/wiki/Configuration:-Debug-Options.md",
+    "docs/wiki/Configuration:-Gestures.md",
+    "docs/wiki/Configuration:-Include.md",
+    "docs/wiki/Configuration:-Input.md",
+    "docs/wiki/Configuration:-Introduction.md",
+    "docs/wiki/Configuration:-Key-Bindings.md",
+    "docs/wiki/Configuration:-Layer-Rules.md",
+    "docs/wiki/Configuration:-Layout.md",
+    "docs/wiki/Configuration:-Miscellaneous.md",
+    "docs/wiki/Configuration:-Named-Workspaces.md",
+    "docs/wiki/Configuration:-Outputs.md",
+    "docs/wiki/Configuration:-Overview.md",
+    "docs/wiki/Configuration:-Recent-Windows.md",
+    "docs/wiki/Configuration:-Switch-Events.md",
+    "docs/wiki/Configuration:-Window-Rules.md",
+    "docs/wiki/Development:-Animation-Timing.md",
+    "docs/wiki/Development:-Design-Principles.md",
+    "docs/wiki/Development:-Developing-niri.md",
+    "docs/wiki/Development:-Documenting-niri.md",
+    "docs/wiki/Development:-Fractional-Layout.md",
+    "docs/wiki/Development:-Redraw-Loop.md",
+    "docs/wiki/Development:-Releasing-niri.md"
+  ],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "995020a72889a5f6f1ec8394c2e3d3bb77f4098a"
+  },
+  "implementation": {
+    "path": "src/cli.rs",
+    "blobSha": "df69aa14fd4a5cc9b46e2a4ce83f8c6daef7067b"
+  },
+  "treeListingSha256": "e54711d13855536e5db5bf6b8be491874f20d1c43978187cf449d67531930b1c",
+  "report": {
+    "path": "corpus/reports/niri-wm-niri.json",
+    "sha256": "67c094067bf3f8cd49ab822878d2803d6c4a176d0191bb54d6dc9d79da971c2e",
+    "sizeBytes": 44921,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

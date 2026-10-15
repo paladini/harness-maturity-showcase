@@ -25,13 +25,14 @@ test("the media editing import matches its immutable analysis source and preserv
   assert.equal(history.date, source.runDate);
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(snapshot.previousListings.length, 147);
-  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 5023);
-  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 5023);
-  assert.equal(projects.filter((item) => item.source === "study").length, 5043);
+  assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 6023);
+  assert.equal(projects.filter((item) => item.corpusSourceCommit).length, 11025);
+  assert.equal(projects.filter((item) => item.source === "study").length, 11045);
   assert.equal(projects.filter((item) => item.source === "badge").length, 1);
 
   const mediaEditing = projects.filter((item) => item.selection?.cohort === "media-editing-popularity");
-  assert.equal(mediaEditing.length, 25);
+  assert.equal(mediaEditing.length, 50);
+  assert.equal(new Set(mediaEditing.map((item) => Number(item.selection.githubRepositoryId ?? item.selection.canonicalId))).size, 25);
   assert.ok(mediaEditing.every((item) => Number.isInteger(item.selection.githubStars)));
   assert.ok(mediaEditing.every((item) => item.selection.popularityRank === undefined));
 

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "repository": "wq/wq",
+  "manifestName": "geospatial-wq-wq",
+  "canonicalGitHubId": 5514380,
+  "commit": "c13e1394146a5a61c84f8134001efd102f85a14d",
+  "reason": "NTFS or incomplete cached checkout constraints; source evidence retained, no repository code execution",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/geospatial-wq-wq",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 566,
+  "treeModes": {
+    "100644": 559,
+    "100755": 2,
+    "120000": 1,
+    "160000": 4
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "6eb1af3477da5ac700044523f6b70584b3ff687f"
+  },
+  "implementation": {
+    "path": "demo/config.js",
+    "blobSha": "2254dd2365a0fc9ba765d4b853ad1598b9faec24"
+  },
+  "treeListingSha256": "38a692cd79cddb044553db812d2e56eaeddb93b9125deca0d9362feefa5c6b65",
+  "report": {
+    "path": "corpus/reports/geospatial-wq-wq.json",
+    "sha256": "311ccd302ffbaaed4ab2504728fc392031f7532ec1799aad502bb7067cb12322",
+    "sizeBytes": 45051,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

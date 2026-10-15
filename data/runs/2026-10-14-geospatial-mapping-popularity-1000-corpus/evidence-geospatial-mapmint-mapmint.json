@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "repository": "mapmint/mapmint",
+  "manifestName": "geospatial-mapmint-mapmint",
+  "canonicalGitHubId": 18179939,
+  "commit": "79b4221a795d3093a0d6ec51def0c1c0b3156fef",
+  "reason": "Windows checkout failed exact pinned tree verification; scanned from an audited WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/geospatial-mapmint-mapmint",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 4898,
+  "treeModes": {
+    "100644": 3832,
+    "100755": 1027,
+    "120000": 38,
+    "160000": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": ["con.xsl"],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "f200ced60a8e1e05e6bcb80777dca13889c37527"
+  },
+  "implementation": {
+    "path": "admin-tools/deploy/make_cfg.py",
+    "blobSha": "7097088e1db243c9fe6d3aa0618315a3d7eefe1b"
+  },
+  "treeListingSha256": "e5c8d4c8d09dbe40c8a30e6cc19dec1d25c388959aba95f7a1a3d741baabceb3",
+  "report": {
+    "path": "corpus/reports/geospatial-mapmint-mapmint.json",
+    "sha256": "c121a7675adea0a0a5789828fe51ac669f953807e26b89be9fc34e86a433cd8a",
+    "sizeBytes": 45107,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

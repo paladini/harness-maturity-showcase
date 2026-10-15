@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "repository": "kazulagi/plantFEM",
+  "manifestName": "kazulagi-plantfem",
+  "canonicalGitHubId": null,
+  "commit": "2abebf4028f89251dbf06ccb6c92570598869a77",
+  "reason": "Windows reusable checkout contained existing modified Fortran source files; scanned clean WSL2 Ubuntu 24.04 checkout without omissions.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/kazulagi-plantfem",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1682,
+  "treeModes": {
+    "100644": 216,
+    "100755": 1466
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "9205646cb8a2bbab49c9240fef3de79b6568926c"
+  },
+  "implementation": {
+    "path": "Interactive/GUI.py",
+    "blobSha": "4c8174453873c09bb6ebdedf796735bef06290f1"
+  },
+  "treeListingSha256": "8ca34fb54668d5fe04b048c8373f4a6e1cd4d4d4c8e984851cf7f1c7d186d8c0",
+  "report": {
+    "path": "corpus/reports/kazulagi-plantfem.json",
+    "sha256": "77db64ff4650f5f89388da7073747a34059ce86b39ebee47ac8c0efc5ee5ac82",
+    "sizeBytes": 45254,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

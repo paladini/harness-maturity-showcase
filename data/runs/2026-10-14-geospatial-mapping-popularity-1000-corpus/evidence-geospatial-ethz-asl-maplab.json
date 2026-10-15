@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "repository": "ethz-asl/maplab",
+  "manifestName": "geospatial-ethz-asl-maplab",
+  "canonicalGitHubId": 112253403,
+  "commit": "0b4868efeb292851d71f98d31a1e6bb40ebb244b",
+  "reason": "Pinned commit contains colon filenames invalid on Windows NTFS; source evidence retained, no repository code execution",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/geospatial-ethz-asl-maplab",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1397,
+  "treeModes": {
+    "100644": 1345,
+    "100755": 28,
+    "160000": 24
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "docs/pages/tutorials-extending-maplab/C_Coding-Examples:-Creating-a-custom-console-plugin.md",
+    "docs/pages/tutorials-extending-maplab/D_Coding-Examples:-Working-with-the-VI-Map.md"
+  ],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "b226a7be3e8bff44c0046ad3dbbcda916f68d386"
+  },
+  "implementation": {
+    "path": "algorithms/ceres-error-terms/src/block-pose-prior-error-term-v2.cc",
+    "blobSha": "dda7357d2c4918b3b3830636699bfb3f789bef2a"
+  },
+  "treeListingSha256": "40edc6465faac7f29dbed13edcf2e2ebf374772f19c11ae539846bb0072db69b",
+  "report": {
+    "path": "corpus/reports/geospatial-ethz-asl-maplab.json",
+    "sha256": "9d4a6631c0c404b860a61f63656c3fbc1f260569a8876bd48a5003cec956f0fc",
+    "sizeBytes": 45463,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

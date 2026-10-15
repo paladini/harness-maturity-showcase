@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "repository": "Orange-Cyberdefense/grepmarx",
+  "manifestName": "dev-infra-orange-cyberdefense-grepmarx",
+  "canonicalGitHubId": 586061753,
+  "commit": "35c491e8e7865b377082c61ed37336f7019b09f9",
+  "reason": "NTFS cannot check out colon-containing paths in the pinned tree; source evidence retained, no repository code execution",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/dev-infra-orange-cyberdefense-grepmarx",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 2257,
+  "treeModes": {
+    "100644": 2230,
+    "100755": 27
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "5186335115996a922481f1deaac151828bc9c491"
+  },
+  "implementation": {
+    "path": "app/__init__.py",
+    "blobSha": "a71b68fa2af81958db787a04a8bf900dd6908843"
+  },
+  "treeListingSha256": "38125e520c949cfc2765c0e722e65846647accb885d391a07f965b38efdab1f1",
+  "report": {
+    "path": "corpus/reports/dev-infra-orange-cyberdefense-grepmarx.json",
+    "sha256": "d465891026a4fd504fb7fde7911152927918811654c8431f8be320c7d28219ca",
+    "sizeBytes": 45403,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

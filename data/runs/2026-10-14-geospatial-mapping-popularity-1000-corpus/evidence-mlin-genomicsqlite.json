@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "repository": "mlin/GenomicSQLite",
+  "manifestName": "mlin-genomicsqlite",
+  "canonicalGitHubId": null,
+  "commit": "eb9bd7b227cab21bbe8950b1b5232c8cc6b1afd3",
+  "reason": "Windows NTFS rejected tracked paths containing colons; scanned clean WSL2 Ubuntu 24.04 checkout without omissions.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/mlin-genomicsqlite",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 84,
+  "treeModes": {
+    "100644": 77,
+    "100755": 6,
+    "120000": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "test/data/NA12878.chr21:20000000-22500000.bam",
+    "test/data/hc.NA12878.chr22:25000000-30000000.g.vcf.gz"
+  ],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "313a0b96df689feeb519a8516a795dea9c49be47"
+  },
+  "implementation": {
+    "path": "bindings/jdbc/genomicsqlite-jdbc/src/main/java/net/mlin/genomicsqlite/GenomicSQLite.java",
+    "blobSha": "c7ae92c05c9e77f98159acd3b8d2247ea258bfef"
+  },
+  "treeListingSha256": "1afcac34c4e1889a70adc0bcb1b6afaab1fc33b9f270025a033c93636dd8b50b",
+  "report": {
+    "path": "corpus/reports/mlin-genomicsqlite.json",
+    "sha256": "11962f6d2b61023dbeb04fd1e2e3d78eed9fd93764c8b510ed33f8df59fecd7d",
+    "sizeBytes": 45337,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

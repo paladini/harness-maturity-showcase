@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "repository": "jedarden/gribtract",
+  "manifestName": "jedarden-gribtract",
+  "canonicalGitHubId": null,
+  "commit": "9445b8bc86d9435682dadc44ca9fea3bc0efcb80",
+  "reason": "Windows reusable checkout contained an existing modified tracked file; scanned a clean WSL2 Ubuntu 24.04 checkout without omissions.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/jedarden-gribtract",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 458,
+  "treeModes": {
+    "100644": 421,
+    "100755": 37
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "2aa5eeace063018129673b83b259f8536f5ce76c"
+  },
+  "implementation": {
+    "path": "analyze_sections.py",
+    "blobSha": "b896fd3c53c6189317dfae34826a17cfbf368f59"
+  },
+  "treeListingSha256": "3bc01d38aae1c2098a06095d1c01e9f70f8ac8021c9ddf2da601009c8223a0bb",
+  "report": {
+    "path": "corpus/reports/jedarden-gribtract.json",
+    "sha256": "aa2479c5b906de9803e94df120a7322063a784ee811e1f489dee8a11ff87ba30",
+    "sizeBytes": 45087,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

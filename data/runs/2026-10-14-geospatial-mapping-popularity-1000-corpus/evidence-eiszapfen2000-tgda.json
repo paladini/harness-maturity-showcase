@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "repository": "eiszapfen2000/tgda",
+  "manifestName": "eiszapfen2000-tgda",
+  "canonicalGitHubId": null,
+  "commit": "d78a551e9baead24d006d0714eecb445e1c19722",
+  "reason": "Windows reusable checkout contained existing modified source files; scanned clean WSL2 Ubuntu 24.04 checkout without omissions.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/eiszapfen2000-tgda",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 4436,
+  "treeModes": {
+    "100644": 4262,
+    "100755": 128,
+    "120000": 46
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "75bed4199ec3c2751c1fae12d724ea20da328cf5"
+  },
+  "implementation": {
+    "path": "Branches/OceanDemoLods/AppsV2/OceanDemo/Entities/Ocean/ODAmplitude.c",
+    "blobSha": "c1248d4626fcbf894ff6286e76d1e2d31aae2beb"
+  },
+  "treeListingSha256": "256d80934d72cd5d5cd8832328b9f5f112f915af917200b1770dcf6c05ed9b63",
+  "report": {
+    "path": "corpus/reports/eiszapfen2000-tgda.json",
+    "sha256": "c28763c331549826d95f798dff21891e0bb9b48e59fb349126c5b79888da4311",
+    "sizeBytes": 45067,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

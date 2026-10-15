@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "repository": "microsoft/promptflow",
+  "manifestName": "promptflow",
+  "canonicalGitHubId": null,
+  "commit": "3928a727b406e66d64ff42621534bb58e0ca18ce",
+  "reason": "Windows path-length or NTFS checkout constraints; source tree listing retained without executing repository code",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/promptflow",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 4036,
+  "treeModes": {
+    "100644": 4033,
+    "100755": 3
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "44fec622f43bdddd357598c8161ad8a3453f2b7b"
+  },
+  "implementation": {
+    "path": ".github/skills/maf-online-endpoint/assets/score.py",
+    "blobSha": "f619b4fa3ce4b15fa26814e689706a5a939a1855"
+  },
+  "treeListingSha256": "754397ecd238615c499b916058567c17d737c1b8334211f9f2453b59c962fc9b",
+  "report": {
+    "path": "corpus/reports/promptflow.json",
+    "sha256": "6d37ffb3d82699e7ad4beaf25fd445bdec5254eba1c28d26f425d522f52a8700",
+    "sizeBytes": 45449,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

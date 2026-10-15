@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "repository": "EjbejaranosAI/AI4VJ",
+  "manifestName": "game-ai-ejbejaranosai-ai4vj",
+  "canonicalGitHubId": 835769576,
+  "commit": "50f522bff47fd7a0c5ef82788d6a3ebde9c70045",
+  "reason": "Windows path-length or cached checkout constraints; source tree listing retained without executing repository code",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/game-ai-ejbejaranosai-ai4vj",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 51,
+  "treeModes": {
+    "100644": 51
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "2ff4315b87f1872c605d6e645b11c09f359f5e1c"
+  },
+  "implementation": {
+    "path": "Labs/1_Pathfinding_and_navigation_labs/pathfinding.py",
+    "blobSha": "a9e65b95a81503749f4cc4c7ea25836964d3e426"
+  },
+  "treeListingSha256": "eeb1f935a990f9a2ce8c46fb7d5278f2e6bbd39f40137a53bada32ad9b134339",
+  "report": {
+    "path": "corpus/reports/game-ai-ejbejaranosai-ai4vj.json",
+    "sha256": "2b68a75ef4354a008b91b7e32283ef381e02839a82c63a4e0af0e2e13e769f0f",
+    "sizeBytes": 45076,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

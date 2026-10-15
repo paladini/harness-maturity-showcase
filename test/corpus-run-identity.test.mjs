@@ -25,5 +25,6 @@ test("popularity provenance labels each source cohort", () => {
   assert.equal(popularityLabel("media-editing-popularity"), "Media editing popularity");
   assert.equal(popularityLabel("scientific-software-random-500"), "Scientific software random sample");
   assert.equal(popularityLabel("developer-infrastructure-popularity-816"), "Developer infrastructure popularity");
+  assert.equal(popularityLabel("geospatial-mapping-popularity-1000"), "Geospatial and mapping popularity");
   assert.equal(popularityLabel("another-cohort"), "GitHub popularity");
 });

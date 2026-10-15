@@ -150,9 +150,18 @@ if (isMain) {
       }, selection.cohort ?? source.runId, selection.selectionDate));
     }
   }
-  const evidence = await Promise.all(evidencePaths.map(async (file) => ({
-    file: path.basename(file), bytes: await fetchBytes(file),
-  })));
+  const reservedRunFiles = new Set([
+    "manifest.json", "source-manifest.json", "source-history.json",
+    ...(selectionBytes ? ["selection.json"] : []),
+    ...source.entries.map((entry) => `${entry.name}.json`),
+  ]);
+  const evidence = await Promise.all(evidencePaths.map(async (sourceFile) => {
+    const basename = path.basename(sourceFile);
+    const file = reservedRunFiles.has(basename) ? `evidence-${basename}` : basename;
+    if (reservedRunFiles.has(file)) throw new Error(`Evidence filename collision: ${sourceFile}`);
+    reservedRunFiles.add(file);
+    return { file, sourceFile, bytes: await fetchBytes(sourceFile) };
+  }));
   const listings = [];
   const reports = [];
   // Fetch and validate the full immutable source before writing the index.
@@ -193,7 +202,7 @@ if (isMain) {
       sha256: createHash("sha256").update(selectionBytes).digest("hex"),
     } } : {}),
     evidenceFiles: evidence.map((item) => ({
-      file: item.file, sha256: createHash("sha256").update(item.bytes).digest("hex"),
+      file: item.file, sourceFile: item.sourceFile, sha256: createHash("sha256").update(item.bytes).digest("hex"),
     })),
     entries: listings.map((listing, index) => ({ ...listing, report: `${listing.corpusName}.json`, sha256: reports[index].sha256 })),
   };

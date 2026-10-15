@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "repository": "vgteam/vg",
+  "manifestName": "vgteam-vg",
+  "canonicalGitHubId": null,
+  "commit": "ce79f1283b2eaee639d2d50ccc92f17c9cda17b9",
+  "reason": "Windows NTFS rejected tracked paths containing colons; scanned clean WSL2 Ubuntu 24.04 checkout without omissions.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/vgteam-vg",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1272,
+  "treeModes": {
+    "100644": 1175,
+    "100755": 53,
+    "120000": 1,
+    "160000": 43
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "test/graphs/199754000:199755000.vg",
+    "test/mapsoftclip/113968116:113968146.seq",
+    "test/mapsoftclip/113968116:113968146.vg"
+  ],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "58d0d2d6c895c7fe6ed48a6f5f20ec801565074c"
+  },
+  "implementation": {
+    "path": "contrib/proto2cpp/proto2cpp.py",
+    "blobSha": "e41a2d443df7b3ac3e019f0b8dc36a4ccfd44052"
+  },
+  "treeListingSha256": "1a3663927dd2a23ccd3a23303a8ae8717ac4ad223e9497adf6472c049090beb2",
+  "report": {
+    "path": "corpus/reports/vgteam-vg.json",
+    "sha256": "b10975a45d3508f7249409e22618fd2d1ae2b7235fd9e795d4bca6c3e82bc169",
+    "sizeBytes": 44982,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

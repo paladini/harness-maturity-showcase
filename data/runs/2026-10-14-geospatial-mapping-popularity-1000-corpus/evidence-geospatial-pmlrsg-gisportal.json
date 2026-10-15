@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "repository": "pmlrsg/GISportal",
+  "manifestName": "geospatial-pmlrsg-gisportal",
+  "canonicalGitHubId": 17903443,
+  "commit": "6988ebe635dbcf803a974583c8bcac77f20b5b79",
+  "reason": "Windows checkout failed exact pinned tree verification; scanned from an audited WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/geospatial-pmlrsg-gisportal",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 533,
+  "treeModes": {
+    "100644": 480,
+    "100755": 52,
+    "120000": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "plotting/testing/data/testscatter1.json:",
+    "test_dependencies/config/site_settings/127.0.0.1:6789/config-server.js",
+    "test_dependencies/config/site_settings/127.0.0.1:6789/rsg.pml.ac.uk-thredds-wms-CCI_ALL-v3.0-5DAY.json",
+    "test_dependencies/config/site_settings/127.0.0.1:6789/rsg.pml.ac.uk-thredds-wms-CCI_ALL-v3.0-DAILY.json",
+    "test_dependencies/config/site_settings/127.0.0.1:6789/user_a.user@pml.ac.uk/rsg.pml.ac.uk-thredds-wms-CCI_ALL-v3.0-MONTHLY.json",
+    "test_dependencies/resources/plotting/animation/2eb07c2130bf866a984ec65a488a13184d162bd4_2015-11-01T00-00:00.000Z.png",
+    "test_dependencies/resources/plotting/animation/2eb07c2130bf866a984ec65a488a13184d162bd4_2015-12-01T00-00:00.000Z.png"
+  ],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "89bc6bc78e58e0ce1942032170390b6603875736"
+  },
+  "implementation": {
+    "path": "Gruntfile.js",
+    "blobSha": "791a6c3d6045d46c1adb6d87f93fed9094ae5b52"
+  },
+  "treeListingSha256": "b1b520e4c6547b23ceb2e49ffb12b7df7b4ddf299ce871fb04cab76d7b394a5f",
+  "report": {
+    "path": "corpus/reports/geospatial-pmlrsg-gisportal.json",
+    "sha256": "a3b2dd7d296252ee47e445c3a6399f5422136b5fe8db60817c6e3459a2f784f7",
+    "sizeBytes": 45240,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

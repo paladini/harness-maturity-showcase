@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "repository": "h2oai/h2o-3",
+  "manifestName": "h2o-3",
+  "canonicalGitHubId": null,
+  "commit": "bcd39665671494f1032824acee0c2a3bdad84104",
+  "reason": "Windows path-length or NTFS checkout constraints; source tree listing retained without executing repository code",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/h2o-3",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 8500,
+  "treeModes": {
+    "100644": 7943,
+    "100755": 556,
+    "120000": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "8ced6dec9e8f6e6c3428a9fd106fbfb66783096d"
+  },
+  "implementation": {
+    "path": "buildSrc/src/main/java/H2OBuildVersion.java",
+    "blobSha": "0f6c06cc3dc9a0cc75c54c8c8410958d3bbac16a"
+  },
+  "treeListingSha256": "47df94e2eed87a69e6a7fe9f99b45b4277a06b3cb297912c86b0ae92bf4fe893",
+  "report": {
+    "path": "corpus/reports/h2o-3.json",
+    "sha256": "9bba3fdabe4771ca29ea9e63571d731052fee43460f2fd9d0384bf094753a9b8",
+    "sizeBytes": 45472,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}

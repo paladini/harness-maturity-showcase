@@ -24,10 +24,10 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
   assert.equal(history.toolVersion, source.toolVersion);
   assert.equal(corpusRunPaths(source).directory, "data/runs/2026-10-08-crypto-popularity-corpus/");
   assert.match(snapshot.sourceCommit, /^[a-f0-9]{40}$/);
-  assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 5023);
-  assert.equal(projects.filter(item => item.source === "study").length, 5043);
+  assert.equal(new Set(projects.map(item => item.repo.toLowerCase())).size, 6023);
+  assert.equal(projects.filter(item => item.source === "study").length, 11045);
   assert.equal(projects.filter(item => item.source === "badge").length, 1);
-  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 5023);
+  assert.equal(projects.filter(item => item.corpusSourceCommit).length, 11025);
   for (const entry of source.entries) {
     const imported = snapshot.entries.find(item => item.corpusName === entry.name);
     assert.ok(imported, entry.name);
@@ -45,12 +45,12 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
     assert.equal(current.corpusSourceCommit, currentSnapshot.sourceCommit, entry.name);
     assert.equal(report.truncated, false);
   }
-  const crypto = projects.filter(item => item.selection?.cohort === "crypto-popularity");
+  const crypto = projects.filter(item => item.selection?.cohort === "crypto-popularity" && item.toolVersion === "1.8.1");
   assert.equal(crypto.length, 25);
   assert.equal(crypto.filter(item => item.selection.archived).length, 3);
   assert.deepEqual(crypto.map(item => item.selection.popularityRank).sort((a,b) => a-b), Array.from({ length: 25 }, (_,i) => i+1));
-  assert.equal(projects.filter(item => item.selection?.cohort === "ai-popularity").length, 30);
-  assert.equal(projects.filter(item => item.selection?.cohort === "media-editing-popularity").length, 25);
+  assert.equal(projects.filter(item => item.selection?.cohort === "ai-popularity" && item.toolVersion === "1.8.1").length, 30);
+  assert.equal(projects.filter(item => item.selection?.cohort === "media-editing-popularity" && item.toolVersion === "1.8.1").length, 25);
   for (const item of crypto) assert.ok(Number.isInteger(item.selection.githubStars) && item.selection.githubStars > 0);
   const archivedRun = new URL("data/runs/2026-10-08-corpus/", root);
   const archivedSource = JSON.parse(await readFile(new URL("source-manifest.json", archivedRun)));

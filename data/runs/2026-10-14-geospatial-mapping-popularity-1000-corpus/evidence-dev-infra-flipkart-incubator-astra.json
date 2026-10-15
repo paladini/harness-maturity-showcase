@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "repository": "flipkart-incubator/Astra",
+  "manifestName": "dev-infra-flipkart-incubator-astra",
+  "canonicalGitHubId": 116951658,
+  "commit": "092804a9f9abb3e019c60479e2968b01a76f4ea3",
+  "reason": "Windows checkout failed exact pinned tree verification; scanned from an audited WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.2",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-14/dev-infra-flipkart-incubator-astra",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 139,
+  "treeModes": {
+    "100644": 137,
+    "100755": 1,
+    "160000": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "SSRFmap/127.0.0.1:5000/____etc_passwd",
+    "SSRFmap/127.0.0.1:5000/_etc_hosts",
+    "SSRFmap/127.0.0.1:5000/_etc_passwd"
+  ],
+  "readme": {
+    "path": "README.md",
+    "blobSha": "a030e0a2e3ac34505e5a23adecd3eba1debaa2f0"
+  },
+  "implementation": {
+    "path": "API/__init__.py",
+    "blobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  "treeListingSha256": "cfaa34ab7553464b40f83419b304854f9fa3fd15406457918fc6ec360d1cf7cf",
+  "report": {
+    "path": "corpus/reports/dev-infra-flipkart-incubator-astra.json",
+    "sha256": "0894baff4a5107c07ac59632bdea709f89e0fbea3f81329944e2b824282ca476",
+    "sizeBytes": 45029,
+    "toolVersion": "1.8.2",
+    "truncated": false
+  }
+}
