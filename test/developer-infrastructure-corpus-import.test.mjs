@@ -29,7 +29,7 @@ test("the developer infrastructure cohort preserves its frozen selection and sta
   });
 
   const sourceByName = new Map(source.entries.map((entry) => [entry.name, entry]));
-  const cohort = projects.filter((item) => item.selection?.cohort === selection.cohort);
+  const cohort = projects.filter((item) => item.toolVersion !== "1.8.3" && item.selection?.cohort === selection.cohort);
   assert.equal(cohort.length, 1632);
   assert.equal(new Set(cohort.map((item) => item.selection.githubRepositoryId)).size, 816);
 

@@ -23,7 +23,7 @@ test("the 500-project AI popularity cohort is pinned and traceable", async () =>
   });
   assert.equal(selection.candidates.length, 500);
 
-  const cohort = projects.filter((item) => item.selection?.cohort === "ai-popularity-500");
+  const cohort = projects.filter((item) => item.toolVersion !== "1.8.3" && item.selection?.cohort === "ai-popularity-500");
   assert.equal(cohort.length, 500);
   assert.equal(new Set(cohort.map((item) => item.selection.githubRepositoryId)).size, 500);
   assert.deepEqual(cohort.map((item) => item.selection.popularityRank).sort((a, b) => a - b),
@@ -42,10 +42,11 @@ test("the 500-project AI popularity cohort is pinned and traceable", async () =>
     const bytes = await readFile(new URL(item.file, run));
     assert.equal(item.sha256, createHash("sha256").update(bytes).digest("hex"), item.file);
   }
-  assert.equal(projects.filter((item) => item.selection?.cohort === "ai-popularity").length, 60);
-  assert.equal(projects.filter((item) => item.selection?.cohort === "crypto-popularity").length, 50);
-  assert.equal(projects.filter((item) => item.selection?.cohort === "media-editing-popularity").length, 50);
-  assert.equal(projects.length, 11046);
+  const priorListings = projects.filter((item) => item.toolVersion !== "1.8.3");
+  assert.equal(priorListings.filter((item) => item.selection?.cohort === "ai-popularity").length, 60);
+  assert.equal(priorListings.filter((item) => item.selection?.cohort === "crypto-popularity").length, 50);
+  assert.equal(priorListings.filter((item) => item.selection?.cohort === "media-editing-popularity").length, 50);
+  assert.equal(projects.length, 17047);
   assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 6023);
   assert.equal(projects.filter((item) => item.toolVersion === "1.5.0").length, 21);
 });

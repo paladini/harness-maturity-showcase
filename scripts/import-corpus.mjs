@@ -164,19 +164,39 @@ if (isMain) {
   }));
   const listings = [];
   const reports = [];
+  const unavailableEntries = [];
   // Fetch and validate the full immutable source before writing the index.
   for (let offset = 0; offset < source.entries.length; offset += 12) {
     const batch = await Promise.all(source.entries.slice(offset, offset + 12).map(async (entry) => {
       if (!/^[a-z0-9-]+$/.test(entry.name)) throw new Error("Invalid corpus file name");
-      const bytes = await fetchBytes(`corpus/reports/${entry.name}.json`);
-      const report = JSON.parse(bytes);
       const result = history.entries.find((item) => item.name === entry.name);
       if (!result) throw new Error(`Missing history: ${entry.name}`);
+      if (result.status !== "scored") {
+        if (!["failed", "not-scanned"].includes(result.status) || typeof result.note !== "string" || !result.note) {
+          throw new Error(`Invalid unavailable history entry: ${entry.name}`);
+        }
+        return {
+          unavailable: {
+            corpusName: entry.name,
+            repo: entry.repoUrl.replace("https://github.com/", "").replace(/\.git$/, ""),
+            category: entry.category,
+            commit: entry.commit,
+            status: result.status,
+            note: result.note,
+          },
+        };
+      }
+      const bytes = await fetchBytes(`corpus/reports/${entry.name}.json`);
+      const report = JSON.parse(bytes);
       const listing = corpusListing(entry, report, { ...result, toolVersion: history.toolVersion }, sourceCommit, source.runDate,
         selectionByName.get(entry.name) ?? entry.selection);
       return { listing, report: { name: entry.name, bytes, sha256: createHash("sha256").update(bytes).digest("hex") } };
     }));
     for (const item of batch) {
+      if (item.unavailable) {
+        unavailableEntries.push(item.unavailable);
+        continue;
+      }
       listings.push(item.listing);
       reports.push(item.report);
     }
@@ -201,6 +221,7 @@ if (isMain) {
       file: path.basename(selectionPath),
       sha256: createHash("sha256").update(selectionBytes).digest("hex"),
     } } : {}),
+    ...(unavailableEntries.length ? { unavailableEntries } : {}),
     evidenceFiles: evidence.map((item) => ({
       file: item.file, sourceFile: item.sourceFile, sha256: createHash("sha256").update(item.bytes).digest("hex"),
     })),
@@ -208,5 +229,5 @@ if (isMain) {
   };
   await writeFile(new URL("manifest.json", run), `${JSON.stringify(snapshot, null, 2)}\n`, { flag: "wx" });
   await writeFile(new URL("data/projects.json", root), `[\n${merged.map((entry) => `  ${JSON.stringify(entry)}`).join(",\n")}\n]\n`);
-  console.log(`Imported ${listings.length} pinned corpus reports; index now has ${merged.length} repository-version records.`);
+  console.log(`Imported ${listings.length} pinned corpus reports; retained ${unavailableEntries.length} unavailable source entries; index now has ${merged.length} repository-version records.`);
 }

@@ -31,7 +31,7 @@ test("the AI coding-assistant adoption cohort is pinned and traceable", async ()
   assert.equal(selection.achievedCount, 500);
   assert.equal(selection.selected.length, 500);
 
-  const cohort = projects.filter((item) => item.selection?.cohort === "ai-ide-adoption");
+  const cohort = projects.filter((item) => item.toolVersion !== "1.8.3" && item.selection?.cohort === "ai-ide-adoption");
   assert.equal(cohort.length, 1000);
   assert.equal(new Set(cohort.map((item) => item.selection.githubRepositoryId)).size, 500);
   assert.equal(new Set(cohort.filter((item) => item.selection.githubStars > 0)
