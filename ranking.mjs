@@ -18,6 +18,24 @@ export function repositoryCount(projects) {
   return new Set(projects.map((project) => project.repo.toLowerCase())).size;
 }
 
+export function paginate(items, page, pageSize) {
+  if (!Number.isInteger(pageSize) || pageSize < 1) throw new RangeError("Page size must be a positive integer");
+
+  const total = items.length;
+  const pageCount = Math.max(1, Math.ceil(total / pageSize));
+  const currentPage = Math.min(Math.max(1, Number.isInteger(page) ? page : 1), pageCount);
+  const offset = (currentPage - 1) * pageSize;
+
+  return {
+    items: items.slice(offset, offset + pageSize),
+    page: currentPage,
+    pageCount,
+    total,
+    start: total ? offset + 1 : 0,
+    end: Math.min(offset + pageSize, total),
+  };
+}
+
 export function rankedReports(projects, version) {
   return projects
     .filter((project) => Number.isFinite(project.score) && project.toolVersion === version)

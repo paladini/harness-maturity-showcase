@@ -15,7 +15,7 @@ test("page has one h1 and core landmarks", () => {
 test("header CTA routes to Harness Score and invites a repository check", () => {
   assert.match(html, /href="https:\/\/paladini\.io\/harness-score\/" aria-label="Harness Score home"/);
   assert.match(html, /class="nav-return" href="https:\/\/paladini\.io\/harness-score\/"[^>]*>.*How well-harnessed is your repository\? Find out/s);
-  assert.doesNotMatch(html, /<header[\s\S]*?<nav/);
+  assert.doesNotMatch(html.match(/<header\b[^>]*>[\s\S]*?<\/header>/)?.[0] ?? "", /<nav/);
 });
 
 test("homepage shows dynamic scanner-version coverage and a submission CTA", () => {
@@ -27,6 +27,14 @@ test("homepage shows dynamic scanner-version coverage and a submission CTA", () 
 test("the leaderboard exposes category and selection-provenance filters", () => {
   assert.match(html, /id="category" aria-label="Filter by category"/);
   assert.match(html, /id="cohort" aria-label="Filter by selection provenance"/);
+});
+
+test("the leaderboard includes accessible pagination controls", () => {
+  assert.match(html, /<nav class="pagination" aria-label="Repository result pages">/);
+  assert.match(html, /id="page-summary" aria-live="polite" aria-atomic="true"/);
+  assert.match(html, /id="previous-page" type="button" aria-controls="rows" disabled/);
+  assert.match(html, /id="next-page" type="button" aria-controls="rows" disabled/);
+  assert.match(html, /app\.js\?v=20261023\.1/);
 });
 
 test("all full study records expose reproducible reports", () => {
