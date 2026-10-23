@@ -1,4 +1,6 @@
-import { filterProjects, popularityLabel, rankedReports, reportVersions, repositoryCount } from "./ranking.mjs?v=20261014.1";
+import { filterProjects, paginate, popularityLabel, rankedReports, reportVersions, repositoryCount } from "./ranking.mjs?v=20261023.1";
+
+const PAGE_SIZE = 100;
 
 const levels = {
   0: ["Unharnessed", "l0"],
@@ -8,11 +10,17 @@ const levels = {
   4: ["Self-correcting", "l4"],
 };
 
-const state = { query: "", level: "all", source: "all", category: "all", cohort: "all", version: "all" };
+const state = { query: "", level: "all", source: "all", category: "all", cohort: "all", version: "all", page: 1 };
 const projects = await fetch("./data/projects.json").then((response) => response.json());
 const versions = reportVersions(projects);
 const rankings = new Map(versions.map((version) => [version, rankedReports(projects, version)]));
 const ranked = versions.flatMap((version) => rankings.get(version));
+const rankByVersion = new Map(versions.map((version) => [
+  version,
+  new Map(rankings.get(version).map((project, index) => [project.repo, index + 1])),
+]));
+const overallRank = new Map(ranked.map((project, index) => [project, index]));
+state.version = versions[0] ?? "all";
 
 document.querySelector("#total-count").textContent = repositoryCount(projects);
 document.querySelector("#scored-count").textContent = ranked.length;
@@ -45,6 +53,7 @@ for (const version of versions) {
   option.textContent = `harness-score ${version}`;
   versionFilter.append(option);
 }
+versionFilter.value = state.version;
 
 const categoryFilter = document.querySelector("#category");
 for (const category of [...new Set(projects.map((project) => project.category))].sort()) {
@@ -85,37 +94,69 @@ function renderPodium() {
 
 const rows = document.querySelector("#rows");
 const empty = document.querySelector("#empty");
+const pageSummary = document.querySelector("#page-summary");
+const pageNumber = document.querySelector("#page-number");
+const previousPage = document.querySelector("#previous-page");
+const nextPage = document.querySelector("#next-page");
+
+function matchesCommonFilters(project) {
+  return project.repo.toLowerCase().includes(state.query)
+    && (state.source === "all" || project.source === state.source)
+    && (state.category === "all" || project.category === state.category)
+    && (state.cohort === "all" || (project.selection?.cohort ?? "none") === state.cohort);
+}
 
 function renderFilterCounts() {
-  const withoutVersion = filterProjects(projects, state, "version");
+  const countsByVersion = new Map(versions.map((version) => [version, 0]));
+  const countsByLevel = new Map([["all", 0], ["0", 0], ["1", 0], ["2", 0], ["3", 0], ["4", 0]]);
+  let allReports = 0;
+
+  for (const project of projects) {
+    if (!matchesCommonFilters(project)) continue;
+
+    if (state.level === "all" || String(project.level) === state.level) {
+      if (Number.isFinite(project.score)) {
+        allReports += 1;
+        countsByVersion.set(project.toolVersion, (countsByVersion.get(project.toolVersion) ?? 0) + 1);
+      }
+    }
+
+    if (state.version === "all" || project.toolVersion === state.version) {
+      if (project.level !== undefined) {
+        countsByLevel.set("all", countsByLevel.get("all") + 1);
+        const level = String(project.level);
+        if (countsByLevel.has(level)) countsByLevel.set(level, countsByLevel.get(level) + 1);
+      }
+    }
+  }
+
   for (const option of versionFilter.options) {
     if (option.value === "all") continue;
-    const count = withoutVersion.filter((project) => project.toolVersion === option.value && Number.isFinite(project.score)).length;
-    option.textContent = `harness-score ${option.value} (${count.toLocaleString("en-US")})`;
+    option.textContent = `harness-score ${option.value} (${(countsByVersion.get(option.value) ?? 0).toLocaleString("en-US")})`;
   }
-  const allReports = withoutVersion.filter((project) => Number.isFinite(project.score)).length;
   versionFilter.options[0].textContent = `All scanner versions (${allReports.toLocaleString("en-US")})`;
 
-  const withoutLevel = filterProjects(projects, state, "level");
   for (const button of document.querySelectorAll(".filter-group button")) {
-    const count = withoutLevel.filter((project) => button.dataset.level === "all"
-      ? project.level !== undefined
-      : String(project.level) === button.dataset.level).length;
+    const count = countsByLevel.get(button.dataset.level) ?? 0;
     const label = button.dataset.level === "all" ? "All levels" : `L${button.dataset.level}`;
     button.textContent = `${label} (${count.toLocaleString("en-US")})`;
   }
 }
 
-function render() {
+function render(resetPage = false) {
+  if (resetPage) state.page = 1;
   const filtered = filterProjects(projects, state)
     .sort((a, b) => {
       if (Number.isFinite(a.score) !== Number.isFinite(b.score)) return Number.isFinite(a.score) ? -1 : 1;
-      if (Number.isFinite(a.score)) return ranked.indexOf(a) - ranked.indexOf(b);
+      if (Number.isFinite(a.score)) return (overallRank.get(a) ?? Number.MAX_SAFE_INTEGER)
+        - (overallRank.get(b) ?? Number.MAX_SAFE_INTEGER);
       return a.repo.localeCompare(b.repo);
     });
+  const page = paginate(filtered, state.page, PAGE_SIZE);
+  state.page = page.page;
 
-  rows.innerHTML = filtered.map((project) => {
-    const numericRank = rankings.get(project.toolVersion)?.findIndex((item) => item.repo === project.repo) ?? -1;
+  rows.innerHTML = page.items.map((project) => {
+    const numericRank = rankByVersion.get(project.toolVersion)?.get(project.repo) ?? -1;
     const score = Number.isFinite(project.score)
       ? `<strong>${project.score}</strong><span> / ${project.maxScore}</span>`
       : `<span class="not-ranked">badge only</span>`;
@@ -133,13 +174,17 @@ function render() {
     </tr>`;
   }).join("");
   empty.hidden = filtered.length > 0;
+  pageSummary.textContent = `Showing ${page.start.toLocaleString("en-US")}-${page.end.toLocaleString("en-US")} of ${page.total.toLocaleString("en-US")} results`;
+  pageNumber.textContent = `Page ${page.page.toLocaleString("en-US")} of ${page.pageCount.toLocaleString("en-US")}`;
+  previousPage.disabled = page.page === 1;
+  nextPage.disabled = page.page === page.pageCount;
   renderFilterCounts();
   renderPodium();
 }
 
 document.querySelector("#search").addEventListener("input", (event) => {
   state.query = event.target.value.trim().toLowerCase();
-  render();
+  render(true);
 });
 document.querySelector("#source").addEventListener("change", (event) => {
   state.source = event.target.value;
@@ -147,15 +192,15 @@ document.querySelector("#source").addEventListener("change", (event) => {
     state.version = "all";
     versionFilter.value = "all";
   }
-  render();
+  render(true);
 });
 categoryFilter.addEventListener("change", (event) => {
   state.category = event.target.value;
-  render();
+  render(true);
 });
 cohortFilter.addEventListener("change", (event) => {
   state.cohort = event.target.value;
-  render();
+  render(true);
 });
 versionFilter.addEventListener("change", (event) => {
   state.version = event.target.value;
@@ -163,7 +208,7 @@ versionFilter.addEventListener("change", (event) => {
     state.source = "all";
     document.querySelector("#source").value = "all";
   }
-  render();
+  render(true);
 });
 document.querySelector(".filter-group").addEventListener("click", (event) => {
   const button = event.target.closest("button");
@@ -171,6 +216,15 @@ document.querySelector(".filter-group").addEventListener("click", (event) => {
   document.querySelectorAll(".filter-group button").forEach((item) => item.classList.remove("active"));
   button.classList.add("active");
   state.level = button.dataset.level;
+  render(true);
+});
+
+previousPage.addEventListener("click", () => {
+  state.page -= 1;
+  render();
+});
+nextPage.addEventListener("click", () => {
+  state.page += 1;
   render();
 });
 

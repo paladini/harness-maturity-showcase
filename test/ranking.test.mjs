@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { filterProjects, rankedReports, reportVersions } from "../ranking.mjs";
+import { filterProjects, paginate, rankedReports, reportVersions } from "../ranking.mjs";
 
 const report = (repo, toolVersion, score, maxScore, level, extra = {}) => ({
   repo,
@@ -57,4 +57,29 @@ test("filter facets omit only their own active selection", () => {
     "a/one",
     "a/two",
   ]);
+});
+
+test("pagination preserves sorted order and clamps page numbers", () => {
+  const projects = Array.from({ length: 205 }, (_, index) => ({ repo: `repo/${index}` }));
+
+  const first = paginate(projects, 1, 100);
+  const second = paginate(projects, 2, 100);
+  const last = paginate(projects, 3, 100);
+
+  assert.deepEqual({ page: first.page, pageCount: first.pageCount, total: first.total, start: first.start, end: first.end }, {
+    page: 1, pageCount: 3, total: 205, start: 1, end: 100,
+  });
+  assert.equal(first.items.length, 100);
+  assert.equal(second.items.length, 100);
+  assert.equal(last.items.length, 5);
+  assert.equal(new Set([...first.items, ...second.items, ...last.items]).size, 205);
+  assert.deepEqual(paginate(projects, 99, 100).items, last.items);
+  assert.deepEqual(paginate(projects, 0, 100).items, first.items);
+});
+
+test("empty result pagination remains on page one with a zero range", () => {
+  assert.deepEqual(paginate([], 8, 100), {
+    items: [], page: 1, pageCount: 1, total: 0, start: 0, end: 0,
+  });
+  assert.throws(() => paginate([], 1, 0), /positive integer/);
 });
