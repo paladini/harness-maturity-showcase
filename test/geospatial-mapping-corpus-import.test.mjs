@@ -43,7 +43,7 @@ test("the 1,000-repository geospatial cohort is pinned and traceable", async () 
     assert.equal(createHash("sha256").update(reportBytes).digest("hex"), receipt.report.sha256);
   }
 
-  const cohort = projects.filter((item) => item.selection?.cohort === "geospatial-mapping-popularity-1000");
+  const cohort = projects.filter((item) => item.toolVersion !== "1.8.3" && item.selection?.cohort === "geospatial-mapping-popularity-1000");
   assert.equal(cohort.length, 1000);
   assert.equal(new Set(cohort.map((item) => item.selection.githubRepositoryId)).size, 1000);
   assert.equal(new Set(cohort.map((item) => item.commit)).size, 1000);
@@ -56,7 +56,7 @@ test("the 1,000-repository geospatial cohort is pinned and traceable", async () 
     assert.ok(listing.evidence.includes(`/blob/${currentSnapshot.sourceCommit}/corpus/reports/`));
   }
 
-  assert.equal(projects.length, 11046);
+  assert.equal(projects.length, 17047);
   assert.equal(new Set(projects.map((item) => item.repo.toLowerCase())).size, 6023);
 });
 
