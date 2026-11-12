@@ -18,8 +18,8 @@ transparent way to inspect the evidence behind every listing.
 
 This repository currently combines four evidence sets:
 
-- 6,002 pinned, reproducible reports in the current immutable
-  `harness-score@1.8.2` snapshot from the
+- 6,001 pinned, reproducible reports in the current immutable
+  `harness-score@1.8.4` snapshot from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
   including 500 randomly sampled scientific software projects, 500
   repositories with AI coding-agent and IDE guidance files, 500
@@ -27,7 +27,7 @@ This repository currently combines four evidence sets:
   projects, 25 media editing projects, 500 video game AI projects, 500
   agent-ecosystem projects, 500 agriculture software projects, 816 developer
   infrastructure projects, 1,000 geospatial and mapping projects, and 1,000 broadly popular GitHub software projects
-  selected from recorded searches. See the [developer infrastructure import](data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/README.md),
+  selected from recorded searches. One of the 6,002 manifest entries, `jiofarm`, was unavailable at its pinned commit and is recorded as not scanned. See the [developer infrastructure import](data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/README.md),
   [geospatial and mapping import](data/runs/2026-10-14-geospatial-mapping-popularity-1000-corpus/README.md),
   [scientific software import](data/runs/2026-10-12-scientific-software-random-500-corpus/README.md), the [AI coding-assistant adoption
   import](data/runs/2026-10-11-ai-ide-adoption-500-corpus/README.md), [latest video
@@ -47,7 +47,7 @@ same scanner version. Within a version, repositories sort by raw score
 descending, then percentage descending, then repository name alphabetically.
 The podium defaults to the newest version; the scanner filter exposes each
 cohort. A badge records a public level claim, not a verified current score. The
-index has 11,046 repository/version records across 6,023 repositories: 11,045
+index has 23,048 repository/version records across 6,023 repositories: 23,047
 full reports and 1 badge-only entry. Repositories with reports from multiple
 scanner versions appear as separate selectable records.
 
@@ -55,7 +55,7 @@ The 101 earlier corpus listings remain available in their original immutable
 [archive](data/runs/2026-10-08-corpus/README.md). The original 21-report
 `1.5.0` cohort is restored as a selectable version from its pinned analysis
 commit in the [July 25 archive](data/runs/2026-07-25-corpus/README.md). The
-current `1.8.2` cohort and community entries remain available alongside it.
+historical scanner cohorts and community entries remain available alongside it.
 Each corpus evidence link fixes the analysis commit, and byte-identical report
 copies with SHA-256 checksums are retained here.
 Popularity observations are separate metadata, never ranking points or blind

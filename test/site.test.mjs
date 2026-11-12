@@ -34,20 +34,20 @@ test("the leaderboard includes accessible pagination controls", () => {
   assert.match(html, /id="page-summary" aria-live="polite" aria-atomic="true"/);
   assert.match(html, /id="previous-page" type="button" aria-controls="rows" disabled/);
   assert.match(html, /id="next-page" type="button" aria-controls="rows" disabled/);
-  assert.match(html, /app\.js\?v=20261023\.1/);
+  assert.match(html, /app\.js\?v=20261112\.1/);
 });
 
 test("all full study records expose reproducible reports", () => {
   const study = projects.filter((project) => project.corpusSourceCommit);
-  assert.equal(study.length, 17026);
+  assert.equal(study.length, 23027);
   assert.ok(study.every((project) => project.evidence.includes("/corpus/reports/")));
-  assert.deepEqual(reportVersions(projects), ["1.8.3", "1.8.2", "1.8.1", "1.5.0"]);
+  assert.deepEqual(reportVersions(projects), ["1.8.4", "1.8.3", "1.8.2", "1.8.1", "1.5.0"]);
   assert.equal(projects.filter((project) => project.toolVersion === "1.5.0").length, 21);
 });
 
 test("the homepage repository statistic counts unique repositories across versions", () => {
   assert.equal(repositoryCount(projects), 6023);
-  assert.equal(projects.filter((project) => Number.isFinite(project.score)).length, 17046);
+  assert.equal(projects.filter((project) => Number.isFinite(project.score)).length, 23047);
 });
 
 test("current top three stay within their scanner version", () => {
