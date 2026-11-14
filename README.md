@@ -18,7 +18,7 @@ transparent way to inspect the evidence behind every listing.
 
 This repository currently combines four evidence sets:
 
-- 5,993 pinned, reproducible reports in the current immutable
+- 5,994 pinned, reproducible reports in the current immutable
   `harness-score@1.8.5` snapshot from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
   including 500 randomly sampled scientific software projects, 500
@@ -27,9 +27,9 @@ This repository currently combines four evidence sets:
   projects, 25 media editing projects, 500 video game AI projects, 500
   agent-ecosystem projects, 500 agriculture software projects, 816 developer
   infrastructure projects, 1,000 geospatial and mapping projects, and 1,000 broadly popular GitHub software projects
-  selected from recorded searches. Nine of the 6,002 manifest entries were
+  selected from recorded searches. Eight of the 6,002 manifest entries were
   unavailable at their pinned commits and are recorded as not scanned in the
-  [1.8.5 run manifest](data/runs/2026-11-14-scanner-refresh-1-8-5-corpus/manifest.json).
+  [1.8.5 run manifest](data/runs/2026-11-14-scanner-refresh-1-8-5-recovery-1-corpus/manifest.json).
   Earlier versioned reports remain available. See the [developer infrastructure import](data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/README.md),
   [geospatial and mapping import](data/runs/2026-10-14-geospatial-mapping-popularity-1000-corpus/README.md),
   [scientific software import](data/runs/2026-10-12-scientific-software-random-500-corpus/README.md), the [AI coding-assistant adoption

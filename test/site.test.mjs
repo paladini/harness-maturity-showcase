@@ -31,8 +31,8 @@ test("the leaderboard exposes category and selection-provenance filters", () => 
 });
 
 test("the study coverage links to the unavailable pinned sources", () => {
-  assert.match(html, /1\.8\.5 study includes 5,993 of 6,002 pinned repositories/);
-  assert.match(html, /2026-11-14-scanner-refresh-1-8-5-corpus\/README\.md[^>]*>nine sources were unavailable/);
+  assert.match(html, /1\.8\.5 study includes 5,994 of 6,002 pinned repositories/);
+  assert.match(html, /2026-11-14-scanner-refresh-1-8-5-recovery-1-corpus\/README\.md[^>]*>eight sources were unavailable/);
 });
 
 test("the leaderboard includes accessible pagination controls", () => {
@@ -40,7 +40,7 @@ test("the leaderboard includes accessible pagination controls", () => {
   assert.match(html, /id="page-summary" aria-live="polite" aria-atomic="true"/);
   assert.match(html, /id="previous-page" type="button" aria-controls="rows" disabled/);
   assert.match(html, /id="next-page" type="button" aria-controls="rows" disabled/);
-  assert.match(html, /app\.js\?v=20261114\.2/);
+  assert.match(html, /app\.js\?v=20261114\.3/);
 });
 
 test("all full study records expose reproducible reports", () => {
