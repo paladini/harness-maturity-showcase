@@ -2,9 +2,10 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { through184 } from "./historical-catalog.mjs";
 
 const root = new URL("../", import.meta.url);
-const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
+const projects = through184(JSON.parse(await readFile(new URL("data/projects.json", root))));
 const runRoot = new URL("data/runs/2026-10-07/", root);
 const manifest = JSON.parse(await readFile(new URL("manifest.json", runRoot)));
 

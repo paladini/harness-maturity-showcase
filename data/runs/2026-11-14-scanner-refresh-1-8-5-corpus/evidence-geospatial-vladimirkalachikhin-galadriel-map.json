@@ -1,0 +1,26 @@
+{
+  "name": "geospatial-vladimirkalachikhin-galadriel-map",
+  "commit": "3214c4a2087d5bf5d7f30916a993d79dfcc24124",
+  "manifestOrigin": "https://github.com/VladimirKalachikhin/Galadriel-map.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/geospatial-vladimirkalachikhin-galadriel-map/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 663,
+  "treeModes": {
+    "100644": 619,
+    "100755": 42,
+    "120000": 2
+  },
+  "treeListingSha256": "150249fc0ac15a67f782c06f84959caf6dba6053c43343c3dae1db352885c0d2",
+  "reportSha256": "86060cec26161bc62c66853266ff2471a656553389d503e4c5a1331f12e84ff0",
+  "score": {
+    "earned": 17,
+    "max": 105,
+    "percent": 16
+  },
+  "level": 0
+}

@@ -1,0 +1,26 @@
+{
+  "name": "envoyproxy-envoy",
+  "commit": "744a11b5bea643b80f002e8d4020c89e04cea62a",
+  "manifestOrigin": "https://github.com/envoyproxy/envoy.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/envoyproxy-envoy/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 15052,
+  "treeModes": {
+    "100644": 14821,
+    "100755": 220,
+    "120000": 11
+  },
+  "treeListingSha256": "48de3366190ae25bf209969273ef8c92445aa657f44a9bda161426dfe5d7ad4e",
+  "reportSha256": "0593f89e2c861f9178eb6eec2d9f2abb5519ae677cddc5dca9d15d43d59a9d02",
+  "score": {
+    "earned": 71,
+    "max": 105,
+    "percent": 68
+  },
+  "level": 1
+}

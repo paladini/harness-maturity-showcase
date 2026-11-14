@@ -1,0 +1,26 @@
+{
+  "name": "lejubila-pigardenweb",
+  "commit": "3ed1930207d59d72de49fd8877880fe4d30592c2",
+  "manifestOrigin": "https://github.com/lejubila/piGardenWeb.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/lejubila-pigardenweb/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 25605,
+  "treeModes": {
+    "100644": 24904,
+    "100755": 695,
+    "120000": 6
+  },
+  "treeListingSha256": "357fd5af001aa1f231ce2b0f96c6977497a8cb0d508d71d3836053fa2a8bfa4a",
+  "reportSha256": "a31a1ec01bd87b47b1b601bde42e616caa5ce715ea0aa685c4ba5ba8a6a0adef",
+  "score": {
+    "earned": 30,
+    "max": 105,
+    "percent": 29
+  },
+  "level": 0
+}

@@ -1,0 +1,25 @@
+{
+  "name": "niri-wm-niri",
+  "commit": "d0cd58ec5ac6b2d41d42478fb4f3cc7c0c687db9",
+  "manifestOrigin": "https://github.com/niri-wm/niri.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/niri-wm-niri/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 5604,
+  "treeModes": {
+    "100644": 5603,
+    "100755": 1
+  },
+  "treeListingSha256": "e54711d13855536e5db5bf6b8be491874f20d1c43978187cf449d67531930b1c",
+  "reportSha256": "c67274fc56368d0879566c5a33cee04e7a3b80d1695a4a9a4070c6bfb463e5e5",
+  "score": {
+    "earned": 50,
+    "max": 105,
+    "percent": 48
+  },
+  "level": 0
+}

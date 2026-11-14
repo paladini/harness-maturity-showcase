@@ -1,0 +1,24 @@
+{
+  "name": "dev-infra-mergesort-boutique",
+  "commit": "3474aa1d931c17ddcd099285b26b513b36b6969b",
+  "manifestOrigin": "https://github.com/mergesort/Boutique.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/dev-infra-mergesort-boutique/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 417,
+  "treeModes": {
+    "100644": 417
+  },
+  "treeListingSha256": "33784bdc642b40bb501b93ea93d6d82c15a3066de9c27f0e428c85376f73e806",
+  "reportSha256": "e7e424a6256935869dcbe422dfcd227fbcd894c671219724ec3ba81351a719f3",
+  "score": {
+    "earned": 27,
+    "max": 105,
+    "percent": 26
+  },
+  "level": 0
+}

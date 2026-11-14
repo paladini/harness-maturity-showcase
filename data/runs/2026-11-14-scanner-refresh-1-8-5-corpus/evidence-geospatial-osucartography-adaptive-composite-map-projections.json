@@ -1,0 +1,25 @@
+{
+  "name": "geospatial-osucartography-adaptive-composite-map-projections",
+  "commit": "bba9686faa2699c6b5b2ed1400a229d937e52f1f",
+  "manifestOrigin": "https://github.com/OSUCartography/adaptive-composite-map-projections.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/geospatial-osucartography-adaptive-composite-map-projections/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 294,
+  "treeModes": {
+    "100644": 42,
+    "100755": 252
+  },
+  "treeListingSha256": "d96d8f2cb848aee77b70b2b7f39b19d43db4a64c29a6924fcfdd04076790a3ef",
+  "reportSha256": "8fa69102744e958a670c1f294834d7f260f2082ac0896fb191bf912673212747",
+  "score": {
+    "earned": 21,
+    "max": 105,
+    "percent": 20
+  },
+  "level": 0
+}

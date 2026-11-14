@@ -1,0 +1,25 @@
+{
+  "name": "jinghuazhao-inf",
+  "commit": "6216cc1c046c9a01deffa1e05c72558afb6e28f7",
+  "manifestOrigin": "https://github.com/jinghuazhao/INF.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/jinghuazhao-inf/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 399,
+  "treeModes": {
+    "100644": 293,
+    "100755": 106
+  },
+  "treeListingSha256": "b11222e49da5c302be10d0d2201c3f8643cd5ec58b54412fe48e94692d4e2336",
+  "reportSha256": "a8060ed2e4782da007a2e14c82858f874888c65fc620d712a930b38dd788d809",
+  "score": {
+    "earned": 17,
+    "max": 105,
+    "percent": 16
+  },
+  "level": 0
+}

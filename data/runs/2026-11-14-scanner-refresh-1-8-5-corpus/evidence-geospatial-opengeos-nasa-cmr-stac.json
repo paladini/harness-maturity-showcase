@@ -1,0 +1,24 @@
+{
+  "name": "geospatial-opengeos-nasa-cmr-stac",
+  "commit": "a26fe75c354b0d49e3952191b929a7064e2f4574",
+  "manifestOrigin": "https://github.com/opengeos/NASA-CMR-STAC.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/geospatial-opengeos-nasa-cmr-stac/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 30210,
+  "treeModes": {
+    "100644": 30210
+  },
+  "treeListingSha256": "485d53dc25de0409d73ba47c18fc3a2f20d4a62071b5c1a0b5cc1e911811a6f2",
+  "reportSha256": "c5ef6bdd2dc082d3bf34728466c6a98ff3826d8d9422ee4b6b29ab7e789179b8",
+  "score": {
+    "earned": 26,
+    "max": 105,
+    "percent": 25
+  },
+  "level": 0
+}

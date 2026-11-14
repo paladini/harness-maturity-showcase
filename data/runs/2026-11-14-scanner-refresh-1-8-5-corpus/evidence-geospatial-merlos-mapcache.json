@@ -1,0 +1,26 @@
+{
+  "name": "geospatial-merlos-mapcache",
+  "commit": "fbc0f644578d7ac109313f8ca472cb2c31cb414a",
+  "manifestOrigin": "https://github.com/merlos/MapCache.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/geospatial-merlos-mapcache/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 438,
+  "treeModes": {
+    "100644": 421,
+    "100755": 16,
+    "120000": 1
+  },
+  "treeListingSha256": "20d06f15107cb9224afa0168e72d2c0a7b8721079d03b677fe564a68fd0e7d45",
+  "reportSha256": "3d0952554d683ebef93d2d6b614d5adeaf955f17986f3ca46d1fa17f263f3cbb",
+  "score": {
+    "earned": 27,
+    "max": 105,
+    "percent": 26
+  },
+  "level": 0
+}

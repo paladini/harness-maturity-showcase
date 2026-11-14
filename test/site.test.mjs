@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { rankedReports, reportVersions, repositoryCount } from "../ranking.mjs";
+import { through184 } from "./historical-catalog.mjs";
 
 const root = new URL("../", import.meta.url);
 const html = await readFile(new URL("index.html", root), "utf8");
@@ -29,25 +30,30 @@ test("the leaderboard exposes category and selection-provenance filters", () => 
   assert.match(html, /id="cohort" aria-label="Filter by selection provenance"/);
 });
 
+test("the study coverage links to the unavailable pinned sources", () => {
+  assert.match(html, /1\.8\.5 study includes 5,993 of 6,002 pinned repositories/);
+  assert.match(html, /2026-11-14-scanner-refresh-1-8-5-corpus\/README\.md[^>]*>nine sources were unavailable/);
+});
+
 test("the leaderboard includes accessible pagination controls", () => {
   assert.match(html, /<nav class="pagination" aria-label="Repository result pages">/);
   assert.match(html, /id="page-summary" aria-live="polite" aria-atomic="true"/);
   assert.match(html, /id="previous-page" type="button" aria-controls="rows" disabled/);
   assert.match(html, /id="next-page" type="button" aria-controls="rows" disabled/);
-  assert.match(html, /app\.js\?v=20261112\.1/);
+  assert.match(html, /app\.js\?v=20261114\.1/);
 });
 
 test("all full study records expose reproducible reports", () => {
   const study = projects.filter((project) => project.corpusSourceCommit);
-  assert.equal(study.length, 23027);
+  assert.equal(through184(study).length, 23027);
   assert.ok(study.every((project) => project.evidence.includes("/corpus/reports/")));
-  assert.deepEqual(reportVersions(projects), ["1.8.4", "1.8.3", "1.8.2", "1.8.1", "1.5.0"]);
+  assert.deepEqual(reportVersions(through184(projects)), ["1.8.4", "1.8.3", "1.8.2", "1.8.1", "1.5.0"]);
   assert.equal(projects.filter((project) => project.toolVersion === "1.5.0").length, 21);
 });
 
 test("the homepage repository statistic counts unique repositories across versions", () => {
   assert.equal(repositoryCount(projects), 6023);
-  assert.equal(projects.filter((project) => Number.isFinite(project.score)).length, 23047);
+  assert.equal(through184(projects).filter((project) => Number.isFinite(project.score)).length, 23047);
 });
 
 test("current top three stay within their scanner version", () => {

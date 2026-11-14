@@ -1,0 +1,24 @@
+{
+  "name": "dennissergeev-octant",
+  "commit": "edbf3ae1e576dacc42480cf3c7e9801528db4104",
+  "manifestOrigin": "https://github.com/dennissergeev/octant.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/dennissergeev-octant/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 1099,
+  "treeModes": {
+    "100644": 1099
+  },
+  "treeListingSha256": "efa66346488c918e403a8490f95d859b44f93ca7a4332b1bb2c0bfcf7142fcb7",
+  "reportSha256": "af9bd9c6252a5f3f573a1c9cfc7111aaf123f242e33bc17855f649b0eedcd24a",
+  "score": {
+    "earned": 27,
+    "max": 105,
+    "percent": 26
+  },
+  "level": 0
+}

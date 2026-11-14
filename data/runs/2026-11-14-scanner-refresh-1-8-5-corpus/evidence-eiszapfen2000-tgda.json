@@ -1,0 +1,26 @@
+{
+  "name": "eiszapfen2000-tgda",
+  "commit": "d78a551e9baead24d006d0714eecb445e1c19722",
+  "manifestOrigin": "https://github.com/eiszapfen2000/tgda.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/eiszapfen2000-tgda/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 4436,
+  "treeModes": {
+    "100644": 4262,
+    "100755": 128,
+    "120000": 46
+  },
+  "treeListingSha256": "256d80934d72cd5d5cd8832328b9f5f112f915af917200b1770dcf6c05ed9b63",
+  "reportSha256": "4a0f9b43e2301b535d6f2c4642891da1c3c4daedb563e8eab4276f29a0da5806",
+  "score": {
+    "earned": 17,
+    "max": 105,
+    "percent": 16
+  },
+  "level": 0
+}

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { through184 } from "./historical-catalog.mjs";
 
 const root = new URL("../", import.meta.url);
 const run = new URL("data/runs/2026-10-11-ai-ide-adoption-500-corpus/", root);
@@ -10,7 +11,7 @@ const source = JSON.parse(await readFile(new URL("source-manifest.json", run)));
 const history = JSON.parse(await readFile(new URL("source-history.json", run)));
 const selectionBytes = await readFile(new URL("selection.json", run));
 const selection = JSON.parse(selectionBytes);
-const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
+const projects = through184(JSON.parse(await readFile(new URL("data/projects.json", root))));
 const currentSnapshot = JSON.parse(await readFile(new URL(
   "data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/manifest.json", root,
 )));

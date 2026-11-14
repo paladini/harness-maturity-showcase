@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/ccxt/ccxt.git",
+  "manifestName": "ccxt",
+  "commit": "f0aca06eb7482f083bed8406fadfcc0c05e45b1c",
+  "reason": "Windows scan reported an unreadable path; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.5",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-185/ccxt",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 9928,
+  "treeModes": { "100644": 9873, "100755": 36, "120000": 19 },
+  "treeListingSha256": "09f60022794a897722e0d544e181342ee182d968bcdc36efa9b55addcc9ffa75",
+  "report": {
+    "path": "corpus/reports/ccxt.json",
+    "sha256": "8f8917ba7861e30c24c7fe7be89e0f0ebd639ce92085647e3bd628f1d706b562",
+    "toolVersion": "1.8.5",
+    "truncated": false
+  }
+}

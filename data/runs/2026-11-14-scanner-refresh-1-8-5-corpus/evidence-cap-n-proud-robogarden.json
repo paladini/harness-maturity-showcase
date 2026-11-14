@@ -1,0 +1,25 @@
+{
+  "name": "cap-n-proud-robogarden",
+  "commit": "802f2daafcd11131f89395bd9858f7d65e1f5bca",
+  "manifestOrigin": "https://github.com/Cap-n-Proud/roboGarden.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/cap-n-proud-robogarden/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 4091,
+  "treeModes": {
+    "100755": 4088,
+    "120000": 3
+  },
+  "treeListingSha256": "93e8456a80ca0bd6dfb3ef83d5f12e9284eb4415ecb44d7ab99ec7f773df6f08",
+  "reportSha256": "66abe47684be4a6e574029a6531e24af30493493ea0f6a3ee51b5ea757124ded",
+  "score": {
+    "earned": 38,
+    "max": 105,
+    "percent": 36
+  },
+  "level": 0
+}

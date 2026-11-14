@@ -1,0 +1,25 @@
+{
+  "name": "dev-infra-orange-cyberdefense-grepmarx",
+  "commit": "35c491e8e7865b377082c61ed37336f7019b09f9",
+  "manifestOrigin": "https://github.com/Orange-Cyberdefense/grepmarx.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/dev-infra-orange-cyberdefense-grepmarx/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 2257,
+  "treeModes": {
+    "100644": 2230,
+    "100755": 27
+  },
+  "treeListingSha256": "38125e520c949cfc2765c0e722e65846647accb885d391a07f965b38efdab1f1",
+  "reportSha256": "64991f9e58ebe551e133201eec5afc2eb9359cd05893757bff460141bff7505e",
+  "score": {
+    "earned": 24,
+    "max": 105,
+    "percent": 23
+  },
+  "level": 0
+}

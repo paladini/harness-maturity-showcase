@@ -1,0 +1,25 @@
+{
+  "name": "influxdata-influxdb",
+  "commit": "06200ef96ba82c5f6727e5038a83af8e722c6875",
+  "manifestOrigin": "https://github.com/influxdata/influxdb.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/influxdata-influxdb/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 1845,
+  "treeModes": {
+    "100644": 1833,
+    "100755": 12
+  },
+  "treeListingSha256": "46a3b95fe29b95e989a91021c13f9e2fc12c161bc7d5e05a4748d86b1c34e0a2",
+  "reportSha256": "3007d6dc4a18f292a642f11f9773700782d7da94ceaf7db98b6cd01705183f1c",
+  "score": {
+    "earned": 54,
+    "max": 105,
+    "percent": 51
+  },
+  "level": 0
+}

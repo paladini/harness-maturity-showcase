@@ -1,0 +1,25 @@
+{
+  "name": "dev-infra-claimed-framework-claimed",
+  "commit": "d86da9298ebe92f5a13332a48056b4e11e2d801b",
+  "manifestOrigin": "https://github.com/claimed-framework/claimed.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/dev-infra-claimed-framework-claimed/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 468,
+  "treeModes": {
+    "100644": 445,
+    "100755": 23
+  },
+  "treeListingSha256": "8ad71628ae1995832a85b652b19adf54f502891846de3468241ecd4e637f5eb8",
+  "reportSha256": "46e6f6861a1265533b3cd66e8b60ffee86e284876a38ff174efeedccf0283e0d",
+  "score": {
+    "earned": 48,
+    "max": 105,
+    "percent": 46
+  },
+  "level": 0
+}

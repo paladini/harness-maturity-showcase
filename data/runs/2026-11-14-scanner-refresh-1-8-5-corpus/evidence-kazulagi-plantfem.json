@@ -1,0 +1,25 @@
+{
+  "name": "kazulagi-plantfem",
+  "commit": "2abebf4028f89251dbf06ccb6c92570598869a77",
+  "manifestOrigin": "https://github.com/kazulagi/plantFEM.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/kazulagi-plantfem/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 1682,
+  "treeModes": {
+    "100644": 216,
+    "100755": 1466
+  },
+  "treeListingSha256": "8ca34fb54668d5fe04b048c8373f4a6e1cd4d4d4c8e984851cf7f1c7d186d8c0",
+  "reportSha256": "8b5d5125bcbe59876482576f9f218f27962e1ed5743472a910ba7322b95e4ad0",
+  "score": {
+    "earned": 18,
+    "max": 105,
+    "percent": 17
+  },
+  "level": 0
+}

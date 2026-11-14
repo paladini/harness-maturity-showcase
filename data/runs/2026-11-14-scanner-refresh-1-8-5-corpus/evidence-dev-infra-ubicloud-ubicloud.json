@@ -1,0 +1,25 @@
+{
+  "name": "dev-infra-ubicloud-ubicloud",
+  "commit": "fad16215cbf0b392ab5b9cfc8e4a4c7df382ac28",
+  "manifestOrigin": "https://github.com/ubicloud/ubicloud.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/dev-infra-ubicloud-ubicloud/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 2661,
+  "treeModes": {
+    "100644": 2567,
+    "100755": 94
+  },
+  "treeListingSha256": "83f64f74381eeb304e51b1a180a85a4ae837b34ee7f22d3f069bf798aa07e465",
+  "reportSha256": "406ec58533fee15039242be7c989c7e0d2388dbd0d88cc4b322502f3dd1c11a8",
+  "score": {
+    "earned": 40,
+    "max": 105,
+    "percent": 38
+  },
+  "level": 0
+}

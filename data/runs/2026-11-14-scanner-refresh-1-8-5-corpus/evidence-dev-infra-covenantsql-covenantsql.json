@@ -1,0 +1,27 @@
+{
+  "name": "dev-infra-covenantsql-covenantsql",
+  "commit": "ce1b3c0121e193a61e3558e8175c8e831b1c2057",
+  "manifestOrigin": "https://github.com/CovenantSQL/CovenantSQL.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/dev-infra-covenantsql-covenantsql/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 1297,
+  "treeModes": {
+    "100644": 1240,
+    "100755": 36,
+    "120000": 20,
+    "160000": 1
+  },
+  "treeListingSha256": "78de7c53e5b661316c0dfd34ffe703f577c03ec0ba775e96d66cb3cfddc65f18",
+  "reportSha256": "12b8469cee1e93fde50cd2e6025f5dce66d6aebf4e838d147356d0b962f094a2",
+  "score": {
+    "earned": 45,
+    "max": 105,
+    "percent": 43
+  },
+  "level": 0
+}

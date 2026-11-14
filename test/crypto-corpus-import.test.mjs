@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { through184 } from "./historical-catalog.mjs";
 import { corpusListing, corpusRunPaths } from "../scripts/import-corpus.mjs";
 
 const root = new URL("../", import.meta.url);
@@ -14,7 +15,7 @@ test("the prior 126-report crypto snapshot remains intact in the current registr
   const snapshot = JSON.parse(await readFile(new URL("manifest.json", run)));
   const source = JSON.parse(await readFile(new URL("source-manifest.json", run)));
   const history = JSON.parse(await readFile(new URL("source-history.json", run)));
-  const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
+  const projects = through184(JSON.parse(await readFile(new URL("data/projects.json", root))));
   assert.equal(snapshot.entries.length, 126);
   assert.equal(source.entries.length, 126);
   assert.equal(history.entries.length, 126);

@@ -1,0 +1,26 @@
+{
+  "name": "mlin-genomicsqlite",
+  "commit": "eb9bd7b227cab21bbe8950b1b5232c8cc6b1afd3",
+  "manifestOrigin": "https://github.com/mlin/GenomicSQLite.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/mlin-genomicsqlite/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 84,
+  "treeModes": {
+    "100644": 77,
+    "100755": 6,
+    "120000": 1
+  },
+  "treeListingSha256": "1afcac34c4e1889a70adc0bcb1b6afaab1fc33b9f270025a033c93636dd8b50b",
+  "reportSha256": "f1a80259e0f66c75e35bbb5662928bbab5979f75da7ffaf32a7d2bfce701bbc2",
+  "score": {
+    "earned": 35,
+    "max": 105,
+    "percent": 33
+  },
+  "level": 0
+}

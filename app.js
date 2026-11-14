@@ -11,7 +11,7 @@ const levels = {
 };
 
 const state = { query: "", level: "all", source: "all", category: "all", cohort: "all", version: "all", page: 1 };
-const projects = await fetch("./data/projects.json?v=20261112.1").then((response) => response.json());
+const projects = await fetch("./data/projects.json?v=20261114.1").then((response) => response.json());
 const versions = reportVersions(projects);
 const rankings = new Map(versions.map((version) => [version, rankedReports(projects, version)]));
 const ranked = versions.flatMap((version) => rankings.get(version));
