@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { filterProjects, paginate, rankedReports, reportVersions } from "../ranking.mjs";
+import { filterProjects, formatRank, paginate, rankedReports, reportVersions } from "../ranking.mjs";
 import { through184 } from "./historical-catalog.mjs";
 
 const report = (repo, toolVersion, score, maxScore, level, extra = {}) => ({
@@ -24,6 +24,13 @@ test("the 1.8.5 reports lead the version selector while older results remain sel
   assert.equal(rankedReports(projects, "1.8.5")[0].score, 62);
   assert.equal(rankedReports(projects, "1.8.4")[0].score, 60);
   assert.deepEqual(through184(projects).map((project) => project.toolVersion), ["1.8.4"]);
+});
+
+test("a one-based rank is displayed without shifting the leaderboard position", () => {
+  assert.equal(formatRank(1), "01");
+  assert.equal(formatRank(2), "02");
+  assert.equal(formatRank(100), "100");
+  assert.equal(formatRank(-1), "—");
 });
 
 test("rank uses raw score, then percentage, then repository name within each version", () => {

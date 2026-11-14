@@ -18,6 +18,10 @@ export function repositoryCount(projects) {
   return new Set(projects.map((project) => project.repo.toLowerCase())).size;
 }
 
+export function formatRank(rank) {
+  return Number.isInteger(rank) && rank > 0 ? String(rank).padStart(2, "0") : "—";
+}
+
 export function paginate(items, page, pageSize) {
   if (!Number.isInteger(pageSize) || pageSize < 1) throw new RangeError("Page size must be a positive integer");
 

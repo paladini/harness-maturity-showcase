@@ -40,7 +40,7 @@ test("the leaderboard includes accessible pagination controls", () => {
   assert.match(html, /id="page-summary" aria-live="polite" aria-atomic="true"/);
   assert.match(html, /id="previous-page" type="button" aria-controls="rows" disabled/);
   assert.match(html, /id="next-page" type="button" aria-controls="rows" disabled/);
-  assert.match(html, /app\.js\?v=20261114\.1/);
+  assert.match(html, /app\.js\?v=20261114\.2/);
 });
 
 test("all full study records expose reproducible reports", () => {
