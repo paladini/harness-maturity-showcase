@@ -1,0 +1,24 @@
+{
+  "name": "raga-ai-hub-ragaai-catalyst",
+  "commit": "ab67893310891140211280a496402003e52cdab5",
+  "manifestOrigin": "https://github.com/raga-ai-hub/RagaAI-Catalyst.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/raga-ai-hub-ragaai-catalyst/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 214,
+  "treeModes": {
+    "100644": 214
+  },
+  "treeListingSha256": "240d5fc52604c7317efb778ef5710ac6deee311b59959b6a04b2c574cecbcc88",
+  "reportSha256": "fba0227e6f213e4a94a883c76ed0ecc626d1087d4414a571a735ffa0bd380c15",
+  "score": {
+    "earned": 48,
+    "max": 105,
+    "percent": 46
+  },
+  "level": 0
+}

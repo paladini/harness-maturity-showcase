@@ -1,0 +1,27 @@
+{
+  "name": "geospatial-mapmint-mapmint",
+  "commit": "79b4221a795d3093a0d6ec51def0c1c0b3156fef",
+  "manifestOrigin": "https://github.com/mapmint/mapmint.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/geospatial-mapmint-mapmint/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 4898,
+  "treeModes": {
+    "100644": 3832,
+    "100755": 1027,
+    "120000": 38,
+    "160000": 1
+  },
+  "treeListingSha256": "e5c8d4c8d09dbe40c8a30e6cc19dec1d25c388959aba95f7a1a3d741baabceb3",
+  "reportSha256": "ea3faaf06b23764c61e019b564b42cbc079097ced7d3d2b7765ed09e074112ea",
+  "score": {
+    "earned": 23,
+    "max": 105,
+    "percent": 22
+  },
+  "level": 0
+}

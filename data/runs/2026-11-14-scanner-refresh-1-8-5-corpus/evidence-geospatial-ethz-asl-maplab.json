@@ -1,0 +1,26 @@
+{
+  "name": "geospatial-ethz-asl-maplab",
+  "commit": "0b4868efeb292851d71f98d31a1e6bb40ebb244b",
+  "manifestOrigin": "https://github.com/ethz-asl/maplab.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/geospatial-ethz-asl-maplab/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 1397,
+  "treeModes": {
+    "100644": 1345,
+    "100755": 28,
+    "160000": 24
+  },
+  "treeListingSha256": "40edc6465faac7f29dbed13edcf2e2ebf374772f19c11ae539846bb0072db69b",
+  "reportSha256": "56880c7f88751e43ed703bab90cc220cb818f511d02a885f91a39eb190d2b478",
+  "score": {
+    "earned": 21,
+    "max": 105,
+    "percent": 20
+  },
+  "level": 0
+}

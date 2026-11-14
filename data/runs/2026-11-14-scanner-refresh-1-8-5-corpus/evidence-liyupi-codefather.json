@@ -1,0 +1,24 @@
+{
+  "name": "liyupi-codefather",
+  "commit": "24587506abdee3f4257a873fed8e18163d925670",
+  "manifestOrigin": "https://github.com/liyupi/codefather.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/liyupi-codefather/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 1055,
+  "treeModes": {
+    "100644": 1055
+  },
+  "treeListingSha256": "cd2963963b824029c1bbda2d015392b779c2a23dc2c3a710b71a6c5ed13f94d8",
+  "reportSha256": "5b0fecc7608632d24d6c92de5711584770817edd9c33b3180e11b4478cb22646",
+  "score": {
+    "earned": 20,
+    "max": 105,
+    "percent": 19
+  },
+  "level": 0
+}

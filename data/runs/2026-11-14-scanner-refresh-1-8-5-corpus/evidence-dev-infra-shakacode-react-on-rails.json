@@ -1,0 +1,26 @@
+{
+  "name": "dev-infra-shakacode-react-on-rails",
+  "commit": "9fe6fc5b46b0e8f3266cccc240aa50383d26b931",
+  "manifestOrigin": "https://github.com/shakacode/react_on_rails.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/dev-infra-shakacode-react-on-rails/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 3264,
+  "treeModes": {
+    "100644": 2962,
+    "100755": 264,
+    "120000": 38
+  },
+  "treeListingSha256": "655d38bcdcd7193e02449c6a464deee1bd895e8ce4d9bedd2dcf08b6fa23cd87",
+  "reportSha256": "c8b9420cfd46e1aaf22404f59ae6d79ec6d93eadae9cca63f2b0bdec1da5a687",
+  "score": {
+    "earned": 102,
+    "max": 105,
+    "percent": 97
+  },
+  "level": 4
+}

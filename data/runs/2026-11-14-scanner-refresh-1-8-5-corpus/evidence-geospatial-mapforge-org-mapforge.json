@@ -1,0 +1,26 @@
+{
+  "name": "geospatial-mapforge-org-mapforge",
+  "commit": "99d1469c2b71ce1673bcc8bd9e9f082814e7b8e0",
+  "manifestOrigin": "https://github.com/mapforge-org/mapforge.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/geospatial-mapforge-org-mapforge/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 13095,
+  "treeModes": {
+    "100644": 13073,
+    "100755": 16,
+    "120000": 6
+  },
+  "treeListingSha256": "43197ebc1e3afde555174b9a50fdc7a5c0fc3b6119b87113d24555c405489805",
+  "reportSha256": "ac06329594eda8085ec5c035461e0d2ef9887b305ac7ccf5cb1adcccdf72b6cc",
+  "score": {
+    "earned": 36,
+    "max": 105,
+    "percent": 34
+  },
+  "level": 0
+}

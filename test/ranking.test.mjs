@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { filterProjects, paginate, rankedReports, reportVersions } from "../ranking.mjs";
+import { through184 } from "./historical-catalog.mjs";
 
 const report = (repo, toolVersion, score, maxScore, level, extra = {}) => ({
   repo,
@@ -12,6 +13,17 @@ const report = (repo, toolVersion, score, maxScore, level, extra = {}) => ({
   category: "community",
   selection: { cohort: "ai-popularity" },
   ...extra,
+});
+
+test("the 1.8.5 reports lead the version selector while older results remain selectable", () => {
+  const projects = [
+    report("example/repo", "1.8.4", 60, 105, 1),
+    report("example/repo", "1.8.5", 62, 105, 1),
+  ];
+  assert.deepEqual(reportVersions(projects), ["1.8.5", "1.8.4"]);
+  assert.equal(rankedReports(projects, "1.8.5")[0].score, 62);
+  assert.equal(rankedReports(projects, "1.8.4")[0].score, 60);
+  assert.deepEqual(through184(projects).map((project) => project.toolVersion), ["1.8.4"]);
 });
 
 test("rank uses raw score, then percentage, then repository name within each version", () => {

@@ -1,0 +1,25 @@
+{
+  "name": "dev-infra-nhost-nhost",
+  "commit": "a37f8cce0d7c033c1435869ec216a4cf83f10d7f",
+  "manifestOrigin": "https://github.com/nhost/nhost.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/dev-infra-nhost-nhost/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 18875,
+  "treeModes": {
+    "100644": 18822,
+    "100755": 53
+  },
+  "treeListingSha256": "41d022dcfbe0e01b05cbd3776976898f16b3ec926f882758bb5549d9643f9c13",
+  "reportSha256": "9fb5a4bb479e442174f88d7b8bd52d37d9627ffc1e88dc17d1d6cb5f9f7bb46a",
+  "score": {
+    "earned": 71,
+    "max": 105,
+    "percent": 68
+  },
+  "level": 1
+}

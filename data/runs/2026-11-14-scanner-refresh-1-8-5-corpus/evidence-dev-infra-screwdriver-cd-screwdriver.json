@@ -1,0 +1,25 @@
+{
+  "name": "dev-infra-screwdriver-cd-screwdriver",
+  "commit": "5773fa90284c516c0b1b21bd8b178fe8c47b93ce",
+  "manifestOrigin": "https://github.com/screwdriver-cd/screwdriver.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/dev-infra-screwdriver-cd-screwdriver/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 571,
+  "treeModes": {
+    "100644": 568,
+    "100755": 3
+  },
+  "treeListingSha256": "98e19f00725b4728d7184487b0334b93dbaf2d157256e2bdff8d830e4ba7a483",
+  "reportSha256": "2872455e61141482e628033535409b7b0d76e40e6a2937104ad488f641c9ec0e",
+  "score": {
+    "earned": 39,
+    "max": 105,
+    "percent": 37
+  },
+  "level": 0
+}

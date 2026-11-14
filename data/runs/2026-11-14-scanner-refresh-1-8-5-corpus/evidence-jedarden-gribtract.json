@@ -1,0 +1,25 @@
+{
+  "name": "jedarden-gribtract",
+  "commit": "9445b8bc86d9435682dadc44ca9fea3bc0efcb80",
+  "manifestOrigin": "https://github.com/jedarden/gribtract.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/jedarden-gribtract/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 458,
+  "treeModes": {
+    "100644": 421,
+    "100755": 37
+  },
+  "treeListingSha256": "3bc01d38aae1c2098a06095d1c01e9f70f8ac8021c9ddf2da601009c8223a0bb",
+  "reportSha256": "476bf2a34c83e4ba47e6234e5b3960581d142539dab5467ac9e0a3cc27a2c0eb",
+  "score": {
+    "earned": 29,
+    "max": 105,
+    "percent": 28
+  },
+  "level": 0
+}

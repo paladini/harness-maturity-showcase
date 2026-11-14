@@ -1,13 +1,14 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { through184 } from "./historical-catalog.mjs";
 
 const root = new URL("../", import.meta.url);
 const run = new URL("data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/", root);
 const snapshot = JSON.parse(await readFile(new URL("manifest.json", run)));
 const source = JSON.parse(await readFile(new URL("source-manifest.json", run)));
 const selection = JSON.parse(await readFile(new URL("selection.json", run)));
-const projects = JSON.parse(await readFile(new URL("data/projects.json", root)));
+const projects = through184(JSON.parse(await readFile(new URL("data/projects.json", root))));
 
 test("the developer infrastructure cohort preserves its frozen selection and star provenance", () => {
   assert.equal(snapshot.sourceCommit, "2a88ecc00a4fbf8aa13e14692bf673c3c2aba6b7");

@@ -1,0 +1,25 @@
+{
+  "name": "geospatial-awesome-spectral-indices-awesome-spectral-indices",
+  "commit": "dad4f08014fee3d784327985c72d42592842cf5d",
+  "manifestOrigin": "https://github.com/awesome-spectral-indices/awesome-spectral-indices.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/geospatial-awesome-spectral-indices-awesome-spectral-indices/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 428,
+  "treeModes": {
+    "100644": 416,
+    "100755": 12
+  },
+  "treeListingSha256": "66f0804f4eba4ced2fb072d67350c68c630e72f205284ae412f4abeaacc0869c",
+  "reportSha256": "135b13e12fa94f0eff838a19fce1d52d23072556abab136682c4dfe0b0d86a54",
+  "score": {
+    "earned": 29,
+    "max": 105,
+    "percent": 28
+  },
+  "level": 0
+}

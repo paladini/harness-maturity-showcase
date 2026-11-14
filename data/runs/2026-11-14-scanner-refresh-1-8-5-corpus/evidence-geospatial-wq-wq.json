@@ -1,0 +1,27 @@
+{
+  "name": "geospatial-wq-wq",
+  "commit": "c13e1394146a5a61c84f8134001efd102f85a14d",
+  "manifestOrigin": "https://github.com/wq/wq.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/geospatial-wq-wq/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 566,
+  "treeModes": {
+    "100644": 559,
+    "100755": 2,
+    "120000": 1,
+    "160000": 4
+  },
+  "treeListingSha256": "38a692cd79cddb044553db812d2e56eaeddb93b9125deca0d9362feefa5c6b65",
+  "reportSha256": "496821efb5866149b7cec8de7be8899b3a054c8fcce24601eaa297a11f8973cd",
+  "score": {
+    "earned": 32,
+    "max": 105,
+    "percent": 30
+  },
+  "level": 0
+}

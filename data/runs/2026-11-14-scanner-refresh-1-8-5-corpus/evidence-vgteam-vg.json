@@ -1,0 +1,27 @@
+{
+  "name": "vgteam-vg",
+  "commit": "ce79f1283b2eaee639d2d50ccc92f17c9cda17b9",
+  "manifestOrigin": "https://github.com/vgteam/vg.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/vgteam-vg/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 1272,
+  "treeModes": {
+    "100644": 1175,
+    "100755": 53,
+    "120000": 1,
+    "160000": 43
+  },
+  "treeListingSha256": "1a3663927dd2a23ccd3a23303a8ae8717ac4ad223e9497adf6472c049090beb2",
+  "reportSha256": "584f826c01f60b55339839465ee797da676009d81622b3b9c3deb022149ade29",
+  "score": {
+    "earned": 45,
+    "max": 105,
+    "percent": 43
+  },
+  "level": 1
+}

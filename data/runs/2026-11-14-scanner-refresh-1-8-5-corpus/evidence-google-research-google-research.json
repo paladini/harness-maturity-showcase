@@ -1,0 +1,26 @@
+{
+  "name": "google-research-google-research",
+  "commit": "5b381db4139c3cbf25cc9a698c5fe9754215fae2",
+  "manifestOrigin": "https://github.com/google-research/google-research.git",
+  "source": "/mnt/d/code/harness-maturity-analysis-1-8-5/.cache/repos/google-research-google-research/.git",
+  "platform": "WSL Ubuntu 24.04",
+  "scanner": "harness-score@1.8.5",
+  "status": "scored",
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "gitLfsSkipSmudge": true,
+  "treeEntryCount": 23262,
+  "treeModes": {
+    "100644": 22646,
+    "100755": 615,
+    "120000": 1
+  },
+  "treeListingSha256": "cd59b36077d909a4ad4531369e7d768ce9f261d17f49881aa905c227b77d062b",
+  "reportSha256": "3bc04a81a2d367f9380011f037f9911c86126518edcdd76aedc5005edc366ec3",
+  "score": {
+    "earned": 32,
+    "max": 105,
+    "percent": 30
+  },
+  "level": 0
+}
