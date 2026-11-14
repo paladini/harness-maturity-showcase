@@ -1,4 +1,4 @@
-import { filterProjects, paginate, popularityLabel, rankedReports, reportVersions, repositoryCount } from "./ranking.mjs?v=20261023.1";
+import { filterProjects, formatRank, paginate, popularityLabel, rankedReports, reportVersions, repositoryCount } from "./ranking.mjs?v=20261114.2";
 
 const PAGE_SIZE = 100;
 
@@ -165,7 +165,7 @@ function render(resetPage = false) {
       ? `<small>${escapeHtml(popularityLabel(project.selection.cohort))}${project.selection.popularityRank ? ` #${escapeHtml(project.selection.popularityRank)}` : ""} · ${escapeHtml(Number(project.selection.githubStars).toLocaleString("en-US"))} stars on ${escapeHtml(project.selection.date)}${project.selection.archived ? " · archived snapshot" : ""}</small>`
       : "";
     return `<tr>
-      <td class="rank">${numericRank >= 0 ? String(numericRank + 1).padStart(2, "0") : "—"}</td>
+      <td class="rank">${formatRank(numericRank)}</td>
       <td><a class="repo" href="https://github.com/${escapeHtml(project.repo)}">${escapeHtml(project.repo)} <span>↗</span></a><small>${escapeHtml(project.category.replaceAll("-", " "))}${project.isStressCase ? " · stress case" : ""}</small>${provenance}</td>
       <td>${levelPill(project)}</td>
       <td class="score">${score}</td>
