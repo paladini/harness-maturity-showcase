@@ -33,7 +33,7 @@ test("the 1.8.5 refresh publishes every complete pinned report and retains unava
   const currentByRepo = new Map(current.map((entry) => [entry.repo.toLowerCase(), entry]));
   assert.equal(byHistory.size, source.entries.length);
   assert.equal(bySnapshot.size + byUnavailable.size, source.entries.length);
-  assert.equal(reportVersions(projects)[0], "1.8.5");
+  assert.equal(reportVersions(projects)[0], "1.9.0");
   assert.ok(current.length >= bySnapshot.size);
   assert.equal(currentByRepo.size, current.length);
 
