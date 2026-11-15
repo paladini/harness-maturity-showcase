@@ -31,8 +31,8 @@ test("the leaderboard exposes category and selection-provenance filters", () => 
 });
 
 test("the study coverage links to the unavailable pinned sources", () => {
-  assert.match(html, /1\.9\.0 study includes 5,950 of 6,002 pinned repositories/);
-  assert.match(html, /2026-11-14-scanner-refresh-1-9-0-final-linux-ccxt-corpus\/manifest\.json[^>]*>1\.9\.0 run manifest/);
+  assert.match(html, /1\.9\.0 study includes 5,985 of 6,002 pinned repositories/);
+  assert.match(html, /2026-11-14-scanner-refresh-1-9-0-ext4-recovery-final-corpus\/manifest\.json[^>]*>1\.9\.0 run manifest/);
 });
 
 test("the leaderboard includes accessible pagination controls", () => {
