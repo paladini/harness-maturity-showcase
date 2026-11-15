@@ -18,8 +18,8 @@ transparent way to inspect the evidence behind every listing.
 
 This repository currently combines four evidence sets:
 
-- 5,994 pinned, reproducible reports in the current immutable
-  `harness-score@1.8.5` snapshot from the
+- 5,950 pinned, reproducible reports in the newest immutable
+  `harness-score@1.9.0` snapshot from the
   [Harness Maturity Analysis](https://github.com/paladini/harness-maturity-analysis),
   including 500 randomly sampled scientific software projects, 500
   repositories with AI coding-agent and IDE guidance files, 500
@@ -27,10 +27,11 @@ This repository currently combines four evidence sets:
   projects, 25 media editing projects, 500 video game AI projects, 500
   agent-ecosystem projects, 500 agriculture software projects, 816 developer
   infrastructure projects, 1,000 geospatial and mapping projects, and 1,000 broadly popular GitHub software projects
-  selected from recorded searches. Eight of the 6,002 manifest entries were
-  unavailable at their pinned commits and are recorded as not scanned in the
-  [1.8.5 run manifest](data/runs/2026-11-14-scanner-refresh-1-8-5-recovery-1-corpus/manifest.json).
-  Earlier versioned reports remain available. See the [developer infrastructure import](data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/README.md),
+  selected from recorded searches. The 6,002-entry 1.9.0 run records 52 pins
+  that could not be scored in this run; earlier versioned reports remain
+  available. See the [1.9.0 run manifest](data/runs/2026-11-14-scanner-refresh-1-9-0-final-linux-ccxt-corpus/manifest.json),
+  the earlier [1.8.5 run manifest](data/runs/2026-11-14-scanner-refresh-1-8-5-recovery-1-corpus/manifest.json),
+  and the [developer infrastructure import](data/runs/2026-10-13-developer-infrastructure-popularity-816-corpus/README.md),
   [geospatial and mapping import](data/runs/2026-10-14-geospatial-mapping-popularity-1000-corpus/README.md),
   [scientific software import](data/runs/2026-10-12-scientific-software-random-500-corpus/README.md), the [AI coding-assistant adoption
   import](data/runs/2026-10-11-ai-ide-adoption-500-corpus/README.md), [latest video
@@ -50,8 +51,8 @@ same scanner version. Within a version, repositories sort by raw score
 descending, then percentage descending, then repository name alphabetically.
 The podium defaults to the newest version; the scanner filter exposes each
 cohort. A badge records a public level claim, not a verified current score. The
-index has 23,048 repository/version records across 6,023 repositories: 23,047
-full reports and 1 badge-only entry. Repositories with reports from multiple
+index has 34,992 repository/version records across 6,023 repositories: 34,971
+full reports and 21 badge-only entries. Repositories with reports from multiple
 scanner versions appear as separate selectable records.
 
 The 101 earlier corpus listings remain available in their original immutable
