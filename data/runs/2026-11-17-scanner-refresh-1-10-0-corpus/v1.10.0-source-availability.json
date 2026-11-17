@@ -1,0 +1,442 @@
+[
+  {
+    "name": "vibe-coding-cn",
+    "commit": "a800de9bf939d8b8c7dd1e22756ddbd19780bd25",
+    "repoUrl": "https://github.com/tradecatlabs/vibe-coding-cn.git",
+    "apiUrl": "https://api.github.com/repos/tradecatlabs/vibe-coding-cn",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "needle",
+    "commit": "ef3cf7543204d99878c0dd913a05f6a506da4be8",
+    "repoUrl": "https://github.com/cactus-compute/needle.git",
+    "apiUrl": "https://api.github.com/repos/cactus-compute/needle",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "game-ai-xander100891-super-mario-bros-v0",
+    "commit": "0ab03c5f0ad258040b50278a21007b6f30272c56",
+    "repoUrl": "https://github.com/xander100891/super-mario-bros-v0.git",
+    "apiUrl": "https://api.github.com/repos/xander100891/super-mario-bros-v0",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "game-ai-hellosky983-dsh-mc-agent",
+    "commit": "98d8a791948f2f0e88ea08cfa5add91a3f9fa6f3",
+    "repoUrl": "https://github.com/hellosky983/dsh-mc-agent.git",
+    "apiUrl": "https://api.github.com/repos/hellosky983/dsh-mc-agent",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "game-ai-xeldaralz-everything-claude-unity",
+    "commit": "bb28ccbd40b065b0958b02df0c03fb91c4fb7c5b",
+    "repoUrl": "https://github.com/XeldarAlz/everything-claude-unity.git",
+    "apiUrl": "https://api.github.com/repos/XeldarAlz/everything-claude-unity",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "game-ai-alphaparkinc-genpark-interactive-game-development-tutor-skill",
+    "commit": "3a1b0842c9ecb4c7a29d30f7d0368db04dafed41",
+    "repoUrl": "https://github.com/alphaparkinc/genpark-interactive-game-development-tutor-skill.git",
+    "apiUrl": "https://api.github.com/repos/alphaparkinc/genpark-interactive-game-development-tutor-skill",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "juanfont-headscale",
+    "commit": "a8d6f5be81e578a078001b908e41611ec03ce69e",
+    "repoUrl": "https://github.com/juanfont/headscale.git",
+    "apiUrl": "https://api.github.com/repos/juanfont/headscale",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "fuellabs-fuels-ts",
+    "commit": "b3f37c91aca4aa9d5e4c0d3967f66237190826ea",
+    "repoUrl": "https://github.com/FuelLabs/fuels-ts.git",
+    "apiUrl": "https://api.github.com/repos/FuelLabs/fuels-ts",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "google-research-google-research",
+    "commit": "5b381db4139c3cbf25cc9a698c5fe9754215fae2",
+    "repoUrl": "https://github.com/google-research/google-research.git",
+    "apiUrl": "https://api.github.com/repos/google-research/google-research",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "influxdata-influxdb",
+    "commit": "06200ef96ba82c5f6727e5038a83af8e722c6875",
+    "repoUrl": "https://github.com/influxdata/influxdb.git",
+    "apiUrl": "https://api.github.com/repos/influxdata/influxdb",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "envoyproxy-envoy",
+    "commit": "744a11b5bea643b80f002e8d4020c89e04cea62a",
+    "repoUrl": "https://github.com/envoyproxy/envoy.git",
+    "apiUrl": "https://api.github.com/repos/envoyproxy/envoy",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "niri-wm-niri",
+    "commit": "d0cd58ec5ac6b2d41d42478fb4f3cc7c0c687db9",
+    "repoUrl": "https://github.com/niri-wm/niri.git",
+    "apiUrl": "https://api.github.com/repos/niri-wm/niri",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "raga-ai-hub-ragaai-catalyst",
+    "commit": "ab67893310891140211280a496402003e52cdab5",
+    "repoUrl": "https://github.com/raga-ai-hub/RagaAI-Catalyst.git",
+    "apiUrl": "https://api.github.com/repos/raga-ai-hub/RagaAI-Catalyst",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "liyupi-codefather",
+    "commit": "24587506abdee3f4257a873fed8e18163d925670",
+    "repoUrl": "https://github.com/liyupi/codefather.git",
+    "apiUrl": "https://api.github.com/repos/liyupi/codefather",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "agentsmesh-agentsmesh",
+    "commit": "d38e3932df436fadd814a8871b8c6b7be52281d5",
+    "repoUrl": "https://github.com/AgentsMesh/AgentsMesh.git",
+    "apiUrl": "https://api.github.com/repos/AgentsMesh/AgentsMesh",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "ai-ide-eraevous-cognitive-scaffolding-967787402",
+    "commit": "5ffbdc636d09d9b2f3446225e716d9e9697478c0",
+    "repoUrl": "https://github.com/eraevous/Cognitive-Scaffolding.git",
+    "apiUrl": "https://api.github.com/repos/eraevous/Cognitive-Scaffolding",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "ai-ide-tahasohail-goat-sabaqai-1347257888",
+    "commit": "c0f352d50e08d4a9687040b86686e9648226e53f",
+    "repoUrl": "https://github.com/TahaSohail-Goat/SabaqAI.git",
+    "apiUrl": "https://api.github.com/repos/TahaSohail-Goat/SabaqAI",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "ai-ide-mikeydotio-lillist-1236962486",
+    "commit": "8d35213ea3f1fc0a45990809e24fe92a7b1de029",
+    "repoUrl": "https://github.com/mikeydotio/lillist.git",
+    "apiUrl": "https://api.github.com/repos/mikeydotio/lillist",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "ai-ide-gennappio-opencellcomms-999207456",
+    "commit": "c8f3e0d15e59241b5641f1bf0ce1e5dfe1cb87bf",
+    "repoUrl": "https://github.com/Gennappio/OpenCellComms.git",
+    "apiUrl": "https://api.github.com/repos/Gennappio/OpenCellComms",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "ai-ide-gianfossi-whb-1333052940",
+    "commit": "5cb1203197a8e66e89c9207a262c83d04fed5239",
+    "repoUrl": "https://github.com/GianFossi/WHB.git",
+    "apiUrl": "https://api.github.com/repos/GianFossi/WHB",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "ai-ide-karolleb-rpg-manager-1137809893",
+    "commit": "c309257b6d6b9096eeaf83d9db5882951b0b0cdd",
+    "repoUrl": "https://github.com/KarolLeb/rpg-manager.git",
+    "apiUrl": "https://api.github.com/repos/KarolLeb/rpg-manager",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "ai-ide-kelthon-roobra-api-1276380473",
+    "commit": "6347361fee86dd07aeb1c8d4e6ff88b54c2c22cf",
+    "repoUrl": "https://github.com/kelthon/roobra-api.git",
+    "apiUrl": "https://api.github.com/repos/kelthon/roobra-api",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "ai-ide-krystian-booker-engine-1082913989",
+    "commit": "7f41153146b94778a38b188f03e7070d1d46d004",
+    "repoUrl": "https://github.com/krystian-booker/engine.git",
+    "apiUrl": "https://api.github.com/repos/krystian-booker/engine",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "ai-ide-mannek-specforge-1289369557",
+    "commit": "d88e718aa7ddbb066bb84ef79a66c42a9a5aae70",
+    "repoUrl": "https://github.com/ManneK/specforge.git",
+    "apiUrl": "https://api.github.com/repos/ManneK/specforge",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "dennissergeev-octant",
+    "commit": "edbf3ae1e576dacc42480cf3c7e9801528db4104",
+    "repoUrl": "https://github.com/dennissergeev/octant.git",
+    "apiUrl": "https://api.github.com/repos/dennissergeev/octant",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "jedarden-gribtract",
+    "commit": "9445b8bc86d9435682dadc44ca9fea3bc0efcb80",
+    "repoUrl": "https://github.com/jedarden/gribtract.git",
+    "apiUrl": "https://api.github.com/repos/jedarden/gribtract",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "mlin-genomicsqlite",
+    "commit": "eb9bd7b227cab21bbe8950b1b5232c8cc6b1afd3",
+    "repoUrl": "https://github.com/mlin/GenomicSQLite.git",
+    "apiUrl": "https://api.github.com/repos/mlin/GenomicSQLite",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "vgteam-vg",
+    "commit": "ce79f1283b2eaee639d2d50ccc92f17c9cda17b9",
+    "repoUrl": "https://github.com/vgteam/vg.git",
+    "apiUrl": "https://api.github.com/repos/vgteam/vg",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "jinghuazhao-inf",
+    "commit": "6216cc1c046c9a01deffa1e05c72558afb6e28f7",
+    "repoUrl": "https://github.com/jinghuazhao/INF.git",
+    "apiUrl": "https://api.github.com/repos/jinghuazhao/INF",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "eiszapfen2000-tgda",
+    "commit": "d78a551e9baead24d006d0714eecb445e1c19722",
+    "repoUrl": "https://github.com/eiszapfen2000/tgda.git",
+    "apiUrl": "https://api.github.com/repos/eiszapfen2000/tgda",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "kazulagi-plantfem",
+    "commit": "2abebf4028f89251dbf06ccb6c92570598869a77",
+    "repoUrl": "https://github.com/kazulagi/plantFEM.git",
+    "apiUrl": "https://api.github.com/repos/kazulagi/plantFEM",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "lejubila-pigardenweb",
+    "commit": "3ed1930207d59d72de49fd8877880fe4d30592c2",
+    "repoUrl": "https://github.com/lejubila/piGardenWeb.git",
+    "apiUrl": "https://api.github.com/repos/lejubila/piGardenWeb",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "gopiashokan-potato-disease-classification-using-deep-learning",
+    "commit": "08cf5efd03f1294cef92018e700b9f24915cc000",
+    "repoUrl": "https://github.com/gopiashokan/Potato-Disease-Classification-using-Deep-Learning.git",
+    "apiUrl": "https://api.github.com/repos/gopiashokan/Potato-Disease-Classification-using-Deep-Learning",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "undisciplined-alchemist8546-jiofarm",
+    "commit": "5a154311ae82c638719953c65bbf3540d97d5bd8",
+    "repoUrl": "https://github.com/Undisciplined-alchemist8546/jiofarm.git",
+    "apiUrl": "https://api.github.com/repos/Undisciplined-alchemist8546/jiofarm",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "cap-n-proud-robogarden",
+    "commit": "802f2daafcd11131f89395bd9858f7d65e1f5bca",
+    "repoUrl": "https://github.com/Cap-n-Proud/roboGarden.git",
+    "apiUrl": "https://api.github.com/repos/Cap-n-Proud/roboGarden",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-ubicloud-ubicloud",
+    "commit": "fad16215cbf0b392ab5b9cfc8e4a4c7df382ac28",
+    "repoUrl": "https://github.com/ubicloud/ubicloud.git",
+    "apiUrl": "https://api.github.com/repos/ubicloud/ubicloud",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-nhost-nhost",
+    "commit": "a37f8cce0d7c033c1435869ec216a4cf83f10d7f",
+    "repoUrl": "https://github.com/nhost/nhost.git",
+    "apiUrl": "https://api.github.com/repos/nhost/nhost",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-shakacode-react-on-rails",
+    "commit": "9fe6fc5b46b0e8f3266cccc240aa50383d26b931",
+    "repoUrl": "https://github.com/shakacode/react_on_rails.git",
+    "apiUrl": "https://api.github.com/repos/shakacode/react_on_rails",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-flipkart-incubator-astra",
+    "commit": "092804a9f9abb3e019c60479e2968b01a76f4ea3",
+    "repoUrl": "https://github.com/flipkart-incubator/Astra.git",
+    "apiUrl": "https://api.github.com/repos/flipkart-incubator/Astra",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-claimed-framework-claimed",
+    "commit": "d86da9298ebe92f5a13332a48056b4e11e2d801b",
+    "repoUrl": "https://github.com/claimed-framework/claimed.git",
+    "apiUrl": "https://api.github.com/repos/claimed-framework/claimed",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-covenantsql-covenantsql",
+    "commit": "ce1b3c0121e193a61e3558e8175c8e831b1c2057",
+    "repoUrl": "https://github.com/CovenantSQL/CovenantSQL.git",
+    "apiUrl": "https://api.github.com/repos/CovenantSQL/CovenantSQL",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-mergesort-boutique",
+    "commit": "3474aa1d931c17ddcd099285b26b513b36b6969b",
+    "repoUrl": "https://github.com/mergesort/Boutique.git",
+    "apiUrl": "https://api.github.com/repos/mergesort/Boutique",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-screwdriver-cd-screwdriver",
+    "commit": "5773fa90284c516c0b1b21bd8b178fe8c47b93ce",
+    "repoUrl": "https://github.com/screwdriver-cd/screwdriver.git",
+    "apiUrl": "https://api.github.com/repos/screwdriver-cd/screwdriver",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-orange-cyberdefense-grepmarx",
+    "commit": "35c491e8e7865b377082c61ed37336f7019b09f9",
+    "repoUrl": "https://github.com/Orange-Cyberdefense/grepmarx.git",
+    "apiUrl": "https://api.github.com/repos/Orange-Cyberdefense/grepmarx",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "dev-infra-lerianstudio-ring",
+    "commit": "5dcf4ef66574c900c17ee3b8364bdd103f216f88",
+    "repoUrl": "https://github.com/LerianStudio/ring.git",
+    "apiUrl": "https://api.github.com/repos/LerianStudio/ring",
+    "httpStatus": 404,
+    "state": "repository-unavailable"
+  },
+  {
+    "name": "geospatial-ethz-asl-maplab",
+    "commit": "0b4868efeb292851d71f98d31a1e6bb40ebb244b",
+    "repoUrl": "https://github.com/ethz-asl/maplab.git",
+    "apiUrl": "https://api.github.com/repos/ethz-asl/maplab",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "geospatial-awesome-spectral-indices-awesome-spectral-indices",
+    "commit": "dad4f08014fee3d784327985c72d42592842cf5d",
+    "repoUrl": "https://github.com/awesome-spectral-indices/awesome-spectral-indices.git",
+    "apiUrl": "https://api.github.com/repos/awesome-spectral-indices/awesome-spectral-indices",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "geospatial-wq-wq",
+    "commit": "c13e1394146a5a61c84f8134001efd102f85a14d",
+    "repoUrl": "https://github.com/wq/wq.git",
+    "apiUrl": "https://api.github.com/repos/wq/wq",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "geospatial-merlos-mapcache",
+    "commit": "fbc0f644578d7ac109313f8ca472cb2c31cb414a",
+    "repoUrl": "https://github.com/merlos/MapCache.git",
+    "apiUrl": "https://api.github.com/repos/merlos/MapCache",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "geospatial-pmlrsg-gisportal",
+    "commit": "6988ebe635dbcf803a974583c8bcac77f20b5b79",
+    "repoUrl": "https://github.com/pmlrsg/GISportal.git",
+    "apiUrl": "https://api.github.com/repos/pmlrsg/GISportal",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "geospatial-osucartography-adaptive-composite-map-projections",
+    "commit": "bba9686faa2699c6b5b2ed1400a229d937e52f1f",
+    "repoUrl": "https://github.com/OSUCartography/adaptive-composite-map-projections.git",
+    "apiUrl": "https://api.github.com/repos/OSUCartography/adaptive-composite-map-projections",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "geospatial-mapmint-mapmint",
+    "commit": "79b4221a795d3093a0d6ec51def0c1c0b3156fef",
+    "repoUrl": "https://github.com/mapmint/mapmint.git",
+    "apiUrl": "https://api.github.com/repos/mapmint/mapmint",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "geospatial-opengeos-nasa-cmr-stac",
+    "commit": "a26fe75c354b0d49e3952191b929a7064e2f4574",
+    "repoUrl": "https://github.com/opengeos/NASA-CMR-STAC.git",
+    "apiUrl": "https://api.github.com/repos/opengeos/NASA-CMR-STAC",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "geospatial-mapforge-org-mapforge",
+    "commit": "99d1469c2b71ce1673bcc8bd9e9f082814e7b8e0",
+    "repoUrl": "https://github.com/mapforge-org/mapforge.git",
+    "apiUrl": "https://api.github.com/repos/mapforge-org/mapforge",
+    "httpStatus": 200,
+    "state": "repository-available"
+  },
+  {
+    "name": "geospatial-vladimirkalachikhin-galadriel-map",
+    "commit": "3214c4a2087d5bf5d7f30916a993d79dfcc24124",
+    "repoUrl": "https://github.com/VladimirKalachikhin/Galadriel-map.git",
+    "apiUrl": "https://api.github.com/repos/VladimirKalachikhin/Galadriel-map",
+    "httpStatus": 200,
+    "state": "repository-available"
+  }
+]

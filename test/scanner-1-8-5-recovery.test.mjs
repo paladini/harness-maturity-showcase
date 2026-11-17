@@ -26,7 +26,7 @@ test("the 1.8.5 recovery publishes each pinned report and keeps eight unavailabl
   assert.equal(history.entries.length, 6002);
   assert.equal(snapshot.entries.length, 5994);
   assert.equal(snapshot.unavailableEntries.length, 8);
-  assert.equal(reportVersions(projects)[0], "1.9.0");
+  assert.equal(reportVersions(projects)[0], "1.10.0");
   const results = new Map(history.entries.map((entry) => [entry.name, entry]));
   const imported = new Map(snapshot.entries.map((entry) => [entry.corpusName, entry]));
   const missing = new Map(snapshot.unavailableEntries.map((entry) => [entry.corpusName, entry]));
