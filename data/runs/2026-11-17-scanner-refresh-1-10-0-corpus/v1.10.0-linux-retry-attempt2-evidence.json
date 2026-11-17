@@ -1,0 +1,382 @@
+[
+  {
+    "name": "needle",
+    "commit": "ef3cf7543204d99878c0dd913a05f6a506da4be8",
+    "status": "failed",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": null,
+    "toolVersion": null,
+    "reportSha256": null,
+    "error": "Command failed: git -C /tmp/harness-score-v110-retry-20261116-attempt2/.cache/repos/needle rev-parse HEAD\nfatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n"
+  },
+  {
+    "name": "juanfont-headscale",
+    "commit": "a8d6f5be81e578a078001b908e41611ec03ce69e",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "a8d6f5be81e578a078001b908e41611ec03ce69e",
+    "toolVersion": "1.10.0",
+    "reportSha256": "894a139415bed96e938f762ea0908212b94c88575eef9a0961bde30e99be791c",
+    "error": null
+  },
+  {
+    "name": "fuellabs-fuels-ts",
+    "commit": "b3f37c91aca4aa9d5e4c0d3967f66237190826ea",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "b3f37c91aca4aa9d5e4c0d3967f66237190826ea",
+    "toolVersion": "1.10.0",
+    "reportSha256": "3cfa0ad99b5b6f3f045de139f5827963460bb4b9cc55b892464f5f018b797ec3",
+    "error": null
+  },
+  {
+    "name": "google-research-google-research",
+    "commit": "5b381db4139c3cbf25cc9a698c5fe9754215fae2",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "5b381db4139c3cbf25cc9a698c5fe9754215fae2",
+    "toolVersion": "1.10.0",
+    "reportSha256": "4bcf7a777ba45cacc7f36d829e52cba913b9064242a5fa85245913daa09ebdf3",
+    "error": null
+  },
+  {
+    "name": "influxdata-influxdb",
+    "commit": "06200ef96ba82c5f6727e5038a83af8e722c6875",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "06200ef96ba82c5f6727e5038a83af8e722c6875",
+    "toolVersion": "1.10.0",
+    "reportSha256": "cff4e4e7d5cbbff04fdffddeea929f7af68821e8bf6f4923512fad941de0e9e9",
+    "error": null
+  },
+  {
+    "name": "envoyproxy-envoy",
+    "commit": "744a11b5bea643b80f002e8d4020c89e04cea62a",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "744a11b5bea643b80f002e8d4020c89e04cea62a",
+    "toolVersion": "1.10.0",
+    "reportSha256": "70c0921210e2b6b874ab3fc84223f804cfdec5a4cb81e99de5f77e9d500cd44b",
+    "error": null
+  },
+  {
+    "name": "niri-wm-niri",
+    "commit": "d0cd58ec5ac6b2d41d42478fb4f3cc7c0c687db9",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "d0cd58ec5ac6b2d41d42478fb4f3cc7c0c687db9",
+    "toolVersion": "1.10.0",
+    "reportSha256": "6066291f11a32fdcf1569f4372ded6b24146aab3925ddad4c120a529384dcd05",
+    "error": null
+  },
+  {
+    "name": "raga-ai-hub-ragaai-catalyst",
+    "commit": "ab67893310891140211280a496402003e52cdab5",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "ab67893310891140211280a496402003e52cdab5",
+    "toolVersion": "1.10.0",
+    "reportSha256": "ee01208a8cd7c4ad179b07237bb220a6f76e696e61a5dc7826d6090adab8ce87",
+    "error": null
+  },
+  {
+    "name": "liyupi-codefather",
+    "commit": "24587506abdee3f4257a873fed8e18163d925670",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "24587506abdee3f4257a873fed8e18163d925670",
+    "toolVersion": "1.10.0",
+    "reportSha256": "8d50ae0658de80b209bfa4c76e6e18ba8b83363cc2bd59085d5b873eb4e210d3",
+    "error": null
+  },
+  {
+    "name": "dennissergeev-octant",
+    "commit": "edbf3ae1e576dacc42480cf3c7e9801528db4104",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "edbf3ae1e576dacc42480cf3c7e9801528db4104",
+    "toolVersion": "1.10.0",
+    "reportSha256": "8c8ef1a42cee6b8e2b66e5af104051b3d3d7307fbc872dc3da61fc7f71e3b206",
+    "error": null
+  },
+  {
+    "name": "jedarden-gribtract",
+    "commit": "9445b8bc86d9435682dadc44ca9fea3bc0efcb80",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "9445b8bc86d9435682dadc44ca9fea3bc0efcb80",
+    "toolVersion": "1.10.0",
+    "reportSha256": "946d31026a7cf4d013bfdb1ff4544677822474376b3efd03b737c17c906a4d5d",
+    "error": null
+  },
+  {
+    "name": "mlin-genomicsqlite",
+    "commit": "eb9bd7b227cab21bbe8950b1b5232c8cc6b1afd3",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "eb9bd7b227cab21bbe8950b1b5232c8cc6b1afd3",
+    "toolVersion": "1.10.0",
+    "reportSha256": "e4963e6bfc7a6777c0f46d46d1dc6559f257b70923ef7e5cf84f40a06a2f00fc",
+    "error": null
+  },
+  {
+    "name": "vgteam-vg",
+    "commit": "ce79f1283b2eaee639d2d50ccc92f17c9cda17b9",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "ce79f1283b2eaee639d2d50ccc92f17c9cda17b9",
+    "toolVersion": "1.10.0",
+    "reportSha256": "33926be2e0033ec0e2399ea574b265d306002ab7ac5834affdce1c9e6ac26047",
+    "error": null
+  },
+  {
+    "name": "jinghuazhao-inf",
+    "commit": "6216cc1c046c9a01deffa1e05c72558afb6e28f7",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "6216cc1c046c9a01deffa1e05c72558afb6e28f7",
+    "toolVersion": "1.10.0",
+    "reportSha256": "cd45a43482e6a7857f4102578a98e7f1a371c7b864063ec55686701ec175a56d",
+    "error": null
+  },
+  {
+    "name": "eiszapfen2000-tgda",
+    "commit": "d78a551e9baead24d006d0714eecb445e1c19722",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "d78a551e9baead24d006d0714eecb445e1c19722",
+    "toolVersion": "1.10.0",
+    "reportSha256": "50ab104742a9eb33cbeaa4a4d2bfb094bdd8a4a7f1832cd17df5c3ff8384cbb2",
+    "error": null
+  },
+  {
+    "name": "kazulagi-plantfem",
+    "commit": "2abebf4028f89251dbf06ccb6c92570598869a77",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "2abebf4028f89251dbf06ccb6c92570598869a77",
+    "toolVersion": "1.10.0",
+    "reportSha256": "a7f5e0e7325ab711d438272976eba8239fab7df4e6249f901bf15eb9ad715a2c",
+    "error": null
+  },
+  {
+    "name": "lejubila-pigardenweb",
+    "commit": "3ed1930207d59d72de49fd8877880fe4d30592c2",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "3ed1930207d59d72de49fd8877880fe4d30592c2",
+    "toolVersion": "1.10.0",
+    "reportSha256": "2ad7374d89378ca371e7f1ca369e9d43b1fcc92783bf62ccb0141152d824db4f",
+    "error": null
+  },
+  {
+    "name": "gopiashokan-potato-disease-classification-using-deep-learning",
+    "commit": "08cf5efd03f1294cef92018e700b9f24915cc000",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "08cf5efd03f1294cef92018e700b9f24915cc000",
+    "toolVersion": "1.10.0",
+    "reportSha256": "19201ca084232070b29872a336ff61357ead377bbc76d371c87ed7744ac63f8a",
+    "error": null
+  },
+  {
+    "name": "cap-n-proud-robogarden",
+    "commit": "802f2daafcd11131f89395bd9858f7d65e1f5bca",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "802f2daafcd11131f89395bd9858f7d65e1f5bca",
+    "toolVersion": "1.10.0",
+    "reportSha256": "f1981585580f2f98e2aaf9ad3032d2f04b108942aa9299afe4192791577f9547",
+    "error": null
+  },
+  {
+    "name": "dev-infra-ubicloud-ubicloud",
+    "commit": "fad16215cbf0b392ab5b9cfc8e4a4c7df382ac28",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "fad16215cbf0b392ab5b9cfc8e4a4c7df382ac28",
+    "toolVersion": "1.10.0",
+    "reportSha256": "25f89ee8dc085929e3e6d05f244fe4403d3e69f771743c551e7da817fe41502f",
+    "error": null
+  },
+  {
+    "name": "dev-infra-nhost-nhost",
+    "commit": "a37f8cce0d7c033c1435869ec216a4cf83f10d7f",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "a37f8cce0d7c033c1435869ec216a4cf83f10d7f",
+    "toolVersion": "1.10.0",
+    "reportSha256": "8c23d75169356168ecf76357eb6a30b6720f3a0a4c641514d6e908c7ebe8e53e",
+    "error": null
+  },
+  {
+    "name": "dev-infra-shakacode-react-on-rails",
+    "commit": "9fe6fc5b46b0e8f3266cccc240aa50383d26b931",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "9fe6fc5b46b0e8f3266cccc240aa50383d26b931",
+    "toolVersion": "1.10.0",
+    "reportSha256": "f8374d404817173d85c9da12b62fdf4b1c2e13538c57e8acba954381feb21d89",
+    "error": null
+  },
+  {
+    "name": "dev-infra-flipkart-incubator-astra",
+    "commit": "092804a9f9abb3e019c60479e2968b01a76f4ea3",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "092804a9f9abb3e019c60479e2968b01a76f4ea3",
+    "toolVersion": "1.10.0",
+    "reportSha256": "c047991938c0cf7cea46fee4263c944a0678ac8b4998cf134979a924401dd559",
+    "error": null
+  },
+  {
+    "name": "dev-infra-claimed-framework-claimed",
+    "commit": "d86da9298ebe92f5a13332a48056b4e11e2d801b",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "d86da9298ebe92f5a13332a48056b4e11e2d801b",
+    "toolVersion": "1.10.0",
+    "reportSha256": "50095d8e29ed8657ff16cfd3030abf6c44606b0e355b415d047d292c0de4211f",
+    "error": null
+  },
+  {
+    "name": "dev-infra-covenantsql-covenantsql",
+    "commit": "ce1b3c0121e193a61e3558e8175c8e831b1c2057",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "ce1b3c0121e193a61e3558e8175c8e831b1c2057",
+    "toolVersion": "1.10.0",
+    "reportSha256": "b07f98bf5bf6aab29a3fcd56dec68e02e5608000de2482915ec4a31c63f6d56f",
+    "error": null
+  },
+  {
+    "name": "dev-infra-mergesort-boutique",
+    "commit": "3474aa1d931c17ddcd099285b26b513b36b6969b",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "3474aa1d931c17ddcd099285b26b513b36b6969b",
+    "toolVersion": "1.10.0",
+    "reportSha256": "95dfccbe77ddeeb29876091c511cb3d769fd7406fd9e4d3a74ef109be0cf57e9",
+    "error": null
+  },
+  {
+    "name": "dev-infra-screwdriver-cd-screwdriver",
+    "commit": "5773fa90284c516c0b1b21bd8b178fe8c47b93ce",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "5773fa90284c516c0b1b21bd8b178fe8c47b93ce",
+    "toolVersion": "1.10.0",
+    "reportSha256": "1f62c6cf1c501e747f006d504e70ea4f8943190579003402c860545ad71c51a1",
+    "error": null
+  },
+  {
+    "name": "dev-infra-orange-cyberdefense-grepmarx",
+    "commit": "35c491e8e7865b377082c61ed37336f7019b09f9",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "35c491e8e7865b377082c61ed37336f7019b09f9",
+    "toolVersion": "1.10.0",
+    "reportSha256": "7531bfa745447037cc92f559d02cd0bdfbbd20b6821fdf1c227186e48ae29088",
+    "error": null
+  },
+  {
+    "name": "geospatial-ethz-asl-maplab",
+    "commit": "0b4868efeb292851d71f98d31a1e6bb40ebb244b",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "0b4868efeb292851d71f98d31a1e6bb40ebb244b",
+    "toolVersion": "1.10.0",
+    "reportSha256": "7a47c8f4659926d6f3102f1cfc5d6da0d59735bd87d164f4cd1a71806d0f5816",
+    "error": null
+  },
+  {
+    "name": "geospatial-awesome-spectral-indices-awesome-spectral-indices",
+    "commit": "dad4f08014fee3d784327985c72d42592842cf5d",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "dad4f08014fee3d784327985c72d42592842cf5d",
+    "toolVersion": "1.10.0",
+    "reportSha256": "aa3ee7eb4b94338a92b589384d58cc6ab4138d26e684a29a5f97e8c2e53f8aee",
+    "error": null
+  },
+  {
+    "name": "geospatial-wq-wq",
+    "commit": "c13e1394146a5a61c84f8134001efd102f85a14d",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "c13e1394146a5a61c84f8134001efd102f85a14d",
+    "toolVersion": "1.10.0",
+    "reportSha256": "fd4d05796e8956e52b1d84b125e1019f1d76832aa37144d7ee88d9cd7d387fd8",
+    "error": null
+  },
+  {
+    "name": "geospatial-merlos-mapcache",
+    "commit": "fbc0f644578d7ac109313f8ca472cb2c31cb414a",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "fbc0f644578d7ac109313f8ca472cb2c31cb414a",
+    "toolVersion": "1.10.0",
+    "reportSha256": "bdc283c4ee4fc73be9d692b2373d82fbe553d21114dcfcd2dbcd0e5187fe884a",
+    "error": null
+  },
+  {
+    "name": "geospatial-pmlrsg-gisportal",
+    "commit": "6988ebe635dbcf803a974583c8bcac77f20b5b79",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "6988ebe635dbcf803a974583c8bcac77f20b5b79",
+    "toolVersion": "1.10.0",
+    "reportSha256": "7b338abd6e2535878cb0b806351b0350f9f9cb81de890197ebc0836aa2eca6ac",
+    "error": null
+  },
+  {
+    "name": "geospatial-osucartography-adaptive-composite-map-projections",
+    "commit": "bba9686faa2699c6b5b2ed1400a229d937e52f1f",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "bba9686faa2699c6b5b2ed1400a229d937e52f1f",
+    "toolVersion": "1.10.0",
+    "reportSha256": "dd4318432696d45e6a158bac6e1876abae41e21cb95bb8ae4671acf18cb86546",
+    "error": null
+  },
+  {
+    "name": "geospatial-mapmint-mapmint",
+    "commit": "79b4221a795d3093a0d6ec51def0c1c0b3156fef",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "79b4221a795d3093a0d6ec51def0c1c0b3156fef",
+    "toolVersion": "1.10.0",
+    "reportSha256": "fe37127dd0e7e2b89c09ff6391f031d4bda03af6673297fc55bcf1f709e93895",
+    "error": null
+  },
+  {
+    "name": "geospatial-opengeos-nasa-cmr-stac",
+    "commit": "a26fe75c354b0d49e3952191b929a7064e2f4574",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "a26fe75c354b0d49e3952191b929a7064e2f4574",
+    "toolVersion": "1.10.0",
+    "reportSha256": "fc4dd7399e6777b2c1e499643c2d5c1f5d7af7c381bda18bd429b93a6442992c",
+    "error": null
+  },
+  {
+    "name": "geospatial-mapforge-org-mapforge",
+    "commit": "99d1469c2b71ce1673bcc8bd9e9f082814e7b8e0",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "99d1469c2b71ce1673bcc8bd9e9f082814e7b8e0",
+    "toolVersion": "1.10.0",
+    "reportSha256": "16c2543a91e1fff69ebd84e95735efda2b0871359530abc6eea20b40875cb9c2",
+    "error": null
+  },
+  {
+    "name": "geospatial-vladimirkalachikhin-galadriel-map",
+    "commit": "3214c4a2087d5bf5d7f30916a993d79dfcc24124",
+    "status": "scored",
+    "platform": "Ubuntu 24.04 / WSL2 ext4",
+    "checkoutHead": "3214c4a2087d5bf5d7f30916a993d79dfcc24124",
+    "toolVersion": "1.10.0",
+    "reportSha256": "7b6b5364f1dbe4b6f4da67ca01d6ef135108b9b0bc1af8457a6369e44ded9b3c",
+    "error": null
+  }
+]

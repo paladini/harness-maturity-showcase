@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/ccxt/ccxt.git",
+  "manifestName": "ccxt",
+  "commit": "f0aca06eb7482f083bed8406fadfcc0c05e45b1c",
+  "reason": "The 1.10.0 report points to this WSL2 checkout. Revalidated its pinned HEAD and complete clean tree, then verified the report hash; no target code was executed.",
+  "scanner": "harness-score@1.10.0",
+  "scannerRoot": "/home/fernando_paladini/.local/share/codex-harness-corpus-refresh-1-10-0/repos/ccxt",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 9928,
+  "treeModes": {
+    "100644": 9873,
+    "100755": 36,
+    "120000": 19
+  },
+  "treeListingFormat": "git ls-tree -r --full-tree <pinned-commit>, UTF-8 output including trailing newline",
+  "treeListingSha256": "0e44b19c20cb1f7668aa6f5a365dd9fabfc32b92160c79423e8229a8cdf6497f",
+  "report": {
+    "path": "corpus/reports/ccxt.json",
+    "sha256": "fa3e2c43508d9ac1c993789ecac3ab18bc2faf6f304c5cdd2a240b446e9d5dd6",
+    "sizeBytes": 47595,
+    "toolVersion": "1.10.0",
+    "truncated": false
+  }
+}
